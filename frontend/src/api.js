@@ -93,6 +93,24 @@ export async function getQualityReport(config) {
   });
 }
 
+export async function getFidelityReport(config) {
+  return jsonRequest('/quality/report', {
+    method: 'POST',
+    body: JSON.stringify(config),
+  });
+}
+
+// ── Sample Datasets ──
+export async function listSamples() {
+  return jsonRequest('/samples');
+}
+
+export async function loadSample(name) {
+  return jsonRequest(`/samples/${name}/load`, {
+    method: 'POST',
+  });
+}
+
 // ── Relational ──
 export async function generateRelational(config) {
   return jsonRequest('/v1/relational/generate', {
