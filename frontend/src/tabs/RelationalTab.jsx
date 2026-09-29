@@ -18,6 +18,7 @@ export default function RelationalTab() {
   const [learnedSummary, setLearnedSummary] = useState(null)
   const [comparison, setComparison] = useState(null)
   const [learningLoading, setLearningLoading] = useState(false)
+  const [showConfig, setShowConfig] = useState(true)
 
   // Custom upload state
   const [uploadMode, setUploadMode] = useState('sample') // 'sample' | 'custom'
@@ -140,305 +141,328 @@ export default function RelationalTab() {
   const currentTable = tables[activeTable]
 
   return (
-    <div className="flex flex-col lg:flex-row gap-6 h-full">
-      {/* Main content */}
-      <div className="flex-1 flex flex-col gap-4 min-w-0">
-        {/* Error */}
-        {error && (
-          <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg text-sm flex items-center justify-between animate-fade-in">
-            <span>{error}</span>
-            <button onClick={() => setError('')} className="text-red-400 hover:text-red-600 ml-4">✕</button>
-          </div>
-        )}
+    <div className="space-y-6 pb-12 w-full">
+      {/* Error */}
+      {error && (
+        <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-2xl text-sm flex items-center justify-between animate-fade-in shadow-xs">
+          <span className="font-medium">{error}</span>
+          <button onClick={() => setError('')} className="text-red-400 hover:text-red-600 ml-4 font-bold">✕</button>
+        </div>
+      )}
 
-        {/* Validation Badge */}
-        {validation && (
-          <div className={`px-4 py-3 rounded-lg text-sm font-medium flex items-center justify-between gap-3 animate-fade-in ${
-            validation.all_valid
-              ? 'bg-emerald-50 border border-emerald-200 text-emerald-800'
-              : 'bg-red-50 border border-red-200 text-red-700'
-          }`}>
-            <div className="flex items-center gap-3">
-              <span className="text-xl">{validation.all_valid ? '✅' : '❌'}</span>
-              <div>
-                <div className="font-bold flex items-center gap-2">
-                  <span>{validation.all_valid ? 'Mathematical Referential Integrity Guaranteed' : 'Integrity Issues Detected'}</span>
-                  {useLearned && (
-                    <span className="text-[10px] bg-teal/15 text-teal px-2 py-0.5 rounded font-mono font-semibold">
-                      Learned Mode
-                    </span>
-                  )}
-                </div>
-                <div className="text-xs mt-0.5 opacity-80">
-                  {validation.checks?.orphan_keys?.all_valid ? '✓ Zero orphan foreign keys' : '✗ Orphan foreign keys detected'}
-                  {' • '}
-                  {validation.checks?.order_totals?.valid ? '✓ Sum(qty × price) − discount + tax = total (100% reconciled)' : '✗ Total math mismatches'}
-                </div>
-              </div>
-            </div>
-            <div className="text-right text-xs opacity-75 hidden sm:block">
-              Seed: <span className="font-mono font-bold">{seed}</span>
-            </div>
-          </div>
-        )}
-
-        {/* Comparison Table / Cards (Real vs Synthetic Distributions) */}
-        {comparison && (
-          <RelationalComparison comparison={comparison} isLearned={useLearned} />
-        )}
-
-        {/* Table sub-tabs */}
-        {Object.keys(tables).length > 0 && (
-          <div className="flex gap-2 border-b border-gray-200 pb-2">
-            {Object.entries(tables).map(([name, table]) => (
-              <button
-                key={name}
-                onClick={() => setActiveTable(name)}
-                className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all flex items-center gap-2 ${
-                  activeTable === name
-                    ? 'bg-navy text-white shadow-sm'
-                    : 'bg-white border border-gray-200 text-gray-600 hover:border-teal/40'
-                }`}
-              >
-                <span>{name}</span>
-                <span className={`text-xs px-1.5 py-0.2 rounded font-mono ${
-                  activeTable === name ? 'bg-white/20 text-white' : 'bg-gray-100 text-gray-500'
-                }`}>
-                  {table.total_rows}
-                </span>
-              </button>
-            ))}
-          </div>
-        )}
-
-        {/* Preview */}
-        <PreviewTable
-          columns={currentTable?.columns || []}
-          rows={currentTable?.rows || []}
-          title={activeTable ? `${activeTable} Preview` : 'Relational Linked Tables'}
-          emptyMessage="Generate linked datasets to preview Customers → Orders → Order Items with referential integrity"
-        />
-      </div>
-
-      {/* Config panel */}
-      <ConfigPanel title="Relational Generator">
-        <div className="space-y-4">
-          {/* Mode Selector */}
-          <div>
-            <label className="block text-xs font-bold text-navy uppercase tracking-wider mb-2">
-              Generation Engine
-            </label>
-            <div className="grid grid-cols-2 gap-2 p-1 bg-gray-100 rounded-lg">
-              <button
-                type="button"
-                onClick={() => setUseLearned(true)}
-                className={`py-1.5 px-2 text-xs font-semibold rounded-md transition-all ${
-                  useLearned
-                    ? 'bg-white text-teal shadow-xs'
-                    : 'text-gray-500 hover:text-gray-900'
-                }`}
-              >
-                🧠 Learned Mode
-              </button>
-              <button
-                type="button"
-                onClick={() => setUseLearned(false)}
-                className={`py-1.5 px-2 text-xs font-semibold rounded-md transition-all ${
-                  !useLearned
-                    ? 'bg-white text-navy shadow-xs'
-                    : 'text-gray-500 hover:text-gray-900'
-                }`}
-              >
-                📋 Fixed Template
-              </button>
-            </div>
-            <p className="text-[10px] text-gray-500 mt-1 leading-normal">
-              {useLearned
-                ? 'Learns joint orders-per-customer, basket sizes, and category price distributions from real data.'
-                : 'Uses fixed uniform distributions with standard e-commerce defaults.'}
-            </p>
+      {/* ── 1. UNIFIED RELATIONAL COMMAND BAR ── */}
+      <div className="bg-white p-4 rounded-3xl border border-slate-200 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
+        {/* Left: Mode Toggle & Training Source */}
+        <div className="flex flex-wrap items-center gap-3">
+          <div className="flex items-center gap-1.5 p-1 bg-slate-100 rounded-xl">
+            <button
+              type="button"
+              onClick={() => setUseLearned(true)}
+              className={`py-1.5 px-3 text-xs font-bold rounded-lg transition ${
+                useLearned ? 'bg-white text-teal-800 shadow-xs' : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              🧠 Learned Mode
+            </button>
+            <button
+              type="button"
+              onClick={() => setUseLearned(false)}
+              className={`py-1.5 px-3 text-xs font-bold rounded-lg transition ${
+                !useLearned ? 'bg-white text-slate-900 shadow-xs' : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              📋 Fixed Template
+            </button>
           </div>
 
-          {/* Relational Learning Source (when learned mode is active) */}
           {useLearned && (
-            <div className="bg-teal/5 border border-teal/20 rounded-lg p-3 space-y-2.5">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-bold text-teal-800">Training Dataset</span>
-                <span className="text-[10px] font-mono font-semibold px-1.5 py-0.5 rounded bg-teal/10 text-teal-700">
-                  {sampleMeta ? `${sampleMeta.tables?.customers || 500} customers` : 'Ready'}
-                </span>
-              </div>
-
-              {/* Source Toggle: Sample vs Custom */}
-              <div className="flex gap-2">
-                <button
-                  type="button"
-                  onClick={() => { setUploadMode('sample'); handleLoadSample(); }}
-                  disabled={learningLoading}
-                  className={`flex-1 py-1 px-2 text-xs font-medium rounded border transition-all ${
-                    uploadMode === 'sample'
-                      ? 'bg-teal text-white border-teal shadow-2xs'
-                      : 'bg-white text-gray-600 border-gray-200 hover:border-teal/30'
-                  }`}
-                >
-                  ⚡ Bundled Sample
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setUploadMode('custom')}
-                  className={`flex-1 py-1 px-2 text-xs font-medium rounded border transition-all ${
-                    uploadMode === 'custom'
-                      ? 'bg-teal text-white border-teal shadow-2xs'
-                      : 'bg-white text-gray-600 border-gray-200 hover:border-teal/30'
-                  }`}
-                >
-                  📁 Custom CSVs
-                </button>
-              </div>
-
-              {uploadMode === 'sample' ? (
-                <div className="text-[10px] text-gray-600 bg-white/70 rounded p-2 border border-teal/15 space-y-1">
-                  <div className="font-semibold text-teal-900">Bundled E-Commerce Sample:</div>
-                  <div>• 500 Customers, 1,171 Orders, 2,443 Order Items</div>
-                  <div>• Real order frequencies (~2.3 orders/cust) & basket sizes</div>
-                  <div>• 8 realistic category price quantiles</div>
-                </div>
-              ) : (
-                <div className="space-y-2 bg-white/80 p-2.5 rounded border border-teal/20">
-                  <div>
-                    <label className="block text-[10px] font-medium text-gray-600">Customers CSV</label>
-                    <input
-                      type="file"
-                      accept=".csv"
-                      onChange={(e) => setCustFile(e.target.files?.[0] || null)}
-                      className="text-[10px] w-full text-gray-500"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-[10px] font-medium text-gray-600">Orders CSV</label>
-                    <input
-                      type="file"
-                      accept=".csv"
-                      onChange={(e) => setOrdsFile(e.target.files?.[0] || null)}
-                      className="text-[10px] w-full text-gray-500"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-[10px] font-medium text-gray-600">Order Items CSV</label>
-                    <input
-                      type="file"
-                      accept=".csv"
-                      onChange={(e) => setItemsFile(e.target.files?.[0] || null)}
-                      className="text-[10px] w-full text-gray-500"
-                    />
-                  </div>
-                  <button
-                    type="button"
-                    onClick={handleLearnCustom}
-                    disabled={learningLoading || !custFile || !ordsFile || !itemsFile}
-                    className="w-full py-1 text-xs font-semibold bg-teal text-white rounded hover:bg-teal-600 transition-colors disabled:opacity-40"
-                  >
-                    {learningLoading ? 'Learning Distributions...' : 'Extract & Learn Distributions'}
-                  </button>
-                </div>
-              )}
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => { setUploadMode('sample'); handleLoadSample(); }}
+                disabled={learningLoading}
+                className={`px-3 py-1.5 text-xs font-semibold rounded-xl border transition ${
+                  uploadMode === 'sample'
+                    ? 'bg-teal-50 border-teal-300 text-teal-800'
+                    : 'bg-white border-slate-200 text-slate-700 hover:bg-slate-50'
+                }`}
+              >
+                ⚡ Bundled E-Commerce Sample
+              </button>
+              <button
+                type="button"
+                onClick={() => setUploadMode('custom')}
+                className={`px-3 py-1.5 text-xs font-semibold rounded-xl border transition ${
+                  uploadMode === 'custom'
+                    ? 'bg-teal-50 border-teal-300 text-teal-800'
+                    : 'bg-white border-slate-200 text-slate-700 hover:bg-slate-50'
+                }`}
+              >
+                📁 Custom CSVs
+              </button>
             </div>
           )}
+        </div>
 
-          {/* Customer count */}
-          <div>
-            <label className="block text-xs font-semibold text-gray-700 mb-1.5">Customer Count</label>
-            <input
-              type="number"
-              value={customerCount}
-              onChange={(e) => setCustomerCount(Math.max(1, Math.min(5000, parseInt(e.target.value) || 1)))}
-              min={1}
-              max={5000}
-              className="w-full px-3 py-2 text-sm border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal/20 focus:border-teal outline-none transition-all"
-            />
-            <p className="text-[10px] text-gray-400 mt-1">
-              Orders and items scale automatically according to {useLearned ? 'learned real frequencies' : 'template ranges'}
-            </p>
-          </div>
-
-          {/* Seed */}
-          <div>
-            <div className="flex items-center justify-between mb-1.5">
-              <label className="text-xs font-semibold text-gray-700">Random Seed</label>
-              <button
-                type="button"
-                onClick={() => setSeed(Math.floor(Math.random() * 900000) + 10000)}
-                className="text-[10px] text-teal hover:underline font-bold"
-              >
-                🎲 Randomize
-              </button>
-            </div>
-            <input
-              type="number"
-              value={seed}
-              onChange={(e) => setSeed(parseInt(e.target.value) || 0)}
-              className="w-full px-3 py-2 text-sm border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal/20 focus:border-teal outline-none transition-all font-mono"
-            />
-          </div>
-
-          {/* Locale */}
-          <div>
-            <label className="block text-xs font-semibold text-gray-700 mb-1.5">Locale</label>
-            <select
-              value={locale}
-              onChange={(e) => setLocale(e.target.value)}
-              className="w-full px-3 py-2 text-xs border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal/20 focus:border-teal outline-none transition-all bg-white"
-            >
-              {LOCALES.map((loc) => (
-                <option key={loc.code} value={loc.code}>
-                  {loc.flag} {loc.label}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          <hr className="border-gray-100" />
-
-          {/* Math guarantee */}
-          <div className="bg-teal/5 border border-teal/20 rounded-lg p-3">
-            <p className="text-[11px] text-teal-800 font-semibold mb-1">🔐 Mathematical Guarantees</p>
-            <ul className="text-[10px] text-teal-700 space-y-0.5">
-              <li>• Zero orphan foreign keys (100% referential integrity)</li>
-              <li>• Σ(qty × price) − discount + tax = total</li>
-              <li>• Strict Python evaluation, zero LLM hallucination</li>
-            </ul>
-          </div>
-
-          <hr className="border-gray-100" />
-
-          {/* Generate */}
+        {/* Right: Generate Action & Config Toggle */}
+        <div className="flex items-center gap-2.5">
           <button
             onClick={handleGenerate}
             disabled={generating}
-            className={`w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-sm font-semibold transition-all ${
-              generating ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-navy text-white hover:bg-navy-600 shadow-sm'
-            }`}
+            className="px-4 py-2 text-xs font-bold rounded-xl bg-gradient-to-r from-teal-700 to-teal-800 text-white hover:from-teal-800 hover:to-teal-900 disabled:opacity-50 transition shadow-sm flex items-center gap-2"
           >
-            {generating ? '⏳ Learning & Generating...' : '▶ Generate Linked Tables'}
+            {generating ? (
+              <>
+                <span className="animate-spin text-sm">⏳</span> Generating Tables...
+              </>
+            ) : (
+              <>
+                <span>▶</span> Generate Linked Tables
+              </>
+            )}
           </button>
 
-          {/* Export */}
-          <div className="grid grid-cols-2 gap-2">
-            <ExportButton
-              onClick={() => handleExport('zip')}
-              disabled={exporting || !Object.keys(tables).length}
-              label="ZIP (CSVs)"
-              loading={exporting}
-            />
-            <ExportButton
-              onClick={() => handleExport('sql')}
-              disabled={exporting || !Object.keys(tables).length}
-              label="SQL Dump"
-              loading={false}
-            />
+          <button
+            onClick={() => setShowConfig(!showConfig)}
+            className={`px-3 py-2 text-xs font-semibold rounded-xl border transition flex items-center gap-1.5 ${
+              showConfig
+                ? 'bg-slate-100 text-slate-800 border-slate-300'
+                : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'
+            }`}
+          >
+            <span>⚙️</span>
+            <span>{showConfig ? 'Hide Config' : 'Config'}</span>
+          </button>
+        </div>
+      </div>
+
+      {/* Custom Upload Drawer if active */}
+      {useLearned && uploadMode === 'custom' && (
+        <div className="bg-white p-5 rounded-3xl border border-slate-200 shadow-xs space-y-4">
+          <div className="flex items-center justify-between">
+            <h4 className="text-xs font-bold text-slate-800 uppercase tracking-wider">
+              Upload Relational Tables (Customers, Orders, Order Items)
+            </h4>
+            <span className="text-[11px] text-slate-400">CSV format</span>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="p-3 bg-slate-50 rounded-2xl border border-slate-200">
+              <label className="block text-xs font-semibold text-slate-700 mb-1">1. Customers CSV</label>
+              <input
+                type="file"
+                accept=".csv"
+                onChange={(e) => setCustFile(e.target.files?.[0] || null)}
+                className="text-xs w-full text-slate-600"
+              />
+            </div>
+            <div className="p-3 bg-slate-50 rounded-2xl border border-slate-200">
+              <label className="block text-xs font-semibold text-slate-700 mb-1">2. Orders CSV</label>
+              <input
+                type="file"
+                accept=".csv"
+                onChange={(e) => setOrdsFile(e.target.files?.[0] || null)}
+                className="text-xs w-full text-slate-600"
+              />
+            </div>
+            <div className="p-3 bg-slate-50 rounded-2xl border border-slate-200">
+              <label className="block text-xs font-semibold text-slate-700 mb-1">3. Order Items CSV</label>
+              <input
+                type="file"
+                accept=".csv"
+                onChange={(e) => setItemsFile(e.target.files?.[0] || null)}
+                className="text-xs w-full text-slate-600"
+              />
+            </div>
+          </div>
+
+          <button
+            type="button"
+            onClick={handleLearnCustom}
+            disabled={learningLoading || !custFile || !ordsFile || !itemsFile}
+            className="px-4 py-2 text-xs font-bold bg-teal-700 text-white rounded-xl hover:bg-teal-800 transition disabled:opacity-40"
+          >
+            {learningLoading ? 'Extracting Distributions...' : 'Extract & Fit Learned Distributions'}
+          </button>
+        </div>
+      )}
+
+      {/* ── 2. MATHEMATICAL INTEGRITY BANNER ── */}
+      {validation && (
+        <div className={`px-5 py-4 rounded-3xl text-sm font-medium flex items-center justify-between gap-4 shadow-2xs ${
+          validation.all_valid
+            ? 'bg-emerald-50/80 border border-emerald-200 text-emerald-900'
+            : 'bg-red-50 border border-red-200 text-red-900'
+        }`}>
+          <div className="flex items-center gap-3">
+            <span className="text-2xl">{validation.all_valid ? '✅' : '❌'}</span>
+            <div>
+              <div className="font-bold flex items-center gap-2">
+                <span>{validation.all_valid ? 'Mathematical Referential Integrity Verified' : 'Integrity Issues Detected'}</span>
+                {useLearned && (
+                  <span className="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-mono font-bold">
+                    Learned Distributions
+                  </span>
+                )}
+              </div>
+              <div className="text-xs mt-0.5 opacity-85">
+                {validation.checks?.orphan_keys?.all_valid ? '✓ Zero orphan foreign keys' : '✗ Orphan foreign keys found'}
+                {' • '}
+                {validation.checks?.order_totals?.valid ? '✓ Strict reconciliation: Σ(qty × price) − discount + tax = total' : '✗ Totals mismatch'}
+              </div>
+            </div>
+          </div>
+          <div className="text-right text-xs opacity-75 hidden sm:block font-mono">
+            Seed: <strong>{seed}</strong>
           </div>
         </div>
-      </ConfigPanel>
+      )}
+
+      {/* ── 3. WORKSPACE: TABLES & COMPARISON REPORT + OPTIONAL CONFIG DRAWER ── */}
+      <div className="flex flex-col lg:flex-row gap-6 items-start">
+        {/* Main Content Area */}
+        <div className="flex-1 flex flex-col gap-6 min-w-0 w-full">
+          {/* Comparison Table / Cards (Real vs Synthetic Distributions) */}
+          {comparison && (
+            <RelationalComparison comparison={comparison} isLearned={useLearned} />
+          )}
+
+          {/* Table Sub-Tabs */}
+          {Object.keys(tables).length > 0 && (
+            <div className="flex gap-2 border-b border-slate-200 pb-2">
+              {Object.entries(tables).map(([name, table]) => (
+                <button
+                  key={name}
+                  onClick={() => setActiveTable(name)}
+                  className={`px-4 py-2 rounded-xl text-xs font-bold transition flex items-center gap-2 ${
+                    activeTable === name
+                      ? 'bg-slate-900 text-white shadow-xs'
+                      : 'bg-white border border-slate-200 text-slate-600 hover:border-slate-300'
+                  }`}
+                >
+                  <span className="capitalize">{name}</span>
+                  <span className={`text-[10px] px-1.5 py-0.5 rounded font-mono ${
+                    activeTable === name ? 'bg-white/20 text-white' : 'bg-slate-100 text-slate-500'
+                  }`}>
+                    {table.total_rows}
+                  </span>
+                </button>
+              ))}
+            </div>
+          )}
+
+          {/* Preview */}
+          <PreviewTable
+            columns={currentTable?.columns || []}
+            rows={currentTable?.rows || []}
+            title={activeTable ? `${activeTable} Table Preview` : 'Linked Relational Tables'}
+            emptyMessage="Generate linked datasets to preview Customers → Orders → Order Items with referential integrity"
+          />
+        </div>
+
+        {/* Configuration Panel */}
+        {showConfig && (
+          <ConfigPanel
+            title="Relational Settings"
+            className="w-full lg:w-[320px] shrink-0"
+            badge={useLearned ? 'Learned' : 'Template'}
+          >
+            <div className="space-y-4">
+              {/* Customer count */}
+              <div>
+                <div className="flex items-center justify-between mb-1">
+                  <label className="text-xs font-bold text-slate-700 uppercase tracking-wider">Customer Count</label>
+                  <span className="text-xs font-mono font-bold text-teal-700">{customerCount}</span>
+                </div>
+                <input
+                  type="number"
+                  value={customerCount}
+                  onChange={(e) => setCustomerCount(Math.max(1, Math.min(5000, parseInt(e.target.value) || 1)))}
+                  min={1}
+                  max={5000}
+                  className="w-full px-3 py-2 text-sm border border-slate-200 rounded-xl font-mono focus:ring-2 focus:ring-teal-200 focus:border-teal-600 outline-none"
+                />
+                <p className="text-[10px] text-slate-400 mt-1">
+                  Orders &amp; items scale automatically using {useLearned ? 'learned frequencies' : 'template bounds'}
+                </p>
+              </div>
+
+              {/* Seed */}
+              <div>
+                <div className="flex items-center justify-between mb-1">
+                  <label className="text-xs font-bold text-slate-700 uppercase tracking-wider">Seed</label>
+                  <button
+                    type="button"
+                    onClick={() => setSeed(Math.floor(Math.random() * 900000) + 10000)}
+                    className="text-[10px] text-teal-700 font-bold hover:underline"
+                  >
+                    🎲 Randomize
+                  </button>
+                </div>
+                <input
+                  type="number"
+                  value={seed}
+                  onChange={(e) => setSeed(parseInt(e.target.value) || 0)}
+                  className="w-full px-3 py-2 text-sm border border-slate-200 rounded-xl font-mono focus:ring-2 focus:ring-teal-200 focus:border-teal-600 outline-none"
+                />
+              </div>
+
+              {/* Locale */}
+              <div>
+                <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Locale</label>
+                <select
+                  value={locale}
+                  onChange={(e) => setLocale(e.target.value)}
+                  className="w-full px-3 py-2 text-xs border border-slate-200 rounded-xl focus:ring-2 focus:ring-teal-200 focus:border-teal-600 outline-none bg-white"
+                >
+                  {LOCALES.map((loc) => (
+                    <option key={loc.code} value={loc.code}>
+                      {loc.flag} {loc.label}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <hr className="border-slate-100" />
+
+              {/* Mathematical Guarantees */}
+              <div className="bg-teal-50/70 border border-teal-200/80 rounded-2xl p-3.5 space-y-1">
+                <span className="text-[11px] font-bold text-teal-900 block uppercase tracking-wider">
+                  🔐 Mathematical Guarantees
+                </span>
+                <ul className="text-[10px] text-teal-800 space-y-0.5">
+                  <li>• Zero orphan foreign keys</li>
+                  <li>• Σ(qty × price) − discount + tax = total</li>
+                  <li>• Strict Python evaluation, zero hallucinations</li>
+                </ul>
+              </div>
+
+              <hr className="border-slate-100" />
+
+              {/* Export Buttons */}
+              <div>
+                <div className="text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-2">
+                  Export Linked Tables
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  <ExportButton
+                    onClick={() => handleExport('zip')}
+                    disabled={exporting || !Object.keys(tables).length}
+                    label="ZIP (CSVs)"
+                    loading={exporting}
+                  />
+                  <ExportButton
+                    onClick={() => handleExport('sql')}
+                    disabled={exporting || !Object.keys(tables).length}
+                    label="SQL Dump"
+                    loading={false}
+                  />
+                </div>
+              </div>
+            </div>
+          </ConfigPanel>
+        )}
+      </div>
     </div>
   )
 }

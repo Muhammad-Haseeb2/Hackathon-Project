@@ -1,20 +1,58 @@
+import { useState } from 'react'
+
 export default function ConfigPanel({
   children,
   title = 'Configuration',
-  className = 'w-96 lg:w-[420px]',
+  className = 'w-80 lg:w-[330px]',
+  defaultCollapsed = false,
+  badge = null,
 }) {
-  return (
-    <div className={`${className} bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden flex-shrink-0 transition-all`}>
-      <div className="px-5 py-4 border-b border-gray-100 bg-gray-50/50">
-        <h3 className="text-sm font-semibold text-navy flex items-center gap-2">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <circle cx="12" cy="12" r="3" />
-            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
-          </svg>
-          {title}
-        </h3>
+  const [collapsed, setCollapsed] = useState(defaultCollapsed)
+
+  if (collapsed) {
+    return (
+      <div className="flex-shrink-0 transition-all">
+        <button
+          onClick={() => setCollapsed(false)}
+          className="bg-white hover:bg-slate-50 border border-slate-200 rounded-xl p-3 shadow-xs flex flex-col items-center gap-2 text-slate-600 hover:text-teal-700 transition"
+          title={`Expand ${title}`}
+        >
+          <div className="w-8 h-8 rounded-lg bg-teal-50 flex items-center justify-center text-teal-700 font-bold">
+            ⚙️
+          </div>
+          <span className="text-[11px] font-bold writing-mode-vertical uppercase tracking-wider py-2">
+            {title}
+          </span>
+          <span className="text-xs text-teal-600">◀</span>
+        </button>
       </div>
-      <div className="p-5 space-y-4 overflow-y-auto max-h-[calc(100vh-14rem)]">
+    )
+  }
+
+  return (
+    <div className={`${className} bg-white rounded-2xl border border-slate-200/80 shadow-xs overflow-hidden flex-shrink-0 transition-all flex flex-col`}>
+      <div className="px-4 py-3.5 border-b border-slate-100 bg-slate-50/70 flex items-center justify-between">
+        <div className="flex items-center gap-2 min-w-0">
+          <span className="text-sm">⚙️</span>
+          <h3 className="text-xs font-bold text-slate-800 uppercase tracking-wider truncate">
+            {title}
+          </h3>
+          {badge && (
+            <span className="text-[10px] px-2 py-0.5 rounded-full font-semibold bg-teal-50 text-teal-700 border border-teal-200 shrink-0">
+              {badge}
+            </span>
+          )}
+        </div>
+        <button
+          type="button"
+          onClick={() => setCollapsed(true)}
+          className="p-1 text-slate-400 hover:text-slate-600 hover:bg-slate-200/50 rounded-lg transition text-xs"
+          title="Collapse panel"
+        >
+          ✕
+        </button>
+      </div>
+      <div className="p-4 space-y-4 overflow-y-auto max-h-[calc(100vh-10rem)]">
         {children}
       </div>
     </div>

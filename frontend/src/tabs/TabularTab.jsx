@@ -477,589 +477,408 @@ export default function TabularTab() {
     setSchema(newSchema)
   }
 
+  const [showConfig, setShowConfig] = useState(true)
+
   return (
-    <div className="flex flex-col lg:flex-row gap-6 h-full pb-12">
-      {/* Main content area */}
-      <div className="flex-1 flex flex-col gap-5 min-w-0">
-        {/* Error toast */}
-        {error && (
-          <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-xl text-sm flex items-center justify-between animate-fade-in shadow-xs">
-            <span className="font-medium">{error}</span>
-            <button
-              onClick={() => setError('')}
-              className="text-red-400 hover:text-red-600 ml-4 font-bold"
-            >
-              ✕
-            </button>
-          </div>
-        )}
-
-        {/* ── 7. SAMPLE DATASETS BAR & QUICK ACTIONS ── */}
-        <div className="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-teal-50 flex items-center justify-center text-[#167A6C] font-bold text-sm shrink-0">
-              📊
-            </div>
-            <div>
-              <div className="text-xs font-semibold text-[#16233B]">
-                Bundled Demo Datasets (1-Click Load)
-              </div>
-              <div className="text-[11px] text-slate-500">
-                Pre-loaded with strong statistical correlations (no upload needed).
-              </div>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <select
-              value={datasetName ? samplesList.find((s) => s.title === datasetName || s.name === datasetName)?.name || '' : ''}
-              onChange={(e) => handleLoadSample(e.target.value)}
-              className="px-3 py-1.5 text-xs bg-slate-50 border border-slate-300 rounded-xl font-medium text-[#16233B] focus:ring-2 focus:ring-[#167A6C] outline-none"
-            >
-              <option value="">Choose a Demo Dataset...</option>
-              {samplesList.map((sample) => (
-                <option key={sample.name} value={sample.name}>
-                  {sample.title}
-                </option>
-              ))}
-            </select>
-
-            <button
-              onClick={handleGenerateAndCompare}
-              disabled={fidelityLoading || (!datasetId && !schema.length)}
-              className="px-4 py-1.5 text-xs font-semibold rounded-xl bg-[#167A6C] text-white hover:bg-teal-700 disabled:opacity-50 transition shadow-xs flex items-center gap-1.5 shrink-0"
-              title="Generate synthetic data with Copula engine and compare against independent baseline"
-            >
-              {fidelityLoading ? (
-                <>
-                  <span className="animate-spin">⏳</span> Comparing...
-                </>
-              ) : (
-                <>
-                  <span>⚡</span> Generate &amp; Compare
-                </>
-              )}
-            </button>
-          </div>
-        </div>
-
-        {/* ── 8. "HOW THE MODEL LEARNS" COLLAPSIBLE PANEL ── */}
-        <div className="bg-white rounded-2xl border border-slate-200/80 shadow-xs overflow-hidden">
+    <div className="space-y-6 pb-12 w-full">
+      {/* Error toast */}
+      {error && (
+        <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-2xl text-sm flex items-center justify-between animate-fade-in shadow-xs">
+          <span className="font-medium">{error}</span>
           <button
-            onClick={() => setIsHowItWorksOpen(!isHowItWorksOpen)}
-            className="w-full px-5 py-3.5 flex items-center justify-between text-left hover:bg-slate-50/60 transition"
+            onClick={() => setError('')}
+            className="text-red-400 hover:text-red-600 ml-4 font-bold"
           >
-            <div className="flex items-center gap-2">
-              <span className="text-xs font-bold text-[#16233B] flex items-center gap-1.5">
-                <span>🧠</span> How the model learns: Statistical Joint Architecture (Copula)
-              </span>
-              <span className="text-[10px] px-2 py-0.5 rounded-full bg-teal-50 text-[#167A6C] font-semibold">
-                Not a Random Generator
-              </span>
-            </div>
-            <span className="text-xs text-slate-400 font-bold">
-              {isHowItWorksOpen ? '▲ Collapse' : '▼ Learn how it works'}
+            ✕
+          </button>
+        </div>
+      )}
+
+      {/* ── 1. UNIFIED COMMAND & DATASET ACTION BAR ── */}
+      <div className="bg-white p-4 rounded-3xl border border-slate-200 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
+        {/* Left: Dataset Selector & Upload */}
+        <div className="flex flex-wrap items-center gap-3">
+          <div className="flex items-center gap-2">
+            <span className="text-sm">📊</span>
+            <span className="text-xs font-bold text-slate-800 uppercase tracking-wider">
+              Training Data:
             </span>
+          </div>
+
+          <select
+            value={datasetName ? samplesList.find((s) => s.title === datasetName || s.name === datasetName)?.name || '' : ''}
+            onChange={(e) => handleLoadSample(e.target.value)}
+            className="px-3 py-1.5 text-xs bg-slate-50 border border-slate-300 rounded-xl font-semibold text-slate-800 focus:ring-2 focus:ring-teal-500 outline-none shadow-2xs"
+          >
+            <option value="">⚡ Load Bundled Sample Dataset...</option>
+            {samplesList.map((sample) => (
+              <option key={sample.name} value={sample.name}>
+                {sample.title}
+              </option>
+            ))}
+          </select>
+
+          <button
+            onClick={() => fileInputRef.current?.click()}
+            className="px-3 py-1.5 text-xs font-semibold rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition flex items-center gap-1.5"
+            title="Upload your own CSV to fit Copula"
+          >
+            <span>📁</span> Upload CSV
           </button>
 
-          {isHowItWorksOpen && (
-            <div className="px-5 pb-5 pt-1 border-t border-slate-100 bg-[#FBFBF9]/40 text-xs">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-3">
-                {/* Step 1 */}
-                <div className="p-3.5 bg-white rounded-xl border border-slate-200/80 space-y-1.5">
-                  <div className="flex items-center gap-1.5 font-bold text-[#16233B]">
-                    <span className="w-5 h-5 rounded-full bg-teal-100 text-[#167A6C] flex items-center justify-center text-[10px]">
-                      1
-                    </span>
-                    <span>Learn Column Shapes</span>
-                  </div>
-                  <p className="text-[11px] text-slate-500 leading-relaxed">
-                    Stores empirical 200-point quantile tables for numeric/datetime marginals so
-                    skewed, log-normal, and bimodal shapes are preserved exactly.
-                  </p>
-                </div>
-
-                {/* Step 2 */}
-                <div className="p-3.5 bg-white rounded-xl border border-slate-200/80 space-y-1.5">
-                  <div className="flex items-center gap-1.5 font-bold text-[#16233B]">
-                    <span className="w-5 h-5 rounded-full bg-teal-100 text-[#167A6C] flex items-center justify-center text-[10px]">
-                      2
-                    </span>
-                    <span>Learn Dependencies</span>
-                  </div>
-                  <p className="text-[11px] text-slate-500 leading-relaxed">
-                    Transforms marginals to normal scores (rank → uniform → Gaussian) and computes
-                    the pairwise association matrix (Spearman, Cramér's V, eta) with PSD projection.
-                  </p>
-                </div>
-
-                {/* Step 3 */}
-                <div className="p-3.5 bg-white rounded-xl border border-slate-200/80 space-y-1.5">
-                  <div className="flex items-center gap-1.5 font-bold text-[#16233B]">
-                    <span className="w-5 h-5 rounded-full bg-teal-100 text-[#167A6C] flex items-center justify-center text-[10px]">
-                      3
-                    </span>
-                    <span>Joint Sampling</span>
-                  </div>
-                  <p className="text-[11px] text-slate-500 leading-relaxed">
-                    Draws correlated vectors from multivariate normal distribution, transforms
-                    through Gaussian CDF, and inverts through quantile tables with seeded
-                    determinism.
-                  </p>
-                </div>
-
-                {/* Step 4 */}
-                <div className="p-3.5 bg-white rounded-xl border border-slate-200/80 space-y-1.5">
-                  <div className="flex items-center gap-1.5 font-bold text-[#16233B]">
-                    <span className="w-5 h-5 rounded-full bg-teal-100 text-[#167A6C] flex items-center justify-center text-[10px]">
-                      4
-                    </span>
-                    <span>Fidelity &amp; Privacy Proof</span>
-                  </div>
-                  <p className="text-[11px] text-slate-500 leading-relaxed">
-                    Calculates Kolmogorov-Smirnov distance, TVD, association preservation vs
-                    independent baseline, plus KDTree distance-to-closest-record (DCR) check.
-                  </p>
-                </div>
-              </div>
-            </div>
+          {datasetName && (
+            <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold bg-teal-50 text-teal-800 border border-teal-200">
+              <span>✓ Active: {datasetName}</span>
+              <button
+                onClick={() => {
+                  setDatasetId('')
+                  setDatasetName('')
+                  setSessionKey('')
+                  setFidelityReport(null)
+                }}
+                className="hover:text-red-500 ml-1 font-bold"
+                title="Clear loaded dataset"
+              >
+                ✕
+              </button>
+            </span>
           )}
         </div>
 
-        {/* ── PREVIEW TABLE ── */}
-        <PreviewTable
-          columns={preview.columns}
-          rows={preview.rows}
-          title={
-            datasetName
-              ? `${datasetName} (Copula Learned Synthesis)`
-              : activePreset
-              ? `${activePreset} (Live Preview)`
-              : 'Tabular Preview'
-          }
-          emptyMessage="Upload a CSV, pick a sample dataset above, or click a Quick Preset to generate synthetic data"
-        />
+        {/* Right: Engine Indicator, Generate & Compare CTA, and Settings Toggle */}
+        <div className="flex items-center gap-2.5">
+          <span className="hidden xl:inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-slate-100 text-slate-700">
+            <span>🧠</span> {datasetId ? 'Gaussian Copula Mode' : 'Marginal Generator'}
+          </span>
 
-        {/* ── STEP 5: FIDELITY REPORT SECTION ── */}
-        <FidelityReport
-          report={fidelityReport}
-          loading={fidelityLoading}
-          onRerun={handleGenerateAndCompare}
-        />
+          <button
+            onClick={handleGenerateAndCompare}
+            disabled={fidelityLoading || (!datasetId && !schema.length)}
+            className="px-4 py-2 text-xs font-bold rounded-xl bg-gradient-to-r from-teal-700 to-teal-800 text-white hover:from-teal-800 hover:to-teal-900 disabled:opacity-50 transition shadow-sm flex items-center gap-2"
+          >
+            {fidelityLoading ? (
+              <>
+                <span className="animate-spin text-sm">⏳</span> Computing Fidelity...
+              </>
+            ) : (
+              <>
+                <span>⚡</span> Generate &amp; Compare
+              </>
+            )}
+          </button>
 
-        {/* Legacy Quality Report (if toggled) */}
-        {qualityReport && (
-          <div className="bg-white rounded-xl border border-slate-200 shadow-xs p-5 animate-fade-in mt-4">
-            <div className="flex items-center justify-between mb-3">
-              <h3 className="text-sm font-semibold text-[#16233B]">
-                📊 Quick Column Match Report
-              </h3>
-              <div
-                className={`text-2xl font-bold ${
-                  qualityReport.overall_score >= 80
-                    ? 'text-emerald-600'
-                    : qualityReport.overall_score >= 50
-                    ? 'text-amber-600'
-                    : 'text-red-600'
-                }`}
-              >
-                {qualityReport.overall_score}/100
+          <button
+            onClick={() => setShowConfig(!showConfig)}
+            className={`px-3 py-2 text-xs font-semibold rounded-xl border transition flex items-center gap-1.5 ${
+              showConfig
+                ? 'bg-slate-100 text-slate-800 border-slate-300'
+                : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'
+            }`}
+            title="Toggle Configuration Drawer"
+          >
+            <span>⚙️</span>
+            <span>{showConfig ? 'Hide Config' : 'Config'}</span>
+          </button>
+        </div>
+      </div>
+
+      {/* ── 2. "HOW THE MODEL LEARNS" COLLAPSIBLE PANEL ── */}
+      <div className="bg-white rounded-3xl border border-slate-200 shadow-xs overflow-hidden">
+        <button
+          onClick={() => setIsHowItWorksOpen(!isHowItWorksOpen)}
+          className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-slate-50/70 transition"
+        >
+          <div className="flex items-center gap-3">
+            <span className="text-base">🧠</span>
+            <div>
+              <div className="text-xs font-bold text-slate-900 flex items-center gap-2">
+                <span>How the model learns: Statistical Joint Architecture (Copula)</span>
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-teal-50 text-teal-800 font-bold uppercase">
+                  Not a random generator
+                </span>
+              </div>
+              <div className="text-[11px] text-slate-500">
+                Transforms marginals to normal scores, projects the correlation matrix to PSD, and samples joint records with zero memorization.
               </div>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-              {qualityReport.columns?.slice(0, 8).map((col, i) => (
-                <div key={i} className="bg-slate-50 rounded-lg p-3">
-                  <div className="text-xs text-slate-500 truncate">{col.column}</div>
-                  <div className="text-sm font-semibold mt-1">{col.score}/100</div>
-                  <div className="w-full bg-slate-200 rounded-full h-1.5 mt-1">
-                    <div
-                      className="bg-[#167A6C] rounded-full h-1.5 transition-all"
-                      style={{ width: `${col.score}%` }}
-                    />
-                  </div>
+          </div>
+          <span className="text-xs text-slate-400 font-bold shrink-0">
+            {isHowItWorksOpen ? '▲ Collapse' : '▼ Learn how it works'}
+          </span>
+        </button>
+
+        {isHowItWorksOpen && (
+          <div className="px-6 pb-6 pt-2 border-t border-slate-100 bg-slate-50/40 text-xs">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-3">
+              <div className="p-4 bg-white rounded-2xl border border-slate-200/80 space-y-1.5 shadow-2xs">
+                <div className="flex items-center gap-2 font-bold text-slate-900">
+                  <span className="w-5 h-5 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center text-[10px]">
+                    1
+                  </span>
+                  <span>Learn Marginals</span>
                 </div>
-              ))}
+                <p className="text-[11px] text-slate-500 leading-relaxed">
+                  Stores 200 empirical quantiles per numeric/datetime column to preserve skewed, bimodal, or long-tailed real shapes without loss.
+                </p>
+              </div>
+
+              <div className="p-4 bg-white rounded-2xl border border-slate-200/80 space-y-1.5 shadow-2xs">
+                <div className="flex items-center gap-2 font-bold text-slate-900">
+                  <span className="w-5 h-5 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center text-[10px]">
+                    2
+                  </span>
+                  <span>Learn Dependencies</span>
+                </div>
+                <p className="text-[11px] text-slate-500 leading-relaxed">
+                  Transforms values to Gaussian scores and computes pairwise Spearman, Cramér's V, and eta correlations with eigenvalue PSD projection.
+                </p>
+              </div>
+
+              <div className="p-4 bg-white rounded-2xl border border-slate-200/80 space-y-1.5 shadow-2xs">
+                <div className="flex items-center gap-2 font-bold text-slate-900">
+                  <span className="w-5 h-5 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center text-[10px]">
+                    3
+                  </span>
+                  <span>Joint Vector Sampling</span>
+                </div>
+                <p className="text-[11px] text-slate-500 leading-relaxed">
+                  Samples correlated normal vectors from the covariance matrix, maps through Gaussian CDF, and inverts through empirical quantiles deterministically.
+                </p>
+              </div>
+
+              <div className="p-4 bg-white rounded-2xl border border-slate-200/80 space-y-1.5 shadow-2xs">
+                <div className="flex items-center gap-2 font-bold text-slate-900">
+                  <span className="w-5 h-5 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center text-[10px]">
+                    4
+                  </span>
+                  <span>Fidelity &amp; Privacy Proof</span>
+                </div>
+                <p className="text-[11px] text-slate-500 leading-relaxed">
+                  Evaluates composite score (Shape + Relationship + Validity) against Faker baseline and verifies zero exact row matches via KDTree DCR.
+                </p>
+              </div>
             </div>
-            <button
-              onClick={() => setQualityReport(null)}
-              className="mt-3 text-xs text-slate-400 hover:text-slate-600 font-medium"
-            >
-              Dismiss Quick Report
-            </button>
           </div>
         )}
       </div>
 
-      {/* ── RIGHT CONFIG PANEL ── */}
-      <ConfigPanel title="Tabular Config" className="w-full lg:w-[420px] xl:w-[460px] shrink-0">
-        <div className="space-y-4">
-          {/* Active Model Indicator */}
-          <div className="p-3 bg-teal-50/70 border border-teal-100 rounded-xl flex items-center justify-between">
-            <div>
-              <div className="text-[11px] font-semibold text-[#167A6C]">SYNTHESIS ENGINE</div>
-              <div className="text-xs font-bold text-[#16233B] capitalize">
-                {datasetId ? 'Gaussian Copula (Joint Model)' : 'Independent Marginal Sampler'}
-              </div>
-            </div>
-            <span
-              className={`text-[10px] px-2 py-0.5 rounded-full font-bold ${
-                datasetId ? 'bg-teal-600 text-white' : 'bg-slate-200 text-slate-700'
-              }`}
-            >
-              {datasetId ? 'Modelled' : 'Standard'}
-            </span>
-          </div>
+      {/* ── 3. WORKSPACE: MAIN CONTENT + OPTIONAL CONFIG DRAWER ── */}
+      <div className="flex flex-col lg:flex-row gap-6 items-start">
+        {/* Main Content Area */}
+        <div className="flex-1 flex flex-col gap-6 min-w-0 w-full">
+          {/* Data Preview Table */}
+          <PreviewTable
+            columns={preview.columns}
+            rows={preview.rows}
+            title={
+              datasetName
+                ? `${datasetName} (Copula Learned Synthesis)`
+                : activePreset
+                ? `${activePreset} (Live Preview)`
+                : 'Synthetic Dataset Preview'
+            }
+            emptyMessage="Pick a demo dataset above or upload a CSV to generate correlated synthetic data"
+          />
 
-          {/* Quick Presets */}
-          <div>
-            <div className="flex items-center justify-between mb-2">
-              <label className="text-xs font-semibold text-slate-700">Quick Presets</label>
-              <span className="text-[10px] text-[#167A6C] font-medium">Auto-generates preview</span>
-            </div>
-            <div className="space-y-2">
-              {DEMO_PRESETS.map((preset, i) => {
-                const isSelected = activePreset === preset.label
-                return (
-                  <button
-                    key={i}
-                    onClick={() => loadPreset(preset)}
-                    className={`w-full text-left px-3 py-2 text-xs rounded-xl border transition-all flex items-center justify-between ${
-                      isSelected
-                        ? 'border-[#167A6C] bg-teal-50 font-semibold text-teal-900 shadow-xs'
-                        : 'border-slate-200 hover:border-teal-300 hover:bg-slate-50 text-slate-700'
-                    }`}
-                  >
-                    <span>{preset.label}</span>
-                    {isSelected && (
-                      <span className="text-[10px] bg-[#167A6C] text-white px-1.5 py-0.5 rounded-full font-bold">
-                        Active
-                      </span>
-                    )}
-                  </button>
-                )
-              })}
-            </div>
-          </div>
+          {/* Fidelity Report Section (Wide & Spacious) */}
+          <FidelityReport
+            report={fidelityReport}
+            loading={fidelityLoading}
+            onRerun={handleGenerateAndCompare}
+          />
+        </div>
 
-          <hr className="border-slate-100" />
-
-          {/* AI Schema Inference */}
-          <div>
-            <div className="flex items-center justify-between mb-1.5">
-              <label className="text-xs font-semibold text-slate-700">🤖 AI Schema Inference</label>
-              {aiSource && (
-                <span
-                  className={`px-1.5 py-0.5 rounded text-[10px] font-semibold ${
-                    aiSource === 'ai'
-                      ? 'bg-purple-100 text-purple-700'
-                      : 'bg-emerald-100 text-emerald-700'
-                  }`}
-                >
-                  {aiSource === 'ai' ? 'Gemini AI' : 'Smart Offline'}
-                </span>
-              )}
-            </div>
-            <textarea
-              value={aiPrompt}
-              onChange={(e) => setAiPrompt(e.target.value)}
-              placeholder="e.g. 500 IoT cold-storage temperature readings with device_id, warehouse_location, temp_celsius, and warning_alert"
-              className="w-full px-3 py-2 text-xs border border-slate-200 rounded-xl focus:ring-2 focus:ring-teal-200 focus:border-[#167A6C] outline-none transition resize-none h-16"
-            />
-            <button
-              onClick={handleAiInfer}
-              disabled={aiLoading || !aiPrompt.trim()}
-              className="mt-1.5 w-full px-3 py-2 text-xs font-semibold rounded-xl bg-[#16233B] text-white hover:bg-slate-800 disabled:opacity-50 disabled:cursor-not-allowed transition shadow-xs flex items-center justify-center gap-1.5"
-            >
-              {aiLoading ? (
-                <>
-                  <span className="animate-spin text-sm">⏳</span> Inferring &amp; Generating...
-                </>
-              ) : (
-                '⚡ Infer Schema & Generate'
-              )}
-            </button>
-          </div>
-
-          <hr className="border-slate-100" />
-
-          {/* Row count */}
-          <div>
-            <div className="flex items-center justify-between mb-1.5">
-              <label className="text-xs font-semibold text-slate-700">Row Count</label>
-              <span className="text-[11px] font-mono text-[#167A6C] font-semibold">
-                {rowCount.toLocaleString()} rows
-              </span>
-            </div>
-            <input
-              type="number"
-              value={rowCount}
-              onChange={(e) =>
-                setRowCount(Math.max(1, Math.min(50000, parseInt(e.target.value) || 1)))
-              }
-              min={1}
-              max={50000}
-              className="w-full px-3 py-2 text-sm border border-slate-200 rounded-xl focus:ring-2 focus:ring-teal-200 focus:border-[#167A6C] outline-none transition font-mono"
-            />
-          </div>
-
-          {/* Random seed */}
-          <div>
-            <div className="flex items-center justify-between mb-1.5">
-              <label className="text-xs font-semibold text-slate-700">Random Seed</label>
-              <span className="text-[10px] text-slate-400">Deterministic reproducibility</span>
-            </div>
-            <div className="flex gap-2">
-              <input
-                type="number"
-                value={seed}
-                onChange={(e) => setSeed(parseInt(e.target.value) || 0)}
-                className="flex-1 px-3 py-2 text-sm border border-slate-200 rounded-xl focus:ring-2 focus:ring-teal-200 focus:border-[#167A6C] outline-none transition font-mono"
-              />
-              <button
-                type="button"
-                onClick={handleRandomizeSeed}
-                title="Generate new random seed"
-                className="px-3 py-2 bg-slate-100 hover:bg-[#167A6C] hover:text-white rounded-xl text-xs font-bold transition border border-slate-200 flex items-center gap-1"
-              >
-                <span>🎲</span> Randomize
-              </button>
-            </div>
-          </div>
-
-          {/* Locale & Currency */}
-          <div>
-            <div className="flex items-center justify-between mb-1.5">
-              <label className="text-xs font-semibold text-slate-700">Locale &amp; Currency</label>
-              <span className="text-[10px] text-[#167A6C] font-semibold">
-                {LOCALES.find((l) => l.code === locale)?.currency || 'USD'}
-              </span>
-            </div>
-            <select
-              value={locale}
-              onChange={(e) => setLocale(e.target.value)}
-              className="w-full px-3 py-2 text-xs border border-slate-200 rounded-xl focus:ring-2 focus:ring-teal-200 focus:border-[#167A6C] outline-none transition bg-white"
-            >
-              {LOCALES.map((loc) => (
-                <option key={loc.code} value={loc.code}>
-                  {loc.flag} {loc.label}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          {/* Null rate */}
-          <div>
-            <label className="block text-xs font-medium text-slate-600 mb-1.5">
-              Null Rate: <span className="text-[#167A6C] font-semibold">{nullRate}%</span>
-            </label>
-            <input
-              type="range"
-              min={0}
-              max={50}
-              value={nullRate}
-              onChange={(e) => setNullRate(parseInt(e.target.value))}
-              className="w-full accent-[#167A6C]"
-            />
-          </div>
-
-          {/* Outlier rate */}
-          <div>
-            <label className="block text-xs font-medium text-slate-600 mb-1.5">
-              Outlier Rate: <span className="text-[#167A6C] font-semibold">{outlierRate}%</span>
-            </label>
-            <input
-              type="range"
-              min={0}
-              max={20}
-              value={outlierRate}
-              onChange={(e) => setOutlierRate(parseInt(e.target.value))}
-              className="w-full accent-[#167A6C]"
-            />
-          </div>
-
-          <hr className="border-slate-100" />
-
-          {/* Upload area */}
-          <div
-            onDrop={handleDrop}
-            onDragOver={handleDragOver}
-            onClick={() => fileInputRef.current?.click()}
-            className={`border-2 border-dashed rounded-xl p-4 text-center transition cursor-pointer ${
-              uploading
-                ? 'border-[#167A6C] bg-teal-50/20'
-                : 'border-slate-200 hover:border-teal-400 bg-white'
-            }`}
+        {/* Configuration Panel (Docked on Right, Toggleable) */}
+        {showConfig && (
+          <ConfigPanel
+            title="Tabular Parameters"
+            className="w-full lg:w-[320px] shrink-0"
+            badge={datasetId ? 'Modelled' : 'Standard'}
           >
-            <input
-              ref={fileInputRef}
-              type="file"
-              accept=".csv,.xlsx,.xls"
-              onChange={(e) => handleFileUpload(e.target.files[0])}
-              className="hidden"
-            />
-            {uploading ? (
-              <div className="text-[#167A6C] text-xs font-semibold animate-pulse">
-                Profiling &amp; Fitting Copula Model...
-              </div>
-            ) : (
-              <>
-                <svg
-                  className="mx-auto mb-1.5"
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#A3AFC3"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                  <polyline points="17 8 12 3 7 8" />
-                  <line x1="12" y1="3" x2="12" y2="15" />
-                </svg>
-                <p className="text-xs text-slate-600 font-medium">
-                  Drop CSV/Excel here to train Copula
-                </p>
-                <p className="text-[10px] text-slate-400 mt-0.5">
-                  Max 5 MB • Learns joint relationships &amp; marginals
-                </p>
-              </>
-            )}
-          </div>
-
-          {/* Schema editor */}
-          {schema.length > 0 && (
-            <div>
-              <div className="flex items-center justify-between mb-2">
-                <label className="text-xs font-semibold text-slate-700">
-                  Schema ({schema.length} cols)
+            <div className="space-y-4">
+              {/* Quick Presets */}
+              <div>
+                <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                  Quick Presets
                 </label>
+                <div className="space-y-1.5">
+                  {DEMO_PRESETS.map((preset, i) => {
+                    const isSelected = activePreset === preset.label
+                    return (
+                      <button
+                        key={i}
+                        onClick={() => loadPreset(preset)}
+                        className={`w-full text-left px-3 py-2 text-xs rounded-xl border transition flex items-center justify-between ${
+                          isSelected
+                            ? 'border-teal-600 bg-teal-50/60 font-semibold text-teal-900 shadow-2xs'
+                            : 'border-slate-200 hover:border-slate-300 hover:bg-slate-50 text-slate-700'
+                        }`}
+                      >
+                        <span>{preset.label}</span>
+                        {isSelected && (
+                          <span className="text-[10px] bg-teal-700 text-white px-1.5 py-0.5 rounded-full font-bold">
+                            Active
+                          </span>
+                        )}
+                      </button>
+                    )
+                  })}
+                </div>
+              </div>
+
+              <hr className="border-slate-100" />
+
+              {/* AI Schema Inference */}
+              <div>
+                <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                  🤖 Prompt to Schema
+                </label>
+                <textarea
+                  value={aiPrompt}
+                  onChange={(e) => setAiPrompt(e.target.value)}
+                  placeholder="e.g. 500 IoT cold-storage temperature readings with device_id, location, temp_celsius"
+                  className="w-full px-3 py-2 text-xs border border-slate-200 rounded-xl focus:ring-2 focus:ring-teal-200 focus:border-teal-600 outline-none transition resize-none h-16"
+                />
                 <button
-                  onClick={addColumn}
-                  className="text-[10px] text-[#167A6C] hover:text-teal-800 font-bold"
+                  onClick={handleAiInfer}
+                  disabled={aiLoading || !aiPrompt.trim()}
+                  className="mt-1.5 w-full px-3 py-2 text-xs font-semibold rounded-xl bg-slate-900 text-white hover:bg-slate-800 disabled:opacity-50 transition shadow-2xs"
                 >
-                  + Add Column
+                  {aiLoading ? 'Inferring...' : 'Generate from Prompt'}
                 </button>
               </div>
-              <div className="flex gap-2 text-[10px] font-semibold text-slate-400 px-1 mb-1">
-                <span className="flex-1">NAME</span>
-                <span className="w-28">TYPE</span>
-                <span className="w-24">PRIVACY</span>
-                <span className="w-4"></span>
+
+              <hr className="border-slate-100" />
+
+              {/* Row count */}
+              <div>
+                <div className="flex items-center justify-between mb-1">
+                  <label className="text-xs font-bold text-slate-700 uppercase tracking-wider">Row Count</label>
+                  <span className="text-xs font-mono font-bold text-teal-700">
+                    {rowCount.toLocaleString()}
+                  </span>
+                </div>
+                <input
+                  type="number"
+                  value={rowCount}
+                  onChange={(e) =>
+                    setRowCount(Math.max(1, Math.min(50000, parseInt(e.target.value) || 1)))
+                  }
+                  min={1}
+                  max={50000}
+                  className="w-full px-3 py-2 text-sm border border-slate-200 rounded-xl font-mono focus:ring-2 focus:ring-teal-200 focus:border-teal-600 outline-none"
+                />
               </div>
-              <div className="space-y-2 max-h-56 overflow-y-auto pr-1">
-                {schema.map((col, i) => (
-                  <div key={i} className="flex gap-2 items-center">
-                    <input
-                      value={col.name}
-                      onChange={(e) => updateColumn(i, 'name', e.target.value)}
-                      className="flex-1 min-w-0 px-2.5 py-1.5 text-xs border border-slate-200 rounded-lg focus:border-[#167A6C] focus:ring-1 focus:ring-teal-100 outline-none font-mono"
-                      placeholder="Column name"
-                    />
-                    <select
-                      value={col.type}
-                      onChange={(e) => updateColumn(i, 'type', e.target.value)}
-                      className="w-28 px-2 py-1.5 text-xs border border-slate-200 rounded-lg bg-white focus:border-[#167A6C] outline-none font-medium text-[#16233B]"
-                    >
-                      {COLUMN_TYPES.map((t) => (
-                        <option key={t} value={t}>
-                          {t}
-                        </option>
-                      ))}
-                    </select>
-                    <select
-                      value={privacyRules[col.name] || 'none'}
-                      onChange={(e) =>
-                        setPrivacyRules({ ...privacyRules, [col.name]: e.target.value })
-                      }
-                      className="w-24 px-2 py-1.5 text-xs border border-slate-200 rounded-lg bg-white focus:border-[#167A6C] outline-none text-slate-700"
-                      title="Privacy Rule"
-                    >
-                      {PRIVACY_METHODS.map((m) => (
-                        <option key={m} value={m}>
-                          {m}
-                        </option>
-                      ))}
-                    </select>
-                    <button
-                      onClick={() => removeColumn(i)}
-                      className="text-slate-300 hover:text-red-500 text-sm px-1 shrink-0 transition"
-                      title="Remove column"
-                    >
-                      ✕
-                    </button>
-                  </div>
-                ))}
+
+              {/* Random seed */}
+              <div>
+                <div className="flex items-center justify-between mb-1">
+                  <label className="text-xs font-bold text-slate-700 uppercase tracking-wider">Seed</label>
+                  <button
+                    type="button"
+                    onClick={handleRandomizeSeed}
+                    className="text-[10px] text-teal-700 font-bold hover:underline"
+                  >
+                    🎲 Randomize
+                  </button>
+                </div>
+                <input
+                  type="number"
+                  value={seed}
+                  onChange={(e) => setSeed(parseInt(e.target.value) || 0)}
+                  className="w-full px-3 py-2 text-sm border border-slate-200 rounded-xl font-mono focus:ring-2 focus:ring-teal-200 focus:border-teal-600 outline-none"
+                />
+              </div>
+
+              {/* Locale & Currency */}
+              <div>
+                <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Locale</label>
+                <select
+                  value={locale}
+                  onChange={(e) => setLocale(e.target.value)}
+                  className="w-full px-3 py-2 text-xs border border-slate-200 rounded-xl focus:ring-2 focus:ring-teal-200 focus:border-teal-600 outline-none bg-white"
+                >
+                  {LOCALES.map((loc) => (
+                    <option key={loc.code} value={loc.code}>
+                      {loc.flag} {loc.label}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {/* Null rate */}
+              <div>
+                <div className="flex items-center justify-between mb-1">
+                  <label className="text-xs font-bold text-slate-700 uppercase tracking-wider">Null Rate</label>
+                  <span className="text-xs font-mono font-semibold text-teal-700">{nullRate}%</span>
+                </div>
+                <input
+                  type="range"
+                  min={0}
+                  max={50}
+                  value={nullRate}
+                  onChange={(e) => setNullRate(parseInt(e.target.value))}
+                  className="w-full accent-teal-700"
+                />
+              </div>
+
+              {/* Outlier rate */}
+              <div>
+                <div className="flex items-center justify-between mb-1">
+                  <label className="text-xs font-bold text-slate-700 uppercase tracking-wider">Outlier Rate</label>
+                  <span className="text-xs font-mono font-semibold text-teal-700">{outlierRate}%</span>
+                </div>
+                <input
+                  type="range"
+                  min={0}
+                  max={20}
+                  value={outlierRate}
+                  onChange={(e) => setOutlierRate(parseInt(e.target.value))}
+                  className="w-full accent-teal-700"
+                />
+              </div>
+
+              <hr className="border-slate-100" />
+
+              {/* Hidden file input for header upload */}
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept=".csv,.xlsx,.xls"
+                onChange={(e) => handleFileUpload(e.target.files[0])}
+                className="hidden"
+              />
+
+              {/* Export Full Dataset */}
+              <div>
+                <div className="text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-2">
+                  Export Dataset ({rowCount.toLocaleString()} rows)
+                </div>
+                <div className="grid grid-cols-3 gap-2">
+                  <ExportButton
+                    onClick={() => handleExport('csv')}
+                    disabled={exporting || (!schema.length && !datasetId)}
+                    label="CSV"
+                    loading={exporting}
+                  />
+                  <ExportButton
+                    onClick={() => handleExport('json')}
+                    disabled={exporting || (!schema.length && !datasetId)}
+                    label="JSON"
+                    loading={false}
+                  />
+                  <ExportButton
+                    onClick={() => handleExport('excel')}
+                    disabled={exporting || (!schema.length && !datasetId)}
+                    label="Excel"
+                    loading={false}
+                  />
+                </div>
               </div>
             </div>
-          )}
-
-          {!schema.length && (
-            <button
-              onClick={addColumn}
-              className="w-full px-3 py-2 text-xs border border-dashed border-slate-300 rounded-xl text-slate-500 hover:border-teal-400 hover:text-[#167A6C] transition font-medium"
-            >
-              + Build Schema Manually
-            </button>
-          )}
-
-          <hr className="border-slate-100" />
-
-          {/* Generate & Compare Button (Prominent) */}
-          <button
-            onClick={handleGenerateAndCompare}
-            disabled={fidelityLoading || (!datasetId && !schema.length)}
-            className={`w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold transition shadow-xs ${
-              fidelityLoading || (!datasetId && !schema.length)
-                ? 'bg-slate-100 text-slate-400 cursor-not-allowed'
-                : 'bg-[#167A6C] text-white hover:bg-teal-700 shadow-teal-700/10'
-            }`}
-          >
-            {fidelityLoading ? '⏳ Running Fidelity & Privacy Report...' : '⚡ Generate & Compare (Fidelity Report)'}
-          </button>
-
-          {/* Standard Generate Preview Button */}
-          <button
-            onClick={handleGenerate}
-            disabled={generating || (!schema.length && !datasetId)}
-            className={`w-full flex items-center justify-center gap-2 px-4 py-2 text-xs font-semibold rounded-xl transition ${
-              generating || (!schema.length && !datasetId)
-                ? 'bg-slate-100 text-slate-400 cursor-not-allowed'
-                : 'bg-[#16233B] text-white hover:bg-slate-800'
-            }`}
-          >
-            {generating ? '⏳ Generating Rows...' : '▶ Generate Preview Only'}
-          </button>
-
-          {/* Export buttons */}
-          <div>
-            <div className="text-[11px] font-medium text-slate-500 mb-1.5">
-              Export Full Dataset ({rowCount.toLocaleString()} rows)
-            </div>
-            <div className="grid grid-cols-3 gap-2">
-              <ExportButton
-                onClick={() => handleExport('csv')}
-                disabled={exporting || (!schema.length && !datasetId)}
-                label="CSV"
-                loading={exporting}
-              />
-              <ExportButton
-                onClick={() => handleExport('json')}
-                disabled={exporting || (!schema.length && !datasetId)}
-                label="JSON"
-                loading={false}
-              />
-              <ExportButton
-                onClick={() => handleExport('excel')}
-                disabled={exporting || (!schema.length && !datasetId)}
-                label="Excel"
-                loading={false}
-              />
-            </div>
-          </div>
-        </div>
-      </ConfigPanel>
+          </ConfigPanel>
+        )}
+      </div>
     </div>
   )
 }
