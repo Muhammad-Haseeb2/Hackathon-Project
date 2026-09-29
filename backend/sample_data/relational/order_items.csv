@@ -1,0 +1,2444 @@
+item_id,order_id,product_name,category,quantity,unit_price,line_total
+1,1,Wool Scarf,Clothing,1,39.95,39.95
+2,2,LED Desk Lamp,Home & Garden,1,56.56,56.56
+3,2,Stainless Kettle,Home & Garden,4,76.54,306.16
+4,3,Design Thinking,Books,2,22.02,44.04
+5,3,Bluetooth Speaker,Electronics,2,241.93,483.86
+6,3,Wall Clock,Home & Garden,1,68.57,68.57
+7,3,Storage Bin,Home & Garden,2,61.32,122.64
+8,4,Artisan Olive Oil,Food,1,16.94,16.94
+9,4,History Atlas,Books,1,10.61,10.61
+10,5,LED Desk Lamp,Home & Garden,1,92.63,92.63
+11,6,Smart Watch,Electronics,1,489.02,489.02
+12,7,Smart Watch,Electronics,1,98.24,98.24
+13,8,Granola Pack,Food,2,16.75,33.5
+14,8,Green Tea Box,Food,1,11.29,11.29
+15,9,Organic Coffee Beans,Food,5,11.87,59.35
+16,9,4K Monitor,Electronics,2,341.22,682.44
+17,10,LED Desk Lamp,Home & Garden,2,93.29,186.58
+18,10,Webcam HD,Electronics,1,257.61,257.61
+19,11,USB-C Hub,Electronics,3,327.22,981.66
+20,11,Webcam HD,Electronics,1,166.36,166.36
+21,12,Stainless Kettle,Home & Garden,1,102.79,102.79
+22,13,Webcam HD,Electronics,1,122.85,122.85
+23,13,Python Mastery Guide,Books,2,24.77,49.54
+24,13,Sci-Fi Novel,Books,2,23.52,47.04
+25,13,USB-C Hub,Electronics,4,258.57,1034.28
+26,14,Wireless Headphones,Electronics,1,345.72,345.72
+27,14,Slim Jeans,Clothing,3,47.46,142.38
+28,14,Data Science Handbook,Books,5,16.61,83.05
+29,15,Water Bottle Insulated,Sports,1,61.74,61.74
+30,16,Storage Bin,Home & Garden,1,53.49,53.49
+31,16,USB-C Hub,Electronics,1,236.65,236.65
+32,16,Winter Jacket,Clothing,1,43.69,43.69
+33,17,Running Shoes,Clothing,3,57.25,171.75
+34,17,Slim Jeans,Clothing,1,35.93,35.93
+35,18,Wool Scarf,Clothing,2,60.23,120.46
+36,19,Wool Scarf,Clothing,1,61.19,61.19
+37,19,Wireless Headphones,Electronics,1,324.64,324.64
+38,19,Wool Scarf,Clothing,3,51.83,155.49
+39,19,Ceramic Planter,Home & Garden,3,62.4,187.2
+40,19,Cotton T-Shirt,Clothing,3,64.77,194.31
+41,20,Ceramic Planter,Home & Garden,1,69.63,69.63
+42,21,4K Monitor,Electronics,1,443.56,443.56
+43,22,Wall Clock,Home & Garden,2,75.91,151.82
+44,22,Fleece Hoodie,Clothing,2,42.33,84.66
+45,23,Green Tea Box,Food,1,15.08,15.08
+46,23,USB-C Hub,Electronics,2,174.51,349.02
+47,23,Water Bottle Insulated,Sports,3,42.75,128.25
+48,24,LED Desk Lamp,Home & Garden,1,49.17,49.17
+49,24,Water Bottle Insulated,Sports,1,65.9,65.9
+50,24,Fleece Hoodie,Clothing,4,37.14,148.56
+51,25,Green Tea Box,Food,1,11.13,11.13
+52,26,Running Shoes,Clothing,1,35.4,35.4
+53,27,Granola Pack,Food,1,9.37,9.37
+54,27,Jump Rope,Sports,2,68.56,137.12
+55,27,Slim Jeans,Clothing,1,37.51,37.51
+56,28,Dumbbell Set,Sports,1,39.33,39.33
+57,29,Data Science Handbook,Books,1,15.34,15.34
+58,30,Raw Honey Jar,Food,1,12.33,12.33
+59,30,LED Desk Lamp,Home & Garden,1,50.56,50.56
+60,31,Ceramic Planter,Home & Garden,2,88.83,177.66
+61,32,Smart Watch,Electronics,4,143.16,572.64
+62,32,Economics 101,Books,2,17.72,35.44
+63,32,4K Monitor,Electronics,1,160.18,160.18
+64,32,4K Monitor,Electronics,3,228.78,686.34
+65,32,Granola Pack,Food,1,14.39,14.39
+66,32,Design Thinking,Books,2,21.2,42.4
+67,33,Slim Jeans,Clothing,2,29.63,59.26
+68,34,Sci-Fi Novel,Books,2,31.2,62.4
+69,34,Economics 101,Books,1,14.34,14.34
+70,35,Water Bottle Insulated,Sports,1,31.61,31.61
+71,35,Webcam HD,Electronics,2,168.55,337.1
+72,35,Raw Honey Jar,Food,1,9.44,9.44
+73,35,Fleece Hoodie,Clothing,1,54.3,54.3
+74,36,Cycling Gloves,Sports,1,55.98,55.98
+75,36,Sci-Fi Novel,Books,2,17.64,35.28
+76,37,Smart Watch,Electronics,1,97.84,97.84
+77,38,Python Mastery Guide,Books,3,14.67,44.01
+78,38,Cotton T-Shirt,Clothing,1,52.56,52.56
+79,38,Wireless Headphones,Electronics,2,205.12,410.24
+80,38,Running Shoes,Clothing,1,20.17,20.17
+81,38,Resistance Bands,Sports,2,86.63,173.26
+82,38,Wall Clock,Home & Garden,1,61.49,61.49
+83,39,Design Thinking,Books,3,16.59,49.77
+84,39,Running Shoes,Clothing,1,78.86,78.86
+85,40,Wall Clock,Home & Garden,1,45.06,45.06
+86,41,Data Science Handbook,Books,1,20.89,20.89
+87,41,USB-C Hub,Electronics,1,281.34,281.34
+88,41,Cotton T-Shirt,Clothing,4,47.62,190.48
+89,42,Smart Watch,Electronics,4,236.6,946.4
+90,42,Data Science Handbook,Books,5,21.5,107.5
+91,42,Fleece Hoodie,Clothing,1,76.13,76.13
+92,43,Artisan Olive Oil,Food,2,14.0,28.0
+93,44,History Atlas,Books,1,12.87,12.87
+94,45,Granola Pack,Food,3,8.85,26.55
+95,45,Wireless Headphones,Electronics,1,214.6,214.6
+96,45,4K Monitor,Electronics,2,182.14,364.28
+97,46,Python Mastery Guide,Books,1,12.8,12.8
+98,46,Webcam HD,Electronics,5,210.89,1054.45
+99,46,USB-C Hub,Electronics,1,222.88,222.88
+100,46,Wireless Headphones,Electronics,2,156.98,313.96
+101,46,Cotton T-Shirt,Clothing,5,29.42,147.1
+102,47,Cotton T-Shirt,Clothing,3,25.49,76.47
+103,47,Dark Chocolate Bar,Food,3,15.53,46.59
+104,48,Running Shoes,Clothing,2,26.77,53.54
+105,48,Yoga Mat,Sports,1,49.26,49.26
+106,49,Economics 101,Books,1,20.85,20.85
+107,49,Green Tea Box,Food,2,14.12,28.24
+108,49,Winter Jacket,Clothing,1,71.3,71.3
+109,49,Running Shoes,Clothing,2,64.29,128.58
+110,49,Winter Jacket,Clothing,2,72.07,144.14
+111,50,Fleece Hoodie,Clothing,4,42.59,170.36
+112,51,Organic Coffee Beans,Food,1,16.89,16.89
+113,52,Stainless Kettle,Home & Garden,1,28.94,28.94
+114,52,Yoga Mat,Sports,1,31.73,31.73
+115,52,USB-C Hub,Electronics,1,170.93,170.93
+116,52,History Atlas,Books,1,19.84,19.84
+117,53,Wool Scarf,Clothing,2,28.28,56.56
+118,54,USB-C Hub,Electronics,1,236.76,236.76
+119,54,Granola Pack,Food,1,10.08,10.08
+120,55,Resistance Bands,Sports,2,38.17,76.34
+121,55,Bluetooth Speaker,Electronics,2,341.2,682.4
+122,56,Stainless Kettle,Home & Garden,5,63.0,315.0
+123,56,Cycling Gloves,Sports,1,50.72,50.72
+124,57,Water Bottle Insulated,Sports,3,35.11,105.33
+125,58,Economics 101,Books,3,19.2,57.6
+126,58,Green Tea Box,Food,1,16.13,16.13
+127,58,Fleece Hoodie,Clothing,1,39.91,39.91
+128,58,Fleece Hoodie,Clothing,1,25.96,25.96
+129,58,LED Desk Lamp,Home & Garden,3,108.64,325.92
+130,58,LED Desk Lamp,Home & Garden,1,78.52,78.52
+131,59,Python Mastery Guide,Books,1,20.26,20.26
+132,59,Stainless Kettle,Home & Garden,1,85.71,85.71
+133,60,Design Thinking,Books,1,16.2,16.2
+134,60,4K Monitor,Electronics,1,479.83,479.83
+135,61,Fleece Hoodie,Clothing,3,57.25,171.75
+136,61,Slim Jeans,Clothing,3,55.35,166.05
+137,61,4K Monitor,Electronics,2,185.28,370.56
+138,62,Slim Jeans,Clothing,1,86.26,86.26
+139,62,Artisan Olive Oil,Food,2,14.03,28.06
+140,63,Fleece Hoodie,Clothing,1,62.46,62.46
+141,64,Dumbbell Set,Sports,2,46.19,92.38
+142,64,Design Thinking,Books,1,15.61,15.61
+143,64,Raw Honey Jar,Food,3,7.87,23.61
+144,65,Dumbbell Set,Sports,1,66.29,66.29
+145,65,Fleece Hoodie,Clothing,1,57.89,57.89
+146,66,Running Shoes,Clothing,2,49.02,98.04
+147,67,Slim Jeans,Clothing,2,62.39,124.78
+148,67,Webcam HD,Electronics,1,180.18,180.18
+149,67,History Atlas,Books,1,29.79,29.79
+150,68,Sci-Fi Novel,Books,2,16.36,32.72
+151,69,Smart Watch,Electronics,4,185.31,741.24
+152,69,Green Tea Box,Food,1,7.81,7.81
+153,70,Wall Clock,Home & Garden,1,68.93,68.93
+154,70,Data Science Handbook,Books,1,18.1,18.1
+155,71,Wool Scarf,Clothing,2,28.77,57.54
+156,72,Smart Watch,Electronics,2,197.4,394.8
+157,72,Slim Jeans,Clothing,1,46.62,46.62
+158,73,History Atlas,Books,1,19.63,19.63
+159,73,Cotton T-Shirt,Clothing,2,70.8,141.6
+160,74,Economics 101,Books,1,23.1,23.1
+161,74,Running Shoes,Clothing,1,42.8,42.8
+162,75,Granola Pack,Food,1,8.17,8.17
+163,76,4K Monitor,Electronics,2,410.97,821.94
+164,76,Winter Jacket,Clothing,2,18.0,36.0
+165,77,Green Tea Box,Food,1,10.33,10.33
+166,78,Slim Jeans,Clothing,1,53.56,53.56
+167,79,Data Science Handbook,Books,3,15.87,47.61
+168,80,Running Shoes,Clothing,2,68.32,136.64
+169,80,Winter Jacket,Clothing,2,71.0,142.0
+170,81,Webcam HD,Electronics,1,750.0,750.0
+171,82,Webcam HD,Electronics,2,157.99,315.98
+172,82,Smart Watch,Electronics,1,209.82,209.82
+173,83,Wall Clock,Home & Garden,2,90.14,180.28
+174,84,Yoga Mat,Sports,1,46.31,46.31
+175,84,Winter Jacket,Clothing,1,68.86,68.86
+176,84,Winter Jacket,Clothing,1,41.56,41.56
+177,84,Python Mastery Guide,Books,3,9.92,29.76
+178,84,Bluetooth Speaker,Electronics,1,184.1,184.1
+179,85,USB-C Hub,Electronics,1,171.79,171.79
+180,85,Wall Clock,Home & Garden,4,55.68,222.72
+181,86,4K Monitor,Electronics,3,211.09,633.27
+182,86,Running Shoes,Clothing,5,52.44,262.2
+183,86,Fleece Hoodie,Clothing,3,87.04,261.12
+184,86,Granola Pack,Food,1,14.8,14.8
+185,87,Design Thinking,Books,2,14.26,28.52
+186,87,Green Tea Box,Food,1,16.84,16.84
+187,88,Smart Watch,Electronics,1,285.88,285.88
+188,88,USB-C Hub,Electronics,1,72.91,72.91
+189,89,USB-C Hub,Electronics,1,130.8,130.8
+190,90,Slim Jeans,Clothing,2,52.73,105.46
+191,91,Winter Jacket,Clothing,1,59.37,59.37
+192,91,Jump Rope,Sports,2,27.72,55.44
+193,92,Bluetooth Speaker,Electronics,2,418.97,837.94
+194,92,Wool Scarf,Clothing,1,29.8,29.8
+195,92,Smart Watch,Electronics,2,173.61,347.22
+196,92,Smart Watch,Electronics,2,212.42,424.84
+197,93,4K Monitor,Electronics,2,258.79,517.58
+198,93,Ceramic Planter,Home & Garden,1,68.45,68.45
+199,93,Raw Honey Jar,Food,4,11.4,45.6
+200,94,Wool Scarf,Clothing,3,42.12,126.36
+201,94,Cycling Gloves,Sports,1,82.27,82.27
+202,95,Design Thinking,Books,3,21.24,63.72
+203,95,Dumbbell Set,Sports,3,66.47,199.41
+204,95,Cotton T-Shirt,Clothing,1,30.51,30.51
+205,95,Bluetooth Speaker,Electronics,1,264.12,264.12
+206,96,Webcam HD,Electronics,2,145.45,290.9
+207,97,Green Tea Box,Food,2,14.8,29.6
+208,97,History Atlas,Books,2,25.74,51.48
+209,98,Running Shoes,Clothing,2,34.06,68.12
+210,99,USB-C Hub,Electronics,1,371.85,371.85
+211,99,Fleece Hoodie,Clothing,1,54.53,54.53
+212,100,Dumbbell Set,Sports,2,34.49,68.98
+213,100,Cotton T-Shirt,Clothing,1,49.6,49.6
+214,100,Artisan Olive Oil,Food,1,9.72,9.72
+215,101,Artisan Olive Oil,Food,1,7.77,7.77
+216,102,Dumbbell Set,Sports,1,114.59,114.59
+217,102,Dumbbell Set,Sports,2,58.0,116.0
+218,103,Cycling Gloves,Sports,2,37.13,74.26
+219,103,Ceramic Planter,Home & Garden,1,45.09,45.09
+220,103,Artisan Olive Oil,Food,2,9.62,19.24
+221,104,Sci-Fi Novel,Books,1,18.06,18.06
+222,104,Wool Scarf,Clothing,1,63.39,63.39
+223,105,Wall Clock,Home & Garden,1,58.44,58.44
+224,105,LED Desk Lamp,Home & Garden,1,135.42,135.42
+225,106,Cycling Gloves,Sports,2,33.65,67.3
+226,106,LED Desk Lamp,Home & Garden,1,60.83,60.83
+227,106,Dumbbell Set,Sports,1,42.21,42.21
+228,106,Slim Jeans,Clothing,1,45.81,45.81
+229,106,Water Bottle Insulated,Sports,3,79.74,239.22
+230,107,Cotton T-Shirt,Clothing,4,60.41,241.64
+231,107,4K Monitor,Electronics,2,289.43,578.86
+232,108,Winter Jacket,Clothing,3,33.64,100.92
+233,109,Running Shoes,Clothing,4,109.33,437.32
+234,109,Smart Watch,Electronics,4,152.4,609.6
+235,110,Fleece Hoodie,Clothing,1,37.59,37.59
+236,111,USB-C Hub,Electronics,4,105.96,423.84
+237,111,Winter Jacket,Clothing,2,38.22,76.44
+238,112,Resistance Bands,Sports,2,71.45,142.9
+239,112,Cotton T-Shirt,Clothing,1,53.0,53.0
+240,113,Fleece Hoodie,Clothing,1,50.14,50.14
+241,113,Winter Jacket,Clothing,2,87.83,175.66
+242,113,Fleece Hoodie,Clothing,1,43.02,43.02
+243,114,LED Desk Lamp,Home & Garden,1,68.09,68.09
+244,115,Cycling Gloves,Sports,3,37.25,111.75
+245,115,Slim Jeans,Clothing,1,61.49,61.49
+246,116,4K Monitor,Electronics,1,272.43,272.43
+247,117,Jump Rope,Sports,1,100.02,100.02
+248,117,Data Science Handbook,Books,2,20.54,41.08
+249,118,Raw Honey Jar,Food,1,13.56,13.56
+250,119,Running Shoes,Clothing,2,47.87,95.74
+251,120,Cotton T-Shirt,Clothing,1,55.19,55.19
+252,121,Granola Pack,Food,2,22.47,44.94
+253,121,Bluetooth Speaker,Electronics,3,257.27,771.81
+254,122,Webcam HD,Electronics,1,180.74,180.74
+255,122,Wireless Headphones,Electronics,1,154.89,154.89
+256,123,Wool Scarf,Clothing,1,27.28,27.28
+257,124,Resistance Bands,Sports,5,67.07,335.35
+258,124,Stainless Kettle,Home & Garden,1,54.1,54.1
+259,125,Ceramic Planter,Home & Garden,2,50.8,101.6
+260,125,Green Tea Box,Food,1,16.03,16.03
+261,125,Fleece Hoodie,Clothing,2,54.94,109.88
+262,126,Python Mastery Guide,Books,1,12.1,12.1
+263,126,Dumbbell Set,Sports,3,97.0,291.0
+264,126,Cycling Gloves,Sports,1,71.15,71.15
+265,126,Wool Scarf,Clothing,4,18.0,72.0
+266,127,Yoga Mat,Sports,1,62.24,62.24
+267,128,Cotton T-Shirt,Clothing,1,51.45,51.45
+268,129,Organic Coffee Beans,Food,2,18.43,36.86
+269,129,Economics 101,Books,2,14.32,28.64
+270,129,Slim Jeans,Clothing,1,55.42,55.42
+271,130,Economics 101,Books,4,25.65,102.6
+272,130,History Atlas,Books,1,12.86,12.86
+273,130,Smart Watch,Electronics,2,215.59,431.18
+274,130,Wool Scarf,Clothing,1,117.69,117.69
+275,131,Running Shoes,Clothing,2,46.11,92.22
+276,131,Stainless Kettle,Home & Garden,1,94.23,94.23
+277,131,Fleece Hoodie,Clothing,1,140.0,140.0
+278,131,Wool Scarf,Clothing,1,31.37,31.37
+279,132,Python Mastery Guide,Books,1,28.35,28.35
+280,132,Data Science Handbook,Books,1,13.44,13.44
+281,133,Design Thinking,Books,2,23.49,46.98
+282,133,Cotton T-Shirt,Clothing,5,47.53,237.65
+283,134,Smart Watch,Electronics,1,179.33,179.33
+284,135,Dark Chocolate Bar,Food,1,15.28,15.28
+285,135,Wireless Headphones,Electronics,1,154.81,154.81
+286,135,Artisan Olive Oil,Food,1,17.73,17.73
+287,135,Storage Bin,Home & Garden,1,53.16,53.16
+288,136,USB-C Hub,Electronics,2,295.93,591.86
+289,136,Data Science Handbook,Books,1,20.36,20.36
+290,137,USB-C Hub,Electronics,1,274.43,274.43
+291,137,Running Shoes,Clothing,1,48.73,48.73
+292,137,USB-C Hub,Electronics,1,294.56,294.56
+293,138,Raw Honey Jar,Food,1,13.53,13.53
+294,138,Raw Honey Jar,Food,2,7.22,14.44
+295,138,Organic Coffee Beans,Food,1,10.25,10.25
+296,138,Ceramic Planter,Home & Garden,1,97.76,97.76
+297,139,Smart Watch,Electronics,1,119.95,119.95
+298,139,Winter Jacket,Clothing,1,38.4,38.4
+299,139,Slim Jeans,Clothing,1,32.03,32.03
+300,139,Artisan Olive Oil,Food,1,11.49,11.49
+301,139,Ceramic Planter,Home & Garden,1,87.12,87.12
+302,140,Running Shoes,Clothing,5,91.41,457.05
+303,141,Ceramic Planter,Home & Garden,1,145.87,145.87
+304,141,Design Thinking,Books,1,23.96,23.96
+305,142,History Atlas,Books,2,18.41,36.82
+306,142,Webcam HD,Electronics,2,276.93,553.86
+307,143,Dark Chocolate Bar,Food,2,12.46,24.92
+308,143,Data Science Handbook,Books,2,18.18,36.36
+309,143,Storage Bin,Home & Garden,1,44.01,44.01
+310,143,Dumbbell Set,Sports,3,37.15,111.45
+311,144,Cotton T-Shirt,Clothing,2,36.01,72.02
+312,145,Wall Clock,Home & Garden,2,92.8,185.6
+313,146,LED Desk Lamp,Home & Garden,1,70.88,70.88
+314,146,Python Mastery Guide,Books,2,17.45,34.9
+315,146,Fleece Hoodie,Clothing,4,57.04,228.16
+316,146,Design Thinking,Books,1,14.16,14.16
+317,146,Wool Scarf,Clothing,1,42.77,42.77
+318,147,Webcam HD,Electronics,2,132.75,265.5
+319,147,Webcam HD,Electronics,5,205.4,1027.0
+320,148,Yoga Mat,Sports,3,57.65,172.95
+321,149,Water Bottle Insulated,Sports,2,31.69,63.38
+322,149,Economics 101,Books,1,18.77,18.77
+323,150,Throw Blanket,Home & Garden,1,64.27,64.27
+324,150,Fleece Hoodie,Clothing,1,58.02,58.02
+325,151,Green Tea Box,Food,1,9.04,9.04
+326,152,4K Monitor,Electronics,3,265.46,796.38
+327,153,Artisan Olive Oil,Food,1,15.68,15.68
+328,153,History Atlas,Books,1,15.45,15.45
+329,153,Cotton T-Shirt,Clothing,2,42.68,85.36
+330,154,Jump Rope,Sports,1,53.22,53.22
+331,155,Design Thinking,Books,2,15.65,31.3
+332,156,Ceramic Planter,Home & Garden,1,90.71,90.71
+333,157,Slim Jeans,Clothing,1,31.41,31.41
+334,157,Running Shoes,Clothing,1,37.25,37.25
+335,157,Webcam HD,Electronics,1,74.04,74.04
+336,158,Cycling Gloves,Sports,1,51.92,51.92
+337,159,Dark Chocolate Bar,Food,2,11.35,22.7
+338,159,Design Thinking,Books,1,14.97,14.97
+339,159,Yoga Mat,Sports,1,119.5,119.5
+340,160,USB-C Hub,Electronics,1,374.26,374.26
+341,160,Smart Watch,Electronics,5,367.96,1839.8
+342,160,LED Desk Lamp,Home & Garden,2,58.3,116.6
+343,160,Design Thinking,Books,2,19.53,39.06
+344,161,Economics 101,Books,2,16.72,33.44
+345,161,History Atlas,Books,1,10.01,10.01
+346,161,Winter Jacket,Clothing,3,102.44,307.32
+347,162,Winter Jacket,Clothing,1,41.26,41.26
+348,162,Granola Pack,Food,2,10.27,20.54
+349,163,Fleece Hoodie,Clothing,1,41.89,41.89
+350,163,Wool Scarf,Clothing,2,46.58,93.16
+351,163,Ceramic Planter,Home & Garden,1,74.52,74.52
+352,164,Fleece Hoodie,Clothing,1,82.26,82.26
+353,164,Wall Clock,Home & Garden,1,79.34,79.34
+354,164,Artisan Olive Oil,Food,1,18.14,18.14
+355,165,Design Thinking,Books,1,20.51,20.51
+356,165,Storage Bin,Home & Garden,1,89.97,89.97
+357,165,Water Bottle Insulated,Sports,1,81.92,81.92
+358,166,Running Shoes,Clothing,1,52.61,52.61
+359,166,Design Thinking,Books,1,23.39,23.39
+360,166,Storage Bin,Home & Garden,1,97.13,97.13
+361,167,Python Mastery Guide,Books,2,22.97,45.94
+362,168,Wool Scarf,Clothing,1,54.64,54.64
+363,168,Dumbbell Set,Sports,3,53.57,160.71
+364,169,4K Monitor,Electronics,2,480.84,961.68
+365,169,Storage Bin,Home & Garden,1,55.66,55.66
+366,170,Slim Jeans,Clothing,5,64.21,321.05
+367,171,Wool Scarf,Clothing,2,78.86,157.72
+368,172,Sci-Fi Novel,Books,1,22.02,22.02
+369,172,Water Bottle Insulated,Sports,1,110.33,110.33
+370,173,Ceramic Planter,Home & Garden,1,90.19,90.19
+371,174,Wool Scarf,Clothing,4,33.43,133.72
+372,175,Wool Scarf,Clothing,2,30.87,61.74
+373,175,Organic Coffee Beans,Food,1,9.62,9.62
+374,176,Wireless Headphones,Electronics,2,265.69,531.38
+375,177,Design Thinking,Books,1,12.08,12.08
+376,177,Design Thinking,Books,3,13.17,39.51
+377,178,Raw Honey Jar,Food,1,17.15,17.15
+378,179,Slim Jeans,Clothing,1,43.7,43.7
+379,179,Artisan Olive Oil,Food,1,22.56,22.56
+380,180,4K Monitor,Electronics,1,198.35,198.35
+381,181,Fleece Hoodie,Clothing,1,50.01,50.01
+382,182,4K Monitor,Electronics,1,133.35,133.35
+383,183,Organic Coffee Beans,Food,1,11.07,11.07
+384,184,USB-C Hub,Electronics,1,167.76,167.76
+385,185,Wall Clock,Home & Garden,2,76.59,153.18
+386,185,Resistance Bands,Sports,5,39.6,198.0
+387,185,Webcam HD,Electronics,1,191.35,191.35
+388,186,Stainless Kettle,Home & Garden,2,92.06,184.12
+389,187,Cotton T-Shirt,Clothing,2,51.17,102.34
+390,187,Design Thinking,Books,1,30.18,30.18
+391,188,Winter Jacket,Clothing,3,45.1,135.3
+392,188,Throw Blanket,Home & Garden,2,54.14,108.28
+393,189,Dark Chocolate Bar,Food,1,12.96,12.96
+394,189,Wireless Headphones,Electronics,1,338.37,338.37
+395,189,Ceramic Planter,Home & Garden,1,106.28,106.28
+396,190,Cotton T-Shirt,Clothing,2,72.69,145.38
+397,191,Webcam HD,Electronics,4,234.13,936.52
+398,191,Python Mastery Guide,Books,2,15.2,30.4
+399,192,Dark Chocolate Bar,Food,1,6.97,6.97
+400,192,Webcam HD,Electronics,4,224.59,898.36
+401,193,Smart Watch,Electronics,2,141.88,283.76
+402,193,Artisan Olive Oil,Food,3,17.61,52.83
+403,193,Running Shoes,Clothing,1,22.53,22.53
+404,194,Throw Blanket,Home & Garden,1,67.96,67.96
+405,194,Webcam HD,Electronics,1,282.33,282.33
+406,195,LED Desk Lamp,Home & Garden,1,102.56,102.56
+407,195,Jump Rope,Sports,3,37.12,111.36
+408,195,Wall Clock,Home & Garden,4,64.19,256.76
+409,196,Artisan Olive Oil,Food,2,10.9,21.8
+410,197,Winter Jacket,Clothing,2,18.0,36.0
+411,198,Organic Coffee Beans,Food,4,11.52,46.08
+412,198,Resistance Bands,Sports,1,71.42,71.42
+413,198,Bluetooth Speaker,Electronics,1,415.8,415.8
+414,199,Economics 101,Books,1,23.62,23.62
+415,199,4K Monitor,Electronics,1,298.17,298.17
+416,200,Ceramic Planter,Home & Garden,2,147.33,294.66
+417,200,Dark Chocolate Bar,Food,1,11.03,11.03
+418,200,Webcam HD,Electronics,2,180.3,360.6
+419,201,Organic Coffee Beans,Food,1,8.41,8.41
+420,202,Wool Scarf,Clothing,3,28.59,85.77
+421,203,Stainless Kettle,Home & Garden,1,79.46,79.46
+422,204,Ceramic Planter,Home & Garden,3,70.97,212.91
+423,204,Sci-Fi Novel,Books,1,18.34,18.34
+424,205,Wireless Headphones,Electronics,1,436.4,436.4
+425,205,Resistance Bands,Sports,1,20.13,20.13
+426,206,Storage Bin,Home & Garden,2,78.35,156.7
+427,207,Design Thinking,Books,1,19.26,19.26
+428,207,USB-C Hub,Electronics,1,187.22,187.22
+429,207,Wool Scarf,Clothing,1,46.69,46.69
+430,208,Slim Jeans,Clothing,4,74.31,297.24
+431,208,Cotton T-Shirt,Clothing,1,30.39,30.39
+432,208,Winter Jacket,Clothing,1,75.25,75.25
+433,209,Wool Scarf,Clothing,1,41.8,41.8
+434,209,Dark Chocolate Bar,Food,2,10.26,20.52
+435,210,Wireless Headphones,Electronics,1,170.15,170.15
+436,210,Sci-Fi Novel,Books,4,18.43,73.72
+437,210,Wool Scarf,Clothing,1,44.11,44.11
+438,211,Artisan Olive Oil,Food,4,9.99,39.96
+439,211,Bluetooth Speaker,Electronics,4,219.13,876.52
+440,211,4K Monitor,Electronics,2,197.76,395.52
+441,211,History Atlas,Books,2,15.81,31.62
+442,211,Wireless Headphones,Electronics,1,222.21,222.21
+443,212,Resistance Bands,Sports,1,89.37,89.37
+444,213,4K Monitor,Electronics,2,97.44,194.88
+445,213,Slim Jeans,Clothing,1,66.84,66.84
+446,214,Throw Blanket,Home & Garden,1,64.18,64.18
+447,215,Granola Pack,Food,3,9.92,29.76
+448,215,Fleece Hoodie,Clothing,1,57.52,57.52
+449,216,Data Science Handbook,Books,1,23.1,23.1
+450,216,Storage Bin,Home & Garden,3,37.65,112.95
+451,216,Economics 101,Books,5,19.59,97.95
+452,216,Slim Jeans,Clothing,3,57.6,172.8
+453,217,Cotton T-Shirt,Clothing,4,87.72,350.88
+454,218,Water Bottle Insulated,Sports,2,31.56,63.12
+455,218,Cotton T-Shirt,Clothing,1,52.36,52.36
+456,219,4K Monitor,Electronics,1,271.92,271.92
+457,219,USB-C Hub,Electronics,2,203.2,406.4
+458,220,Water Bottle Insulated,Sports,3,42.0,126.0
+459,221,History Atlas,Books,1,29.1,29.1
+460,222,Throw Blanket,Home & Garden,2,61.58,123.16
+461,222,Python Mastery Guide,Books,1,12.53,12.53
+462,222,Winter Jacket,Clothing,3,44.84,134.52
+463,222,Dark Chocolate Bar,Food,1,12.95,12.95
+464,223,Fleece Hoodie,Clothing,1,27.5,27.5
+465,223,USB-C Hub,Electronics,2,131.54,263.08
+466,224,Fleece Hoodie,Clothing,1,29.18,29.18
+467,225,4K Monitor,Electronics,3,317.67,953.01
+468,226,Cycling Gloves,Sports,2,23.35,46.7
+469,226,4K Monitor,Electronics,3,272.69,818.07
+470,226,Wall Clock,Home & Garden,2,159.74,319.48
+471,227,Slim Jeans,Clothing,2,32.67,65.34
+472,227,Bluetooth Speaker,Electronics,1,186.45,186.45
+473,228,Economics 101,Books,2,22.72,45.44
+474,228,Wireless Headphones,Electronics,1,424.47,424.47
+475,229,Webcam HD,Electronics,1,139.07,139.07
+476,230,Dark Chocolate Bar,Food,1,9.59,9.59
+477,231,Stainless Kettle,Home & Garden,1,138.28,138.28
+478,231,Ceramic Planter,Home & Garden,1,69.13,69.13
+479,232,Water Bottle Insulated,Sports,1,70.25,70.25
+480,232,Data Science Handbook,Books,2,21.03,42.06
+481,233,Slim Jeans,Clothing,1,36.53,36.53
+482,234,Throw Blanket,Home & Garden,1,92.39,92.39
+483,235,Wireless Headphones,Electronics,2,176.83,353.66
+484,235,Storage Bin,Home & Garden,4,39.69,158.76
+485,235,Cotton T-Shirt,Clothing,4,46.73,186.92
+486,236,Wool Scarf,Clothing,2,33.68,67.36
+487,236,Python Mastery Guide,Books,2,19.65,39.3
+488,237,Stainless Kettle,Home & Garden,2,60.76,121.52
+489,237,Bluetooth Speaker,Electronics,4,116.96,467.84
+490,238,4K Monitor,Electronics,2,355.82,711.64
+491,238,Cotton T-Shirt,Clothing,1,32.76,32.76
+492,239,Stainless Kettle,Home & Garden,5,139.28,696.4
+493,240,Ceramic Planter,Home & Garden,1,62.37,62.37
+494,240,Cotton T-Shirt,Clothing,3,68.99,206.97
+495,240,Stainless Kettle,Home & Garden,1,37.77,37.77
+496,240,4K Monitor,Electronics,1,353.22,353.22
+497,241,Sci-Fi Novel,Books,1,17.8,17.8
+498,242,Ceramic Planter,Home & Garden,1,64.45,64.45
+499,242,4K Monitor,Electronics,1,256.01,256.01
+500,242,Water Bottle Insulated,Sports,2,36.27,72.54
+501,242,Design Thinking,Books,2,19.14,38.28
+502,242,Storage Bin,Home & Garden,1,88.63,88.63
+503,242,Winter Jacket,Clothing,1,56.17,56.17
+504,243,Fleece Hoodie,Clothing,1,34.85,34.85
+505,244,Slim Jeans,Clothing,1,81.37,81.37
+506,244,Stainless Kettle,Home & Garden,1,38.22,38.22
+507,244,Python Mastery Guide,Books,1,18.65,18.65
+508,244,Webcam HD,Electronics,1,132.2,132.2
+509,244,Jump Rope,Sports,2,43.72,87.44
+510,245,Wool Scarf,Clothing,1,34.46,34.46
+511,245,Webcam HD,Electronics,5,202.39,1011.95
+512,245,Raw Honey Jar,Food,1,10.09,10.09
+513,245,Raw Honey Jar,Food,3,23.09,69.27
+514,245,Running Shoes,Clothing,1,33.96,33.96
+515,246,Yoga Mat,Sports,1,55.56,55.56
+516,246,Slim Jeans,Clothing,2,74.59,149.18
+517,246,Fleece Hoodie,Clothing,3,79.81,239.43
+518,247,Economics 101,Books,2,24.74,49.48
+519,248,LED Desk Lamp,Home & Garden,1,103.71,103.71
+520,249,Webcam HD,Electronics,2,123.54,247.08
+521,249,Smart Watch,Electronics,1,271.35,271.35
+522,249,Resistance Bands,Sports,3,42.21,126.63
+523,249,History Atlas,Books,2,25.01,50.02
+524,249,Webcam HD,Electronics,3,164.14,492.42
+525,250,Cycling Gloves,Sports,5,39.75,198.75
+526,251,Wall Clock,Home & Garden,1,112.61,112.61
+527,252,Slim Jeans,Clothing,1,41.58,41.58
+528,252,Python Mastery Guide,Books,1,16.98,16.98
+529,253,USB-C Hub,Electronics,2,170.78,341.56
+530,254,Wool Scarf,Clothing,1,32.38,32.38
+531,254,USB-C Hub,Electronics,3,172.93,518.79
+532,254,Fleece Hoodie,Clothing,2,71.99,143.98
+533,255,Wool Scarf,Clothing,1,37.86,37.86
+534,255,Artisan Olive Oil,Food,1,13.82,13.82
+535,256,Python Mastery Guide,Books,1,20.83,20.83
+536,257,LED Desk Lamp,Home & Garden,1,107.05,107.05
+537,257,Webcam HD,Electronics,2,266.71,533.42
+538,258,Storage Bin,Home & Garden,2,33.5,67.0
+539,259,Ceramic Planter,Home & Garden,1,58.98,58.98
+540,259,Bluetooth Speaker,Electronics,3,339.94,1019.82
+541,260,Ceramic Planter,Home & Garden,3,48.98,146.94
+542,260,4K Monitor,Electronics,2,211.34,422.68
+543,261,Data Science Handbook,Books,1,11.61,11.61
+544,262,Throw Blanket,Home & Garden,1,62.39,62.39
+545,262,Cotton T-Shirt,Clothing,1,51.09,51.09
+546,263,Economics 101,Books,2,20.44,40.88
+547,264,Granola Pack,Food,2,17.89,35.78
+548,264,Ceramic Planter,Home & Garden,1,120.7,120.7
+549,264,Wireless Headphones,Electronics,1,149.19,149.19
+550,265,Stainless Kettle,Home & Garden,4,48.27,193.08
+551,265,Wall Clock,Home & Garden,2,189.26,378.52
+552,266,Wall Clock,Home & Garden,3,63.68,191.04
+553,267,Data Science Handbook,Books,1,26.91,26.91
+554,268,Design Thinking,Books,2,15.55,31.1
+555,268,Storage Bin,Home & Garden,2,33.58,67.16
+556,268,Stainless Kettle,Home & Garden,1,34.97,34.97
+557,269,Winter Jacket,Clothing,1,34.11,34.11
+558,269,Fleece Hoodie,Clothing,2,44.33,88.66
+559,270,4K Monitor,Electronics,1,370.85,370.85
+560,270,Ceramic Planter,Home & Garden,2,72.36,144.72
+561,270,Slim Jeans,Clothing,3,30.14,90.42
+562,270,USB-C Hub,Electronics,2,395.39,790.78
+563,270,Data Science Handbook,Books,1,18.02,18.02
+564,271,Bluetooth Speaker,Electronics,1,156.52,156.52
+565,271,Sci-Fi Novel,Books,2,16.36,32.72
+566,272,LED Desk Lamp,Home & Garden,1,30.44,30.44
+567,272,Dumbbell Set,Sports,2,70.16,140.32
+568,273,Smart Watch,Electronics,1,291.83,291.83
+569,273,Stainless Kettle,Home & Garden,3,60.65,181.95
+570,274,Webcam HD,Electronics,5,750.0,3750.0
+571,275,Wall Clock,Home & Garden,1,50.9,50.9
+572,276,Bluetooth Speaker,Electronics,1,107.2,107.2
+573,277,Wall Clock,Home & Garden,1,41.91,41.91
+574,277,Resistance Bands,Sports,1,26.84,26.84
+575,277,Storage Bin,Home & Garden,1,71.56,71.56
+576,277,Throw Blanket,Home & Garden,4,87.62,350.48
+577,277,Fleece Hoodie,Clothing,3,35.25,105.75
+578,278,Webcam HD,Electronics,1,120.6,120.6
+579,279,4K Monitor,Electronics,2,217.08,434.16
+580,279,USB-C Hub,Electronics,1,221.12,221.12
+581,279,Throw Blanket,Home & Garden,2,38.32,76.64
+582,279,LED Desk Lamp,Home & Garden,1,73.6,73.6
+583,279,Green Tea Box,Food,4,11.77,47.08
+584,280,Slim Jeans,Clothing,1,39.64,39.64
+585,281,USB-C Hub,Electronics,1,123.07,123.07
+586,281,Storage Bin,Home & Garden,1,49.0,49.0
+587,282,Ceramic Planter,Home & Garden,4,58.64,234.56
+588,283,Running Shoes,Clothing,3,25.64,76.92
+589,283,Data Science Handbook,Books,5,27.64,138.2
+590,283,Cotton T-Shirt,Clothing,1,25.74,25.74
+591,283,Slim Jeans,Clothing,2,52.15,104.3
+592,284,Resistance Bands,Sports,1,56.05,56.05
+593,285,Wireless Headphones,Electronics,1,238.39,238.39
+594,286,Python Mastery Guide,Books,2,17.49,34.98
+595,286,4K Monitor,Electronics,2,168.16,336.32
+596,287,Artisan Olive Oil,Food,1,12.73,12.73
+597,288,Sci-Fi Novel,Books,2,20.02,40.04
+598,289,4K Monitor,Electronics,2,750.0,1500.0
+599,289,Smart Watch,Electronics,1,311.59,311.59
+600,290,Raw Honey Jar,Food,3,15.22,45.66
+601,290,Wall Clock,Home & Garden,1,104.69,104.69
+602,290,USB-C Hub,Electronics,3,204.71,614.13
+603,291,LED Desk Lamp,Home & Garden,1,91.46,91.46
+604,291,LED Desk Lamp,Home & Garden,1,105.53,105.53
+605,292,Winter Jacket,Clothing,4,48.26,193.04
+606,292,LED Desk Lamp,Home & Garden,5,39.82,199.1
+607,293,History Atlas,Books,1,14.29,14.29
+608,293,Running Shoes,Clothing,1,87.18,87.18
+609,293,Wall Clock,Home & Garden,1,95.74,95.74
+610,293,Resistance Bands,Sports,2,50.39,100.78
+611,294,Wireless Headphones,Electronics,4,266.7,1066.8
+612,294,Green Tea Box,Food,4,22.47,89.88
+613,295,Data Science Handbook,Books,1,23.69,23.69
+614,296,Cotton T-Shirt,Clothing,2,44.08,88.16
+615,296,Granola Pack,Food,3,22.32,66.96
+616,297,Ceramic Planter,Home & Garden,1,43.85,43.85
+617,297,Granola Pack,Food,1,9.08,9.08
+618,298,USB-C Hub,Electronics,4,185.52,742.08
+619,298,Fleece Hoodie,Clothing,1,29.92,29.92
+620,299,Design Thinking,Books,4,20.75,83.0
+621,300,Slim Jeans,Clothing,4,58.04,232.16
+622,300,Wool Scarf,Clothing,1,76.53,76.53
+623,300,Sci-Fi Novel,Books,1,21.1,21.1
+624,301,Water Bottle Insulated,Sports,1,59.85,59.85
+625,302,Raw Honey Jar,Food,1,11.52,11.52
+626,303,Webcam HD,Electronics,2,297.12,594.24
+627,303,Stainless Kettle,Home & Garden,1,56.33,56.33
+628,304,4K Monitor,Electronics,1,705.08,705.08
+629,305,Running Shoes,Clothing,1,51.7,51.7
+630,305,Dumbbell Set,Sports,2,39.11,78.22
+631,305,Artisan Olive Oil,Food,3,15.16,45.48
+632,305,4K Monitor,Electronics,1,232.59,232.59
+633,305,Bluetooth Speaker,Electronics,1,509.27,509.27
+634,306,Wall Clock,Home & Garden,1,54.49,54.49
+635,306,Organic Coffee Beans,Food,1,16.12,16.12
+636,306,Dumbbell Set,Sports,1,53.98,53.98
+637,306,Water Bottle Insulated,Sports,1,96.34,96.34
+638,306,Smart Watch,Electronics,1,61.97,61.97
+639,307,Stainless Kettle,Home & Garden,1,58.55,58.55
+640,307,Green Tea Box,Food,2,14.76,29.52
+641,308,Artisan Olive Oil,Food,4,12.93,51.72
+642,308,Cotton T-Shirt,Clothing,1,28.8,28.8
+643,308,Wool Scarf,Clothing,1,46.47,46.47
+644,308,Winter Jacket,Clothing,3,61.88,185.64
+645,309,Wool Scarf,Clothing,1,49.41,49.41
+646,309,Sci-Fi Novel,Books,2,23.25,46.5
+647,309,Running Shoes,Clothing,2,42.0,84.0
+648,310,USB-C Hub,Electronics,1,179.55,179.55
+649,310,Data Science Handbook,Books,1,17.54,17.54
+650,310,Design Thinking,Books,1,18.74,18.74
+651,311,Bluetooth Speaker,Electronics,1,197.13,197.13
+652,311,4K Monitor,Electronics,1,294.71,294.71
+653,312,Smart Watch,Electronics,1,178.76,178.76
+654,313,Running Shoes,Clothing,1,84.73,84.73
+655,314,Data Science Handbook,Books,3,21.94,65.82
+656,314,Smart Watch,Electronics,1,231.73,231.73
+657,315,Winter Jacket,Clothing,1,39.18,39.18
+658,316,Bluetooth Speaker,Electronics,1,184.33,184.33
+659,317,Granola Pack,Food,1,7.3,7.3
+660,317,Wool Scarf,Clothing,1,66.2,66.2
+661,317,Wall Clock,Home & Garden,1,108.02,108.02
+662,317,4K Monitor,Electronics,2,344.79,689.58
+663,318,Bluetooth Speaker,Electronics,1,314.58,314.58
+664,318,Dumbbell Set,Sports,2,107.87,215.74
+665,318,Webcam HD,Electronics,1,254.33,254.33
+666,319,Running Shoes,Clothing,1,58.27,58.27
+667,319,Fleece Hoodie,Clothing,1,52.8,52.8
+668,319,USB-C Hub,Electronics,1,307.78,307.78
+669,320,LED Desk Lamp,Home & Garden,1,73.61,73.61
+670,320,Bluetooth Speaker,Electronics,4,134.23,536.92
+671,321,Smart Watch,Electronics,1,172.13,172.13
+672,321,USB-C Hub,Electronics,3,314.57,943.71
+673,322,4K Monitor,Electronics,3,119.25,357.75
+674,323,Fleece Hoodie,Clothing,1,63.96,63.96
+675,324,Dark Chocolate Bar,Food,2,15.71,31.42
+676,325,Throw Blanket,Home & Garden,1,77.69,77.69
+677,325,Green Tea Box,Food,3,13.21,39.63
+678,325,Artisan Olive Oil,Food,2,14.82,29.64
+679,325,4K Monitor,Electronics,2,220.99,441.98
+680,326,Data Science Handbook,Books,1,20.21,20.21
+681,326,Wool Scarf,Clothing,1,46.59,46.59
+682,327,Wool Scarf,Clothing,1,37.93,37.93
+683,327,LED Desk Lamp,Home & Garden,1,65.34,65.34
+684,327,4K Monitor,Electronics,1,353.92,353.92
+685,327,Wireless Headphones,Electronics,5,264.85,1324.25
+686,328,Organic Coffee Beans,Food,1,20.4,20.4
+687,329,Ceramic Planter,Home & Garden,3,91.56,274.68
+688,329,Slim Jeans,Clothing,1,45.95,45.95
+689,330,Resistance Bands,Sports,2,35.43,70.86
+690,330,Slim Jeans,Clothing,1,66.27,66.27
+691,331,LED Desk Lamp,Home & Garden,1,126.17,126.17
+692,332,Storage Bin,Home & Garden,2,59.45,118.9
+693,332,Data Science Handbook,Books,1,13.25,13.25
+694,332,Cotton T-Shirt,Clothing,1,50.93,50.93
+695,333,Bluetooth Speaker,Electronics,1,750.0,750.0
+696,333,Wireless Headphones,Electronics,1,342.43,342.43
+697,333,Webcam HD,Electronics,1,243.78,243.78
+698,333,Webcam HD,Electronics,2,106.08,212.16
+699,333,USB-C Hub,Electronics,1,196.88,196.88
+700,334,Ceramic Planter,Home & Garden,2,45.07,90.14
+701,334,Artisan Olive Oil,Food,1,22.35,22.35
+702,334,Winter Jacket,Clothing,1,18.0,18.0
+703,334,4K Monitor,Electronics,1,127.88,127.88
+704,334,4K Monitor,Electronics,1,266.63,266.63
+705,335,Economics 101,Books,1,20.7,20.7
+706,335,Smart Watch,Electronics,1,132.12,132.12
+707,335,Bluetooth Speaker,Electronics,2,209.59,419.18
+708,336,Smart Watch,Electronics,4,517.27,2069.08
+709,337,Green Tea Box,Food,2,14.48,28.96
+710,337,Slim Jeans,Clothing,1,26.09,26.09
+711,338,Smart Watch,Electronics,1,223.41,223.41
+712,339,Wall Clock,Home & Garden,2,43.1,86.2
+713,339,Bluetooth Speaker,Electronics,4,258.98,1035.92
+714,340,Wall Clock,Home & Garden,1,80.72,80.72
+715,340,Stainless Kettle,Home & Garden,2,40.43,80.86
+716,341,Storage Bin,Home & Garden,1,87.9,87.9
+717,341,Sci-Fi Novel,Books,1,13.9,13.9
+718,342,Organic Coffee Beans,Food,1,12.51,12.51
+719,342,Winter Jacket,Clothing,5,47.29,236.45
+720,343,Raw Honey Jar,Food,1,15.7,15.7
+721,343,Yoga Mat,Sports,4,33.44,133.76
+722,344,Stainless Kettle,Home & Garden,3,92.16,276.48
+723,345,USB-C Hub,Electronics,1,161.88,161.88
+724,345,Design Thinking,Books,2,17.34,34.68
+725,345,Bluetooth Speaker,Electronics,4,192.1,768.4
+726,346,Python Mastery Guide,Books,3,16.67,50.01
+727,346,Storage Bin,Home & Garden,1,80.3,80.3
+728,346,Throw Blanket,Home & Garden,3,76.13,228.39
+729,347,Jump Rope,Sports,1,85.37,85.37
+730,348,Yoga Mat,Sports,2,59.2,118.4
+731,348,Winter Jacket,Clothing,4,26.38,105.52
+732,348,Slim Jeans,Clothing,1,36.09,36.09
+733,349,Green Tea Box,Food,1,11.4,11.4
+734,350,Cotton T-Shirt,Clothing,1,81.63,81.63
+735,350,Smart Watch,Electronics,1,251.49,251.49
+736,351,Wireless Headphones,Electronics,4,535.21,2140.84
+737,352,Raw Honey Jar,Food,1,8.19,8.19
+738,353,Wireless Headphones,Electronics,2,211.95,423.9
+739,353,Webcam HD,Electronics,3,127.06,381.18
+740,354,Ceramic Planter,Home & Garden,4,81.38,325.52
+741,355,Winter Jacket,Clothing,1,54.15,54.15
+742,356,Winter Jacket,Clothing,1,99.16,99.16
+743,357,Green Tea Box,Food,2,10.95,21.9
+744,357,LED Desk Lamp,Home & Garden,1,77.57,77.57
+745,358,Jump Rope,Sports,3,59.28,177.84
+746,359,Wall Clock,Home & Garden,1,68.06,68.06
+747,360,USB-C Hub,Electronics,1,139.77,139.77
+748,361,Design Thinking,Books,3,16.51,49.53
+749,362,4K Monitor,Electronics,1,316.7,316.7
+750,363,Cotton T-Shirt,Clothing,1,61.73,61.73
+751,364,Slim Jeans,Clothing,1,44.86,44.86
+752,365,Sci-Fi Novel,Books,2,17.11,34.22
+753,366,Data Science Handbook,Books,1,24.9,24.9
+754,366,Stainless Kettle,Home & Garden,1,31.31,31.31
+755,367,Winter Jacket,Clothing,1,49.05,49.05
+756,368,Python Mastery Guide,Books,1,14.26,14.26
+757,368,Smart Watch,Electronics,2,316.61,633.22
+758,369,Python Mastery Guide,Books,2,20.21,40.42
+759,369,History Atlas,Books,1,15.54,15.54
+760,370,Throw Blanket,Home & Garden,2,115.57,231.14
+761,371,Raw Honey Jar,Food,3,15.95,47.85
+762,372,Slim Jeans,Clothing,1,50.55,50.55
+763,373,Slim Jeans,Clothing,2,66.89,133.78
+764,374,Smart Watch,Electronics,4,153.51,614.04
+765,375,Jump Rope,Sports,2,50.94,101.88
+766,375,Dark Chocolate Bar,Food,1,12.15,12.15
+767,375,Cycling Gloves,Sports,4,49.29,197.16
+768,375,Wool Scarf,Clothing,1,59.18,59.18
+769,375,LED Desk Lamp,Home & Garden,2,169.88,339.76
+770,376,Dark Chocolate Bar,Food,2,9.86,19.72
+771,376,Smart Watch,Electronics,2,442.68,885.36
+772,377,Yoga Mat,Sports,2,30.83,61.66
+773,378,Cycling Gloves,Sports,1,52.68,52.68
+774,378,Dark Chocolate Bar,Food,1,12.14,12.14
+775,379,Economics 101,Books,1,14.84,14.84
+776,380,History Atlas,Books,1,14.88,14.88
+777,380,Resistance Bands,Sports,1,39.88,39.88
+778,381,Dark Chocolate Bar,Food,2,12.76,25.52
+779,381,Smart Watch,Electronics,1,260.21,260.21
+780,382,Throw Blanket,Home & Garden,5,147.22,736.1
+781,382,Green Tea Box,Food,1,7.65,7.65
+782,383,Green Tea Box,Food,1,10.28,10.28
+783,383,Stainless Kettle,Home & Garden,1,36.5,36.5
+784,384,Slim Jeans,Clothing,3,53.12,159.36
+785,385,Storage Bin,Home & Garden,1,63.89,63.89
+786,385,Ceramic Planter,Home & Garden,4,51.35,205.4
+787,385,Sci-Fi Novel,Books,5,19.56,97.8
+788,386,Winter Jacket,Clothing,3,43.23,129.69
+789,386,Storage Bin,Home & Garden,3,69.4,208.2
+790,386,Stainless Kettle,Home & Garden,1,55.37,55.37
+791,386,Storage Bin,Home & Garden,1,87.04,87.04
+792,387,Design Thinking,Books,3,16.58,49.74
+793,387,USB-C Hub,Electronics,1,121.09,121.09
+794,388,Winter Jacket,Clothing,1,80.09,80.09
+795,388,USB-C Hub,Electronics,1,132.29,132.29
+796,388,Python Mastery Guide,Books,2,14.13,28.26
+797,389,Storage Bin,Home & Garden,2,102.8,205.6
+798,390,Organic Coffee Beans,Food,2,10.19,20.38
+799,391,Throw Blanket,Home & Garden,1,55.58,55.58
+800,391,Yoga Mat,Sports,1,71.42,71.42
+801,392,Slim Jeans,Clothing,1,47.46,47.46
+802,392,Organic Coffee Beans,Food,4,9.82,39.28
+803,393,Ceramic Planter,Home & Garden,1,60.43,60.43
+804,393,Data Science Handbook,Books,2,17.23,34.46
+805,394,Wireless Headphones,Electronics,1,181.06,181.06
+806,394,Yoga Mat,Sports,1,26.14,26.14
+807,395,History Atlas,Books,1,16.04,16.04
+808,396,LED Desk Lamp,Home & Garden,1,45.91,45.91
+809,397,Wool Scarf,Clothing,1,49.25,49.25
+810,397,Running Shoes,Clothing,1,42.76,42.76
+811,397,Dumbbell Set,Sports,3,65.67,197.01
+812,398,Slim Jeans,Clothing,1,36.11,36.11
+813,398,Wall Clock,Home & Garden,1,28.07,28.07
+814,399,Bluetooth Speaker,Electronics,1,463.32,463.32
+815,400,Dark Chocolate Bar,Food,1,11.59,11.59
+816,400,LED Desk Lamp,Home & Garden,1,60.79,60.79
+817,400,Wall Clock,Home & Garden,2,78.61,157.22
+818,400,History Atlas,Books,1,14.36,14.36
+819,401,Smart Watch,Electronics,1,125.59,125.59
+820,402,Sci-Fi Novel,Books,3,18.54,55.62
+821,402,4K Monitor,Electronics,1,153.47,153.47
+822,403,Water Bottle Insulated,Sports,1,70.94,70.94
+823,403,Design Thinking,Books,2,17.94,35.88
+824,403,Smart Watch,Electronics,5,224.47,1122.35
+825,403,Winter Jacket,Clothing,4,38.34,153.36
+826,404,Green Tea Box,Food,1,14.47,14.47
+827,404,Economics 101,Books,1,22.21,22.21
+828,404,USB-C Hub,Electronics,2,285.74,571.48
+829,404,Sci-Fi Novel,Books,1,16.99,16.99
+830,405,Storage Bin,Home & Garden,2,94.93,189.86
+831,405,Fleece Hoodie,Clothing,1,73.39,73.39
+832,405,History Atlas,Books,2,28.39,56.78
+833,406,Data Science Handbook,Books,1,16.68,16.68
+834,406,Cotton T-Shirt,Clothing,4,42.73,170.92
+835,406,USB-C Hub,Electronics,2,276.55,553.1
+836,406,Running Shoes,Clothing,2,60.13,120.26
+837,407,Data Science Handbook,Books,1,21.03,21.03
+838,408,Throw Blanket,Home & Garden,1,66.93,66.93
+839,408,Winter Jacket,Clothing,2,40.08,80.16
+840,408,Wall Clock,Home & Garden,1,59.67,59.67
+841,408,Smart Watch,Electronics,1,205.9,205.9
+842,409,Wool Scarf,Clothing,1,34.75,34.75
+843,409,Green Tea Box,Food,1,14.89,14.89
+844,409,4K Monitor,Electronics,2,189.29,378.58
+845,409,USB-C Hub,Electronics,1,129.87,129.87
+846,410,Throw Blanket,Home & Garden,1,68.87,68.87
+847,410,Artisan Olive Oil,Food,2,15.66,31.32
+848,411,USB-C Hub,Electronics,2,266.3,532.6
+849,412,LED Desk Lamp,Home & Garden,2,139.33,278.66
+850,412,Water Bottle Insulated,Sports,1,42.73,42.73
+851,413,Green Tea Box,Food,1,9.61,9.61
+852,414,Bluetooth Speaker,Electronics,1,166.47,166.47
+853,414,Dark Chocolate Bar,Food,2,16.58,33.16
+854,415,Winter Jacket,Clothing,4,36.64,146.56
+855,416,USB-C Hub,Electronics,3,209.47,628.41
+856,416,LED Desk Lamp,Home & Garden,1,86.5,86.5
+857,416,Sci-Fi Novel,Books,2,31.4,62.8
+858,417,Jump Rope,Sports,1,75.11,75.11
+859,417,Design Thinking,Books,1,29.63,29.63
+860,418,Smart Watch,Electronics,1,105.83,105.83
+861,418,Ceramic Planter,Home & Garden,1,106.09,106.09
+862,419,Storage Bin,Home & Garden,1,91.36,91.36
+863,419,Granola Pack,Food,5,12.44,62.2
+864,419,Winter Jacket,Clothing,1,34.03,34.03
+865,419,Cotton T-Shirt,Clothing,2,43.33,86.66
+866,420,Smart Watch,Electronics,1,253.6,253.6
+867,420,Python Mastery Guide,Books,1,24.49,24.49
+868,420,USB-C Hub,Electronics,2,102.21,204.42
+869,421,Webcam HD,Electronics,1,166.33,166.33
+870,421,Bluetooth Speaker,Electronics,1,134.14,134.14
+871,421,Granola Pack,Food,2,14.68,29.36
+872,422,LED Desk Lamp,Home & Garden,2,110.85,221.7
+873,422,Winter Jacket,Clothing,3,37.26,111.78
+874,423,Sci-Fi Novel,Books,1,21.22,21.22
+875,423,Raw Honey Jar,Food,5,9.61,48.05
+876,423,4K Monitor,Electronics,2,159.84,319.68
+877,424,Stainless Kettle,Home & Garden,3,82.11,246.33
+878,424,Wool Scarf,Clothing,1,41.29,41.29
+879,425,Storage Bin,Home & Garden,1,88.55,88.55
+880,426,Granola Pack,Food,1,26.6,26.6
+881,426,4K Monitor,Electronics,1,211.75,211.75
+882,427,Bluetooth Speaker,Electronics,1,372.22,372.22
+883,427,Winter Jacket,Clothing,1,31.09,31.09
+884,427,Yoga Mat,Sports,2,76.6,153.2
+885,428,Green Tea Box,Food,1,9.11,9.11
+886,428,Cycling Gloves,Sports,1,80.95,80.95
+887,428,Wool Scarf,Clothing,2,50.19,100.38
+888,429,Green Tea Box,Food,1,10.49,10.49
+889,429,History Atlas,Books,1,11.49,11.49
+890,429,Running Shoes,Clothing,1,39.48,39.48
+891,429,Wool Scarf,Clothing,1,52.73,52.73
+892,430,Raw Honey Jar,Food,1,10.34,10.34
+893,430,Cycling Gloves,Sports,2,31.52,63.04
+894,431,LED Desk Lamp,Home & Garden,1,45.94,45.94
+895,431,Running Shoes,Clothing,2,56.24,112.48
+896,431,Winter Jacket,Clothing,1,62.46,62.46
+897,432,Winter Jacket,Clothing,1,73.14,73.14
+898,433,Wall Clock,Home & Garden,2,77.78,155.56
+899,433,Wool Scarf,Clothing,3,36.18,108.54
+900,434,Webcam HD,Electronics,1,247.17,247.17
+901,435,Wall Clock,Home & Garden,1,49.4,49.4
+902,435,Webcam HD,Electronics,1,138.58,138.58
+903,435,Organic Coffee Beans,Food,1,8.18,8.18
+904,436,Ceramic Planter,Home & Garden,2,64.69,129.38
+905,437,Bluetooth Speaker,Electronics,1,110.23,110.23
+906,438,History Atlas,Books,1,22.28,22.28
+907,439,Python Mastery Guide,Books,1,13.57,13.57
+908,439,Smart Watch,Electronics,1,160.02,160.02
+909,439,Slim Jeans,Clothing,2,42.13,84.26
+910,440,Running Shoes,Clothing,2,51.4,102.8
+911,440,Slim Jeans,Clothing,1,84.53,84.53
+912,441,Design Thinking,Books,1,14.08,14.08
+913,442,Ceramic Planter,Home & Garden,2,123.34,246.68
+914,442,Dumbbell Set,Sports,2,41.35,82.7
+915,442,Green Tea Box,Food,1,14.59,14.59
+916,443,Economics 101,Books,3,16.6,49.8
+917,443,Ceramic Planter,Home & Garden,2,128.94,257.88
+918,444,Design Thinking,Books,1,11.78,11.78
+919,445,Slim Jeans,Clothing,1,31.95,31.95
+920,445,Yoga Mat,Sports,1,60.44,60.44
+921,446,Running Shoes,Clothing,1,29.57,29.57
+922,446,Wall Clock,Home & Garden,1,69.34,69.34
+923,446,Smart Watch,Electronics,2,355.78,711.56
+924,447,Webcam HD,Electronics,1,750.0,750.0
+925,447,Winter Jacket,Clothing,1,91.86,91.86
+926,447,Organic Coffee Beans,Food,1,13.12,13.12
+927,447,Water Bottle Insulated,Sports,2,60.37,120.74
+928,448,Smart Watch,Electronics,1,227.88,227.88
+929,449,Slim Jeans,Clothing,2,45.08,90.16
+930,449,Organic Coffee Beans,Food,4,14.3,57.2
+931,450,History Atlas,Books,4,13.18,52.72
+932,450,Running Shoes,Clothing,2,40.24,80.48
+933,451,Wall Clock,Home & Garden,2,114.62,229.24
+934,452,Bluetooth Speaker,Electronics,1,304.07,304.07
+935,453,Cotton T-Shirt,Clothing,2,69.21,138.42
+936,453,LED Desk Lamp,Home & Garden,1,163.12,163.12
+937,453,Cotton T-Shirt,Clothing,2,62.9,125.8
+938,453,Wall Clock,Home & Garden,1,45.45,45.45
+939,454,Cycling Gloves,Sports,1,92.86,92.86
+940,454,Winter Jacket,Clothing,4,59.49,237.96
+941,454,Python Mastery Guide,Books,5,15.5,77.5
+942,454,Wall Clock,Home & Garden,1,109.7,109.7
+943,455,Webcam HD,Electronics,2,283.31,566.62
+944,456,Wall Clock,Home & Garden,4,110.57,442.28
+945,457,LED Desk Lamp,Home & Garden,3,88.54,265.62
+946,457,Wall Clock,Home & Garden,1,101.15,101.15
+947,458,Wall Clock,Home & Garden,1,61.93,61.93
+948,459,Bluetooth Speaker,Electronics,2,133.17,266.34
+949,460,Dumbbell Set,Sports,3,122.99,368.97
+950,461,LED Desk Lamp,Home & Garden,1,41.02,41.02
+951,461,Artisan Olive Oil,Food,2,11.53,23.06
+952,462,Green Tea Box,Food,1,12.32,12.32
+953,462,Resistance Bands,Sports,1,68.53,68.53
+954,462,Design Thinking,Books,1,17.89,17.89
+955,462,Storage Bin,Home & Garden,2,96.8,193.6
+956,463,Wall Clock,Home & Garden,1,91.96,91.96
+957,463,Webcam HD,Electronics,1,284.1,284.1
+958,463,Resistance Bands,Sports,2,75.34,150.68
+959,463,Economics 101,Books,3,21.59,64.77
+960,463,Yoga Mat,Sports,1,57.82,57.82
+961,464,Ceramic Planter,Home & Garden,3,67.87,203.61
+962,464,Wool Scarf,Clothing,1,81.52,81.52
+963,464,Dumbbell Set,Sports,2,47.46,94.92
+964,464,LED Desk Lamp,Home & Garden,2,76.4,152.8
+965,464,Cotton T-Shirt,Clothing,1,50.53,50.53
+966,464,Fleece Hoodie,Clothing,3,43.23,129.69
+967,465,Python Mastery Guide,Books,1,15.82,15.82
+968,466,Slim Jeans,Clothing,1,31.74,31.74
+969,467,Wireless Headphones,Electronics,3,246.65,739.95
+970,468,Fleece Hoodie,Clothing,4,103.77,415.08
+971,468,Green Tea Box,Food,4,16.73,66.92
+972,469,LED Desk Lamp,Home & Garden,1,73.39,73.39
+973,470,Design Thinking,Books,2,14.7,29.4
+974,470,Dumbbell Set,Sports,2,46.19,92.38
+975,471,Throw Blanket,Home & Garden,1,67.13,67.13
+976,471,Running Shoes,Clothing,1,65.14,65.14
+977,471,USB-C Hub,Electronics,1,199.22,199.22
+978,472,USB-C Hub,Electronics,2,133.24,266.48
+979,472,Dark Chocolate Bar,Food,2,17.9,35.8
+980,472,Slim Jeans,Clothing,1,48.14,48.14
+981,473,USB-C Hub,Electronics,2,296.8,593.6
+982,473,Fleece Hoodie,Clothing,1,53.08,53.08
+983,474,LED Desk Lamp,Home & Garden,1,47.27,47.27
+984,474,Winter Jacket,Clothing,1,62.43,62.43
+985,474,Webcam HD,Electronics,1,200.93,200.93
+986,474,USB-C Hub,Electronics,5,188.34,941.7
+987,475,Artisan Olive Oil,Food,1,10.58,10.58
+988,475,Wool Scarf,Clothing,1,35.82,35.82
+989,475,USB-C Hub,Electronics,2,102.56,205.12
+990,475,Wireless Headphones,Electronics,1,186.51,186.51
+991,476,4K Monitor,Electronics,2,362.23,724.46
+992,477,Dumbbell Set,Sports,3,41.64,124.92
+993,478,Smart Watch,Electronics,1,304.58,304.58
+994,479,Throw Blanket,Home & Garden,1,68.99,68.99
+995,479,Sci-Fi Novel,Books,1,28.12,28.12
+996,479,Raw Honey Jar,Food,4,8.48,33.92
+997,480,Winter Jacket,Clothing,4,63.86,255.44
+998,480,USB-C Hub,Electronics,1,142.05,142.05
+999,481,Smart Watch,Electronics,4,225.21,900.84
+1000,481,4K Monitor,Electronics,1,265.06,265.06
+1001,481,USB-C Hub,Electronics,2,229.96,459.92
+1002,482,Bluetooth Speaker,Electronics,1,276.24,276.24
+1003,482,Webcam HD,Electronics,1,199.36,199.36
+1004,483,USB-C Hub,Electronics,1,225.58,225.58
+1005,484,Granola Pack,Food,2,11.35,22.7
+1006,484,Cotton T-Shirt,Clothing,1,39.47,39.47
+1007,485,Granola Pack,Food,1,12.44,12.44
+1008,486,Sci-Fi Novel,Books,1,27.29,27.29
+1009,487,Cotton T-Shirt,Clothing,2,39.25,78.5
+1010,488,Smart Watch,Electronics,5,351.98,1759.9
+1011,488,Artisan Olive Oil,Food,2,17.47,34.94
+1012,488,Design Thinking,Books,2,18.3,36.6
+1013,489,Bluetooth Speaker,Electronics,2,143.47,286.94
+1014,489,Storage Bin,Home & Garden,1,155.98,155.98
+1015,489,Wool Scarf,Clothing,1,61.86,61.86
+1016,490,Bluetooth Speaker,Electronics,1,282.18,282.18
+1017,491,Cotton T-Shirt,Clothing,1,62.53,62.53
+1018,492,Stainless Kettle,Home & Garden,1,96.41,96.41
+1019,492,Webcam HD,Electronics,2,180.34,360.68
+1020,492,Bluetooth Speaker,Electronics,1,267.24,267.24
+1021,493,4K Monitor,Electronics,1,205.61,205.61
+1022,493,Wireless Headphones,Electronics,1,368.66,368.66
+1023,493,Smart Watch,Electronics,1,149.52,149.52
+1024,493,Artisan Olive Oil,Food,1,10.62,10.62
+1025,494,Cotton T-Shirt,Clothing,3,35.78,107.34
+1026,494,Smart Watch,Electronics,1,718.17,718.17
+1027,494,Granola Pack,Food,3,8.39,25.17
+1028,494,Design Thinking,Books,1,13.95,13.95
+1029,495,Dark Chocolate Bar,Food,1,11.65,11.65
+1030,495,Raw Honey Jar,Food,1,17.0,17.0
+1031,495,Cotton T-Shirt,Clothing,1,52.36,52.36
+1032,495,Bluetooth Speaker,Electronics,1,492.06,492.06
+1033,496,Design Thinking,Books,1,13.89,13.89
+1034,497,Dark Chocolate Bar,Food,1,9.4,9.4
+1035,497,Sci-Fi Novel,Books,3,30.75,92.25
+1036,498,Yoga Mat,Sports,1,48.97,48.97
+1037,498,Bluetooth Speaker,Electronics,1,658.14,658.14
+1038,499,Wireless Headphones,Electronics,2,272.99,545.98
+1039,499,Slim Jeans,Clothing,2,54.49,108.98
+1040,500,Smart Watch,Electronics,1,383.55,383.55
+1041,500,Bluetooth Speaker,Electronics,1,215.03,215.03
+1042,500,Stainless Kettle,Home & Garden,1,80.81,80.81
+1043,501,USB-C Hub,Electronics,3,334.15,1002.45
+1044,501,Organic Coffee Beans,Food,1,12.25,12.25
+1045,501,Water Bottle Insulated,Sports,2,52.33,104.66
+1046,501,Dark Chocolate Bar,Food,1,15.86,15.86
+1047,502,Jump Rope,Sports,1,59.74,59.74
+1048,503,Ceramic Planter,Home & Garden,1,81.23,81.23
+1049,504,Fleece Hoodie,Clothing,1,50.33,50.33
+1050,505,Economics 101,Books,1,20.43,20.43
+1051,506,Winter Jacket,Clothing,1,31.14,31.14
+1052,507,Raw Honey Jar,Food,2,11.19,22.38
+1053,507,Jump Rope,Sports,1,51.68,51.68
+1054,508,Throw Blanket,Home & Garden,1,54.43,54.43
+1055,509,Ceramic Planter,Home & Garden,1,51.24,51.24
+1056,510,LED Desk Lamp,Home & Garden,4,38.8,155.2
+1057,510,Throw Blanket,Home & Garden,4,178.48,713.92
+1058,510,USB-C Hub,Electronics,2,750.0,1500.0
+1059,511,Data Science Handbook,Books,1,12.98,12.98
+1060,512,Webcam HD,Electronics,1,361.92,361.92
+1061,512,Dark Chocolate Bar,Food,1,7.81,7.81
+1062,512,Bluetooth Speaker,Electronics,2,294.0,588.0
+1063,512,Cotton T-Shirt,Clothing,1,36.4,36.4
+1064,513,Smart Watch,Electronics,2,212.25,424.5
+1065,514,Stainless Kettle,Home & Garden,4,22.0,88.0
+1066,514,Webcam HD,Electronics,2,198.44,396.88
+1067,515,Wireless Headphones,Electronics,1,169.37,169.37
+1068,516,History Atlas,Books,1,16.32,16.32
+1069,516,Slim Jeans,Clothing,2,55.0,110.0
+1070,517,USB-C Hub,Electronics,1,343.3,343.3
+1071,518,Webcam HD,Electronics,2,138.3,276.6
+1072,519,Wall Clock,Home & Garden,1,50.92,50.92
+1073,519,Winter Jacket,Clothing,4,31.48,125.92
+1074,520,Economics 101,Books,1,20.36,20.36
+1075,521,4K Monitor,Electronics,1,232.14,232.14
+1076,522,Throw Blanket,Home & Garden,1,65.3,65.3
+1077,522,Wall Clock,Home & Garden,2,78.09,156.18
+1078,522,Fleece Hoodie,Clothing,1,50.5,50.5
+1079,522,Artisan Olive Oil,Food,1,6.38,6.38
+1080,522,LED Desk Lamp,Home & Garden,1,75.59,75.59
+1081,523,Cycling Gloves,Sports,1,81.09,81.09
+1082,524,4K Monitor,Electronics,3,191.93,575.79
+1083,524,Organic Coffee Beans,Food,1,13.19,13.19
+1084,525,Throw Blanket,Home & Garden,1,88.04,88.04
+1085,525,USB-C Hub,Electronics,1,79.24,79.24
+1086,525,Throw Blanket,Home & Garden,1,96.49,96.49
+1087,526,Artisan Olive Oil,Food,1,18.79,18.79
+1088,526,Cotton T-Shirt,Clothing,2,55.47,110.94
+1089,526,Fleece Hoodie,Clothing,2,47.22,94.44
+1090,527,LED Desk Lamp,Home & Garden,1,111.05,111.05
+1091,527,Winter Jacket,Clothing,4,96.12,384.48
+1092,527,LED Desk Lamp,Home & Garden,3,57.49,172.47
+1093,528,4K Monitor,Electronics,1,119.2,119.2
+1094,528,Python Mastery Guide,Books,1,25.49,25.49
+1095,529,Resistance Bands,Sports,3,47.97,143.91
+1096,529,Smart Watch,Electronics,1,339.14,339.14
+1097,529,Economics 101,Books,1,18.99,18.99
+1098,530,Running Shoes,Clothing,3,28.54,85.62
+1099,531,Webcam HD,Electronics,1,244.09,244.09
+1100,531,Wireless Headphones,Electronics,3,303.68,911.04
+1101,531,Wool Scarf,Clothing,1,39.24,39.24
+1102,532,Smart Watch,Electronics,3,225.36,676.08
+1103,532,Wool Scarf,Clothing,1,75.15,75.15
+1104,533,Wool Scarf,Clothing,1,48.9,48.9
+1105,533,Smart Watch,Electronics,1,255.77,255.77
+1106,534,Bluetooth Speaker,Electronics,1,201.31,201.31
+1107,534,Running Shoes,Clothing,2,72.11,144.22
+1108,534,LED Desk Lamp,Home & Garden,2,97.83,195.66
+1109,535,Webcam HD,Electronics,1,280.56,280.56
+1110,536,Wall Clock,Home & Garden,1,67.12,67.12
+1111,536,Throw Blanket,Home & Garden,2,45.78,91.56
+1112,537,Cycling Gloves,Sports,2,79.76,159.52
+1113,537,Slim Jeans,Clothing,2,68.04,136.08
+1114,537,Storage Bin,Home & Garden,1,52.32,52.32
+1115,537,Artisan Olive Oil,Food,1,8.07,8.07
+1116,538,4K Monitor,Electronics,2,343.45,686.9
+1117,538,Economics 101,Books,5,15.61,78.05
+1118,539,Cotton T-Shirt,Clothing,1,58.09,58.09
+1119,539,Design Thinking,Books,3,14.05,42.15
+1120,540,Winter Jacket,Clothing,2,44.07,88.14
+1121,540,Sci-Fi Novel,Books,1,13.94,13.94
+1122,541,Ceramic Planter,Home & Garden,1,84.85,84.85
+1123,541,Cotton T-Shirt,Clothing,4,70.1,280.4
+1124,541,Granola Pack,Food,1,12.63,12.63
+1125,541,Stainless Kettle,Home & Garden,1,135.88,135.88
+1126,542,Running Shoes,Clothing,1,36.29,36.29
+1127,543,Stainless Kettle,Home & Garden,2,84.27,168.54
+1128,543,Raw Honey Jar,Food,1,12.02,12.02
+1129,543,USB-C Hub,Electronics,1,315.59,315.59
+1130,544,Sci-Fi Novel,Books,2,14.22,28.44
+1131,544,Bluetooth Speaker,Electronics,3,304.27,912.81
+1132,545,Sci-Fi Novel,Books,1,30.55,30.55
+1133,546,Storage Bin,Home & Garden,1,66.88,66.88
+1134,547,Running Shoes,Clothing,2,35.81,71.62
+1135,548,Raw Honey Jar,Food,4,7.14,28.56
+1136,549,Water Bottle Insulated,Sports,3,35.38,106.14
+1137,549,Slim Jeans,Clothing,1,42.02,42.02
+1138,549,Resistance Bands,Sports,1,51.49,51.49
+1139,550,Cotton T-Shirt,Clothing,1,51.57,51.57
+1140,550,Organic Coffee Beans,Food,1,8.81,8.81
+1141,550,Stainless Kettle,Home & Garden,2,42.52,85.04
+1142,550,Winter Jacket,Clothing,1,70.05,70.05
+1143,551,Stainless Kettle,Home & Garden,1,60.25,60.25
+1144,551,Wireless Headphones,Electronics,2,215.21,430.42
+1145,552,USB-C Hub,Electronics,1,275.31,275.31
+1146,553,4K Monitor,Electronics,1,217.58,217.58
+1147,553,Winter Jacket,Clothing,4,63.76,255.04
+1148,554,Stainless Kettle,Home & Garden,2,79.48,158.96
+1149,554,Wireless Headphones,Electronics,1,286.91,286.91
+1150,555,Economics 101,Books,2,16.4,32.8
+1151,556,History Atlas,Books,1,24.89,24.89
+1152,557,Winter Jacket,Clothing,2,56.43,112.86
+1153,558,Economics 101,Books,2,29.1,58.2
+1154,558,Throw Blanket,Home & Garden,1,52.87,52.87
+1155,559,Wall Clock,Home & Garden,5,119.9,599.5
+1156,559,History Atlas,Books,2,20.8,41.6
+1157,559,Webcam HD,Electronics,2,426.83,853.66
+1158,559,Green Tea Box,Food,2,14.05,28.1
+1159,559,Wool Scarf,Clothing,1,42.19,42.19
+1160,560,4K Monitor,Electronics,2,325.03,650.06
+1161,561,Granola Pack,Food,4,12.89,51.56
+1162,562,Cycling Gloves,Sports,3,53.8,161.4
+1163,563,Running Shoes,Clothing,2,53.05,106.1
+1164,563,4K Monitor,Electronics,1,222.19,222.19
+1165,564,Winter Jacket,Clothing,1,91.24,91.24
+1166,565,Wall Clock,Home & Garden,2,53.68,107.36
+1167,566,Yoga Mat,Sports,2,82.94,165.88
+1168,566,Wall Clock,Home & Garden,1,52.51,52.51
+1169,566,Webcam HD,Electronics,1,124.82,124.82
+1170,566,Data Science Handbook,Books,1,18.64,18.64
+1171,567,Dark Chocolate Bar,Food,1,7.99,7.99
+1172,568,Organic Coffee Beans,Food,2,14.85,29.7
+1173,568,Wool Scarf,Clothing,5,35.05,175.25
+1174,569,4K Monitor,Electronics,1,252.89,252.89
+1175,569,Storage Bin,Home & Garden,1,75.69,75.69
+1176,569,Winter Jacket,Clothing,1,31.13,31.13
+1177,570,Fleece Hoodie,Clothing,1,45.66,45.66
+1178,571,Stainless Kettle,Home & Garden,2,63.91,127.82
+1179,571,LED Desk Lamp,Home & Garden,3,103.22,309.66
+1180,572,Jump Rope,Sports,2,57.47,114.94
+1181,573,Cycling Gloves,Sports,2,37.76,75.52
+1182,573,Sci-Fi Novel,Books,2,13.41,26.82
+1183,574,Fleece Hoodie,Clothing,2,42.78,85.56
+1184,575,Throw Blanket,Home & Garden,1,74.97,74.97
+1185,575,Green Tea Box,Food,3,8.94,26.82
+1186,575,Storage Bin,Home & Garden,1,168.36,168.36
+1187,576,4K Monitor,Electronics,1,358.99,358.99
+1188,577,Running Shoes,Clothing,3,93.11,279.33
+1189,577,4K Monitor,Electronics,3,208.2,624.6
+1190,578,Webcam HD,Electronics,2,151.21,302.42
+1191,578,Stainless Kettle,Home & Garden,2,44.32,88.64
+1192,578,Slim Jeans,Clothing,1,40.3,40.3
+1193,579,LED Desk Lamp,Home & Garden,2,131.55,263.1
+1194,580,Slim Jeans,Clothing,1,38.24,38.24
+1195,580,Webcam HD,Electronics,1,244.49,244.49
+1196,580,Stainless Kettle,Home & Garden,1,140.94,140.94
+1197,580,4K Monitor,Electronics,1,108.79,108.79
+1198,581,Dumbbell Set,Sports,2,48.02,96.04
+1199,582,Raw Honey Jar,Food,1,14.15,14.15
+1200,583,Fleece Hoodie,Clothing,2,25.26,50.52
+1201,584,Wool Scarf,Clothing,5,34.98,174.9
+1202,584,Cotton T-Shirt,Clothing,1,44.24,44.24
+1203,585,Winter Jacket,Clothing,1,45.46,45.46
+1204,585,Webcam HD,Electronics,1,398.88,398.88
+1205,585,Yoga Mat,Sports,2,99.56,199.12
+1206,586,Wool Scarf,Clothing,1,51.96,51.96
+1207,587,Throw Blanket,Home & Garden,1,38.47,38.47
+1208,587,Wall Clock,Home & Garden,1,73.49,73.49
+1209,588,4K Monitor,Electronics,3,212.69,638.07
+1210,588,LED Desk Lamp,Home & Garden,2,68.63,137.26
+1211,588,USB-C Hub,Electronics,4,173.21,692.84
+1212,589,Design Thinking,Books,2,17.56,35.12
+1213,590,Sci-Fi Novel,Books,1,23.66,23.66
+1214,590,Running Shoes,Clothing,4,36.74,146.96
+1215,591,Jump Rope,Sports,1,85.3,85.3
+1216,592,Sci-Fi Novel,Books,2,19.23,38.46
+1217,592,Running Shoes,Clothing,4,82.43,329.72
+1218,592,Data Science Handbook,Books,2,15.7,31.4
+1219,593,Wireless Headphones,Electronics,5,314.04,1570.2
+1220,594,Bluetooth Speaker,Electronics,1,269.28,269.28
+1221,594,Dark Chocolate Bar,Food,2,11.15,22.3
+1222,594,Data Science Handbook,Books,2,19.16,38.32
+1223,594,USB-C Hub,Electronics,1,698.35,698.35
+1224,594,Running Shoes,Clothing,1,132.98,132.98
+1225,594,Running Shoes,Clothing,1,84.34,84.34
+1226,595,4K Monitor,Electronics,1,203.32,203.32
+1227,595,LED Desk Lamp,Home & Garden,2,45.33,90.66
+1228,596,Running Shoes,Clothing,1,66.32,66.32
+1229,597,Data Science Handbook,Books,2,16.74,33.48
+1230,597,Slim Jeans,Clothing,2,52.84,105.68
+1231,598,Running Shoes,Clothing,1,71.95,71.95
+1232,599,Raw Honey Jar,Food,1,10.71,10.71
+1233,599,Bluetooth Speaker,Electronics,1,158.89,158.89
+1234,599,Wool Scarf,Clothing,2,36.04,72.08
+1235,599,Throw Blanket,Home & Garden,2,109.33,218.66
+1236,599,Sci-Fi Novel,Books,1,19.13,19.13
+1237,599,Organic Coffee Beans,Food,1,15.92,15.92
+1238,600,Python Mastery Guide,Books,1,16.89,16.89
+1239,600,4K Monitor,Electronics,3,186.9,560.7
+1240,601,Webcam HD,Electronics,3,443.01,1329.03
+1241,601,Wireless Headphones,Electronics,1,225.55,225.55
+1242,602,History Atlas,Books,1,31.14,31.14
+1243,603,Cycling Gloves,Sports,2,56.0,112.0
+1244,603,Dark Chocolate Bar,Food,1,10.63,10.63
+1245,604,Fleece Hoodie,Clothing,3,41.44,124.32
+1246,604,Fleece Hoodie,Clothing,1,37.28,37.28
+1247,604,Yoga Mat,Sports,2,61.04,122.08
+1248,604,Bluetooth Speaker,Electronics,1,190.24,190.24
+1249,605,Data Science Handbook,Books,1,17.85,17.85
+1250,606,Wireless Headphones,Electronics,1,231.28,231.28
+1251,607,Economics 101,Books,2,18.44,36.88
+1252,607,Jump Rope,Sports,1,59.83,59.83
+1253,608,Fleece Hoodie,Clothing,1,44.8,44.8
+1254,608,Smart Watch,Electronics,2,301.46,602.92
+1255,609,USB-C Hub,Electronics,1,100.69,100.69
+1256,609,Sci-Fi Novel,Books,2,19.09,38.18
+1257,610,Economics 101,Books,1,17.74,17.74
+1258,610,Ceramic Planter,Home & Garden,3,136.66,409.98
+1259,611,Cycling Gloves,Sports,1,65.81,65.81
+1260,611,Dumbbell Set,Sports,2,66.56,133.12
+1261,612,Sci-Fi Novel,Books,1,18.9,18.9
+1262,612,Raw Honey Jar,Food,3,18.02,54.06
+1263,612,Storage Bin,Home & Garden,1,95.57,95.57
+1264,612,USB-C Hub,Electronics,1,237.85,237.85
+1265,612,Smart Watch,Electronics,3,362.31,1086.93
+1266,613,Cotton T-Shirt,Clothing,2,64.32,128.64
+1267,614,Fleece Hoodie,Clothing,2,31.73,63.46
+1268,614,LED Desk Lamp,Home & Garden,1,66.4,66.4
+1269,615,Green Tea Box,Food,1,11.66,11.66
+1270,616,Slim Jeans,Clothing,4,42.62,170.48
+1271,616,Wall Clock,Home & Garden,1,50.74,50.74
+1272,616,Cycling Gloves,Sports,1,55.76,55.76
+1273,617,Ceramic Planter,Home & Garden,4,41.22,164.88
+1274,618,Design Thinking,Books,1,18.3,18.3
+1275,618,Sci-Fi Novel,Books,5,19.9,99.5
+1276,619,USB-C Hub,Electronics,1,98.95,98.95
+1277,620,Winter Jacket,Clothing,1,64.09,64.09
+1278,620,Raw Honey Jar,Food,2,15.77,31.54
+1279,620,Jump Rope,Sports,1,35.64,35.64
+1280,621,Fleece Hoodie,Clothing,3,58.59,175.77
+1281,621,Storage Bin,Home & Garden,1,67.93,67.93
+1282,622,Wool Scarf,Clothing,1,40.56,40.56
+1283,623,Bluetooth Speaker,Electronics,1,215.8,215.8
+1284,623,LED Desk Lamp,Home & Garden,2,109.48,218.96
+1285,624,Ceramic Planter,Home & Garden,1,209.44,209.44
+1286,625,Cotton T-Shirt,Clothing,4,18.0,72.0
+1287,625,Artisan Olive Oil,Food,1,10.61,10.61
+1288,626,Resistance Bands,Sports,1,82.77,82.77
+1289,627,Throw Blanket,Home & Garden,1,59.02,59.02
+1290,627,Cycling Gloves,Sports,1,42.96,42.96
+1291,628,Smart Watch,Electronics,1,616.74,616.74
+1292,628,Cycling Gloves,Sports,3,39.97,119.91
+1293,628,Smart Watch,Electronics,1,183.52,183.52
+1294,628,Bluetooth Speaker,Electronics,1,199.36,199.36
+1295,628,Smart Watch,Electronics,1,107.59,107.59
+1296,628,Data Science Handbook,Books,1,15.82,15.82
+1297,629,History Atlas,Books,1,18.58,18.58
+1298,629,Smart Watch,Electronics,2,219.85,439.7
+1299,630,Fleece Hoodie,Clothing,2,60.0,120.0
+1300,630,Bluetooth Speaker,Electronics,1,412.31,412.31
+1301,630,Wool Scarf,Clothing,2,32.72,65.44
+1302,631,Python Mastery Guide,Books,1,14.98,14.98
+1303,631,Economics 101,Books,1,19.53,19.53
+1304,631,Storage Bin,Home & Garden,2,86.64,173.28
+1305,632,Yoga Mat,Sports,4,57.38,229.52
+1306,632,Bluetooth Speaker,Electronics,2,200.73,401.46
+1307,632,Fleece Hoodie,Clothing,1,46.95,46.95
+1308,632,Smart Watch,Electronics,1,287.98,287.98
+1309,633,Cycling Gloves,Sports,1,38.57,38.57
+1310,633,4K Monitor,Electronics,5,354.4,1772.0
+1311,633,Wall Clock,Home & Garden,1,62.65,62.65
+1312,633,Cotton T-Shirt,Clothing,3,47.25,141.75
+1313,634,Wireless Headphones,Electronics,1,159.27,159.27
+1314,634,Stainless Kettle,Home & Garden,2,43.84,87.68
+1315,635,Artisan Olive Oil,Food,2,10.11,20.22
+1316,636,USB-C Hub,Electronics,1,155.47,155.47
+1317,636,Wireless Headphones,Electronics,1,220.78,220.78
+1318,636,USB-C Hub,Electronics,3,249.0,747.0
+1319,637,Smart Watch,Electronics,1,92.8,92.8
+1320,638,Smart Watch,Electronics,1,434.96,434.96
+1321,639,Data Science Handbook,Books,4,13.21,52.84
+1322,639,Artisan Olive Oil,Food,2,9.51,19.02
+1323,640,Wall Clock,Home & Garden,1,62.01,62.01
+1324,640,Artisan Olive Oil,Food,1,12.18,12.18
+1325,640,Running Shoes,Clothing,3,44.78,134.34
+1326,641,Fleece Hoodie,Clothing,1,36.91,36.91
+1327,641,Webcam HD,Electronics,1,141.85,141.85
+1328,641,Raw Honey Jar,Food,1,10.55,10.55
+1329,641,History Atlas,Books,3,13.94,41.82
+1330,642,Bluetooth Speaker,Electronics,1,168.27,168.27
+1331,643,History Atlas,Books,1,14.39,14.39
+1332,643,Bluetooth Speaker,Electronics,1,346.06,346.06
+1333,644,Smart Watch,Electronics,1,318.71,318.71
+1334,644,Bluetooth Speaker,Electronics,2,281.83,563.66
+1335,644,Bluetooth Speaker,Electronics,1,150.63,150.63
+1336,644,Running Shoes,Clothing,4,42.57,170.28
+1337,645,Dark Chocolate Bar,Food,1,9.37,9.37
+1338,645,Bluetooth Speaker,Electronics,1,149.44,149.44
+1339,646,Dark Chocolate Bar,Food,1,10.9,10.9
+1340,646,LED Desk Lamp,Home & Garden,1,74.41,74.41
+1341,646,Stainless Kettle,Home & Garden,1,65.66,65.66
+1342,647,Wall Clock,Home & Garden,1,67.27,67.27
+1343,648,Data Science Handbook,Books,1,19.16,19.16
+1344,649,Wool Scarf,Clothing,5,94.6,473.0
+1345,649,Design Thinking,Books,2,28.01,56.02
+1346,650,Wool Scarf,Clothing,1,21.66,21.66
+1347,650,Cotton T-Shirt,Clothing,1,65.15,65.15
+1348,651,Sci-Fi Novel,Books,2,11.83,23.66
+1349,651,4K Monitor,Electronics,1,261.2,261.2
+1350,652,Green Tea Box,Food,2,19.72,39.44
+1351,652,Throw Blanket,Home & Garden,4,79.35,317.4
+1352,653,Winter Jacket,Clothing,2,56.41,112.82
+1353,653,Resistance Bands,Sports,1,54.91,54.91
+1354,654,Yoga Mat,Sports,1,83.06,83.06
+1355,654,History Atlas,Books,1,21.37,21.37
+1356,655,Dark Chocolate Bar,Food,1,21.73,21.73
+1357,656,Cycling Gloves,Sports,2,58.28,116.56
+1358,657,Resistance Bands,Sports,2,59.53,119.06
+1359,657,Winter Jacket,Clothing,2,38.22,76.44
+1360,658,Dumbbell Set,Sports,1,27.81,27.81
+1361,658,Design Thinking,Books,2,16.27,32.54
+1362,658,Ceramic Planter,Home & Garden,1,66.1,66.1
+1363,659,Fleece Hoodie,Clothing,3,52.16,156.48
+1364,660,4K Monitor,Electronics,1,240.52,240.52
+1365,661,4K Monitor,Electronics,1,285.38,285.38
+1366,661,Bluetooth Speaker,Electronics,2,135.48,270.96
+1367,661,Smart Watch,Electronics,1,281.59,281.59
+1368,662,Webcam HD,Electronics,1,339.16,339.16
+1369,662,Data Science Handbook,Books,3,17.27,51.81
+1370,663,4K Monitor,Electronics,2,182.2,364.4
+1371,663,4K Monitor,Electronics,2,496.43,992.86
+1372,663,Ceramic Planter,Home & Garden,5,98.09,490.45
+1373,663,Webcam HD,Electronics,1,147.73,147.73
+1374,664,Cotton T-Shirt,Clothing,1,50.98,50.98
+1375,664,Wool Scarf,Clothing,4,61.12,244.48
+1376,664,Storage Bin,Home & Garden,2,101.55,203.1
+1377,665,History Atlas,Books,1,24.43,24.43
+1378,665,Economics 101,Books,2,17.9,35.8
+1379,665,Organic Coffee Beans,Food,1,18.81,18.81
+1380,666,Data Science Handbook,Books,1,20.28,20.28
+1381,667,USB-C Hub,Electronics,1,137.45,137.45
+1382,667,Slim Jeans,Clothing,1,45.61,45.61
+1383,668,USB-C Hub,Electronics,1,287.25,287.25
+1384,669,History Atlas,Books,4,15.77,63.08
+1385,669,Running Shoes,Clothing,2,90.56,181.12
+1386,670,Jump Rope,Sports,1,41.97,41.97
+1387,671,Smart Watch,Electronics,2,153.67,307.34
+1388,671,Smart Watch,Electronics,3,145.48,436.44
+1389,671,Cotton T-Shirt,Clothing,3,48.69,146.07
+1390,671,Stainless Kettle,Home & Garden,1,53.7,53.7
+1391,672,Webcam HD,Electronics,1,164.15,164.15
+1392,672,Dark Chocolate Bar,Food,1,14.94,14.94
+1393,672,History Atlas,Books,1,22.06,22.06
+1394,673,Stainless Kettle,Home & Garden,1,50.3,50.3
+1395,674,Data Science Handbook,Books,1,13.86,13.86
+1396,675,Wireless Headphones,Electronics,1,200.18,200.18
+1397,676,Economics 101,Books,1,30.98,30.98
+1398,677,Economics 101,Books,2,15.68,31.36
+1399,678,Design Thinking,Books,1,18.06,18.06
+1400,679,Ceramic Planter,Home & Garden,3,105.91,317.73
+1401,680,LED Desk Lamp,Home & Garden,2,40.93,81.86
+1402,680,Webcam HD,Electronics,2,479.11,958.22
+1403,681,Cycling Gloves,Sports,1,72.54,72.54
+1404,681,History Atlas,Books,1,17.37,17.37
+1405,681,Bluetooth Speaker,Electronics,4,134.21,536.84
+1406,681,Fleece Hoodie,Clothing,1,47.44,47.44
+1407,682,Economics 101,Books,3,25.84,77.52
+1408,683,Economics 101,Books,1,23.79,23.79
+1409,684,Smart Watch,Electronics,1,218.22,218.22
+1410,684,Yoga Mat,Sports,1,54.15,54.15
+1411,685,Ceramic Planter,Home & Garden,4,47.01,188.04
+1412,685,4K Monitor,Electronics,1,158.91,158.91
+1413,685,Artisan Olive Oil,Food,2,15.58,31.16
+1414,685,Yoga Mat,Sports,1,56.64,56.64
+1415,685,Smart Watch,Electronics,2,325.24,650.48
+1416,685,Ceramic Planter,Home & Garden,3,45.69,137.07
+1417,686,Storage Bin,Home & Garden,1,66.14,66.14
+1418,687,Webcam HD,Electronics,3,128.94,386.82
+1419,688,Sci-Fi Novel,Books,1,20.86,20.86
+1420,689,Sci-Fi Novel,Books,1,24.55,24.55
+1421,690,Fleece Hoodie,Clothing,3,103.9,311.7
+1422,690,Wool Scarf,Clothing,1,44.17,44.17
+1423,691,Sci-Fi Novel,Books,1,10.64,10.64
+1424,691,Throw Blanket,Home & Garden,2,68.63,137.26
+1425,692,Green Tea Box,Food,1,7.91,7.91
+1426,692,Green Tea Box,Food,4,11.01,44.04
+1427,693,Economics 101,Books,1,18.97,18.97
+1428,693,Throw Blanket,Home & Garden,1,53.64,53.64
+1429,693,Resistance Bands,Sports,4,53.16,212.64
+1430,693,Organic Coffee Beans,Food,1,12.91,12.91
+1431,694,Cycling Gloves,Sports,1,30.21,30.21
+1432,694,Smart Watch,Electronics,2,283.89,567.78
+1433,695,Storage Bin,Home & Garden,1,155.55,155.55
+1434,696,Cycling Gloves,Sports,1,46.92,46.92
+1435,696,Fleece Hoodie,Clothing,1,42.72,42.72
+1436,696,Winter Jacket,Clothing,2,64.18,128.36
+1437,697,Stainless Kettle,Home & Garden,1,75.89,75.89
+1438,697,Dark Chocolate Bar,Food,1,12.0,12.0
+1439,698,LED Desk Lamp,Home & Garden,1,67.22,67.22
+1440,699,Jump Rope,Sports,3,50.0,150.0
+1441,699,LED Desk Lamp,Home & Garden,2,136.68,273.36
+1442,700,Throw Blanket,Home & Garden,1,60.07,60.07
+1443,700,Winter Jacket,Clothing,1,37.24,37.24
+1444,700,Organic Coffee Beans,Food,1,14.0,14.0
+1445,701,Ceramic Planter,Home & Garden,2,111.08,222.16
+1446,701,Wireless Headphones,Electronics,2,124.38,248.76
+1447,702,Python Mastery Guide,Books,1,18.3,18.3
+1448,703,Wall Clock,Home & Garden,1,68.06,68.06
+1449,704,Green Tea Box,Food,3,9.02,27.06
+1450,705,Stainless Kettle,Home & Garden,1,54.45,54.45
+1451,705,Dark Chocolate Bar,Food,1,16.56,16.56
+1452,705,Stainless Kettle,Home & Garden,1,75.43,75.43
+1453,706,Wool Scarf,Clothing,5,52.34,261.7
+1454,707,Bluetooth Speaker,Electronics,2,160.88,321.76
+1455,708,Wireless Headphones,Electronics,1,147.78,147.78
+1456,709,Webcam HD,Electronics,1,95.19,95.19
+1457,710,Wool Scarf,Clothing,1,95.02,95.02
+1458,710,4K Monitor,Electronics,1,219.66,219.66
+1459,711,Jump Rope,Sports,1,29.88,29.88
+1460,711,Cycling Gloves,Sports,1,108.04,108.04
+1461,712,Dumbbell Set,Sports,2,85.57,171.14
+1462,712,Resistance Bands,Sports,1,48.61,48.61
+1463,712,Dark Chocolate Bar,Food,1,10.96,10.96
+1464,713,Wireless Headphones,Electronics,1,201.54,201.54
+1465,714,Wool Scarf,Clothing,2,33.15,66.3
+1466,714,Wool Scarf,Clothing,1,53.82,53.82
+1467,715,Smart Watch,Electronics,2,257.02,514.04
+1468,715,Storage Bin,Home & Garden,1,82.37,82.37
+1469,715,Organic Coffee Beans,Food,2,22.28,44.56
+1470,716,Fleece Hoodie,Clothing,1,40.13,40.13
+1471,716,Ceramic Planter,Home & Garden,2,105.43,210.86
+1472,716,4K Monitor,Electronics,3,187.87,563.61
+1473,716,Fleece Hoodie,Clothing,1,48.09,48.09
+1474,716,Winter Jacket,Clothing,1,42.16,42.16
+1475,716,Bluetooth Speaker,Electronics,1,269.28,269.28
+1476,717,Winter Jacket,Clothing,2,28.76,57.52
+1477,718,Green Tea Box,Food,2,12.22,24.44
+1478,718,Fleece Hoodie,Clothing,1,40.2,40.2
+1479,718,Bluetooth Speaker,Electronics,3,192.16,576.48
+1480,719,Ceramic Planter,Home & Garden,2,86.55,173.1
+1481,719,LED Desk Lamp,Home & Garden,4,59.12,236.48
+1482,719,4K Monitor,Electronics,2,210.26,420.52
+1483,719,Throw Blanket,Home & Garden,2,100.87,201.74
+1484,720,Ceramic Planter,Home & Garden,1,91.91,91.91
+1485,721,Wireless Headphones,Electronics,3,162.3,486.9
+1486,722,Smart Watch,Electronics,2,171.52,343.04
+1487,723,Yoga Mat,Sports,1,31.01,31.01
+1488,724,Python Mastery Guide,Books,1,22.0,22.0
+1489,724,Water Bottle Insulated,Sports,1,78.42,78.42
+1490,724,Raw Honey Jar,Food,1,13.75,13.75
+1491,725,Organic Coffee Beans,Food,1,12.0,12.0
+1492,726,Cotton T-Shirt,Clothing,1,28.72,28.72
+1493,727,Smart Watch,Electronics,1,216.5,216.5
+1494,727,Webcam HD,Electronics,1,518.78,518.78
+1495,727,Webcam HD,Electronics,1,143.92,143.92
+1496,727,Webcam HD,Electronics,1,461.4,461.4
+1497,727,Running Shoes,Clothing,1,35.08,35.08
+1498,727,Data Science Handbook,Books,1,14.65,14.65
+1499,728,Running Shoes,Clothing,1,81.11,81.11
+1500,729,4K Monitor,Electronics,1,169.03,169.03
+1501,729,Bluetooth Speaker,Electronics,1,266.65,266.65
+1502,729,Running Shoes,Clothing,1,46.3,46.3
+1503,730,Yoga Mat,Sports,1,94.73,94.73
+1504,730,Winter Jacket,Clothing,3,63.67,191.01
+1505,731,Stainless Kettle,Home & Garden,1,97.48,97.48
+1506,731,Economics 101,Books,2,10.05,20.1
+1507,731,Ceramic Planter,Home & Garden,2,52.9,105.8
+1508,731,4K Monitor,Electronics,2,140.43,280.86
+1509,732,Sci-Fi Novel,Books,2,12.09,24.18
+1510,732,Bluetooth Speaker,Electronics,2,123.49,246.98
+1511,733,Smart Watch,Electronics,5,206.1,1030.5
+1512,734,Dumbbell Set,Sports,4,31.7,126.8
+1513,735,Smart Watch,Electronics,1,164.48,164.48
+1514,735,Winter Jacket,Clothing,2,55.45,110.9
+1515,735,Stainless Kettle,Home & Garden,1,62.33,62.33
+1516,735,Winter Jacket,Clothing,1,37.34,37.34
+1517,736,Wireless Headphones,Electronics,2,302.36,604.72
+1518,737,Artisan Olive Oil,Food,1,7.67,7.67
+1519,737,Raw Honey Jar,Food,2,14.35,28.7
+1520,738,Dumbbell Set,Sports,1,76.45,76.45
+1521,738,Cotton T-Shirt,Clothing,5,28.81,144.05
+1522,739,Python Mastery Guide,Books,3,14.48,43.44
+1523,739,Wall Clock,Home & Garden,2,79.84,159.68
+1524,739,History Atlas,Books,1,17.35,17.35
+1525,739,Winter Jacket,Clothing,1,52.56,52.56
+1526,739,Sci-Fi Novel,Books,2,19.72,39.44
+1527,740,Dark Chocolate Bar,Food,1,16.87,16.87
+1528,740,Bluetooth Speaker,Electronics,1,202.1,202.1
+1529,740,Stainless Kettle,Home & Garden,1,104.66,104.66
+1530,740,USB-C Hub,Electronics,1,349.71,349.71
+1531,740,Fleece Hoodie,Clothing,1,36.13,36.13
+1532,741,Design Thinking,Books,5,20.46,102.3
+1533,742,Water Bottle Insulated,Sports,1,56.2,56.2
+1534,742,Slim Jeans,Clothing,1,60.27,60.27
+1535,743,Stainless Kettle,Home & Garden,1,175.6,175.6
+1536,744,4K Monitor,Electronics,1,184.17,184.17
+1537,744,Webcam HD,Electronics,1,297.09,297.09
+1538,745,Organic Coffee Beans,Food,2,7.26,14.52
+1539,745,History Atlas,Books,2,28.49,56.98
+1540,745,Granola Pack,Food,1,9.94,9.94
+1541,746,Fleece Hoodie,Clothing,1,47.51,47.51
+1542,747,Yoga Mat,Sports,1,37.19,37.19
+1543,748,Cotton T-Shirt,Clothing,2,53.38,106.76
+1544,748,Throw Blanket,Home & Garden,1,52.07,52.07
+1545,749,Resistance Bands,Sports,2,50.17,100.34
+1546,749,Dark Chocolate Bar,Food,1,8.64,8.64
+1547,749,USB-C Hub,Electronics,2,168.59,337.18
+1548,749,Cotton T-Shirt,Clothing,3,80.58,241.74
+1549,750,Dark Chocolate Bar,Food,2,24.08,48.16
+1550,750,Webcam HD,Electronics,3,196.15,588.45
+1551,750,Cotton T-Shirt,Clothing,1,27.85,27.85
+1552,750,Economics 101,Books,1,12.15,12.15
+1553,750,Smart Watch,Electronics,1,354.41,354.41
+1554,750,Artisan Olive Oil,Food,1,14.32,14.32
+1555,751,Webcam HD,Electronics,3,239.55,718.65
+1556,752,LED Desk Lamp,Home & Garden,1,91.75,91.75
+1557,753,Stainless Kettle,Home & Garden,1,97.01,97.01
+1558,753,Stainless Kettle,Home & Garden,1,128.89,128.89
+1559,753,Resistance Bands,Sports,1,78.0,78.0
+1560,753,Green Tea Box,Food,1,8.3,8.3
+1561,753,Slim Jeans,Clothing,1,44.47,44.47
+1562,753,Smart Watch,Electronics,1,236.47,236.47
+1563,754,Jump Rope,Sports,3,67.72,203.16
+1564,755,Ceramic Planter,Home & Garden,1,63.44,63.44
+1565,755,USB-C Hub,Electronics,1,276.89,276.89
+1566,756,Storage Bin,Home & Garden,1,65.68,65.68
+1567,756,Data Science Handbook,Books,1,31.99,31.99
+1568,757,Cotton T-Shirt,Clothing,2,85.91,171.82
+1569,758,Smart Watch,Electronics,2,363.34,726.68
+1570,759,Sci-Fi Novel,Books,4,15.24,60.96
+1571,759,USB-C Hub,Electronics,1,229.99,229.99
+1572,760,Slim Jeans,Clothing,1,47.66,47.66
+1573,760,Jump Rope,Sports,2,41.8,83.6
+1574,760,Slim Jeans,Clothing,2,34.69,69.38
+1575,761,Fleece Hoodie,Clothing,2,37.54,75.08
+1576,762,Ceramic Planter,Home & Garden,1,73.43,73.43
+1577,763,4K Monitor,Electronics,1,332.25,332.25
+1578,763,Winter Jacket,Clothing,1,49.25,49.25
+1579,764,Wireless Headphones,Electronics,1,157.08,157.08
+1580,764,Wool Scarf,Clothing,1,28.73,28.73
+1581,765,Storage Bin,Home & Garden,1,111.39,111.39
+1582,765,Data Science Handbook,Books,1,12.11,12.11
+1583,765,Ceramic Planter,Home & Garden,1,103.99,103.99
+1584,766,Throw Blanket,Home & Garden,1,112.66,112.66
+1585,766,Dumbbell Set,Sports,3,32.23,96.69
+1586,766,Dumbbell Set,Sports,1,48.39,48.39
+1587,766,Bluetooth Speaker,Electronics,5,348.39,1741.95
+1588,767,Winter Jacket,Clothing,1,56.54,56.54
+1589,768,Jump Rope,Sports,1,60.52,60.52
+1590,769,Granola Pack,Food,2,10.98,21.96
+1591,769,Smart Watch,Electronics,1,174.52,174.52
+1592,769,Design Thinking,Books,1,16.19,16.19
+1593,769,Wool Scarf,Clothing,1,33.16,33.16
+1594,769,Jump Rope,Sports,2,61.79,123.58
+1595,769,Raw Honey Jar,Food,5,18.01,90.05
+1596,770,Fleece Hoodie,Clothing,1,40.8,40.8
+1597,771,Wall Clock,Home & Garden,1,91.8,91.8
+1598,771,History Atlas,Books,1,19.45,19.45
+1599,772,History Atlas,Books,2,34.28,68.56
+1600,772,Cotton T-Shirt,Clothing,3,41.13,123.39
+1601,773,LED Desk Lamp,Home & Garden,1,41.57,41.57
+1602,773,Wireless Headphones,Electronics,2,212.68,425.36
+1603,774,Running Shoes,Clothing,3,66.03,198.09
+1604,774,LED Desk Lamp,Home & Garden,2,63.7,127.4
+1605,774,4K Monitor,Electronics,1,168.14,168.14
+1606,774,Wall Clock,Home & Garden,1,59.14,59.14
+1607,774,Jump Rope,Sports,2,70.95,141.9
+1608,775,Organic Coffee Beans,Food,1,11.39,11.39
+1609,776,Jump Rope,Sports,2,36.19,72.38
+1610,776,Wireless Headphones,Electronics,1,95.18,95.18
+1611,776,Wireless Headphones,Electronics,2,190.59,381.18
+1612,777,Wireless Headphones,Electronics,2,352.91,705.82
+1613,778,Webcam HD,Electronics,2,190.37,380.74
+1614,778,4K Monitor,Electronics,1,357.57,357.57
+1615,778,Bluetooth Speaker,Electronics,1,88.18,88.18
+1616,779,Wall Clock,Home & Garden,1,55.86,55.86
+1617,780,Artisan Olive Oil,Food,1,8.35,8.35
+1618,780,LED Desk Lamp,Home & Garden,2,72.95,145.9
+1619,781,Wireless Headphones,Electronics,1,132.11,132.11
+1620,781,LED Desk Lamp,Home & Garden,1,50.17,50.17
+1621,781,Wireless Headphones,Electronics,1,198.16,198.16
+1622,781,Data Science Handbook,Books,1,18.92,18.92
+1623,782,Slim Jeans,Clothing,1,51.1,51.1
+1624,782,Sci-Fi Novel,Books,1,14.72,14.72
+1625,783,Slim Jeans,Clothing,1,25.26,25.26
+1626,784,Organic Coffee Beans,Food,1,26.81,26.81
+1627,785,Wireless Headphones,Electronics,1,374.0,374.0
+1628,785,Resistance Bands,Sports,1,92.38,92.38
+1629,786,Cycling Gloves,Sports,2,48.06,96.12
+1630,786,Sci-Fi Novel,Books,1,13.92,13.92
+1631,787,Ceramic Planter,Home & Garden,2,36.28,72.56
+1632,788,Data Science Handbook,Books,1,17.04,17.04
+1633,788,LED Desk Lamp,Home & Garden,1,72.18,72.18
+1634,789,Green Tea Box,Food,1,6.99,6.99
+1635,789,Yoga Mat,Sports,1,37.75,37.75
+1636,789,Storage Bin,Home & Garden,2,60.63,121.26
+1637,790,Raw Honey Jar,Food,1,15.51,15.51
+1638,790,Stainless Kettle,Home & Garden,1,65.3,65.3
+1639,790,Bluetooth Speaker,Electronics,3,271.69,815.07
+1640,791,Smart Watch,Electronics,1,101.17,101.17
+1641,791,Wall Clock,Home & Garden,1,92.78,92.78
+1642,792,Data Science Handbook,Books,1,24.22,24.22
+1643,792,Wool Scarf,Clothing,1,57.48,57.48
+1644,793,Granola Pack,Food,1,9.73,9.73
+1645,793,Dark Chocolate Bar,Food,2,11.51,23.02
+1646,794,Python Mastery Guide,Books,1,14.08,14.08
+1647,794,Design Thinking,Books,1,19.28,19.28
+1648,794,Storage Bin,Home & Garden,1,58.5,58.5
+1649,794,Slim Jeans,Clothing,1,51.66,51.66
+1650,794,Bluetooth Speaker,Electronics,1,260.79,260.79
+1651,795,Winter Jacket,Clothing,1,36.95,36.95
+1652,795,Throw Blanket,Home & Garden,1,93.16,93.16
+1653,796,Stainless Kettle,Home & Garden,1,51.39,51.39
+1654,797,History Atlas,Books,1,19.88,19.88
+1655,797,Stainless Kettle,Home & Garden,1,64.39,64.39
+1656,798,Jump Rope,Sports,1,71.68,71.68
+1657,798,USB-C Hub,Electronics,1,242.79,242.79
+1658,798,Winter Jacket,Clothing,1,89.05,89.05
+1659,798,Webcam HD,Electronics,3,307.06,921.18
+1660,798,Green Tea Box,Food,2,10.43,20.86
+1661,798,Wall Clock,Home & Garden,2,88.51,177.02
+1662,799,Python Mastery Guide,Books,1,17.44,17.44
+1663,799,4K Monitor,Electronics,1,180.31,180.31
+1664,800,Wool Scarf,Clothing,1,59.58,59.58
+1665,800,Ceramic Planter,Home & Garden,1,71.22,71.22
+1666,801,Wool Scarf,Clothing,3,64.5,193.5
+1667,801,Slim Jeans,Clothing,1,32.64,32.64
+1668,801,Organic Coffee Beans,Food,1,13.48,13.48
+1669,802,Fleece Hoodie,Clothing,3,56.05,168.15
+1670,803,Webcam HD,Electronics,1,179.67,179.67
+1671,804,History Atlas,Books,1,16.31,16.31
+1672,805,LED Desk Lamp,Home & Garden,5,67.03,335.15
+1673,805,History Atlas,Books,3,17.83,53.49
+1674,806,Ceramic Planter,Home & Garden,1,74.93,74.93
+1675,806,Fleece Hoodie,Clothing,1,41.26,41.26
+1676,806,Fleece Hoodie,Clothing,2,41.95,83.9
+1677,806,Wall Clock,Home & Garden,4,58.71,234.84
+1678,807,Cotton T-Shirt,Clothing,1,33.53,33.53
+1679,807,Smart Watch,Electronics,1,169.87,169.87
+1680,808,Wool Scarf,Clothing,4,50.03,200.12
+1681,808,Stainless Kettle,Home & Garden,5,66.28,331.4
+1682,809,Fleece Hoodie,Clothing,1,76.11,76.11
+1683,809,Storage Bin,Home & Garden,1,91.82,91.82
+1684,810,History Atlas,Books,1,22.96,22.96
+1685,810,Running Shoes,Clothing,3,47.59,142.77
+1686,811,Design Thinking,Books,1,13.8,13.8
+1687,812,Raw Honey Jar,Food,4,17.49,69.96
+1688,812,Yoga Mat,Sports,2,58.47,116.94
+1689,812,Raw Honey Jar,Food,2,7.32,14.64
+1690,813,History Atlas,Books,1,15.11,15.11
+1691,814,Green Tea Box,Food,3,21.73,65.19
+1692,815,Sci-Fi Novel,Books,1,15.3,15.3
+1693,815,Organic Coffee Beans,Food,1,10.52,10.52
+1694,816,Dark Chocolate Bar,Food,1,17.01,17.01
+1695,817,Jump Rope,Sports,1,45.37,45.37
+1696,817,Economics 101,Books,5,18.07,90.35
+1697,817,Wireless Headphones,Electronics,3,186.92,560.76
+1698,817,History Atlas,Books,1,24.02,24.02
+1699,817,Wool Scarf,Clothing,1,56.81,56.81
+1700,818,Fleece Hoodie,Clothing,1,34.22,34.22
+1701,818,Data Science Handbook,Books,1,19.65,19.65
+1702,819,Raw Honey Jar,Food,5,9.84,49.2
+1703,819,LED Desk Lamp,Home & Garden,1,99.07,99.07
+1704,819,Jump Rope,Sports,2,51.28,102.56
+1705,820,Fleece Hoodie,Clothing,3,38.0,114.0
+1706,821,Sci-Fi Novel,Books,1,16.25,16.25
+1707,822,Wall Clock,Home & Garden,2,72.99,145.98
+1708,823,Design Thinking,Books,1,12.73,12.73
+1709,824,Design Thinking,Books,1,30.76,30.76
+1710,824,Wool Scarf,Clothing,1,71.69,71.69
+1711,825,Granola Pack,Food,1,21.73,21.73
+1712,825,Resistance Bands,Sports,1,63.23,63.23
+1713,825,Fleece Hoodie,Clothing,4,41.01,164.04
+1714,826,Webcam HD,Electronics,1,219.2,219.2
+1715,827,4K Monitor,Electronics,1,224.41,224.41
+1716,828,Cotton T-Shirt,Clothing,2,76.57,153.14
+1717,829,Economics 101,Books,2,23.7,47.4
+1718,829,Throw Blanket,Home & Garden,1,96.41,96.41
+1719,829,Wool Scarf,Clothing,1,42.16,42.16
+1720,830,LED Desk Lamp,Home & Garden,1,85.85,85.85
+1721,830,Wool Scarf,Clothing,1,47.76,47.76
+1722,831,Throw Blanket,Home & Garden,1,22.0,22.0
+1723,832,Bluetooth Speaker,Electronics,2,248.95,497.9
+1724,832,Water Bottle Insulated,Sports,1,92.24,92.24
+1725,833,Cycling Gloves,Sports,3,78.07,234.21
+1726,834,Webcam HD,Electronics,1,524.59,524.59
+1727,834,Dumbbell Set,Sports,1,26.16,26.16
+1728,834,Fleece Hoodie,Clothing,1,95.47,95.47
+1729,835,Data Science Handbook,Books,1,16.84,16.84
+1730,836,LED Desk Lamp,Home & Garden,2,86.18,172.36
+1731,836,Cotton T-Shirt,Clothing,3,59.51,178.53
+1732,837,Cycling Gloves,Sports,3,77.4,232.2
+1733,837,Economics 101,Books,2,10.49,20.98
+1734,837,Fleece Hoodie,Clothing,2,48.11,96.22
+1735,838,Python Mastery Guide,Books,1,17.29,17.29
+1736,839,Resistance Bands,Sports,2,66.66,133.32
+1737,840,Slim Jeans,Clothing,1,54.96,54.96
+1738,841,History Atlas,Books,3,29.41,88.23
+1739,841,Yoga Mat,Sports,2,112.92,225.84
+1740,841,Sci-Fi Novel,Books,1,23.2,23.2
+1741,842,Data Science Handbook,Books,2,28.72,57.44
+1742,842,Running Shoes,Clothing,2,43.16,86.32
+1743,843,Wall Clock,Home & Garden,2,136.33,272.66
+1744,844,Storage Bin,Home & Garden,3,49.15,147.45
+1745,845,Cycling Gloves,Sports,1,70.16,70.16
+1746,846,Organic Coffee Beans,Food,1,13.98,13.98
+1747,846,Sci-Fi Novel,Books,3,18.64,55.92
+1748,846,Webcam HD,Electronics,1,291.93,291.93
+1749,847,Storage Bin,Home & Garden,3,47.48,142.44
+1750,847,Granola Pack,Food,1,12.42,12.42
+1751,848,Webcam HD,Electronics,2,186.25,372.5
+1752,848,Smart Watch,Electronics,1,160.91,160.91
+1753,848,Running Shoes,Clothing,2,78.91,157.82
+1754,848,Webcam HD,Electronics,1,418.83,418.83
+1755,848,Dark Chocolate Bar,Food,1,7.93,7.93
+1756,849,Wool Scarf,Clothing,2,18.0,36.0
+1757,850,4K Monitor,Electronics,1,293.71,293.71
+1758,850,Winter Jacket,Clothing,4,31.7,126.8
+1759,850,Wall Clock,Home & Garden,1,83.22,83.22
+1760,850,Organic Coffee Beans,Food,1,15.14,15.14
+1761,851,Ceramic Planter,Home & Garden,1,60.39,60.39
+1762,851,Sci-Fi Novel,Books,1,29.26,29.26
+1763,852,Resistance Bands,Sports,1,135.22,135.22
+1764,853,Granola Pack,Food,1,19.47,19.47
+1765,853,USB-C Hub,Electronics,2,412.9,825.8
+1766,854,Organic Coffee Beans,Food,2,14.2,28.4
+1767,854,Jump Rope,Sports,3,36.07,108.21
+1768,854,Winter Jacket,Clothing,2,69.86,139.72
+1769,855,Throw Blanket,Home & Garden,1,128.43,128.43
+1770,856,Sci-Fi Novel,Books,1,20.02,20.02
+1771,856,Stainless Kettle,Home & Garden,1,43.83,43.83
+1772,856,Organic Coffee Beans,Food,1,7.92,7.92
+1773,857,Cotton T-Shirt,Clothing,1,74.72,74.72
+1774,857,Webcam HD,Electronics,1,161.83,161.83
+1775,857,Sci-Fi Novel,Books,1,14.65,14.65
+1776,858,Running Shoes,Clothing,5,59.08,295.4
+1777,858,Winter Jacket,Clothing,1,44.38,44.38
+1778,859,Yoga Mat,Sports,1,22.28,22.28
+1779,859,History Atlas,Books,1,16.54,16.54
+1780,860,Artisan Olive Oil,Food,1,17.87,17.87
+1781,860,Ceramic Planter,Home & Garden,1,122.94,122.94
+1782,861,Smart Watch,Electronics,2,125.94,251.88
+1783,862,4K Monitor,Electronics,1,294.79,294.79
+1784,863,Cotton T-Shirt,Clothing,2,58.41,116.82
+1785,864,Fleece Hoodie,Clothing,1,51.13,51.13
+1786,864,Green Tea Box,Food,5,23.77,118.85
+1787,865,Economics 101,Books,1,22.0,22.0
+1788,866,Bluetooth Speaker,Electronics,4,223.31,893.24
+1789,866,Running Shoes,Clothing,1,69.14,69.14
+1790,866,Ceramic Planter,Home & Garden,1,61.02,61.02
+1791,867,Jump Rope,Sports,3,52.89,158.67
+1792,867,Wool Scarf,Clothing,4,117.66,470.64
+1793,867,Bluetooth Speaker,Electronics,1,313.47,313.47
+1794,868,Stainless Kettle,Home & Garden,1,91.55,91.55
+1795,868,Economics 101,Books,1,17.19,17.19
+1796,868,Ceramic Planter,Home & Garden,1,40.92,40.92
+1797,868,Bluetooth Speaker,Electronics,1,258.8,258.8
+1798,869,Design Thinking,Books,1,19.92,19.92
+1799,869,USB-C Hub,Electronics,2,222.68,445.36
+1800,869,Slim Jeans,Clothing,3,87.65,262.95
+1801,869,Dumbbell Set,Sports,1,55.54,55.54
+1802,870,History Atlas,Books,1,18.28,18.28
+1803,871,History Atlas,Books,2,10.3,20.6
+1804,872,Cotton T-Shirt,Clothing,1,55.83,55.83
+1805,872,Throw Blanket,Home & Garden,4,41.88,167.52
+1806,872,Fleece Hoodie,Clothing,1,70.63,70.63
+1807,873,Sci-Fi Novel,Books,3,16.87,50.61
+1808,874,USB-C Hub,Electronics,2,515.14,1030.28
+1809,874,Data Science Handbook,Books,2,18.19,36.38
+1810,874,Smart Watch,Electronics,2,101.03,202.06
+1811,875,Data Science Handbook,Books,2,20.04,40.08
+1812,875,Cycling Gloves,Sports,1,38.76,38.76
+1813,876,Bluetooth Speaker,Electronics,1,175.11,175.11
+1814,876,Slim Jeans,Clothing,2,73.8,147.6
+1815,876,Sci-Fi Novel,Books,2,15.84,31.68
+1816,877,Smart Watch,Electronics,1,122.17,122.17
+1817,878,Bluetooth Speaker,Electronics,1,187.87,187.87
+1818,879,Cotton T-Shirt,Clothing,3,41.37,124.11
+1819,879,Throw Blanket,Home & Garden,2,135.65,271.3
+1820,879,Winter Jacket,Clothing,1,35.64,35.64
+1821,880,Raw Honey Jar,Food,1,13.68,13.68
+1822,881,Dark Chocolate Bar,Food,3,11.0,33.0
+1823,881,Data Science Handbook,Books,1,14.24,14.24
+1824,882,Webcam HD,Electronics,4,93.2,372.8
+1825,882,Dark Chocolate Bar,Food,2,11.8,23.6
+1826,882,Bluetooth Speaker,Electronics,2,200.99,401.98
+1827,882,Yoga Mat,Sports,2,52.01,104.02
+1828,883,Wall Clock,Home & Garden,2,61.55,123.1
+1829,883,Smart Watch,Electronics,1,273.81,273.81
+1830,884,Artisan Olive Oil,Food,4,12.31,49.24
+1831,885,Dark Chocolate Bar,Food,1,8.69,8.69
+1832,885,Smart Watch,Electronics,2,258.38,516.76
+1833,885,Yoga Mat,Sports,1,43.86,43.86
+1834,885,Cycling Gloves,Sports,2,48.61,97.22
+1835,886,Throw Blanket,Home & Garden,1,102.43,102.43
+1836,886,Wall Clock,Home & Garden,1,93.47,93.47
+1837,886,USB-C Hub,Electronics,1,194.44,194.44
+1838,886,Dark Chocolate Bar,Food,2,14.92,29.84
+1839,886,4K Monitor,Electronics,1,203.79,203.79
+1840,887,Jump Rope,Sports,5,65.49,327.45
+1841,887,Python Mastery Guide,Books,2,17.62,35.24
+1842,888,Cycling Gloves,Sports,5,74.2,371.0
+1843,889,Wireless Headphones,Electronics,1,185.79,185.79
+1844,890,4K Monitor,Electronics,1,188.31,188.31
+1845,891,Stainless Kettle,Home & Garden,2,91.37,182.74
+1846,892,Running Shoes,Clothing,2,39.45,78.9
+1847,892,Water Bottle Insulated,Sports,2,48.14,96.28
+1848,892,Webcam HD,Electronics,2,139.04,278.08
+1849,893,Storage Bin,Home & Garden,2,132.2,264.4
+1850,894,Resistance Bands,Sports,3,33.15,99.45
+1851,894,Smart Watch,Electronics,2,152.78,305.56
+1852,895,Running Shoes,Clothing,1,54.34,54.34
+1853,896,Smart Watch,Electronics,2,287.88,575.76
+1854,896,4K Monitor,Electronics,2,195.72,391.44
+1855,896,Dumbbell Set,Sports,5,65.66,328.3
+1856,897,Throw Blanket,Home & Garden,2,53.63,107.26
+1857,897,USB-C Hub,Electronics,3,127.48,382.44
+1858,897,Wireless Headphones,Electronics,2,556.75,1113.5
+1859,898,Fleece Hoodie,Clothing,2,31.56,63.12
+1860,898,History Atlas,Books,2,18.82,37.64
+1861,899,Fleece Hoodie,Clothing,3,55.08,165.24
+1862,899,Wall Clock,Home & Garden,1,101.18,101.18
+1863,899,Wall Clock,Home & Garden,1,138.28,138.28
+1864,899,Cotton T-Shirt,Clothing,1,49.58,49.58
+1865,900,Storage Bin,Home & Garden,1,67.1,67.1
+1866,900,Throw Blanket,Home & Garden,1,125.51,125.51
+1867,901,Wireless Headphones,Electronics,1,326.96,326.96
+1868,902,Water Bottle Insulated,Sports,1,42.54,42.54
+1869,902,History Atlas,Books,2,25.75,51.5
+1870,903,Cotton T-Shirt,Clothing,4,24.14,96.56
+1871,903,Ceramic Planter,Home & Garden,3,79.83,239.49
+1872,903,USB-C Hub,Electronics,2,177.73,355.46
+1873,904,Data Science Handbook,Books,3,13.77,41.31
+1874,904,LED Desk Lamp,Home & Garden,5,65.02,325.1
+1875,904,Ceramic Planter,Home & Garden,1,60.34,60.34
+1876,905,Cotton T-Shirt,Clothing,1,70.3,70.3
+1877,906,LED Desk Lamp,Home & Garden,1,88.95,88.95
+1878,907,Wall Clock,Home & Garden,2,65.73,131.46
+1879,908,Granola Pack,Food,2,22.96,45.92
+1880,909,Data Science Handbook,Books,1,31.42,31.42
+1881,910,Stainless Kettle,Home & Garden,1,67.87,67.87
+1882,910,Design Thinking,Books,2,19.51,39.02
+1883,910,Design Thinking,Books,1,14.72,14.72
+1884,910,Storage Bin,Home & Garden,1,64.37,64.37
+1885,911,Resistance Bands,Sports,1,37.6,37.6
+1886,911,Resistance Bands,Sports,3,38.95,116.85
+1887,912,Running Shoes,Clothing,4,56.67,226.68
+1888,913,Granola Pack,Food,1,14.99,14.99
+1889,914,Ceramic Planter,Home & Garden,1,119.13,119.13
+1890,915,Bluetooth Speaker,Electronics,1,140.81,140.81
+1891,915,Winter Jacket,Clothing,2,45.37,90.74
+1892,915,Slim Jeans,Clothing,3,62.74,188.22
+1893,916,Slim Jeans,Clothing,1,38.93,38.93
+1894,916,Wall Clock,Home & Garden,1,54.76,54.76
+1895,916,Wireless Headphones,Electronics,3,208.97,626.91
+1896,917,Stainless Kettle,Home & Garden,2,72.21,144.42
+1897,917,Green Tea Box,Food,2,7.42,14.84
+1898,918,Green Tea Box,Food,2,18.23,36.46
+1899,919,Slim Jeans,Clothing,2,80.96,161.92
+1900,919,Ceramic Planter,Home & Garden,1,56.91,56.91
+1901,920,Water Bottle Insulated,Sports,3,52.8,158.4
+1902,921,Slim Jeans,Clothing,2,37.85,75.7
+1903,922,Winter Jacket,Clothing,2,50.21,100.42
+1904,922,Yoga Mat,Sports,1,57.98,57.98
+1905,923,4K Monitor,Electronics,3,258.65,775.95
+1906,923,Stainless Kettle,Home & Garden,3,91.14,273.42
+1907,923,Artisan Olive Oil,Food,2,18.24,36.48
+1908,924,4K Monitor,Electronics,1,321.62,321.62
+1909,924,Slim Jeans,Clothing,1,40.82,40.82
+1910,925,Running Shoes,Clothing,1,55.24,55.24
+1911,926,History Atlas,Books,1,14.28,14.28
+1912,926,Throw Blanket,Home & Garden,2,50.94,101.88
+1913,927,Storage Bin,Home & Garden,2,109.73,219.46
+1914,928,Smart Watch,Electronics,1,181.43,181.43
+1915,929,LED Desk Lamp,Home & Garden,1,55.13,55.13
+1916,930,LED Desk Lamp,Home & Garden,1,45.71,45.71
+1917,930,Cycling Gloves,Sports,1,51.6,51.6
+1918,930,4K Monitor,Electronics,2,180.15,360.3
+1919,931,Green Tea Box,Food,1,15.93,15.93
+1920,932,Winter Jacket,Clothing,5,75.65,378.25
+1921,932,4K Monitor,Electronics,1,525.39,525.39
+1922,932,Webcam HD,Electronics,1,162.96,162.96
+1923,933,Slim Jeans,Clothing,1,65.21,65.21
+1924,933,Python Mastery Guide,Books,2,29.59,59.18
+1925,933,Wool Scarf,Clothing,1,52.95,52.95
+1926,934,Running Shoes,Clothing,1,95.09,95.09
+1927,934,Python Mastery Guide,Books,2,13.31,26.62
+1928,935,Data Science Handbook,Books,1,24.41,24.41
+1929,935,Wireless Headphones,Electronics,1,329.71,329.71
+1930,936,Winter Jacket,Clothing,1,31.73,31.73
+1931,936,Green Tea Box,Food,3,10.19,30.57
+1932,937,Wireless Headphones,Electronics,2,296.37,592.74
+1933,937,LED Desk Lamp,Home & Garden,2,52.16,104.32
+1934,938,Wool Scarf,Clothing,1,92.59,92.59
+1935,938,Organic Coffee Beans,Food,2,8.1,16.2
+1936,938,Fleece Hoodie,Clothing,1,87.42,87.42
+1937,939,USB-C Hub,Electronics,3,298.79,896.37
+1938,940,Smart Watch,Electronics,1,164.33,164.33
+1939,941,History Atlas,Books,1,16.95,16.95
+1940,941,Resistance Bands,Sports,2,39.23,78.46
+1941,942,Raw Honey Jar,Food,2,8.88,17.76
+1942,942,Ceramic Planter,Home & Garden,3,57.52,172.56
+1943,943,Data Science Handbook,Books,2,23.24,46.48
+1944,944,Granola Pack,Food,1,7.57,7.57
+1945,944,Artisan Olive Oil,Food,1,13.87,13.87
+1946,944,Wool Scarf,Clothing,2,35.23,70.46
+1947,945,Dark Chocolate Bar,Food,1,13.45,13.45
+1948,946,Stainless Kettle,Home & Garden,1,84.37,84.37
+1949,946,Cycling Gloves,Sports,1,59.48,59.48
+1950,946,Fleece Hoodie,Clothing,2,46.48,92.96
+1951,947,Raw Honey Jar,Food,3,11.27,33.81
+1952,947,Fleece Hoodie,Clothing,3,57.81,173.43
+1953,948,History Atlas,Books,2,18.41,36.82
+1954,948,Throw Blanket,Home & Garden,2,119.4,238.8
+1955,948,Granola Pack,Food,1,9.25,9.25
+1956,949,4K Monitor,Electronics,3,263.19,789.57
+1957,949,Wool Scarf,Clothing,1,34.04,34.04
+1958,949,USB-C Hub,Electronics,1,274.62,274.62
+1959,950,USB-C Hub,Electronics,2,373.98,747.96
+1960,950,Green Tea Box,Food,3,11.44,34.32
+1961,950,Ceramic Planter,Home & Garden,3,53.61,160.83
+1962,950,Granola Pack,Food,3,16.67,50.01
+1963,951,Resistance Bands,Sports,1,54.21,54.21
+1964,952,Artisan Olive Oil,Food,2,12.97,25.94
+1965,952,Running Shoes,Clothing,3,40.63,121.89
+1966,953,Ceramic Planter,Home & Garden,2,36.6,73.2
+1967,953,Design Thinking,Books,1,9.83,9.83
+1968,954,Running Shoes,Clothing,2,66.84,133.68
+1969,954,Granola Pack,Food,2,10.75,21.5
+1970,955,Cotton T-Shirt,Clothing,2,82.83,165.66
+1971,955,Artisan Olive Oil,Food,4,20.0,80.0
+1972,956,Artisan Olive Oil,Food,1,11.89,11.89
+1973,956,Fleece Hoodie,Clothing,1,33.81,33.81
+1974,957,Throw Blanket,Home & Garden,1,91.89,91.89
+1975,957,Raw Honey Jar,Food,1,7.09,7.09
+1976,958,Smart Watch,Electronics,1,175.49,175.49
+1977,958,Resistance Bands,Sports,1,56.86,56.86
+1978,958,Stainless Kettle,Home & Garden,1,117.52,117.52
+1979,958,Storage Bin,Home & Garden,3,84.54,253.62
+1980,959,Running Shoes,Clothing,2,37.63,75.26
+1981,960,Storage Bin,Home & Garden,1,48.04,48.04
+1982,960,Running Shoes,Clothing,2,43.01,86.02
+1983,960,Storage Bin,Home & Garden,1,90.6,90.6
+1984,961,Webcam HD,Electronics,4,163.69,654.76
+1985,962,Cycling Gloves,Sports,5,41.79,208.95
+1986,963,Ceramic Planter,Home & Garden,2,89.07,178.14
+1987,964,LED Desk Lamp,Home & Garden,1,28.67,28.67
+1988,965,Wireless Headphones,Electronics,1,267.73,267.73
+1989,965,Smart Watch,Electronics,1,184.92,184.92
+1990,966,Raw Honey Jar,Food,1,12.89,12.89
+1991,967,Wireless Headphones,Electronics,1,340.63,340.63
+1992,968,Artisan Olive Oil,Food,2,17.77,35.54
+1993,968,Stainless Kettle,Home & Garden,2,43.52,87.04
+1994,968,Wireless Headphones,Electronics,1,159.52,159.52
+1995,969,Running Shoes,Clothing,2,31.56,63.12
+1996,970,Bluetooth Speaker,Electronics,2,130.57,261.14
+1997,971,Storage Bin,Home & Garden,1,62.51,62.51
+1998,972,Raw Honey Jar,Food,1,12.18,12.18
+1999,972,Data Science Handbook,Books,2,17.03,34.06
+2000,973,Slim Jeans,Clothing,1,43.59,43.59
+2001,974,Storage Bin,Home & Garden,2,97.68,195.36
+2002,975,LED Desk Lamp,Home & Garden,1,110.08,110.08
+2003,975,History Atlas,Books,2,17.34,34.68
+2004,976,Cotton T-Shirt,Clothing,1,40.63,40.63
+2005,976,Cycling Gloves,Sports,2,44.2,88.4
+2006,976,Winter Jacket,Clothing,2,66.03,132.06
+2007,976,4K Monitor,Electronics,3,167.39,502.17
+2008,977,Wool Scarf,Clothing,2,35.64,71.28
+2009,977,Design Thinking,Books,3,30.82,92.46
+2010,977,Wireless Headphones,Electronics,1,96.94,96.94
+2011,978,USB-C Hub,Electronics,1,261.65,261.65
+2012,979,Slim Jeans,Clothing,1,45.55,45.55
+2013,979,Fleece Hoodie,Clothing,1,34.22,34.22
+2014,980,Python Mastery Guide,Books,1,13.63,13.63
+2015,981,Dark Chocolate Bar,Food,2,20.59,41.18
+2016,981,Dumbbell Set,Sports,2,76.2,152.4
+2017,982,Green Tea Box,Food,1,13.46,13.46
+2018,982,Smart Watch,Electronics,2,251.67,503.34
+2019,982,History Atlas,Books,2,17.13,34.26
+2020,982,Yoga Mat,Sports,1,108.25,108.25
+2021,983,Wireless Headphones,Electronics,1,297.44,297.44
+2022,984,Wool Scarf,Clothing,1,37.13,37.13
+2023,984,Cotton T-Shirt,Clothing,2,45.65,91.3
+2024,984,Wall Clock,Home & Garden,3,25.88,77.64
+2025,985,Winter Jacket,Clothing,2,58.56,117.12
+2026,985,Running Shoes,Clothing,1,35.68,35.68
+2027,985,Stainless Kettle,Home & Garden,1,97.09,97.09
+2028,986,Slim Jeans,Clothing,1,65.57,65.57
+2029,987,Green Tea Box,Food,1,10.25,10.25
+2030,988,USB-C Hub,Electronics,2,150.84,301.68
+2031,989,Ceramic Planter,Home & Garden,5,61.56,307.8
+2032,989,Smart Watch,Electronics,1,105.45,105.45
+2033,989,Cotton T-Shirt,Clothing,1,43.63,43.63
+2034,989,4K Monitor,Electronics,1,258.19,258.19
+2035,990,USB-C Hub,Electronics,1,367.3,367.3
+2036,990,Sci-Fi Novel,Books,1,25.61,25.61
+2037,990,Wall Clock,Home & Garden,3,111.95,335.85
+2038,991,Raw Honey Jar,Food,1,10.29,10.29
+2039,991,Cotton T-Shirt,Clothing,1,34.94,34.94
+2040,991,Wool Scarf,Clothing,2,69.16,138.32
+2041,991,Resistance Bands,Sports,1,104.41,104.41
+2042,992,Cotton T-Shirt,Clothing,3,58.35,175.05
+2043,993,Ceramic Planter,Home & Garden,1,142.83,142.83
+2044,994,LED Desk Lamp,Home & Garden,1,110.51,110.51
+2045,995,Smart Watch,Electronics,3,211.12,633.36
+2046,995,Jump Rope,Sports,1,68.73,68.73
+2047,996,Bluetooth Speaker,Electronics,1,242.76,242.76
+2048,997,USB-C Hub,Electronics,1,167.72,167.72
+2049,998,Python Mastery Guide,Books,2,26.14,52.28
+2050,998,USB-C Hub,Electronics,1,119.54,119.54
+2051,998,Cotton T-Shirt,Clothing,2,72.46,144.92
+2052,998,Ceramic Planter,Home & Garden,1,78.54,78.54
+2053,999,Green Tea Box,Food,1,12.92,12.92
+2054,1000,Design Thinking,Books,4,21.53,86.12
+2055,1000,Wireless Headphones,Electronics,1,231.24,231.24
+2056,1000,Water Bottle Insulated,Sports,2,71.82,143.64
+2057,1001,Sci-Fi Novel,Books,3,28.09,84.27
+2058,1001,LED Desk Lamp,Home & Garden,1,110.28,110.28
+2059,1001,Slim Jeans,Clothing,2,49.06,98.12
+2060,1001,Smart Watch,Electronics,4,170.13,680.52
+2061,1002,Wool Scarf,Clothing,2,67.82,135.64
+2062,1003,4K Monitor,Electronics,2,156.98,313.96
+2063,1003,Dark Chocolate Bar,Food,1,9.87,9.87
+2064,1003,Wireless Headphones,Electronics,1,172.55,172.55
+2065,1004,Stainless Kettle,Home & Garden,1,92.0,92.0
+2066,1004,Bluetooth Speaker,Electronics,1,453.57,453.57
+2067,1004,Wireless Headphones,Electronics,1,325.74,325.74
+2068,1004,Artisan Olive Oil,Food,1,5.69,5.69
+2069,1005,Green Tea Box,Food,1,12.82,12.82
+2070,1006,Winter Jacket,Clothing,2,29.5,59.0
+2071,1006,Fleece Hoodie,Clothing,1,80.58,80.58
+2072,1007,Fleece Hoodie,Clothing,5,42.15,210.75
+2073,1007,Green Tea Box,Food,2,16.77,33.54
+2074,1007,Wool Scarf,Clothing,1,80.24,80.24
+2075,1007,Jump Rope,Sports,1,51.66,51.66
+2076,1008,Stainless Kettle,Home & Garden,1,74.05,74.05
+2077,1008,Bluetooth Speaker,Electronics,1,217.59,217.59
+2078,1009,Economics 101,Books,1,19.9,19.9
+2079,1009,Stainless Kettle,Home & Garden,4,93.89,375.56
+2080,1010,Dumbbell Set,Sports,2,46.89,93.78
+2081,1011,Wireless Headphones,Electronics,4,401.92,1607.68
+2082,1011,Storage Bin,Home & Garden,1,59.46,59.46
+2083,1012,4K Monitor,Electronics,1,106.92,106.92
+2084,1012,Economics 101,Books,2,17.97,35.94
+2085,1012,Wall Clock,Home & Garden,2,67.33,134.66
+2086,1013,Running Shoes,Clothing,1,74.98,74.98
+2087,1013,4K Monitor,Electronics,2,166.38,332.76
+2088,1013,Wall Clock,Home & Garden,3,127.11,381.33
+2089,1014,Fleece Hoodie,Clothing,1,85.45,85.45
+2090,1014,Cotton T-Shirt,Clothing,2,50.69,101.38
+2091,1015,Dumbbell Set,Sports,2,88.21,176.42
+2092,1016,Wireless Headphones,Electronics,2,170.2,340.4
+2093,1017,Storage Bin,Home & Garden,1,75.7,75.7
+2094,1017,Organic Coffee Beans,Food,1,12.06,12.06
+2095,1017,LED Desk Lamp,Home & Garden,2,63.47,126.94
+2096,1018,Fleece Hoodie,Clothing,2,56.03,112.06
+2097,1019,USB-C Hub,Electronics,1,150.06,150.06
+2098,1020,USB-C Hub,Electronics,1,115.11,115.11
+2099,1020,Storage Bin,Home & Garden,1,78.32,78.32
+2100,1021,Ceramic Planter,Home & Garden,2,46.48,92.96
+2101,1022,Webcam HD,Electronics,3,292.99,878.97
+2102,1023,Data Science Handbook,Books,1,22.72,22.72
+2103,1024,Throw Blanket,Home & Garden,1,80.68,80.68
+2104,1024,Throw Blanket,Home & Garden,1,77.16,77.16
+2105,1025,Dumbbell Set,Sports,1,41.9,41.9
+2106,1025,Winter Jacket,Clothing,1,40.53,40.53
+2107,1025,Fleece Hoodie,Clothing,3,46.79,140.37
+2108,1026,Organic Coffee Beans,Food,2,10.74,21.48
+2109,1026,LED Desk Lamp,Home & Garden,3,46.32,138.96
+2110,1027,Throw Blanket,Home & Garden,1,86.84,86.84
+2111,1028,Data Science Handbook,Books,2,16.74,33.48
+2112,1028,History Atlas,Books,1,16.67,16.67
+2113,1029,Dumbbell Set,Sports,1,51.05,51.05
+2114,1029,Smart Watch,Electronics,2,243.27,486.54
+2115,1030,Bluetooth Speaker,Electronics,1,81.73,81.73
+2116,1031,Design Thinking,Books,1,20.47,20.47
+2117,1031,Dark Chocolate Bar,Food,1,9.13,9.13
+2118,1031,Cotton T-Shirt,Clothing,1,38.94,38.94
+2119,1032,USB-C Hub,Electronics,2,235.06,470.12
+2120,1033,Water Bottle Insulated,Sports,1,33.56,33.56
+2121,1033,4K Monitor,Electronics,4,188.09,752.36
+2122,1033,Granola Pack,Food,2,18.3,36.6
+2123,1034,Cycling Gloves,Sports,1,83.76,83.76
+2124,1034,Slim Jeans,Clothing,1,30.39,30.39
+2125,1035,Cotton T-Shirt,Clothing,3,20.98,62.94
+2126,1035,Python Mastery Guide,Books,3,16.53,49.59
+2127,1036,Sci-Fi Novel,Books,1,14.55,14.55
+2128,1036,History Atlas,Books,4,34.8,139.2
+2129,1036,Slim Jeans,Clothing,1,40.7,40.7
+2130,1037,Artisan Olive Oil,Food,1,10.32,10.32
+2131,1037,Wireless Headphones,Electronics,1,197.64,197.64
+2132,1037,Sci-Fi Novel,Books,2,14.96,29.92
+2133,1038,Ceramic Planter,Home & Garden,1,66.91,66.91
+2134,1039,Throw Blanket,Home & Garden,1,99.41,99.41
+2135,1039,Running Shoes,Clothing,1,60.72,60.72
+2136,1039,Slim Jeans,Clothing,1,70.72,70.72
+2137,1040,Storage Bin,Home & Garden,1,72.05,72.05
+2138,1041,Stainless Kettle,Home & Garden,2,127.73,255.46
+2139,1041,Webcam HD,Electronics,1,350.22,350.22
+2140,1041,Raw Honey Jar,Food,1,21.91,21.91
+2141,1042,Running Shoes,Clothing,2,24.63,49.26
+2142,1042,Wireless Headphones,Electronics,1,238.99,238.99
+2143,1043,Winter Jacket,Clothing,2,33.2,66.4
+2144,1043,Green Tea Box,Food,4,10.25,41.0
+2145,1043,Winter Jacket,Clothing,1,34.92,34.92
+2146,1043,USB-C Hub,Electronics,3,427.62,1282.86
+2147,1043,LED Desk Lamp,Home & Garden,5,162.27,811.35
+2148,1043,Green Tea Box,Food,3,13.66,40.98
+2149,1044,Webcam HD,Electronics,2,122.82,245.64
+2150,1045,Bluetooth Speaker,Electronics,2,453.0,906.0
+2151,1045,Winter Jacket,Clothing,2,46.5,93.0
+2152,1045,Cotton T-Shirt,Clothing,1,66.78,66.78
+2153,1045,Fleece Hoodie,Clothing,1,48.44,48.44
+2154,1045,Economics 101,Books,1,13.78,13.78
+2155,1046,Jump Rope,Sports,1,98.53,98.53
+2156,1047,Artisan Olive Oil,Food,4,15.85,63.4
+2157,1048,Ceramic Planter,Home & Garden,1,57.43,57.43
+2158,1048,Fleece Hoodie,Clothing,1,57.58,57.58
+2159,1049,Resistance Bands,Sports,1,35.25,35.25
+2160,1049,Fleece Hoodie,Clothing,4,56.84,227.36
+2161,1049,Python Mastery Guide,Books,2,13.37,26.74
+2162,1049,Cotton T-Shirt,Clothing,3,56.51,169.53
+2163,1049,Jump Rope,Sports,1,108.33,108.33
+2164,1049,Bluetooth Speaker,Electronics,1,308.63,308.63
+2165,1050,Resistance Bands,Sports,2,45.28,90.56
+2166,1051,Organic Coffee Beans,Food,5,11.18,55.9
+2167,1051,Dark Chocolate Bar,Food,1,11.05,11.05
+2168,1052,Python Mastery Guide,Books,2,20.22,40.44
+2169,1052,USB-C Hub,Electronics,1,383.04,383.04
+2170,1052,Wall Clock,Home & Garden,1,66.39,66.39
+2171,1053,Organic Coffee Beans,Food,1,8.03,8.03
+2172,1053,LED Desk Lamp,Home & Garden,1,52.61,52.61
+2173,1053,Organic Coffee Beans,Food,3,12.22,36.66
+2174,1054,Webcam HD,Electronics,1,349.47,349.47
+2175,1054,Resistance Bands,Sports,1,51.21,51.21
+2176,1055,Bluetooth Speaker,Electronics,2,94.64,189.28
+2177,1055,Wireless Headphones,Electronics,1,145.09,145.09
+2178,1055,Webcam HD,Electronics,2,157.49,314.98
+2179,1055,Organic Coffee Beans,Food,2,11.77,23.54
+2180,1056,Throw Blanket,Home & Garden,1,38.63,38.63
+2181,1057,Running Shoes,Clothing,3,61.87,185.61
+2182,1057,Python Mastery Guide,Books,1,20.91,20.91
+2183,1057,Python Mastery Guide,Books,2,14.06,28.12
+2184,1057,Smart Watch,Electronics,1,245.8,245.8
+2185,1058,Data Science Handbook,Books,1,15.54,15.54
+2186,1059,Running Shoes,Clothing,3,65.71,197.13
+2187,1060,Fleece Hoodie,Clothing,2,95.17,190.34
+2188,1060,Ceramic Planter,Home & Garden,5,142.85,714.25
+2189,1061,Throw Blanket,Home & Garden,1,55.57,55.57
+2190,1061,Slim Jeans,Clothing,2,35.47,70.94
+2191,1061,Fleece Hoodie,Clothing,2,29.81,59.62
+2192,1062,Bluetooth Speaker,Electronics,5,210.78,1053.9
+2193,1062,Smart Watch,Electronics,1,208.83,208.83
+2194,1062,USB-C Hub,Electronics,2,171.84,343.68
+2195,1063,Wall Clock,Home & Garden,4,59.25,237.0
+2196,1064,LED Desk Lamp,Home & Garden,1,48.51,48.51
+2197,1064,Slim Jeans,Clothing,1,42.45,42.45
+2198,1065,USB-C Hub,Electronics,1,559.35,559.35
+2199,1066,Green Tea Box,Food,1,16.59,16.59
+2200,1066,Slim Jeans,Clothing,1,35.16,35.16
+2201,1066,Wireless Headphones,Electronics,1,226.79,226.79
+2202,1066,Economics 101,Books,2,26.24,52.48
+2203,1067,Data Science Handbook,Books,2,11.98,23.96
+2204,1068,Granola Pack,Food,5,12.25,61.25
+2205,1068,Ceramic Planter,Home & Garden,3,43.42,130.26
+2206,1068,Wool Scarf,Clothing,1,103.02,103.02
+2207,1068,Smart Watch,Electronics,1,135.51,135.51
+2208,1068,Dumbbell Set,Sports,1,75.09,75.09
+2209,1068,Slim Jeans,Clothing,2,44.59,89.18
+2210,1069,Resistance Bands,Sports,2,74.87,149.74
+2211,1070,Cycling Gloves,Sports,1,71.87,71.87
+2212,1070,Raw Honey Jar,Food,2,13.62,27.24
+2213,1071,Throw Blanket,Home & Garden,2,122.34,244.68
+2214,1071,Slim Jeans,Clothing,4,57.15,228.6
+2215,1072,Fleece Hoodie,Clothing,1,44.6,44.6
+2216,1072,Cotton T-Shirt,Clothing,1,37.45,37.45
+2217,1072,Ceramic Planter,Home & Garden,1,30.98,30.98
+2218,1073,Wireless Headphones,Electronics,2,163.33,326.66
+2219,1074,History Atlas,Books,1,18.59,18.59
+2220,1074,Economics 101,Books,1,18.17,18.17
+2221,1074,Yoga Mat,Sports,1,43.19,43.19
+2222,1075,Slim Jeans,Clothing,1,45.78,45.78
+2223,1076,Economics 101,Books,1,28.72,28.72
+2224,1076,Stainless Kettle,Home & Garden,1,88.51,88.51
+2225,1076,Economics 101,Books,3,22.91,68.73
+2226,1076,Wall Clock,Home & Garden,2,51.04,102.08
+2227,1076,USB-C Hub,Electronics,1,105.3,105.3
+2228,1077,Green Tea Box,Food,1,14.39,14.39
+2229,1077,Webcam HD,Electronics,2,328.55,657.1
+2230,1077,Dark Chocolate Bar,Food,1,11.52,11.52
+2231,1077,Fleece Hoodie,Clothing,3,44.68,134.04
+2232,1078,Cotton T-Shirt,Clothing,2,75.5,151.0
+2233,1079,Smart Watch,Electronics,1,321.09,321.09
+2234,1080,Jump Rope,Sports,2,35.26,70.52
+2235,1081,Bluetooth Speaker,Electronics,1,280.94,280.94
+2236,1082,Slim Jeans,Clothing,1,64.15,64.15
+2237,1083,Cotton T-Shirt,Clothing,3,27.66,82.98
+2238,1083,Webcam HD,Electronics,1,71.06,71.06
+2239,1083,Bluetooth Speaker,Electronics,1,60.0,60.0
+2240,1084,Cotton T-Shirt,Clothing,4,56.58,226.32
+2241,1084,Bluetooth Speaker,Electronics,1,364.71,364.71
+2242,1084,Sci-Fi Novel,Books,2,23.31,46.62
+2243,1085,Cycling Gloves,Sports,2,37.31,74.62
+2244,1086,Webcam HD,Electronics,1,352.33,352.33
+2245,1087,Water Bottle Insulated,Sports,1,44.2,44.2
+2246,1087,Dumbbell Set,Sports,2,93.64,187.28
+2247,1087,LED Desk Lamp,Home & Garden,1,36.37,36.37
+2248,1088,Running Shoes,Clothing,1,57.22,57.22
+2249,1089,LED Desk Lamp,Home & Garden,4,44.38,177.52
+2250,1089,Storage Bin,Home & Garden,1,35.68,35.68
+2251,1089,Storage Bin,Home & Garden,1,122.46,122.46
+2252,1090,Data Science Handbook,Books,1,18.48,18.48
+2253,1090,Throw Blanket,Home & Garden,1,80.39,80.39
+2254,1091,Slim Jeans,Clothing,1,66.33,66.33
+2255,1091,Artisan Olive Oil,Food,3,11.36,34.08
+2256,1091,Dark Chocolate Bar,Food,1,15.35,15.35
+2257,1092,4K Monitor,Electronics,1,61.04,61.04
+2258,1092,Jump Rope,Sports,1,56.5,56.5
+2259,1092,Organic Coffee Beans,Food,1,15.41,15.41
+2260,1092,Ceramic Planter,Home & Garden,1,70.13,70.13
+2261,1092,Granola Pack,Food,2,18.48,36.96
+2262,1093,Smart Watch,Electronics,1,467.02,467.02
+2263,1094,Green Tea Box,Food,1,12.63,12.63
+2264,1095,USB-C Hub,Electronics,4,201.42,805.68
+2265,1095,History Atlas,Books,2,28.15,56.3
+2266,1095,Dumbbell Set,Sports,5,58.63,293.15
+2267,1095,Data Science Handbook,Books,1,19.07,19.07
+2268,1096,Data Science Handbook,Books,1,12.33,12.33
+2269,1096,Green Tea Box,Food,1,22.01,22.01
+2270,1096,Data Science Handbook,Books,1,17.34,17.34
+2271,1096,4K Monitor,Electronics,1,284.25,284.25
+2272,1097,Economics 101,Books,1,21.35,21.35
+2273,1098,Dumbbell Set,Sports,1,80.01,80.01
+2274,1099,Slim Jeans,Clothing,1,49.39,49.39
+2275,1099,Python Mastery Guide,Books,1,21.75,21.75
+2276,1100,Economics 101,Books,2,21.46,42.92
+2277,1100,Water Bottle Insulated,Sports,5,52.09,260.45
+2278,1100,Cotton T-Shirt,Clothing,1,55.54,55.54
+2279,1100,Data Science Handbook,Books,2,18.01,36.02
+2280,1101,LED Desk Lamp,Home & Garden,2,68.71,137.42
+2281,1101,Wireless Headphones,Electronics,2,182.26,364.52
+2282,1102,Data Science Handbook,Books,1,25.23,25.23
+2283,1102,Organic Coffee Beans,Food,1,11.49,11.49
+2284,1102,Economics 101,Books,1,17.79,17.79
+2285,1103,Smart Watch,Electronics,3,133.61,400.83
+2286,1103,Fleece Hoodie,Clothing,1,61.16,61.16
+2287,1104,Artisan Olive Oil,Food,1,12.55,12.55
+2288,1105,Throw Blanket,Home & Garden,4,149.27,597.08
+2289,1106,Dark Chocolate Bar,Food,1,13.24,13.24
+2290,1107,Stainless Kettle,Home & Garden,1,60.49,60.49
+2291,1107,Slim Jeans,Clothing,3,56.06,168.18
+2292,1108,Artisan Olive Oil,Food,1,14.02,14.02
+2293,1108,Wireless Headphones,Electronics,5,104.39,521.95
+2294,1109,4K Monitor,Electronics,1,153.03,153.03
+2295,1109,Bluetooth Speaker,Electronics,2,425.95,851.9
+2296,1109,Green Tea Box,Food,3,6.8,20.4
+2297,1110,Smart Watch,Electronics,1,95.54,95.54
+2298,1110,LED Desk Lamp,Home & Garden,1,86.74,86.74
+2299,1110,Wool Scarf,Clothing,1,28.49,28.49
+2300,1110,Winter Jacket,Clothing,1,56.71,56.71
+2301,1110,Python Mastery Guide,Books,1,18.43,18.43
+2302,1111,Water Bottle Insulated,Sports,1,44.93,44.93
+2303,1111,LED Desk Lamp,Home & Garden,1,75.86,75.86
+2304,1112,Design Thinking,Books,2,15.89,31.78
+2305,1112,Economics 101,Books,1,30.12,30.12
+2306,1112,Wireless Headphones,Electronics,2,147.46,294.92
+2307,1112,Raw Honey Jar,Food,1,7.43,7.43
+2308,1112,Wall Clock,Home & Garden,3,98.71,296.13
+2309,1113,Winter Jacket,Clothing,1,66.24,66.24
+2310,1114,History Atlas,Books,1,27.2,27.2
+2311,1115,Slim Jeans,Clothing,2,32.48,64.96
+2312,1116,USB-C Hub,Electronics,2,325.71,651.42
+2313,1116,Dark Chocolate Bar,Food,1,12.48,12.48
+2314,1117,Webcam HD,Electronics,1,154.74,154.74
+2315,1117,Data Science Handbook,Books,5,25.33,126.65
+2316,1117,Winter Jacket,Clothing,1,42.22,42.22
+2317,1117,Smart Watch,Electronics,1,210.88,210.88
+2318,1118,Wall Clock,Home & Garden,2,102.24,204.48
+2319,1118,Organic Coffee Beans,Food,1,17.68,17.68
+2320,1118,Resistance Bands,Sports,4,28.35,113.4
+2321,1119,Stainless Kettle,Home & Garden,1,63.09,63.09
+2322,1119,Stainless Kettle,Home & Garden,2,98.04,196.08
+2323,1119,Slim Jeans,Clothing,2,35.65,71.3
+2324,1119,Winter Jacket,Clothing,3,58.8,176.4
+2325,1119,Smart Watch,Electronics,1,319.75,319.75
+2326,1120,USB-C Hub,Electronics,1,82.91,82.91
+2327,1121,Webcam HD,Electronics,2,109.93,219.86
+2328,1122,LED Desk Lamp,Home & Garden,1,28.07,28.07
+2329,1122,Economics 101,Books,1,24.81,24.81
+2330,1123,Wall Clock,Home & Garden,1,61.61,61.61
+2331,1124,Wireless Headphones,Electronics,1,251.5,251.5
+2332,1125,Organic Coffee Beans,Food,1,11.25,11.25
+2333,1125,Running Shoes,Clothing,1,95.97,95.97
+2334,1125,Jump Rope,Sports,1,35.41,35.41
+2335,1126,Yoga Mat,Sports,1,39.51,39.51
+2336,1126,4K Monitor,Electronics,1,463.04,463.04
+2337,1126,LED Desk Lamp,Home & Garden,4,42.66,170.64
+2338,1126,USB-C Hub,Electronics,1,267.13,267.13
+2339,1127,Smart Watch,Electronics,1,278.92,278.92
+2340,1128,Resistance Bands,Sports,2,47.04,94.08
+2341,1128,Wall Clock,Home & Garden,1,80.48,80.48
+2342,1129,History Atlas,Books,1,20.65,20.65
+2343,1129,Slim Jeans,Clothing,1,27.01,27.01
+2344,1129,Wireless Headphones,Electronics,2,424.76,849.52
+2345,1130,Green Tea Box,Food,1,9.45,9.45
+2346,1131,Granola Pack,Food,1,12.65,12.65
+2347,1131,Sci-Fi Novel,Books,1,18.57,18.57
+2348,1131,Slim Jeans,Clothing,1,70.62,70.62
+2349,1131,Green Tea Box,Food,1,17.89,17.89
+2350,1131,USB-C Hub,Electronics,1,221.74,221.74
+2351,1131,Smart Watch,Electronics,1,186.92,186.92
+2352,1132,Wool Scarf,Clothing,1,85.74,85.74
+2353,1132,History Atlas,Books,3,17.84,53.52
+2354,1132,Green Tea Box,Food,2,10.62,21.24
+2355,1133,Ceramic Planter,Home & Garden,2,75.68,151.36
+2356,1133,Design Thinking,Books,1,15.29,15.29
+2357,1134,USB-C Hub,Electronics,1,195.48,195.48
+2358,1135,Ceramic Planter,Home & Garden,1,113.39,113.39
+2359,1136,Smart Watch,Electronics,1,134.28,134.28
+2360,1136,Stainless Kettle,Home & Garden,2,64.05,128.1
+2361,1136,Running Shoes,Clothing,1,109.35,109.35
+2362,1137,Winter Jacket,Clothing,2,70.11,140.22
+2363,1137,Wall Clock,Home & Garden,2,91.06,182.12
+2364,1137,Wireless Headphones,Electronics,2,135.21,270.42
+2365,1137,USB-C Hub,Electronics,1,201.66,201.66
+2366,1137,History Atlas,Books,1,11.87,11.87
+2367,1138,Throw Blanket,Home & Garden,4,77.24,308.96
+2368,1138,Bluetooth Speaker,Electronics,1,239.69,239.69
+2369,1139,Raw Honey Jar,Food,3,12.09,36.27
+2370,1139,Fleece Hoodie,Clothing,2,29.69,59.38
+2371,1139,Ceramic Planter,Home & Garden,2,103.93,207.86
+2372,1139,Fleece Hoodie,Clothing,1,34.33,34.33
+2373,1140,Raw Honey Jar,Food,1,5.57,5.57
+2374,1141,Bluetooth Speaker,Electronics,1,183.84,183.84
+2375,1141,Resistance Bands,Sports,1,32.2,32.2
+2376,1142,Fleece Hoodie,Clothing,1,34.26,34.26
+2377,1142,Stainless Kettle,Home & Garden,1,62.07,62.07
+2378,1143,Storage Bin,Home & Garden,1,152.03,152.03
+2379,1143,Webcam HD,Electronics,1,218.31,218.31
+2380,1144,Bluetooth Speaker,Electronics,2,232.61,465.22
+2381,1145,Artisan Olive Oil,Food,3,16.6,49.8
+2382,1146,Green Tea Box,Food,1,14.24,14.24
+2383,1146,Python Mastery Guide,Books,1,13.84,13.84
+2384,1146,Sci-Fi Novel,Books,4,13.15,52.6
+2385,1147,Economics 101,Books,3,23.77,71.31
+2386,1147,Bluetooth Speaker,Electronics,2,118.51,237.02
+2387,1147,Resistance Bands,Sports,1,36.39,36.39
+2388,1148,Running Shoes,Clothing,2,39.18,78.36
+2389,1148,Storage Bin,Home & Garden,1,84.37,84.37
+2390,1149,Dark Chocolate Bar,Food,2,15.78,31.56
+2391,1149,USB-C Hub,Electronics,5,218.99,1094.95
+2392,1149,History Atlas,Books,1,19.82,19.82
+2393,1150,Water Bottle Insulated,Sports,1,77.01,77.01
+2394,1150,Granola Pack,Food,2,15.17,30.34
+2395,1150,Throw Blanket,Home & Garden,2,98.79,197.58
+2396,1150,Wireless Headphones,Electronics,1,260.83,260.83
+2397,1150,Stainless Kettle,Home & Garden,1,95.68,95.68
+2398,1150,Fleece Hoodie,Clothing,2,63.0,126.0
+2399,1151,Throw Blanket,Home & Garden,1,35.88,35.88
+2400,1151,Winter Jacket,Clothing,1,74.36,74.36
+2401,1152,Wool Scarf,Clothing,2,51.63,103.26
+2402,1152,Dumbbell Set,Sports,2,67.31,134.62
+2403,1153,Running Shoes,Clothing,4,107.49,429.96
+2404,1153,Wall Clock,Home & Garden,3,66.98,200.94
+2405,1154,Webcam HD,Electronics,2,163.43,326.86
+2406,1154,Jump Rope,Sports,2,46.68,93.36
+2407,1154,4K Monitor,Electronics,2,251.66,503.32
+2408,1155,Economics 101,Books,1,16.02,16.02
+2409,1155,4K Monitor,Electronics,3,588.79,1766.37
+2410,1155,Throw Blanket,Home & Garden,1,54.54,54.54
+2411,1156,Cotton T-Shirt,Clothing,1,44.97,44.97
+2412,1156,Green Tea Box,Food,1,12.04,12.04
+2413,1156,USB-C Hub,Electronics,1,272.36,272.36
+2414,1157,Wireless Headphones,Electronics,2,263.12,526.24
+2415,1157,Cotton T-Shirt,Clothing,2,43.32,86.64
+2416,1158,Dark Chocolate Bar,Food,3,8.67,26.01
+2417,1158,Smart Watch,Electronics,1,203.89,203.89
+2418,1158,Wall Clock,Home & Garden,1,68.1,68.1
+2419,1159,Data Science Handbook,Books,4,23.48,93.92
+2420,1159,4K Monitor,Electronics,2,273.24,546.48
+2421,1159,Cotton T-Shirt,Clothing,1,67.61,67.61
+2422,1159,Storage Bin,Home & Garden,1,65.65,65.65
+2423,1160,Python Mastery Guide,Books,1,15.92,15.92
+2424,1161,Wool Scarf,Clothing,1,35.26,35.26
+2425,1162,Sci-Fi Novel,Books,5,15.56,77.8
+2426,1163,USB-C Hub,Electronics,1,245.24,245.24
+2427,1163,Granola Pack,Food,1,16.88,16.88
+2428,1164,Slim Jeans,Clothing,2,35.16,70.32
+2429,1164,Fleece Hoodie,Clothing,2,48.46,96.92
+2430,1164,Fleece Hoodie,Clothing,1,52.94,52.94
+2431,1164,Smart Watch,Electronics,1,174.46,174.46
+2432,1165,Python Mastery Guide,Books,2,29.54,59.08
+2433,1165,Resistance Bands,Sports,1,62.93,62.93
+2434,1165,Dark Chocolate Bar,Food,1,6.61,6.61
+2435,1166,Storage Bin,Home & Garden,2,93.45,186.9
+2436,1166,Artisan Olive Oil,Food,1,8.08,8.08
+2437,1167,4K Monitor,Electronics,4,385.7,1542.8
+2438,1167,Jump Rope,Sports,1,39.08,39.08
+2439,1168,Green Tea Box,Food,5,13.59,67.95
+2440,1169,USB-C Hub,Electronics,1,510.66,510.66
+2441,1169,Python Mastery Guide,Books,3,22.42,67.26
+2442,1170,Dark Chocolate Bar,Food,2,5.75,11.5
+2443,1171,Running Shoes,Clothing,1,51.01,51.01

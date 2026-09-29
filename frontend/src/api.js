@@ -112,6 +112,23 @@ export async function loadSample(name) {
 }
 
 // ── Relational ──
+export async function getRelationalSampleInfo() {
+  return jsonRequest('/relational/sample');
+}
+
+export async function learnRelational(data) {
+  if (data instanceof FormData) {
+    return jsonRequest('/relational/learn', {
+      method: 'POST',
+      body: data,
+    });
+  }
+  return jsonRequest('/relational/learn', {
+    method: 'POST',
+    body: JSON.stringify(data || { use_sample: true }),
+  });
+}
+
 export async function generateRelational(config) {
   return jsonRequest('/v1/relational/generate', {
     method: 'POST',

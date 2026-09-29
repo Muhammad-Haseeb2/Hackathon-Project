@@ -11,6 +11,8 @@ import psutil
 from pathlib import Path
 from contextlib import asynccontextmanager
 
+import uuid
+from typing import Optional
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException, Header, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
@@ -27,7 +29,11 @@ from profiler import read_uploaded_file, profile_dataframe
 from tabular import generate_tabular
 from privacy import apply_privacy
 from quality import compare_datasets, generate_fidelity_report
-from relational import generate_relational, export_relational_zip, generate_sql_dump, DEFAULT_TEMPLATE
+from relational import (
+    generate_relational, export_relational_zip, generate_sql_dump, DEFAULT_TEMPLATE,
+    RelationalLearnedModel, learn_relational_distributions,
+    load_built_in_relational_sample, compare_relational_datasets,
+)
 from session_store import dataset_store
 from association import association_matrix, _build_column_types_from_schema
 from synth_model import CopulaSynthesizer
@@ -545,26 +551,134 @@ async def compute_association(request: Request):
 #  RELATIONAL
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+# In-memory storage for learned relational models: model_id -> (model, real_tables)
+_relational_models: dict[str, tuple[RelationalLearnedModel, dict[str, pd.DataFrame]]] = {}
+
+
+@app.get("/api/relational/sample")
+@app.get("/api/v1/relational/sample")
+async def relational_sample_info():
+    """Get metadata and learned statistics about the bundled relational sample."""
+    try:
+        cust, ords, items = load_built_in_relational_sample()
+        model = learn_relational_distributions(cust, ords, items)
+        return {
+            "name": "E-Commerce Linked Dataset",
+            "tables": {
+                "customers": len(cust),
+                "orders": len(ords),
+                "order_items": len(items),
+            },
+            "summary": model.to_summary_dict(),
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/relational/learn")
+@app.post("/api/v1/relational/learn")
+async def relational_learn(
+    request: Request,
+    customers_file: Optional[UploadFile] = File(None),
+    orders_file: Optional[UploadFile] = File(None),
+    order_items_file: Optional[UploadFile] = File(None),
+):
+    """
+    Learn relational distributions from uploaded CSV files or the built-in sample.
+    Returns model_id and summary of learned distributions.
+    """
+    try:
+        cust_df = None
+        ords_df = None
+        items_df = None
+
+        content_type = request.headers.get("content-type", "")
+        if "application/json" in content_type:
+            body = await request.json()
+            if body.get("use_sample", True):
+                cust_df, ords_df, items_df = load_built_in_relational_sample()
+        elif customers_file and orders_file and order_items_file:
+            cust_bytes = await customers_file.read()
+            ords_bytes = await orders_file.read()
+            items_bytes = await order_items_file.read()
+            cust_df = pd.read_csv(io.BytesIO(cust_bytes))
+            ords_df = pd.read_csv(io.BytesIO(ords_bytes))
+            items_df = pd.read_csv(io.BytesIO(items_bytes))
+        else:
+            cust_df, ords_df, items_df = load_built_in_relational_sample()
+
+        if cust_df is None or ords_df is None or items_df is None:
+            raise HTTPException(
+                status_code=400,
+                detail="Missing required relational tables (customers, orders, order_items)."
+            )
+
+        model = learn_relational_distributions(cust_df, ords_df, items_df)
+        model_id = str(uuid.uuid4())[:12]
+        _relational_models[model_id] = (model, {
+            "customers": cust_df,
+            "orders": ords_df,
+            "order_items": items_df,
+        })
+
+        return {
+            "model_id": model_id,
+            "learned_summary": model.to_summary_dict(),
+            "real_counts": {
+                "customers": len(cust_df),
+                "orders": len(ords_df),
+                "order_items": len(items_df),
+            },
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/relational/generate")
 @app.post("/api/v1/relational/generate")
 async def relational_generate(request: Request):
-    """Generate relational datasets with referential integrity."""
+    """Generate relational datasets with referential integrity (supports template or learned mode)."""
     start = time.time()
     try:
         body = await request.json()
         customer_count = validate_row_count(body.get("customer_count", 50))
         seed = body.get("seed", 42)
         locale = body.get("locale", "en_US")
-        template = body.get("template")  # Custom template or None for default
+        template = body.get("template")
+        use_learned = body.get("use_learned", False)
+        model_id = body.get("model_id", "")
+
+        learned_model = None
+        real_tables = None
+
+        if use_learned or model_id:
+            if model_id and model_id in _relational_models:
+                learned_model, real_tables = _relational_models[model_id]
+            else:
+                cust, ords, items = load_built_in_relational_sample()
+                learned_model = learn_relational_distributions(cust, ords, items)
+                real_tables = {"customers": cust, "orders": ords, "order_items": items}
+                if not model_id:
+                    model_id = "sample_relational"
+                    _relational_models[model_id] = (learned_model, real_tables)
 
         tables = generate_relational(
             template=template,
             customer_count=customer_count,
             seed=seed,
             locale=locale,
+            learned_model=learned_model,
         )
 
-        # Run validation
+        # Run referential integrity validation
         validation = run_relational_validation(tables)
+
+        # Comparison table (real vs synthetic) if learned mode was used
+        comparison = None
+        if real_tables is not None:
+            comparison = compare_relational_datasets(real_tables, tables)
 
         # Convert to preview
         previews = {}
@@ -581,18 +695,24 @@ async def relational_generate(request: Request):
             "/api/v1/relational/generate",
             row_count=total_rows,
             execution_time_ms=elapsed,
-            extra={"tables": len(tables)},
+            extra={"tables": len(tables), "is_learned": learned_model is not None},
         )
 
         return {
             "tables": previews,
             "validation": validation,
+            "comparison": comparison,
             "seed": seed,
+            "is_learned": learned_model is not None,
+            "model_id": model_id,
         }
+    except HTTPException:
+        raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
+@app.post("/api/relational/export")
 @app.post("/api/v1/relational/export")
 async def relational_export(request: Request):
     """Export relational data as ZIP of CSVs + SQL dump."""
@@ -602,9 +722,24 @@ async def relational_export(request: Request):
         customer_count = validate_row_count(body.get("customer_count", 50))
         seed = body.get("seed", 42)
         locale = body.get("locale", "en_US")
-        fmt = body.get("format", "zip")  # zip or sql
+        fmt = body.get("format", "zip")
+        use_learned = body.get("use_learned", False)
+        model_id = body.get("model_id", "")
 
-        tables = generate_relational(customer_count=customer_count, seed=seed, locale=locale)
+        learned_model = None
+        if use_learned or model_id:
+            if model_id and model_id in _relational_models:
+                learned_model, _ = _relational_models[model_id]
+            else:
+                cust, ords, items = load_built_in_relational_sample()
+                learned_model = learn_relational_distributions(cust, ords, items)
+
+        tables = generate_relational(
+            customer_count=customer_count,
+            seed=seed,
+            locale=locale,
+            learned_model=learned_model,
+        )
 
         elapsed = (time.time() - start) * 1000
         total_rows = sum(len(df) for df in tables.values())
@@ -624,8 +759,11 @@ async def relational_export(request: Request):
                 media_type="application/zip",
                 headers={"Content-Disposition": "attachment; filename=relational_data.zip"},
             )
+    except HTTPException:
+        raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
 
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
