@@ -30,6 +30,7 @@ from quality import compare_datasets
 from relational import generate_relational, export_relational_zip, generate_sql_dump, DEFAULT_TEMPLATE
 from session_store import dataset_store
 from association import association_matrix, _build_column_types_from_schema
+from synth_model import CopulaSynthesizer
 from documents import (
     generate_invoice_data, render_invoice_pdf, render_invoice_html,
     generate_bank_statement, render_statement_pdf, render_statement_html,
@@ -141,6 +142,65 @@ async def tabular_profile(file: UploadFile = File(...)):
         raise HTTPException(status_code=422, detail=f"Could not process file: {str(e)}")
 
 
+def _generate_with_method(
+    schema: list[dict],
+    row_count: int,
+    seed: int,
+    locale: str,
+    null_rate: float,
+    outlier_rate: float,
+    dataset_id: str = "",
+    method: str = "auto",
+) -> tuple[pd.DataFrame, str, list[str]]:
+    """
+    Generate synthetic data using the requested method.
+
+    Returns:
+        (df, method_used, warnings)
+    """
+    warnings = []
+
+    # Determine method
+    if method == "auto":
+        method = "copula" if dataset_id else "independent"
+
+    if method == "copula" and dataset_id:
+        entry = dataset_store.get(dataset_id)
+        if entry is None:
+            warnings.append("Dataset expired or not found. Falling back to independent generation.")
+            method = "independent"
+        else:
+            col_types = _build_column_types_from_schema(entry.schema)
+            synth = CopulaSynthesizer()
+            synth.fit(entry.df, col_types)
+            warnings.extend(synth.warnings)
+
+            if synth.is_fallback:
+                method = "independent"
+            else:
+                df = synth.sample(row_count, seed=seed)
+
+                # Apply null/outlier injection on top if requested
+                if null_rate > 0:
+                    rng = np.random.default_rng(seed + 1000)
+                    for col in df.columns:
+                        mask = rng.random(len(df)) < null_rate
+                        df.loc[mask, col] = None
+
+                return df, "copula", warnings
+
+    # Independent generation (the original behaviour)
+    df = generate_tabular(
+        schema=schema,
+        row_count=row_count,
+        seed=seed,
+        locale=locale,
+        null_rate=null_rate,
+        outlier_rate=outlier_rate,
+    )
+    return df, "independent", warnings
+
+
 @app.post("/api/v1/tabular/generate")
 async def tabular_generate(request: Request):
     """Generate synthetic tabular data from schema."""
@@ -154,17 +214,28 @@ async def tabular_generate(request: Request):
         null_rate = body.get("null_rate", 0.0)
         outlier_rate = body.get("outlier_rate", 0.0)
         privacy_rules = body.get("privacy_rules", [])
+        dataset_id = body.get("dataset_id", "")
+        method = body.get("method", "auto")
 
-        if not schema:
-            raise HTTPException(status_code=400, detail="Schema is required.")
+        if not schema and not dataset_id:
+            raise HTTPException(status_code=400, detail="Schema or dataset_id is required.")
 
-        df = generate_tabular(
+        # If dataset_id provided but no schema, use the stored schema
+        if not schema and dataset_id:
+            entry = dataset_store.get(dataset_id)
+            if entry is None:
+                raise HTTPException(status_code=404, detail="Dataset not found or expired.")
+            schema = entry.schema
+
+        df, method_used, gen_warnings = _generate_with_method(
             schema=schema,
             row_count=row_count,
             seed=seed,
             locale=locale,
             null_rate=null_rate,
             outlier_rate=outlier_rate,
+            dataset_id=dataset_id,
+            method=method,
         )
 
         # Apply privacy if rules provided
@@ -183,6 +254,7 @@ async def tabular_generate(request: Request):
             row_count=row_count,
             privacy_noise=has_privacy,
             execution_time_ms=elapsed,
+            extra={"method": method_used},
         )
 
         return {
@@ -190,6 +262,8 @@ async def tabular_generate(request: Request):
             "columns": columns,
             "total_rows": row_count,
             "seed": seed,
+            "method": method_used,
+            "warnings": gen_warnings,
         }
     except HTTPException:
         raise
@@ -211,17 +285,28 @@ async def tabular_export(request: Request):
         outlier_rate = body.get("outlier_rate", 0.0)
         privacy_rules = body.get("privacy_rules", [])
         fmt = body.get("format", "csv")
+        dataset_id = body.get("dataset_id", "")
+        method = body.get("method", "auto")
 
-        if not schema:
-            raise HTTPException(status_code=400, detail="Schema is required.")
+        if not schema and not dataset_id:
+            raise HTTPException(status_code=400, detail="Schema or dataset_id is required.")
 
-        df = generate_tabular(
+        # If dataset_id provided but no schema, use the stored schema
+        if not schema and dataset_id:
+            entry = dataset_store.get(dataset_id)
+            if entry is None:
+                raise HTTPException(status_code=404, detail="Dataset not found or expired.")
+            schema = entry.schema
+
+        df, method_used, gen_warnings = _generate_with_method(
             schema=schema,
             row_count=row_count,
             seed=seed,
             locale=locale,
             null_rate=null_rate,
             outlier_rate=outlier_rate,
+            dataset_id=dataset_id,
+            method=method,
         )
 
         if privacy_rules:
@@ -233,6 +318,7 @@ async def tabular_export(request: Request):
             row_count=row_count,
             privacy_noise=len(privacy_rules) > 0,
             execution_time_ms=elapsed,
+            extra={"method": method_used},
         )
 
         if fmt == "json":
