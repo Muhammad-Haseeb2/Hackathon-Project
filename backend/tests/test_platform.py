@@ -145,5 +145,44 @@ class TestSecurityControls(unittest.TestCase):
         self.assertTrue(verify_admin("admin123"))
 
 
+class TestLocalesAndSchemaInference(unittest.TestCase):
+    """Test multi-locale support, Pakistani data provider, and schema inference."""
+
+    def test_ur_pk_tabular_generation(self):
+        """Verify ur_PK locale generates authentic Pakistani data without crashing."""
+        schema = [
+            {'name': 'id', 'type': 'id'},
+            {'name': 'full_name', 'type': 'name'},
+            {'name': 'phone', 'type': 'phone'},
+            {'name': 'city', 'type': 'address'},
+            {'name': 'currency', 'type': 'currency'},
+            {'name': 'amount', 'type': 'float', 'stats': {'min': 100, 'max': 50000}},
+        ]
+        df = generate_tabular(schema, row_count=100, seed=42, locale='ur_PK')
+        self.assertEqual(len(df), 100)
+        self.assertTrue(all(p.startswith('+92') for p in df['phone']))
+        self.assertIn('PKR', list(df['currency']))
+
+    def test_row_count_exactness(self):
+        """Verify tabular generator generates exactly the requested number of rows."""
+        schema = [{'name': 'id', 'type': 'id'}, {'name': 'val', 'type': 'integer'}]
+        for count in [20, 50, 100, 250]:
+            df = generate_tabular(schema, row_count=count, seed=42)
+            self.assertEqual(len(df), count)
+
+    def test_offline_schema_inference(self):
+        """Verify schema inference works reliably offline for various domains."""
+        from llm import infer_schema
+        iot = infer_schema("500 IoT cold-storage temperature readings with device_id, temp_celsius")
+        self.assertIn('columns', iot['data'])
+        cols = [c['name'] for c in iot['data']['columns']]
+        self.assertIn('temp_celsius', cols)
+
+        fintech = infer_schema("fintech transactions with PKR and debit credit")
+        fcols = [c['name'] for c in fintech['data']['columns']]
+        self.assertIn('amount', fcols)
+        self.assertIn('currency', fcols)
+
+
 if __name__ == "__main__":
     unittest.main()

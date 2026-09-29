@@ -1,6 +1,10 @@
-export default function ConfigPanel({ children, title = 'Configuration' }) {
+export default function ConfigPanel({
+  children,
+  title = 'Configuration',
+  className = 'w-96 lg:w-[420px]',
+}) {
   return (
-    <div className="w-80 bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden flex-shrink-0">
+    <div className={`${className} bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden flex-shrink-0 transition-all`}>
       <div className="px-5 py-4 border-b border-gray-100 bg-gray-50/50">
         <h3 className="text-sm font-semibold text-navy flex items-center gap-2">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

@@ -13,6 +13,7 @@ import pandas as pd
 from faker import Faker
 from typing import Optional
 
+from locales import get_safe_faker
 from fallbacks import PRODUCT_NAMES, CATEGORIES
 
 
@@ -82,9 +83,7 @@ def generate_relational(
         template = DEFAULT_TEMPLATE
 
     rng = np.random.default_rng(seed)
-    fake = Faker(locale)
-    if seed is not None:
-        Faker.seed(seed)
+    fake, locale_cfg, pk_provider = get_safe_faker(locale, seed)
 
     tables = {}
     id_maps = {}  # table_name -> list of primary key values
@@ -147,13 +146,26 @@ def generate_relational(
                     else:
                         data[col_name] = list(range(1, row_count + 1))
             elif col_type == 'name':
-                data[col_name] = [fake.name() for _ in range(row_count)]
+                if pk_provider:
+                    data[col_name] = [pk_provider.name() for _ in range(row_count)]
+                else:
+                    data[col_name] = [fake.name() for _ in range(row_count)]
             elif col_type == 'email':
-                data[col_name] = [fake.email() for _ in range(row_count)]
+                if pk_provider:
+                    domains = ['gmail.com', 'yahoo.com', 'outlook.com', 'live.com']
+                    data[col_name] = [f"{pk_provider.name().lower().replace(' ', '.')}{rng.integers(10, 999)}@{rng.choice(domains)}" for _ in range(row_count)]
+                else:
+                    data[col_name] = [fake.email() for _ in range(row_count)]
             elif col_type == 'phone':
-                data[col_name] = [fake.phone_number() for _ in range(row_count)]
+                if pk_provider:
+                    data[col_name] = [pk_provider.phone_number() for _ in range(row_count)]
+                else:
+                    data[col_name] = [fake.phone_number() for _ in range(row_count)]
             elif col_type == 'address':
-                data[col_name] = [fake.city() for _ in range(row_count)]
+                if pk_provider:
+                    data[col_name] = [pk_provider.city() for _ in range(row_count)]
+                else:
+                    data[col_name] = [fake.city() for _ in range(row_count)]
             elif col_type == 'datetime':
                 start = pd.Timestamp(stats.get('min', '2020-01-01'))
                 end = pd.Timestamp(stats.get('max', '2024-12-31'))

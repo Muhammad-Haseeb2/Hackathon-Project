@@ -18,59 +18,14 @@ from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, 
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 
 from fallbacks import MERCHANT_NAMES, COMPANY_NAMES, PRODUCT_NAMES, TRANSACTION_DESCRIPTIONS
-
-
-# ── Locale Configuration ────────────────────────────────────────────────────
-
-LOCALE_CONFIG = {
-    'en_US': {
-        'currency_symbol': '$',
-        'currency_code': 'USD',
-        'tax_label': 'Sales Tax',
-        'tax_rate': 0.08,
-        'date_format': '%m/%d/%Y',
-        'locale_faker': 'en_US',
-    },
-    'en_GB': {
-        'currency_symbol': '£',
-        'currency_code': 'GBP',
-        'tax_label': 'VAT',
-        'tax_rate': 0.20,
-        'date_format': '%d/%m/%Y',
-        'locale_faker': 'en_GB',
-    },
-    'ur_PK': {
-        'currency_symbol': 'PKR',
-        'currency_code': 'PKR',
-        'tax_label': 'GST',
-        'tax_rate': 0.17,
-        'date_format': '%d/%m/%Y',
-        'locale_faker': 'en_US',  # Faker has limited ur_PK support
-    },
-    'de_DE': {
-        'currency_symbol': '€',
-        'currency_code': 'EUR',
-        'tax_label': 'MwSt',
-        'tax_rate': 0.19,
-        'date_format': '%d.%m.%Y',
-        'locale_faker': 'de_DE',
-    },
-    'fr_FR': {
-        'currency_symbol': '€',
-        'currency_code': 'EUR',
-        'tax_label': 'TVA',
-        'tax_rate': 0.20,
-        'date_format': '%d/%m/%Y',
-        'locale_faker': 'fr_FR',
-    },
-}
+from locales import SUPPORTED_LOCALES as LOCALE_CONFIG, get_safe_faker
 
 
 def _fmt_currency(amount: float, symbol: str) -> str:
     """Format currency amount."""
-    if symbol in ('$', '£', '€'):
+    if symbol in ('$', '£', '€', '₹', '¥', '₺', 'CA$', 'A$'):
         return f'{symbol}{amount:,.2f}'
-    return f'{amount:,.2f} {symbol}'
+    return f'{symbol} {amount:,.2f}'
 
 
 # ── Invoice Generator ────────────────────────────────────────────────────────
@@ -86,10 +41,7 @@ def generate_invoice_data(
     All math computed in code.
     """
     rng = np.random.default_rng(seed)
-    lc = LOCALE_CONFIG.get(locale, LOCALE_CONFIG['en_US'])
-    fake = Faker(lc['locale_faker'])
-    if seed is not None:
-        Faker.seed(seed)
+    fake, lc, pk_provider = get_safe_faker(locale, seed)
 
     if n_items <= 0:
         n_items = int(rng.integers(2, 8))
@@ -122,10 +74,10 @@ def generate_invoice_data(
         'invoice_number': f'INV-{rng.integers(10000, 99999)}',
         'invoice_date': invoice_date.strftime(lc['date_format']),
         'due_date': due_date.strftime(lc['date_format']),
-        'company_from': str(rng.choice(COMPANY_NAMES)),
-        'company_to': str(rng.choice(COMPANY_NAMES)),
-        'address_from': fake.address().replace('\n', ', '),
-        'address_to': fake.address().replace('\n', ', '),
+        'company_from': pk_provider.company() if pk_provider else str(rng.choice(COMPANY_NAMES)),
+        'company_to': pk_provider.company() if pk_provider else str(rng.choice(COMPANY_NAMES)),
+        'address_from': pk_provider.address() if pk_provider else fake.address().replace('\n', ', '),
+        'address_to': pk_provider.address() if pk_provider else fake.address().replace('\n', ', '),
         'items': items,
         'subtotal': subtotal,
         'discount': discount,
@@ -285,10 +237,7 @@ def generate_bank_statement(
     Balance_t = Balance_{t-1} + Credit_t - Debit_t
     """
     rng = np.random.default_rng(seed)
-    lc = LOCALE_CONFIG.get(locale, LOCALE_CONFIG['en_US'])
-    fake = Faker(lc['locale_faker'])
-    if seed is not None:
-        Faker.seed(seed)
+    fake, lc, pk_provider = get_safe_faker(locale, seed)
 
     sym = lc['currency_symbol']
     end_date = datetime.now().date()
@@ -389,9 +338,9 @@ def generate_bank_statement(
             })
 
     statement = {
-        'account_holder': fake.name(),
+        'account_holder': pk_provider.name() if pk_provider else fake.name(),
         'account_number': f'****{rng.integers(1000, 9999)}',
-        'bank_name': f'{str(rng.choice(["First National", "City", "Global", "Pacific", "Atlantic"]))} Bank',
+        'bank_name': pk_provider.bank() if pk_provider else f'{str(rng.choice(["First National", "City", "Global", "Pacific", "Atlantic"]))} Bank',
         'statement_period': f'{start_date.strftime(lc["date_format"])} - {end_date.strftime(lc["date_format"])}',
         'opening_balance': opening_balance,
         'closing_balance': balance,

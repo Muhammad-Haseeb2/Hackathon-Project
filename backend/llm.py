@@ -146,7 +146,22 @@ def _get_fallback(prompt: str) -> Any:
     """Return fallback data based on prompt keywords."""
     prompt_lower = prompt.lower()
 
-    if 'merchant' in prompt_lower:
+    # Check for schema inference FIRST to prevent keyword collisions (e.g. 'categor' in prompt)
+    if 'schema' in prompt_lower or 'columns' in prompt_lower:
+        desc = prompt
+        if 'Description: "' in prompt:
+            try:
+                desc = prompt.split('Description: "')[1].split('"\n')[0]
+            except Exception:
+                desc = prompt
+        elif 'description: "' in prompt_lower:
+            try:
+                idx = prompt_lower.index('description: "') + len('description: "')
+                desc = prompt[idx:].split('"')[0]
+            except Exception:
+                desc = prompt
+        return _infer_schema_offline(desc)
+    elif 'merchant' in prompt_lower:
         return {'items': MERCHANT_NAMES}
     elif 'company' in prompt_lower or 'business' in prompt_lower:
         return {'items': COMPANY_NAMES}
@@ -160,18 +175,6 @@ def _get_fallback(prompt: str) -> Any:
         return {'items': JOB_TITLES}
     elif 'categor' in prompt_lower:
         return {'items': CATEGORIES}
-    elif 'schema' in prompt_lower or 'column' in prompt_lower:
-        # Default schema fallback
-        return {
-            'columns': [
-                {'name': 'id', 'type': 'id'},
-                {'name': 'name', 'type': 'name'},
-                {'name': 'email', 'type': 'email'},
-                {'name': 'value', 'type': 'float', 'stats': {'min': 0, 'max': 100, 'mean': 50, 'std': 25}},
-                {'name': 'category', 'type': 'categorical', 'stats': {'categories': {'A': 0.4, 'B': 0.35, 'C': 0.25}}},
-                {'name': 'created_at', 'type': 'datetime', 'stats': {'min': '2023-01-01', 'max': '2024-12-31'}},
-            ]
-        }
     elif 'edge' in prompt_lower or 'outlier' in prompt_lower or 'boundary' in prompt_lower:
         return {
             'suggestions': [
@@ -186,12 +189,107 @@ def _get_fallback(prompt: str) -> Any:
         return {'items': ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5']}
 
 
+def _infer_schema_offline(text: str) -> dict:
+    """
+    Intelligent offline schema inference based on description keywords.
+    Produces high-fidelity, typed schemas without requiring an external LLM.
+    """
+    text_lower = text.lower()
+
+    if any(k in text_lower for k in ['sensor', 'iot', 'temperature', 'device', 'reading']):
+        return {
+            'columns': [
+                {'name': 'device_id', 'type': 'id'},
+                {'name': 'warehouse_location', 'type': 'address'},
+                {'name': 'temp_celsius', 'type': 'float', 'stats': {'min': -15, 'max': 95, 'mean': 22, 'std': 12}},
+                {'name': 'humidity_pct', 'type': 'float', 'stats': {'min': 20, 'max': 99, 'mean': 55, 'std': 18}},
+                {'name': 'warning_alert', 'type': 'categorical', 'stats': {'categories': {'normal': 0.82, 'warning': 0.12, 'critical': 0.06}}},
+                {'name': 'recorded_at', 'type': 'datetime', 'stats': {'min': '2024-01-01', 'max': '2024-12-31'}},
+            ]
+        }
+    elif any(k in text_lower for k in ['patient', 'hospital', 'health', 'medical', 'clinical', 'doctor']):
+        return {
+            'columns': [
+                {'name': 'patient_id', 'type': 'id'},
+                {'name': 'patient_name', 'type': 'name'},
+                {'name': 'age', 'type': 'integer', 'stats': {'min': 18, 'max': 95, 'mean': 48, 'std': 16}},
+                {'name': 'blood_pressure', 'type': 'float', 'stats': {'min': 80, 'max': 190, 'mean': 122, 'std': 16}},
+                {'name': 'heart_rate', 'type': 'integer', 'stats': {'min': 50, 'max': 140, 'mean': 74, 'std': 12}},
+                {'name': 'diagnosis', 'type': 'categorical', 'stats': {'categories': {'Hypertension': 0.3, 'Diabetes': 0.25, 'Asthma': 0.15, 'None': 0.3}}},
+                {'name': 'visit_date', 'type': 'datetime', 'stats': {'min': '2023-01-01', 'max': '2024-12-31'}},
+            ]
+        }
+    elif any(k in text_lower for k in ['transaction', 'payment', 'fintech', 'bank', 'fraud', 'crypto']):
+        return {
+            'columns': [
+                {'name': 'transaction_id', 'type': 'uuid'},
+                {'name': 'account_holder', 'type': 'name'},
+                {'name': 'email', 'type': 'email'},
+                {'name': 'amount', 'type': 'float', 'stats': {'min': 5, 'max': 50000, 'mean': 320, 'std': 950}},
+                {'name': 'currency', 'type': 'categorical', 'stats': {'categories': {'USD': 0.5, 'EUR': 0.25, 'GBP': 0.15, 'PKR': 0.1}}},
+                {'name': 'type', 'type': 'categorical', 'stats': {'categories': {'debit': 0.65, 'credit': 0.25, 'transfer': 0.1}}},
+                {'name': 'status', 'type': 'categorical', 'stats': {'categories': {'completed': 0.88, 'pending': 0.08, 'failed': 0.04}}},
+                {'name': 'timestamp', 'type': 'datetime', 'stats': {'min': '2024-01-01', 'max': '2024-12-31'}},
+            ]
+        }
+    elif any(k in text_lower for k in ['employee', 'hr', 'staff', 'worker', 'payroll', 'salary']):
+        return {
+            'columns': [
+                {'name': 'employee_id', 'type': 'id'},
+                {'name': 'full_name', 'type': 'name'},
+                {'name': 'email', 'type': 'email'},
+                {'name': 'department', 'type': 'categorical', 'stats': {'categories': {'Engineering': 0.35, 'Sales': 0.25, 'Marketing': 0.2, 'HR': 0.1, 'Finance': 0.1}}},
+                {'name': 'salary', 'type': 'float', 'stats': {'min': 35000, 'max': 210000, 'mean': 88000, 'std': 28000}},
+                {'name': 'performance_score', 'type': 'float', 'stats': {'min': 1, 'max': 5, 'mean': 3.9, 'std': 0.7}},
+                {'name': 'hire_date', 'type': 'datetime', 'stats': {'min': '2020-01-01', 'max': '2024-12-31'}},
+            ]
+        }
+    elif any(k in text_lower for k in ['student', 'school', 'university', 'college', 'course', 'grade']):
+        return {
+            'columns': [
+                {'name': 'student_id', 'type': 'id'},
+                {'name': 'student_name', 'type': 'name'},
+                {'name': 'email', 'type': 'email'},
+                {'name': 'major', 'type': 'categorical', 'stats': {'categories': {'Computer Science': 0.35, 'Business': 0.25, 'Biology': 0.2, 'Economics': 0.2}}},
+                {'name': 'gpa', 'type': 'float', 'stats': {'min': 2.0, 'max': 4.0, 'mean': 3.25, 'std': 0.45}},
+                {'name': 'enrollment_year', 'type': 'integer', 'stats': {'min': 2021, 'max': 2025, 'mean': 2023, 'std': 1}},
+            ]
+        }
+    elif any(k in text_lower for k in ['customer', 'e-commerce', 'ecommerce', 'order', 'shop', 'retail', 'sales']):
+        return {
+            'columns': [
+                {'name': 'customer_id', 'type': 'id'},
+                {'name': 'full_name', 'type': 'name'},
+                {'name': 'email', 'type': 'email'},
+                {'name': 'phone', 'type': 'phone'},
+                {'name': 'city', 'type': 'address'},
+                {'name': 'total_orders', 'type': 'integer', 'stats': {'min': 1, 'max': 250, 'mean': 18, 'std': 22}},
+                {'name': 'total_spent', 'type': 'float', 'stats': {'min': 15, 'max': 12000, 'mean': 520, 'std': 850}},
+                {'name': 'currency', 'type': 'categorical', 'stats': {'categories': {'USD': 0.5, 'EUR': 0.25, 'GBP': 0.15, 'PKR': 0.1}}},
+                {'name': 'signup_date', 'type': 'datetime', 'stats': {'min': '2021-01-01', 'max': '2024-12-31'}},
+            ]
+        }
+    else:
+        # Generic intelligent schema
+        return {
+            'columns': [
+                {'name': 'record_id', 'type': 'id'},
+                {'name': 'name', 'type': 'name'},
+                {'name': 'email', 'type': 'email'},
+                {'name': 'category', 'type': 'categorical', 'stats': {'categories': {'Type A': 0.45, 'Type B': 0.35, 'Type C': 0.20}}},
+                {'name': 'value', 'type': 'float', 'stats': {'min': 10, 'max': 1000, 'mean': 250, 'std': 120}},
+                {'name': 'status', 'type': 'categorical', 'stats': {'categories': {'active': 0.8, 'inactive': 0.15, 'pending': 0.05}}},
+                {'name': 'created_at', 'type': 'datetime', 'stats': {'min': '2023-01-01', 'max': '2024-12-31'}},
+            ]
+        }
+
+
 # ── Schema inference ─────────────────────────────────────────────────────────
 
 def infer_schema(description: str) -> dict:
     """
     Use the LLM to infer a table schema from a natural language description.
-    Falls back to a generic schema if LLM fails.
+    Falls back to intelligent deterministic schema if LLM fails or API key is absent.
     """
     prompt = f"""Based on this description, generate a JSON schema for a synthetic data table.
 Description: "{description}"
@@ -206,6 +304,18 @@ Example response:
 """
 
     result = call_llm(prompt)
+
+    # Validate output structure
+    data = result.get('data', {})
+    if not isinstance(data, dict) or 'columns' not in data or not data['columns']:
+        # Fall back to offline inference with user's description
+        offline_schema = _infer_schema_offline(description)
+        return {
+            'data': offline_schema,
+            'source': 'fallback',
+            'cached': False,
+        }
+
     return result
 
 

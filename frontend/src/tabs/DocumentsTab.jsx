@@ -2,6 +2,7 @@ import { useState, useCallback } from 'react'
 import ConfigPanel from '../components/ConfigPanel'
 import ExportButton from '../components/ExportButton'
 import { generateInvoice, exportInvoice, generateStatement, exportStatement } from '../api'
+import { LOCALES } from '../locales'
 
 export default function DocumentsTab() {
   const [docType, setDocType] = useState('invoice') // 'invoice' | 'statement'
@@ -217,20 +218,36 @@ export default function DocumentsTab() {
 
           {/* Common: Seed & Locale */}
           <div>
-            <label className="block text-xs font-medium text-gray-600 mb-1.5">Random Seed</label>
-            <input type="number" value={seed} onChange={(e) => setSeed(parseInt(e.target.value) || 0)}
-              className="w-full px-3 py-2 text-sm border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal/20 focus:border-teal outline-none transition-all" />
+            <div className="flex items-center justify-between mb-1.5">
+              <label className="text-xs font-semibold text-gray-700">Random Seed</label>
+              <button
+                type="button"
+                onClick={() => setSeed(Math.floor(Math.random() * 900000) + 10000)}
+                className="text-[10px] text-teal hover:underline font-bold"
+              >
+                🎲 Randomize
+              </button>
+            </div>
+            <input
+              type="number"
+              value={seed}
+              onChange={(e) => setSeed(parseInt(e.target.value) || 0)}
+              className="w-full px-3 py-2 text-sm border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal/20 focus:border-teal outline-none transition-all font-mono"
+            />
           </div>
 
           <div>
-            <label className="block text-xs font-medium text-gray-600 mb-1.5">Locale & Currency</label>
-            <select value={locale} onChange={(e) => setLocale(e.target.value)}
-              className="w-full px-3 py-2 text-sm border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal/20 focus:border-teal outline-none transition-all bg-white">
-              <option value="en_US">🇺🇸 USD — Sales Tax</option>
-              <option value="en_GB">🇬🇧 GBP — VAT</option>
-              <option value="ur_PK">🇵🇰 PKR — GST</option>
-              <option value="de_DE">🇩🇪 EUR — MwSt</option>
-              <option value="fr_FR">🇫🇷 EUR — TVA</option>
+            <label className="block text-xs font-semibold text-gray-700 mb-1.5">Locale & Currency</label>
+            <select
+              value={locale}
+              onChange={(e) => setLocale(e.target.value)}
+              className="w-full px-3 py-2 text-xs border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal/20 focus:border-teal outline-none transition-all bg-white"
+            >
+              {LOCALES.map((loc) => (
+                <option key={loc.code} value={loc.code}>
+                  {loc.flag} {loc.label}
+                </option>
+              ))}
             </select>
           </div>
 

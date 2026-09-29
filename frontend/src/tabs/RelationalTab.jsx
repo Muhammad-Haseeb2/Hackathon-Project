@@ -3,6 +3,7 @@ import ConfigPanel from '../components/ConfigPanel'
 import PreviewTable from '../components/PreviewTable'
 import ExportButton from '../components/ExportButton'
 import { generateRelational, exportRelational } from '../api'
+import { LOCALES } from '../locales'
 
 export default function RelationalTab() {
   const [customerCount, setCustomerCount] = useState(50)
@@ -147,28 +148,37 @@ export default function RelationalTab() {
 
           {/* Seed */}
           <div>
-            <label className="block text-xs font-medium text-gray-600 mb-1.5">Random Seed</label>
+            <div className="flex items-center justify-between mb-1.5">
+              <label className="text-xs font-semibold text-gray-700">Random Seed</label>
+              <button
+                type="button"
+                onClick={() => setSeed(Math.floor(Math.random() * 900000) + 10000)}
+                className="text-[10px] text-teal hover:underline font-bold"
+              >
+                🎲 Randomize
+              </button>
+            </div>
             <input
               type="number"
               value={seed}
               onChange={(e) => setSeed(parseInt(e.target.value) || 0)}
-              className="w-full px-3 py-2 text-sm border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal/20 focus:border-teal outline-none transition-all"
+              className="w-full px-3 py-2 text-sm border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal/20 focus:border-teal outline-none transition-all font-mono"
             />
           </div>
 
           {/* Locale */}
           <div>
-            <label className="block text-xs font-medium text-gray-600 mb-1.5">Locale</label>
+            <label className="block text-xs font-semibold text-gray-700 mb-1.5">Locale</label>
             <select
               value={locale}
               onChange={(e) => setLocale(e.target.value)}
-              className="w-full px-3 py-2 text-sm border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal/20 focus:border-teal outline-none transition-all bg-white"
+              className="w-full px-3 py-2 text-xs border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal/20 focus:border-teal outline-none transition-all bg-white"
             >
-              <option value="en_US">English (US)</option>
-              <option value="en_GB">English (UK)</option>
-              <option value="ur_PK">Pakistan</option>
-              <option value="de_DE">German</option>
-              <option value="fr_FR">French</option>
+              {LOCALES.map((loc) => (
+                <option key={loc.code} value={loc.code}>
+                  {loc.flag} {loc.label}
+                </option>
+              ))}
             </select>
           </div>
 

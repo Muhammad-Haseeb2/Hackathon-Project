@@ -1,7 +1,7 @@
 """
 Tabular data generator — produces synthetic data from a schema definition.
 Uses Faker for identity columns, numpy for distributions, and supports
-seeded reproducibility, null injection, and outlier injection.
+seeded reproducibility, null injection, outlier injection, and rich locale support.
 """
 
 import uuid
@@ -9,6 +9,8 @@ import numpy as np
 import pandas as pd
 from faker import Faker
 from typing import Optional
+
+from locales import get_safe_faker, PakistanDataProvider
 
 
 def generate_tabular(
@@ -26,7 +28,7 @@ def generate_tabular(
         schema: List of column definitions, each with 'name', 'type', and optional 'stats'.
         row_count: Number of rows to generate (1-50000).
         seed: Random seed for reproducibility. Same seed = same output.
-        locale: Faker locale string.
+        locale: Locale string (e.g. 'en_US', 'ur_PK', 'de_DE', etc.).
         null_rate: Global null injection rate (0.0-0.5).
         outlier_rate: Outlier injection rate for numeric columns (0.0-0.2).
 
@@ -37,11 +39,9 @@ def generate_tabular(
     null_rate = max(0.0, min(null_rate, 0.5))
     outlier_rate = max(0.0, min(outlier_rate, 0.2))
 
-    # Initialize RNG and Faker with seed
+    # Initialize RNG and Safe Faker with seed
     rng = np.random.default_rng(seed)
-    fake = Faker(locale)
-    if seed is not None:
-        Faker.seed(seed)
+    fake, locale_cfg, pk_provider = get_safe_faker(locale, seed)
 
     data = {}
 
@@ -50,7 +50,16 @@ def generate_tabular(
         col_type = col_def.get('type', 'text')
         stats = col_def.get('stats', {})
 
-        values = _generate_column(col_type, stats, row_count, rng, fake)
+        values = _generate_column(
+            col_name=col_name,
+            col_type=col_type,
+            stats=stats,
+            n=row_count,
+            rng=rng,
+            fake=fake,
+            locale_cfg=locale_cfg,
+            pk_provider=pk_provider,
+        )
         data[col_name] = values
 
     df = pd.DataFrame(data)
@@ -67,32 +76,56 @@ def generate_tabular(
 
 
 def _generate_column(
+    col_name: str,
     col_type: str,
     stats: dict,
     n: int,
     rng: np.random.Generator,
     fake: Faker,
+    locale_cfg: dict,
+    pk_provider: Optional[PakistanDataProvider] = None,
 ) -> list:
-    """Generate values for a single column based on type and stats."""
+    """Generate values for a single column based on type, name, and stats."""
+    col_lower = col_name.lower()
 
     if col_type == 'integer':
         return _gen_integer(stats, n, rng)
     elif col_type == 'float':
         return _gen_float(stats, n, rng)
     elif col_type == 'categorical':
-        return _gen_categorical(stats, n, rng)
+        return _gen_categorical(stats, n, rng, col_lower, locale_cfg)
+    elif col_type == 'currency':
+        curr = locale_cfg.get('currency_code', 'USD')
+        # 80% primary currency, 20% major international currencies
+        currencies = [curr, 'USD', 'EUR', 'GBP']
+        probs = [0.85, 0.05, 0.05, 0.05]
+        return list(rng.choice(currencies, size=n, p=probs))
     elif col_type == 'datetime':
         return _gen_datetime(stats, n, rng, fake)
     elif col_type == 'name':
+        if pk_provider:
+            return [pk_provider.name() for _ in range(n)]
         return [fake.name() for _ in range(n)]
     elif col_type == 'email':
+        if pk_provider:
+            domains = ['gmail.com', 'yahoo.com', 'outlook.com', 'live.com']
+            emails = []
+            for _ in range(n):
+                name = pk_provider.name().lower().replace(' ', '.')
+                dom = rng.choice(domains)
+                emails.append(f"{name}{rng.integers(10, 999)}@{dom}")
+            return emails
         return [fake.email() for _ in range(n)]
     elif col_type == 'phone':
+        if pk_provider:
+            return [pk_provider.phone_number() for _ in range(n)]
         return [fake.phone_number() for _ in range(n)]
     elif col_type == 'address':
+        if pk_provider:
+            return [pk_provider.address() for _ in range(n)]
         return [fake.address().replace('\n', ', ') for _ in range(n)]
     elif col_type == 'uuid':
-        return [str(uuid.UUID(int=rng.integers(0, 2**128))) for _ in range(n)]
+        return [str(uuid.UUID(bytes=rng.bytes(16))) for _ in range(n)]
     elif col_type == 'id':
         return list(range(1, n + 1))
     elif col_type == 'text':
@@ -135,9 +168,25 @@ def _gen_float(stats: dict, n: int, rng: np.random.Generator) -> list:
     return [round(float(v), 2) for v in values]
 
 
-def _gen_categorical(stats: dict, n: int, rng: np.random.Generator) -> list:
+def _gen_categorical(
+    stats: dict,
+    n: int,
+    rng: np.random.Generator,
+    col_lower: str = '',
+    locale_cfg: Optional[dict] = None,
+) -> list:
     """Generate categorical column by sampling from frequency distribution."""
     categories = stats.get('categories', {})
+
+    # If this is a currency column and categories contains PKR or locale currency
+    if 'currency' in col_lower and locale_cfg:
+        loc_curr = locale_cfg.get('currency_code', 'USD')
+        # If no categories defined, or categories include currencies, ensure loc_curr is present
+        if not categories:
+            categories = {loc_curr: 0.7, 'USD': 0.15, 'EUR': 0.1, 'GBP': 0.05}
+        elif loc_curr not in categories:
+            # Add loc_curr as prominent option
+            categories = {loc_curr: 0.6, **{k: v * 0.4 for k, v in categories.items()}}
 
     if not categories:
         # Fallback: generate simple categories

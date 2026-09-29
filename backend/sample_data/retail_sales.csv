@@ -1,0 +1,2001 @@
+product_category,unit_price,quantity,discount,revenue,region,month
+Food,15.1,13,0.01,194.34,North,6
+Clothing,23.22,10,0.05,220.59,South,3
+Clothing,16.34,11,0.07,167.16,West,5
+Electronics,220.51,4,0.12,776.2,East,12
+Home & Garden,95.09,7,0.08,612.38,East,4
+Books,16.43,7,0.06,108.11,West,10
+Home & Garden,34.52,12,0.02,405.96,East,12
+Electronics,491.83,3,0.04,1416.47,East,12
+Home & Garden,52.81,10,0.02,517.54,West,6
+Home & Garden,99.33,6,0.09,542.34,East,2
+Electronics,58.32,6,0.03,339.42,East,2
+Food,6.89,15,0.04,99.22,South,12
+Sports,62.11,9,0.11,497.5,East,2
+Electronics,457.24,4,0.01,1810.67,South,11
+Electronics,73.0,9,0.04,630.72,North,2
+Sports,41.36,7,0.04,277.94,North,10
+Food,10.3,11,0.03,109.9,West,1
+Clothing,93.25,6,0.08,514.74,South,8
+Sports,55.07,9,0.03,480.76,North,5
+Electronics,203.89,4,0.01,807.4,West,10
+Books,24.07,9,0.16,181.97,North,7
+Food,16.36,12,0.12,172.76,North,6
+Food,24.01,7,0.07,156.31,South,10
+Home & Garden,29.82,10,0.08,274.34,East,10
+Sports,65.4,3,0.13,170.69,East,12
+Home & Garden,83.76,10,0.04,804.1,East,12
+Food,7.4,10,0.08,68.08,South,10
+Clothing,49.32,12,0.02,580.0,West,5
+Electronics,186.54,6,0.04,1074.47,East,7
+Electronics,118.6,8,0.01,939.31,South,12
+Food,9.31,15,0.11,124.29,East,7
+Sports,107.49,5,0.11,478.33,East,2
+Clothing,52.99,8,0.07,394.25,West,8
+Electronics,148.07,8,0.04,1137.18,South,4
+Home & Garden,79.24,5,0.03,384.31,East,7
+Food,10.05,12,0.03,116.98,East,12
+Electronics,185.39,6,0.11,989.98,East,7
+Clothing,59.63,6,0.08,329.16,East,12
+Clothing,29.97,13,0.06,366.23,North,3
+Home & Garden,64.03,5,0.06,300.94,East,6
+Electronics,148.96,4,0.02,583.92,North,1
+Clothing,50.38,8,0.11,358.71,North,5
+Books,16.2,10,0.11,144.18,East,11
+Food,12.25,12,0.07,136.71,South,11
+Clothing,36.43,9,0.06,308.2,South,4
+Food,8.55,13,0.07,103.37,South,2
+Books,15.58,12,0.16,157.05,East,6
+Books,11.2,13,0.05,138.32,North,7
+Electronics,239.68,4,0.13,834.09,North,8
+Home & Garden,83.2,7,0.07,541.63,South,2
+Electronics,82.64,7,0.01,572.7,North,7
+Food,8.33,14,0.0,116.62,North,12
+Clothing,29.36,11,0.05,306.81,North,4
+Food,7.48,15,0.06,105.47,South,6
+Sports,31.49,13,0.03,397.09,South,12
+Sports,73.25,6,0.06,413.13,South,7
+Food,10.76,16,0.04,165.27,South,11
+Books,23.96,12,0.09,261.64,South,11
+Books,21.26,13,0.08,254.27,East,9
+Clothing,56.96,7,0.02,390.75,South,10
+Electronics,60.64,8,0.04,465.72,West,3
+Clothing,113.3,7,0.03,769.31,North,12
+Clothing,41.99,8,0.07,312.41,North,6
+Home & Garden,16.28,13,0.01,209.52,East,2
+Electronics,128.84,3,0.03,374.92,North,2
+Clothing,38.12,8,0.12,268.36,North,9
+Books,21.66,13,0.05,267.5,East,1
+Sports,33.08,10,0.07,307.64,West,12
+Electronics,170.14,2,0.06,319.86,West,5
+Clothing,37.89,10,0.03,367.53,West,12
+Sports,103.83,7,0.0,726.81,East,5
+Electronics,124.16,7,0.02,851.74,East,7
+Books,21.18,11,0.06,219.0,East,1
+Books,24.75,10,0.07,230.18,North,7
+Sports,36.91,7,0.03,250.62,North,3
+Food,13.82,12,0.08,152.57,North,7
+Sports,56.55,7,0.14,340.43,North,3
+Books,29.84,11,0.05,311.83,West,3
+Clothing,62.76,3,0.02,184.51,East,6
+Books,14.59,12,0.04,168.08,North,12
+Sports,146.04,7,0.05,971.17,East,8
+Clothing,35.05,4,0.08,128.98,West,9
+Books,18.04,12,0.04,207.82,South,1
+Electronics,170.01,5,0.09,773.55,West,5
+Clothing,62.43,8,0.07,464.48,East,12
+Clothing,32.81,10,0.01,324.82,North,7
+Home & Garden,58.28,6,0.11,311.22,South,8
+Food,10.53,14,0.12,129.73,West,11
+Clothing,51.24,9,0.05,438.1,South,3
+Clothing,30.56,6,0.08,168.69,West,7
+Clothing,37.18,10,0.04,356.93,South,2
+Home & Garden,28.45,7,0.06,187.2,South,3
+Home & Garden,194.76,2,0.04,373.94,South,12
+Sports,73.96,8,0.05,562.1,West,12
+Home & Garden,145.36,4,0.1,523.3,West,3
+Electronics,93.48,7,0.09,595.47,North,12
+Electronics,44.05,9,0.1,356.8,West,6
+Home & Garden,24.7,10,0.02,242.06,East,2
+Food,7.32,14,0.07,95.31,West,7
+Food,15.17,8,0.08,111.65,West,5
+Sports,46.25,12,0.03,538.35,West,11
+Books,15.48,13,0.09,183.13,South,9
+Home & Garden,30.88,8,0.05,234.69,West,6
+Sports,132.92,5,0.09,604.79,South,11
+Books,12.02,15,0.01,178.5,West,5
+Food,11.17,11,0.08,113.04,East,9
+Food,10.9,9,0.11,87.31,North,8
+Electronics,140.42,9,0.1,1137.4,East,6
+Sports,51.99,11,0.07,531.86,South,4
+Food,14.25,12,0.05,162.45,East,8
+Clothing,180.54,8,0.03,1400.99,South,4
+Clothing,82.82,8,0.03,642.68,South,12
+Electronics,196.67,5,0.03,953.85,West,8
+Electronics,73.77,8,0.02,578.36,West,4
+Electronics,467.95,3,0.08,1291.54,West,12
+Books,29.9,8,0.04,229.63,South,12
+Clothing,34.86,9,0.05,298.05,West,12
+Books,21.85,11,0.04,230.74,North,5
+Sports,17.26,9,0.02,152.23,South,8
+Books,13.45,9,0.01,119.84,West,11
+Sports,101.91,6,0.06,574.77,East,10
+Clothing,19.29,14,0.03,261.96,East,11
+Sports,80.5,7,0.08,518.42,East,7
+Food,19.73,13,0.04,246.23,West,2
+Electronics,56.77,10,0.07,527.96,South,10
+Sports,54.12,11,0.02,583.41,East,1
+Sports,125.25,7,0.01,867.98,North,1
+Books,39.15,5,0.06,184.0,North,12
+Clothing,49.52,4,0.04,190.16,West,4
+Books,29.84,7,0.04,200.52,North,2
+Clothing,31.28,9,0.02,275.89,East,12
+Sports,41.58,8,0.03,322.66,South,1
+Electronics,227.63,3,0.01,676.06,North,9
+Electronics,286.45,2,0.17,475.51,South,7
+Home & Garden,80.09,8,0.05,608.68,North,7
+Home & Garden,146.03,3,0.04,420.57,West,9
+Sports,92.88,8,0.05,705.89,West,10
+Clothing,99.24,7,0.03,673.84,West,12
+Clothing,75.12,3,0.05,214.09,West,12
+Food,13.52,12,0.19,131.41,South,12
+Electronics,200.32,4,0.05,761.22,South,2
+Sports,59.97,9,0.11,480.36,West,7
+Electronics,204.03,5,0.07,948.74,South,6
+Sports,112.74,1,0.01,111.61,West,9
+Electronics,384.21,6,0.02,2259.15,South,5
+Home & Garden,180.8,5,0.04,867.84,South,5
+Books,26.31,12,0.03,306.25,South,2
+Electronics,357.32,4,0.02,1400.69,West,11
+Electronics,103.09,4,0.07,383.49,South,10
+Clothing,43.65,8,0.03,338.72,East,10
+Clothing,41.19,8,0.15,280.09,South,12
+Books,15.6,16,0.04,239.62,West,12
+Clothing,14.56,9,0.02,128.42,West,11
+Electronics,299.63,6,0.19,1456.2,West,2
+Clothing,29.46,12,0.07,328.77,West,8
+Electronics,102.96,6,0.03,599.23,North,6
+Clothing,34.65,7,0.08,223.15,East,8
+Food,25.09,10,0.11,223.3,West,2
+Electronics,238.63,5,0.03,1157.36,North,1
+Sports,132.74,3,0.02,390.26,North,1
+Sports,60.64,8,0.07,451.16,East,5
+Clothing,75.46,8,0.01,597.64,North,5
+Clothing,75.93,8,0.03,589.22,East,1
+Clothing,46.52,8,0.03,361.0,East,3
+Clothing,54.16,9,0.05,463.07,North,7
+Home & Garden,25.58,12,0.09,279.33,West,2
+Books,13.77,8,0.18,90.33,North,1
+Sports,63.6,5,0.05,302.1,East,8
+Books,9.29,10,0.02,91.04,North,12
+Sports,67.91,6,0.05,387.09,West,7
+Sports,65.4,9,0.04,565.06,South,5
+Books,15.36,13,0.06,187.7,South,6
+Electronics,293.7,4,0.11,1045.57,North,1
+Food,15.6,10,0.15,132.6,West,5
+Clothing,87.26,9,0.03,761.78,West,4
+Home & Garden,80.84,4,0.02,316.89,East,11
+Books,22.81,8,0.04,175.18,West,9
+Electronics,209.51,5,0.02,1026.6,South,5
+Sports,29.56,9,0.04,255.4,East,4
+Books,18.67,13,0.07,225.72,North,8
+Clothing,44.83,10,0.04,430.37,North,1
+Electronics,176.61,6,0.08,974.89,East,12
+Home & Garden,71.73,5,0.02,351.48,East,3
+Electronics,293.84,2,0.1,528.91,South,12
+Clothing,46.4,5,0.13,201.84,West,12
+Electronics,96.89,6,0.08,534.83,South,12
+Clothing,63.53,7,0.01,440.26,North,6
+Sports,19.95,10,0.02,195.51,West,9
+Food,6.96,13,0.08,83.24,East,8
+Clothing,87.79,7,0.13,534.64,West,1
+Food,6.84,16,0.07,101.78,South,5
+Food,13.93,11,0.07,142.5,East,12
+Food,8.0,12,0.08,88.32,South,4
+Books,22.61,10,0.03,219.32,East,6
+Books,20.54,12,0.01,244.02,South,12
+Clothing,79.28,11,0.09,793.59,West,6
+Electronics,236.19,5,0.08,1086.47,West,1
+Sports,105.14,1,0.03,101.99,West,12
+Sports,35.95,6,0.06,202.76,East,12
+Clothing,102.2,4,0.1,367.92,West,12
+Clothing,37.5,4,0.11,133.5,South,11
+Clothing,71.62,8,0.06,538.58,West,7
+Sports,52.52,6,0.06,296.21,North,2
+Clothing,84.05,4,0.04,322.75,South,3
+Clothing,58.81,7,0.11,366.39,East,1
+Books,19.83,11,0.02,213.77,South,7
+Electronics,249.12,3,0.03,724.94,North,12
+Electronics,158.16,5,0.02,774.98,South,3
+Home & Garden,69.77,9,0.07,583.97,North,8
+Clothing,98.37,4,0.01,389.55,East,2
+Food,15.92,11,0.06,164.61,North,4
+Food,13.15,8,0.02,103.1,South,9
+Electronics,123.7,3,0.1,333.99,West,10
+Food,20.56,13,0.07,248.57,South,12
+Food,9.13,11,0.08,92.4,North,2
+Clothing,46.21,6,0.06,260.62,South,5
+Books,13.11,14,0.01,181.7,West,10
+Clothing,35.1,8,0.07,261.14,East,1
+Electronics,145.52,7,0.04,977.89,South,2
+Electronics,209.48,8,0.07,1558.53,South,12
+Books,18.34,15,0.04,264.1,East,10
+Electronics,318.28,2,0.02,623.83,East,5
+Clothing,18.9,12,0.12,199.58,North,5
+Food,29.36,8,0.06,220.79,West,1
+Food,15.96,15,0.03,232.22,East,12
+Clothing,61.58,9,0.04,532.05,South,11
+Sports,38.6,14,0.01,535.0,South,10
+Home & Garden,127.53,4,0.01,505.02,North,3
+Books,14.93,11,0.12,144.52,North,2
+Home & Garden,68.52,1,0.06,64.41,West,12
+Food,13.81,10,0.07,128.43,North,3
+Books,22.21,9,0.04,191.89,South,12
+Books,21.99,11,0.01,239.47,South,4
+Electronics,90.48,8,0.02,709.36,South,11
+Food,7.64,12,0.01,90.76,West,7
+Home & Garden,160.97,4,0.08,592.37,South,4
+Books,23.98,11,0.02,258.5,North,4
+Food,16.23,11,0.07,166.03,East,10
+Home & Garden,94.67,7,0.06,622.93,South,5
+Food,15.9,15,0.13,207.5,South,5
+Clothing,19.28,10,0.06,181.23,South,5
+Food,13.14,13,0.06,160.57,South,9
+Electronics,341.42,5,0.03,1655.89,West,9
+Books,19.76,11,0.1,195.62,West,12
+Electronics,293.48,6,0.02,1725.66,North,7
+Books,21.87,10,0.07,203.39,South,1
+Clothing,40.59,11,0.13,388.45,South,12
+Books,15.31,12,0.01,181.88,West,9
+Electronics,162.34,6,0.02,954.56,North,3
+Home & Garden,138.88,4,0.03,538.85,North,2
+Books,11.96,14,0.03,162.42,South,9
+Clothing,79.81,4,0.05,303.28,West,10
+Food,6.13,16,0.11,87.29,West,3
+Sports,167.15,5,0.03,810.68,South,5
+Electronics,157.89,5,0.01,781.56,West,7
+Electronics,198.13,7,0.03,1345.3,North,7
+Sports,49.24,5,0.09,224.04,South,12
+Clothing,82.18,8,0.08,604.84,East,1
+Home & Garden,49.01,9,0.11,392.57,West,3
+Electronics,472.37,1,0.1,425.13,West,9
+Clothing,151.86,7,0.08,977.98,West,2
+Clothing,51.94,8,0.09,378.12,West,6
+Food,9.52,17,0.11,144.04,South,7
+Food,18.34,10,0.03,177.9,East,5
+Sports,43.69,12,0.13,456.12,North,8
+Electronics,144.24,8,0.03,1119.3,North,12
+Home & Garden,86.69,7,0.04,582.56,East,6
+Food,20.49,9,0.12,162.28,South,9
+Food,8.6,13,0.04,107.33,South,9
+Clothing,73.15,4,0.04,280.9,East,11
+Electronics,259.0,2,0.06,486.92,East,6
+Clothing,48.76,7,0.07,317.43,East,11
+Books,24.0,11,0.04,253.44,North,11
+Electronics,192.58,1,0.05,182.95,West,4
+Clothing,42.76,10,0.03,414.77,North,3
+Food,6.03,13,0.09,71.33,East,12
+Sports,18.38,13,0.11,212.66,South,11
+Clothing,52.43,9,0.04,453.0,East,3
+Home & Garden,114.26,5,0.05,542.74,East,11
+Food,8.85,14,0.1,111.51,North,2
+Electronics,143.54,5,0.02,703.35,South,4
+Electronics,531.88,1,0.03,515.92,West,11
+Sports,94.41,6,0.04,543.8,East,6
+Electronics,51.98,8,0.08,382.57,North,2
+Books,23.46,8,0.08,172.67,East,1
+Electronics,143.42,3,0.05,408.75,West,2
+Home & Garden,100.53,7,0.06,661.49,South,9
+Electronics,183.47,1,0.02,179.8,East,10
+Sports,37.73,10,0.1,339.57,West,2
+Clothing,137.71,7,0.07,896.49,East,4
+Food,4.6,14,0.04,61.82,South,12
+Electronics,79.71,8,0.03,618.55,North,2
+Clothing,86.03,5,0.05,408.64,South,12
+Home & Garden,65.27,9,0.02,575.68,North,12
+Books,20.3,17,0.06,324.39,South,12
+Sports,34.95,10,0.03,339.02,South,11
+Books,23.29,10,0.05,221.25,North,5
+Clothing,31.79,9,0.09,260.36,North,2
+Sports,30.84,7,0.09,196.45,East,12
+Electronics,66.24,6,0.08,365.64,South,7
+Clothing,79.23,6,0.0,475.38,South,3
+Food,11.68,11,0.05,122.06,West,7
+Food,15.97,12,0.01,189.72,West,12
+Food,14.01,14,0.05,186.33,West,5
+Electronics,131.69,2,0.08,242.31,North,9
+Clothing,24.81,9,0.04,214.36,West,11
+Sports,63.66,8,0.15,432.89,East,12
+Books,21.74,8,0.02,170.44,North,7
+Food,7.57,12,0.08,83.57,South,12
+Home & Garden,45.08,9,0.04,389.49,West,2
+Clothing,29.01,11,0.04,306.35,South,3
+Clothing,15.81,12,0.08,174.54,East,5
+Sports,63.86,5,0.06,300.14,North,12
+Books,21.46,12,0.02,252.37,South,5
+Sports,52.66,10,0.09,479.21,South,12
+Food,13.21,11,0.06,136.59,East,12
+Clothing,49.09,8,0.04,377.01,West,6
+Food,19.52,10,0.07,181.54,South,12
+Home & Garden,106.97,5,0.02,524.15,North,12
+Electronics,292.69,2,0.07,544.4,South,4
+Books,14.33,12,0.08,158.2,East,9
+Clothing,57.74,6,0.01,342.98,East,10
+Clothing,44.7,12,0.05,509.58,South,11
+Clothing,26.09,11,0.07,266.9,North,5
+Clothing,56.87,7,0.11,354.3,West,6
+Electronics,46.8,13,0.08,559.73,East,8
+Electronics,68.55,7,0.07,446.26,North,12
+Clothing,77.21,2,0.04,148.24,South,12
+Clothing,63.19,10,0.01,625.58,East,2
+Books,10.29,14,0.08,132.54,South,9
+Electronics,196.55,4,0.02,770.48,North,12
+Home & Garden,70.19,7,0.03,476.59,East,12
+Home & Garden,55.26,7,0.19,313.32,East,9
+Food,7.61,11,0.02,82.04,North,6
+Sports,47.31,6,0.05,269.67,East,6
+Clothing,64.87,12,0.03,755.09,North,6
+Clothing,112.02,4,0.07,416.71,North,3
+Home & Garden,109.86,6,0.07,613.02,South,10
+Sports,35.74,13,0.05,441.39,South,10
+Electronics,246.82,2,0.02,483.77,South,10
+Food,27.97,10,0.05,265.71,North,1
+Books,17.07,10,0.05,162.16,North,12
+Food,7.28,11,0.15,68.07,East,8
+Home & Garden,125.98,6,0.06,710.53,West,5
+Food,9.48,14,0.04,127.41,East,1
+Food,12.37,12,0.08,136.56,North,10
+Home & Garden,80.95,6,0.1,437.13,North,1
+Clothing,41.38,10,0.08,380.7,East,7
+Sports,55.41,9,0.03,483.73,West,8
+Sports,77.3,11,0.06,799.28,East,12
+Books,22.68,12,0.03,264.0,North,3
+Electronics,191.46,6,0.08,1056.86,South,10
+Food,16.58,10,0.06,155.85,East,2
+Electronics,193.26,1,0.06,181.66,West,3
+Clothing,33.1,12,0.03,385.28,West,1
+Books,31.23,8,0.05,237.35,West,8
+Electronics,196.49,5,0.15,835.08,South,6
+Home & Garden,91.5,7,0.07,595.66,West,3
+Electronics,327.52,1,0.07,304.59,South,11
+Books,17.65,12,0.07,196.97,North,3
+Home & Garden,29.55,13,0.02,376.47,South,9
+Sports,23.95,13,0.04,298.9,West,4
+Sports,45.98,8,0.07,342.09,West,12
+Food,18.54,11,0.0,203.94,East,12
+Sports,68.24,3,0.06,192.44,West,12
+Clothing,61.59,5,0.09,280.23,West,5
+Clothing,36.07,8,0.03,279.9,West,7
+Books,11.81,12,0.06,133.22,North,8
+Food,10.91,13,0.02,138.99,East,1
+Sports,22.05,10,0.18,180.81,North,6
+Books,13.84,14,0.05,184.07,East,4
+Food,14.63,10,0.11,130.21,East,1
+Home & Garden,42.96,10,0.04,412.42,North,3
+Food,6.63,12,0.03,77.17,North,11
+Electronics,204.65,3,0.05,583.25,South,6
+Books,20.32,11,0.03,216.81,North,12
+Clothing,46.51,10,0.06,437.19,West,1
+Electronics,39.37,8,0.08,289.76,West,5
+Clothing,61.03,7,0.02,418.67,West,3
+Sports,45.5,8,0.09,331.24,East,1
+Food,14.24,12,0.04,164.04,East,6
+Books,24.11,13,0.05,297.76,North,3
+Food,13.86,13,0.03,174.77,North,4
+Clothing,81.73,6,0.04,470.76,East,11
+Books,21.71,10,0.08,199.73,West,7
+Sports,42.21,11,0.07,431.81,West,12
+Clothing,32.66,12,0.08,360.57,South,12
+Sports,139.87,7,0.12,861.6,North,3
+Books,34.42,9,0.03,300.49,North,7
+Home & Garden,54.41,6,0.09,297.08,South,12
+Food,13.5,11,0.06,139.59,South,9
+Food,14.5,12,0.18,142.68,South,2
+Clothing,67.96,5,0.05,322.81,West,5
+Books,11.49,12,0.1,124.09,South,7
+Clothing,69.32,12,0.06,781.93,East,6
+Sports,62.75,8,0.04,481.92,East,4
+Books,19.79,13,0.1,231.54,West,7
+Sports,48.51,6,0.05,276.51,North,3
+Electronics,443.58,5,0.12,1951.75,West,8
+Books,16.99,11,0.05,177.55,East,2
+Electronics,593.03,1,0.04,569.31,East,12
+Clothing,107.89,6,0.08,595.55,East,12
+Sports,46.32,9,0.14,358.52,East,12
+Sports,97.92,5,0.03,474.91,South,4
+Food,19.35,12,0.08,213.62,East,8
+Clothing,42.86,13,0.05,529.32,South,1
+Books,9.91,12,0.04,114.16,East,8
+Electronics,141.91,7,0.0,993.37,North,10
+Sports,72.73,5,0.05,345.47,West,11
+Electronics,859.68,1,0.09,782.31,North,12
+Sports,118.83,5,0.12,522.85,South,9
+Clothing,82.45,10,0.02,808.01,South,2
+Home & Garden,89.17,6,0.08,492.22,East,9
+Sports,99.28,8,0.09,722.76,South,10
+Clothing,33.31,10,0.03,323.11,West,12
+Food,9.52,11,0.13,91.11,North,12
+Food,7.8,14,0.04,104.83,East,2
+Sports,34.82,9,0.05,297.71,South,11
+Books,18.42,13,0.05,227.49,South,7
+Clothing,137.76,5,0.03,668.14,East,10
+Food,7.48,10,0.11,66.57,South,12
+Food,14.7,10,0.06,138.18,North,1
+Home & Garden,75.54,6,0.07,421.51,North,12
+Electronics,47.3,10,0.05,449.35,South,5
+Books,18.23,11,0.08,184.49,South,7
+Sports,20.73,13,0.1,242.54,North,1
+Electronics,373.99,2,0.02,733.02,North,12
+Clothing,75.67,8,0.04,581.15,East,12
+Clothing,33.28,11,0.02,358.76,East,8
+Electronics,126.23,6,0.03,734.66,South,11
+Sports,45.71,5,0.05,217.12,North,1
+Sports,42.3,11,0.09,423.42,North,2
+Books,23.51,10,0.02,230.4,West,10
+Food,8.04,15,0.05,114.57,South,3
+Home & Garden,56.68,3,0.01,168.34,West,11
+Home & Garden,34.02,9,0.03,296.99,North,12
+Books,26.44,10,0.02,259.11,East,11
+Clothing,51.44,7,0.11,320.47,East,12
+Food,19.28,11,0.04,203.6,North,1
+Sports,38.39,7,0.04,257.98,North,10
+Books,8.47,12,0.07,94.53,East,6
+Sports,77.36,8,0.03,600.31,East,7
+Electronics,205.63,4,0.01,814.29,West,12
+Electronics,296.52,4,0.03,1150.5,South,5
+Home & Garden,66.91,8,0.09,487.1,North,4
+Electronics,253.98,2,0.12,447.0,North,10
+Electronics,291.83,3,0.1,787.94,East,12
+Food,9.94,12,0.06,112.12,West,9
+Clothing,15.53,13,0.08,185.74,East,9
+Food,15.99,15,0.02,235.05,South,8
+Books,19.3,11,0.04,203.81,West,4
+Clothing,36.93,8,0.13,257.03,South,5
+Sports,30.12,14,0.12,371.08,North,6
+Books,30.65,9,0.05,262.06,South,12
+Sports,60.89,6,0.02,358.03,East,12
+Electronics,169.06,4,0.06,635.67,North,11
+Electronics,81.39,3,0.11,217.31,North,12
+Clothing,31.52,13,0.08,376.98,East,12
+Food,13.31,14,0.04,178.89,West,6
+Electronics,61.89,10,0.09,563.2,South,4
+Food,19.83,12,0.03,230.82,South,5
+Books,15.85,11,0.05,165.63,South,11
+Food,20.34,10,0.02,199.33,South,11
+Sports,60.02,6,0.06,338.51,North,12
+Home & Garden,41.11,10,0.05,390.54,West,12
+Home & Garden,223.13,6,0.04,1285.23,East,5
+Books,17.88,13,0.04,223.14,South,10
+Clothing,35.34,7,0.02,242.43,North,8
+Home & Garden,116.43,10,0.01,1152.66,West,8
+Electronics,202.62,3,0.1,547.07,West,4
+Clothing,46.26,9,0.04,399.69,North,10
+Clothing,16.88,11,0.03,180.11,East,1
+Food,6.08,13,0.07,73.51,East,9
+Clothing,72.04,3,0.02,211.8,North,3
+Electronics,105.46,4,0.04,404.97,West,6
+Electronics,214.85,3,0.06,605.88,North,9
+Clothing,29.21,12,0.02,343.51,South,2
+Electronics,183.38,4,0.11,652.83,North,9
+Electronics,43.55,9,0.12,344.92,South,4
+Food,11.01,10,0.09,100.19,West,12
+Sports,114.31,5,0.0,571.55,West,7
+Home & Garden,74.86,9,0.02,660.27,West,10
+Electronics,116.35,9,0.02,1026.21,West,12
+Sports,52.39,9,0.01,466.79,South,8
+Electronics,150.65,6,0.07,840.63,South,5
+Sports,142.1,5,0.1,639.45,South,12
+Electronics,169.75,4,0.06,638.26,North,2
+Clothing,56.59,8,0.02,443.67,East,10
+Clothing,35.42,11,0.05,370.14,South,12
+Electronics,223.69,2,0.01,442.91,South,12
+Books,20.73,9,0.06,175.38,East,12
+Clothing,31.62,11,0.05,330.43,East,9
+Clothing,19.52,10,0.05,185.44,South,3
+Electronics,127.46,6,0.03,741.82,South,12
+Electronics,341.49,1,0.04,327.83,East,12
+Home & Garden,45.57,9,0.02,401.93,East,9
+Home & Garden,52.01,7,0.13,316.74,West,11
+Books,25.55,9,0.03,223.05,North,11
+Sports,51.67,9,0.06,437.13,North,11
+Sports,21.05,9,0.07,176.19,East,12
+Home & Garden,174.98,1,0.14,150.48,South,7
+Clothing,46.72,6,0.07,260.7,West,2
+Clothing,34.52,9,0.05,295.15,North,1
+Sports,48.26,11,0.07,493.7,North,11
+Home & Garden,88.34,6,0.1,477.04,North,1
+Home & Garden,47.65,6,0.02,280.18,North,3
+Electronics,522.74,1,0.06,491.38,East,12
+Home & Garden,85.11,9,0.03,743.01,East,7
+Clothing,61.7,8,0.07,459.05,West,11
+Electronics,185.3,5,0.05,880.18,West,3
+Clothing,34.1,10,0.04,327.36,East,10
+Books,19.08,14,0.07,248.42,South,7
+Home & Garden,188.94,2,0.1,340.09,South,7
+Food,9.92,15,0.12,130.94,South,7
+Clothing,42.05,10,0.04,403.68,West,3
+Home & Garden,81.07,5,0.11,360.76,North,2
+Books,14.37,13,0.06,175.6,South,12
+Food,17.04,14,0.05,226.63,East,12
+Clothing,24.41,10,0.03,236.78,East,1
+Sports,67.37,9,0.1,545.7,South,12
+Electronics,74.65,3,0.01,221.71,North,1
+Clothing,38.59,6,0.04,222.28,West,2
+Clothing,38.64,10,0.04,370.94,East,8
+Clothing,168.89,5,0.17,700.89,West,4
+Home & Garden,46.28,10,0.04,444.29,South,12
+Sports,91.55,8,0.01,725.08,East,7
+Clothing,55.44,10,0.05,526.68,East,7
+Electronics,89.99,4,0.04,345.56,West,11
+Sports,86.9,4,0.09,316.32,East,12
+Electronics,146.73,7,0.04,986.03,West,8
+Books,11.12,13,0.05,137.33,North,8
+Clothing,18.85,11,0.08,190.76,East,11
+Home & Garden,71.1,7,0.03,482.77,South,11
+Electronics,168.96,8,0.03,1311.13,South,9
+Electronics,49.49,7,0.04,332.57,North,8
+Clothing,46.41,9,0.15,355.04,West,12
+Electronics,119.18,9,0.01,1061.89,South,4
+Electronics,207.91,3,0.09,567.59,South,10
+Electronics,90.25,6,0.04,519.84,South,12
+Clothing,46.06,8,0.03,357.43,West,1
+Home & Garden,59.25,4,0.02,232.26,South,12
+Electronics,218.37,6,0.0,1310.22,West,5
+Food,18.03,13,0.08,215.64,West,12
+Clothing,122.4,9,0.03,1068.55,East,12
+Clothing,20.94,11,0.08,211.91,North,11
+Clothing,50.17,9,0.03,437.98,West,9
+Clothing,28.01,12,0.04,322.68,East,8
+Clothing,24.82,14,0.03,337.06,North,12
+Electronics,41.91,10,0.08,385.57,North,4
+Clothing,32.64,11,0.01,355.45,North,3
+Home & Garden,63.12,7,0.08,406.49,North,12
+Electronics,117.44,7,0.03,797.42,West,2
+Electronics,162.69,5,0.06,764.64,East,3
+Clothing,46.83,11,0.04,494.52,East,7
+Home & Garden,79.77,9,0.03,696.39,North,2
+Food,11.67,11,0.11,114.25,South,5
+Electronics,170.78,3,0.11,455.98,North,8
+Clothing,46.06,10,0.09,419.15,West,5
+Food,9.45,13,0.08,113.02,North,10
+Food,6.68,15,0.05,95.19,North,7
+Electronics,48.51,11,0.08,490.92,North,12
+Sports,62.88,5,0.06,295.54,North,6
+Home & Garden,32.38,11,0.01,352.62,West,12
+Electronics,218.99,2,0.06,411.7,West,4
+Home & Garden,43.45,9,0.03,379.32,South,2
+Clothing,27.72,10,0.11,246.71,North,3
+Sports,43.81,7,0.03,297.47,West,1
+Food,11.68,8,0.05,88.77,West,12
+Home & Garden,158.93,4,0.01,629.36,East,8
+Clothing,32.8,7,0.04,220.42,North,6
+Electronics,90.28,7,0.04,606.68,South,1
+Electronics,166.49,5,0.06,782.5,East,6
+Home & Garden,102.7,8,0.06,772.3,North,12
+Books,16.39,13,0.05,202.42,West,12
+Home & Garden,42.2,5,0.05,200.45,South,3
+Electronics,188.35,1,0.08,173.28,North,8
+Clothing,47.74,7,0.03,324.15,East,5
+Clothing,51.39,8,0.05,390.56,East,3
+Food,6.57,15,0.13,85.74,East,11
+Food,14.52,11,0.06,150.14,East,7
+Food,11.65,13,0.08,139.33,South,2
+Clothing,71.03,5,0.04,340.94,West,3
+Food,10.33,15,0.08,142.55,West,12
+Home & Garden,76.77,6,0.09,419.16,East,10
+Electronics,114.95,5,0.09,523.02,North,11
+Sports,146.57,4,0.08,539.38,West,3
+Books,11.17,13,0.19,117.62,West,1
+Home & Garden,33.67,12,0.02,395.96,North,6
+Sports,34.53,10,0.04,331.49,North,4
+Clothing,9.58,15,0.04,137.95,East,7
+Sports,39.12,8,0.04,300.44,East,11
+Home & Garden,154.41,6,0.02,907.93,North,11
+Books,21.39,12,0.06,241.28,South,2
+Electronics,282.68,5,0.12,1243.79,South,11
+Books,16.59,10,0.09,150.97,North,1
+Clothing,30.63,8,0.12,215.64,West,4
+Clothing,38.74,9,0.06,327.74,East,6
+Books,11.77,14,0.02,161.48,North,2
+Sports,21.92,9,0.1,177.55,West,5
+Sports,88.29,7,0.04,593.31,East,11
+Food,11.27,16,0.03,174.91,West,10
+Food,19.55,7,0.01,135.48,North,8
+Sports,26.06,8,0.03,202.23,West,3
+Books,17.78,11,0.06,183.85,North,7
+Food,6.31,15,0.04,90.86,West,11
+Electronics,402.54,2,0.02,788.98,South,12
+Food,11.84,14,0.06,155.81,North,6
+Clothing,25.47,13,0.15,281.44,South,2
+Sports,31.56,9,0.09,258.48,East,10
+Books,25.18,9,0.03,219.82,West,6
+Books,12.61,15,0.03,183.48,North,8
+Sports,46.04,5,0.03,223.29,South,5
+Electronics,136.86,7,0.09,871.8,South,12
+Electronics,68.16,10,0.07,633.89,East,8
+Electronics,385.39,3,0.16,971.18,North,3
+Books,29.75,9,0.04,257.04,West,1
+Clothing,32.35,10,0.02,317.03,North,1
+Books,18.35,10,0.03,178.0,West,8
+Books,21.52,15,0.03,313.12,West,12
+Electronics,212.35,5,0.01,1051.13,South,3
+Clothing,60.81,8,0.1,437.83,West,1
+Books,12.44,13,0.06,152.02,North,9
+Clothing,43.48,10,0.06,408.71,North,10
+Food,6.64,16,0.02,104.12,North,4
+Clothing,40.5,10,0.09,368.55,East,11
+Electronics,198.37,3,0.04,571.31,North,10
+Clothing,64.68,7,0.08,416.54,West,5
+Food,5.07,13,0.02,64.59,West,3
+Clothing,48.6,6,0.05,277.02,North,1
+Books,11.59,13,0.12,132.59,North,4
+Books,20.21,10,0.07,187.95,South,12
+Electronics,186.51,4,0.05,708.74,South,10
+Sports,58.01,9,0.01,516.87,South,12
+Food,16.99,13,0.07,205.41,South,12
+Food,12.95,13,0.06,158.25,West,12
+Food,8.6,13,0.04,107.33,West,12
+Clothing,36.8,11,0.03,392.66,North,2
+Home & Garden,76.72,6,0.04,441.91,West,1
+Books,10.86,16,0.04,166.81,South,10
+Food,10.62,12,0.04,122.34,South,11
+Electronics,183.59,7,0.05,1220.87,South,6
+Books,12.91,10,0.07,120.06,West,3
+Clothing,79.0,9,0.05,675.45,South,2
+Electronics,304.94,4,0.01,1207.56,South,3
+Food,14.39,12,0.03,167.5,South,12
+Clothing,41.48,11,0.05,433.47,North,9
+Books,15.96,13,0.04,199.18,East,12
+Books,20.99,11,0.01,228.58,West,12
+Home & Garden,82.21,7,0.07,535.19,East,4
+Home & Garden,109.6,7,0.12,675.14,South,12
+Home & Garden,41.55,9,0.06,351.51,West,10
+Clothing,58.72,7,0.05,390.49,North,12
+Books,24.46,9,0.04,211.33,East,9
+Sports,33.34,9,0.03,291.06,West,9
+Books,18.34,9,0.04,158.46,East,12
+Electronics,146.1,2,0.01,289.28,North,9
+Clothing,39.53,11,0.04,417.44,East,12
+Books,23.33,10,0.1,209.97,South,11
+Sports,48.76,13,0.07,589.51,East,8
+Books,21.7,11,0.12,210.06,North,3
+Books,19.88,13,0.04,248.1,East,7
+Electronics,238.57,5,0.09,1085.49,West,3
+Food,10.6,13,0.01,136.42,West,9
+Sports,38.57,9,0.08,319.36,West,10
+Home & Garden,90.64,4,0.13,315.43,West,8
+Books,17.84,9,0.02,157.35,East,7
+Books,22.38,8,0.02,175.46,South,1
+Home & Garden,46.82,6,0.06,264.06,East,9
+Clothing,33.09,7,0.07,215.42,West,2
+Electronics,228.93,4,0.06,860.78,South,12
+Electronics,157.28,1,0.09,143.12,North,3
+Sports,49.81,12,0.03,579.79,South,11
+Books,21.42,9,0.02,188.92,South,11
+Food,10.89,14,0.04,146.36,South,10
+Clothing,47.5,9,0.06,401.85,North,2
+Books,20.51,12,0.07,228.89,West,12
+Clothing,25.81,10,0.1,232.29,West,3
+Sports,85.09,7,0.11,530.11,South,8
+Clothing,43.65,9,0.09,357.49,East,2
+Clothing,38.38,11,0.03,409.51,South,7
+Electronics,138.98,7,0.1,875.57,West,12
+Sports,39.59,10,0.05,376.1,West,12
+Clothing,18.29,9,0.09,149.8,North,6
+Clothing,45.13,7,0.05,300.11,East,1
+Sports,43.5,9,0.03,379.76,South,10
+Electronics,432.67,4,0.01,1713.37,South,10
+Electronics,391.74,5,0.01,1939.11,East,8
+Food,9.8,12,0.02,115.25,North,11
+Books,19.59,12,0.1,211.57,North,1
+Clothing,74.6,6,0.05,425.22,South,11
+Sports,64.94,6,0.01,385.74,South,6
+Home & Garden,58.83,8,0.03,456.52,South,12
+Sports,46.55,10,0.06,437.57,West,7
+Home & Garden,36.05,10,0.08,331.66,North,12
+Home & Garden,105.16,2,0.02,206.11,East,3
+Electronics,222.59,6,0.08,1228.7,North,5
+Food,12.68,8,0.09,92.31,East,7
+Sports,54.47,10,0.09,495.68,South,7
+Electronics,467.4,5,0.06,2196.78,East,12
+Clothing,55.24,14,0.05,734.69,North,4
+Books,26.33,7,0.08,169.57,West,8
+Books,12.71,11,0.09,127.23,South,7
+Sports,36.28,10,0.09,330.15,East,7
+Food,8.76,14,0.06,115.28,North,10
+Sports,77.05,6,0.09,420.69,East,4
+Clothing,37.81,11,0.06,390.96,East,8
+Electronics,357.55,2,0.08,657.89,North,2
+Home & Garden,69.09,8,0.05,525.08,West,7
+Food,17.42,11,0.1,172.46,West,11
+Electronics,119.94,7,0.1,755.62,East,4
+Clothing,68.67,8,0.05,521.89,North,12
+Clothing,39.03,6,0.04,224.81,South,11
+Home & Garden,62.91,9,0.05,537.88,West,5
+Food,8.28,12,0.06,93.4,East,12
+Electronics,46.15,7,0.07,300.44,North,7
+Electronics,70.39,6,0.07,392.78,North,12
+Books,19.57,11,0.04,206.66,South,9
+Food,13.36,13,0.03,168.47,South,2
+Books,11.43,14,0.05,152.02,West,11
+Home & Garden,33.46,7,0.05,222.51,West,4
+Food,7.11,14,0.06,93.57,North,10
+Food,14.9,14,0.08,191.91,West,7
+Electronics,83.98,9,0.04,725.59,East,6
+Clothing,27.82,11,0.03,296.84,North,12
+Home & Garden,84.49,5,0.08,388.65,South,9
+Books,15.18,13,0.03,191.42,South,12
+Home & Garden,86.84,6,0.04,500.2,North,7
+Sports,78.43,4,0.07,291.76,East,12
+Food,9.66,8,0.05,73.42,East,2
+Home & Garden,24.76,11,0.1,245.12,South,8
+Sports,48.09,11,0.03,513.12,South,8
+Sports,152.13,9,0.08,1259.64,West,1
+Sports,32.92,12,0.11,351.59,West,9
+Electronics,361.3,3,0.03,1051.38,North,3
+Food,9.37,13,0.01,120.59,South,12
+Clothing,28.39,10,0.04,272.54,South,11
+Clothing,89.4,8,0.07,665.14,North,12
+Home & Garden,50.67,6,0.02,297.94,West,10
+Clothing,16.26,12,0.06,183.41,North,5
+Sports,28.91,9,0.03,252.38,North,12
+Electronics,84.64,8,0.03,656.81,South,2
+Clothing,33.93,11,0.06,350.84,South,1
+Electronics,340.7,1,0.06,320.26,South,4
+Sports,85.31,4,0.05,324.18,South,3
+Home & Garden,64.19,8,0.11,457.03,West,1
+Electronics,198.74,5,0.02,973.83,West,6
+Home & Garden,49.11,7,0.01,340.33,North,7
+Electronics,49.07,9,0.03,428.38,West,7
+Electronics,150.27,5,0.03,728.81,North,7
+Books,16.81,10,0.03,163.06,East,12
+Clothing,69.0,6,0.08,380.88,South,12
+Clothing,51.95,9,0.04,448.85,West,6
+Electronics,317.84,5,0.03,1541.52,North,4
+Food,10.23,12,0.02,120.3,North,10
+Clothing,37.64,10,0.03,365.11,East,6
+Electronics,109.84,6,0.06,619.5,South,6
+Sports,36.6,8,0.09,266.45,North,12
+Food,17.95,10,0.03,174.12,North,7
+Food,12.69,10,0.08,116.75,East,11
+Clothing,25.33,11,0.04,267.48,East,1
+Electronics,98.84,7,0.08,636.53,West,1
+Books,30.65,9,0.06,259.3,North,12
+Sports,164.58,1,0.08,151.41,West,12
+Sports,105.79,6,0.05,603.0,West,12
+Books,18.6,11,0.03,198.46,East,12
+Home & Garden,159.65,4,0.02,625.83,South,12
+Books,17.67,13,0.06,215.93,West,8
+Home & Garden,33.13,8,0.03,257.09,North,8
+Clothing,46.32,8,0.05,352.03,West,2
+Clothing,26.7,10,0.13,232.29,East,2
+Electronics,128.8,8,0.04,989.18,West,2
+Books,34.12,7,0.09,217.34,West,6
+Clothing,57.52,8,0.11,409.54,North,1
+Sports,60.54,4,0.08,222.79,North,12
+Sports,80.29,5,0.01,397.44,East,12
+Home & Garden,50.13,8,0.15,340.88,West,7
+Sports,61.76,5,0.08,284.1,South,3
+Electronics,77.19,8,0.05,586.64,North,12
+Clothing,23.39,11,0.16,216.12,East,1
+Sports,43.3,7,0.11,269.76,West,12
+Electronics,66.47,8,0.07,494.54,West,6
+Home & Garden,17.85,10,0.19,144.58,West,3
+Electronics,104.09,5,0.07,484.02,West,1
+Food,7.95,13,0.04,99.22,North,8
+Electronics,79.61,9,0.08,659.17,West,12
+Clothing,87.54,5,0.07,407.06,South,11
+Books,21.25,12,0.1,229.5,North,8
+Books,23.51,13,0.02,299.52,West,8
+Sports,48.79,8,0.09,355.19,West,10
+Food,7.96,15,0.04,114.62,South,10
+Electronics,79.78,11,0.08,807.37,East,2
+Books,29.57,8,0.02,231.83,North,4
+Books,7.97,11,0.05,83.29,East,12
+Clothing,34.51,11,0.04,364.43,West,7
+Home & Garden,71.08,7,0.07,462.73,North,7
+Sports,26.32,13,0.04,328.47,West,3
+Clothing,72.13,6,0.04,415.47,South,2
+Food,8.62,13,0.08,103.1,South,2
+Electronics,144.23,6,0.04,830.76,North,2
+Books,27.77,6,0.07,154.96,South,8
+Electronics,260.8,6,0.05,1486.56,East,9
+Food,10.89,13,0.01,140.15,West,12
+Home & Garden,59.71,6,0.02,351.09,South,10
+Electronics,392.31,1,0.06,368.77,South,4
+Clothing,109.99,5,0.1,494.95,North,5
+Clothing,57.07,11,0.04,602.66,North,7
+Clothing,18.48,10,0.05,175.56,East,4
+Food,9.97,16,0.01,157.92,South,6
+Home & Garden,118.47,5,0.1,533.12,North,11
+Sports,38.62,10,0.04,370.75,North,8
+Sports,47.74,8,0.04,366.64,West,2
+Clothing,28.25,10,0.04,271.2,East,6
+Electronics,113.61,8,0.09,827.08,North,9
+Food,17.52,11,0.04,185.01,North,5
+Home & Garden,97.04,5,0.09,441.53,East,12
+Clothing,27.06,12,0.04,311.73,West,4
+Electronics,354.38,6,0.07,1977.44,North,9
+Clothing,22.88,10,0.08,210.5,South,12
+Electronics,289.19,3,0.03,841.54,East,12
+Electronics,277.44,2,0.04,532.68,North,12
+Electronics,63.96,5,0.02,313.4,North,8
+Home & Garden,22.87,9,0.04,197.6,South,12
+Food,17.92,12,0.05,204.29,South,9
+Sports,76.83,6,0.02,451.76,West,11
+Food,13.29,13,0.09,157.22,West,6
+Clothing,31.72,10,0.09,288.65,East,12
+Food,14.17,13,0.08,169.47,North,3
+Clothing,22.56,14,0.07,293.73,West,7
+Home & Garden,104.61,6,0.1,564.89,West,7
+Clothing,138.68,3,0.04,399.4,West,8
+Sports,51.24,9,0.02,451.94,East,4
+Electronics,310.9,4,0.03,1206.29,East,5
+Clothing,30.45,13,0.01,391.89,West,6
+Books,19.99,11,0.09,200.1,East,12
+Electronics,135.49,4,0.13,471.51,East,5
+Clothing,56.95,6,0.02,334.87,North,1
+Clothing,39.85,10,0.08,366.62,West,2
+Sports,24.71,10,0.11,219.92,East,2
+Sports,93.12,8,0.07,692.81,East,4
+Electronics,70.81,10,0.03,686.86,West,3
+Clothing,77.76,7,0.08,500.77,East,5
+Food,7.65,15,0.07,106.72,East,12
+Sports,81.7,7,0.07,531.87,North,12
+Home & Garden,82.22,8,0.1,591.98,South,12
+Clothing,35.68,7,0.08,229.78,West,11
+Clothing,72.74,5,0.13,316.42,West,7
+Food,13.39,15,0.07,186.79,North,2
+Clothing,97.98,3,0.03,285.12,North,12
+Clothing,63.01,6,0.12,332.69,North,2
+Food,19.44,12,0.05,221.62,West,11
+Home & Garden,20.36,9,0.03,177.74,North,7
+Electronics,386.13,1,0.05,366.82,East,12
+Home & Garden,57.54,6,0.1,310.72,South,12
+Books,16.96,14,0.01,235.07,North,9
+Home & Garden,31.11,9,0.04,268.79,East,7
+Food,9.15,16,0.01,144.94,West,12
+Clothing,39.48,9,0.08,326.89,North,3
+Clothing,47.03,5,0.05,223.39,South,7
+Food,12.38,13,0.03,156.11,North,5
+Home & Garden,52.58,4,0.03,204.01,West,8
+Electronics,168.41,6,0.09,919.52,South,5
+Home & Garden,107.66,2,0.05,204.55,West,11
+Clothing,35.7,11,0.07,365.21,South,11
+Electronics,97.01,7,0.04,651.91,West,2
+Electronics,310.26,6,0.02,1824.33,North,12
+Clothing,55.74,9,0.03,486.61,West,1
+Clothing,28.68,10,0.02,281.06,South,5
+Food,15.63,11,0.12,151.3,East,4
+Food,14.24,11,0.16,131.58,West,1
+Electronics,658.91,1,0.04,632.55,West,12
+Electronics,276.5,2,0.14,475.58,North,6
+Food,16.48,11,0.06,170.4,West,11
+Electronics,144.08,10,0.02,1411.98,East,11
+Home & Garden,38.08,10,0.11,338.91,East,2
+Clothing,43.45,7,0.05,288.94,South,5
+Books,16.8,14,0.13,204.62,North,11
+Books,16.65,12,0.03,193.81,South,6
+Food,18.73,10,0.05,177.94,North,4
+Food,8.11,14,0.07,105.59,North,5
+Electronics,482.13,1,0.11,429.1,North,3
+Food,8.23,14,0.01,114.07,South,11
+Home & Garden,29.0,9,0.05,247.95,East,11
+Clothing,71.37,9,0.04,616.64,West,9
+Clothing,40.31,6,0.06,227.35,West,11
+Electronics,93.75,7,0.1,590.62,East,6
+Food,14.11,9,0.07,118.1,South,5
+Electronics,108.51,10,0.07,1009.14,West,9
+Clothing,47.84,6,0.02,281.3,East,3
+Home & Garden,52.54,12,0.06,592.65,West,1
+Electronics,165.95,4,0.06,623.97,West,3
+Electronics,85.73,9,0.05,732.99,North,3
+Food,15.6,10,0.04,149.76,South,3
+Sports,44.66,8,0.14,307.26,East,5
+Books,18.42,14,0.07,239.83,East,11
+Electronics,34.25,7,0.04,230.16,South,2
+Books,20.54,12,0.01,244.02,West,6
+Electronics,99.18,3,0.08,273.74,North,11
+Food,10.88,17,0.04,177.56,East,9
+Electronics,115.11,8,0.05,874.84,West,7
+Clothing,33.28,6,0.03,193.69,East,2
+Food,8.0,13,0.0,104.0,North,5
+Electronics,267.49,5,0.04,1283.95,North,9
+Electronics,103.26,11,0.02,1113.14,East,2
+Electronics,123.58,5,0.01,611.72,East,12
+Books,15.92,8,0.06,119.72,West,8
+Sports,37.07,12,0.04,427.05,West,6
+Books,24.0,9,0.05,205.2,South,9
+Food,8.89,13,0.07,107.48,South,8
+Sports,61.75,7,0.01,427.93,North,9
+Home & Garden,38.37,6,0.01,227.92,North,12
+Clothing,21.14,6,0.06,119.23,North,2
+Food,6.48,17,0.12,96.94,South,3
+Electronics,191.71,4,0.06,720.83,South,11
+Clothing,16.4,11,0.02,176.79,South,6
+Home & Garden,22.41,9,0.04,193.62,South,8
+Clothing,30.95,10,0.05,294.02,West,1
+Food,14.14,10,0.06,132.92,East,6
+Food,8.54,11,0.02,92.06,East,1
+Clothing,69.72,4,0.02,273.3,North,2
+Food,10.55,10,0.05,100.22,East,2
+Clothing,37.25,9,0.1,301.73,East,11
+Electronics,376.8,1,0.1,339.12,North,8
+Electronics,188.16,8,0.04,1445.07,West,4
+Clothing,33.87,9,0.08,280.44,South,2
+Electronics,93.08,5,0.12,409.55,North,3
+Clothing,61.57,7,0.06,405.13,North,9
+Electronics,339.78,5,0.04,1630.94,North,7
+Clothing,36.46,4,0.1,131.26,South,7
+Sports,47.32,8,0.05,359.63,East,12
+Clothing,70.0,10,0.02,686.0,North,11
+Electronics,84.91,9,0.08,703.05,East,12
+Electronics,180.87,5,0.11,804.87,West,12
+Electronics,161.76,4,0.1,582.34,East,8
+Clothing,39.03,13,0.11,451.58,North,10
+Sports,33.12,8,0.14,227.87,West,8
+Food,4.61,18,0.06,78.0,East,8
+Electronics,120.45,3,0.08,332.44,West,9
+Clothing,23.17,7,0.1,145.97,East,2
+Electronics,160.99,5,0.06,756.65,South,10
+Food,9.17,12,0.06,103.44,South,2
+Electronics,101.66,1,0.1,91.49,East,10
+Home & Garden,135.5,5,0.03,657.18,North,3
+Clothing,58.01,12,0.12,612.59,South,10
+Clothing,26.48,10,0.05,251.56,North,3
+Electronics,239.11,4,0.09,870.36,North,4
+Books,15.5,11,0.1,153.45,North,9
+Food,6.88,14,0.05,91.5,North,4
+Clothing,44.69,9,0.01,398.19,South,5
+Sports,51.38,8,0.07,382.27,South,8
+Books,22.77,10,0.1,204.93,East,7
+Electronics,268.62,4,0.06,1010.01,East,12
+Food,17.24,12,0.08,190.33,East,5
+Food,8.73,13,0.05,107.82,North,10
+Clothing,40.71,6,0.09,222.28,East,1
+Sports,22.03,9,0.04,190.34,East,3
+Sports,59.61,5,0.1,268.24,West,7
+Electronics,118.17,5,0.01,584.94,North,2
+Electronics,32.23,12,0.06,363.55,East,12
+Electronics,206.14,4,0.02,808.07,East,8
+Books,19.64,10,0.06,184.62,East,8
+Sports,24.01,14,0.13,292.44,East,6
+Electronics,30.54,11,0.01,332.58,South,12
+Books,15.55,10,0.11,138.4,West,3
+Home & Garden,67.61,8,0.03,524.65,South,7
+Electronics,124.86,7,0.06,821.58,West,7
+Electronics,346.17,4,0.03,1343.14,South,3
+Clothing,126.66,4,0.02,496.51,East,7
+Clothing,43.69,9,0.05,373.55,West,12
+Electronics,116.61,4,0.06,438.45,East,6
+Home & Garden,45.74,6,0.06,257.97,South,6
+Sports,137.01,6,0.05,780.96,West,11
+Sports,51.78,4,0.06,194.69,South,2
+Clothing,58.23,7,0.06,383.15,West,6
+Books,22.28,12,0.03,259.34,North,6
+Home & Garden,108.19,7,0.15,643.73,North,7
+Home & Garden,76.68,7,0.06,504.55,North,10
+Clothing,103.77,7,0.03,704.6,East,6
+Food,14.22,12,0.03,165.52,East,7
+Sports,56.78,10,0.06,533.73,East,2
+Home & Garden,32.64,10,0.03,316.61,South,12
+Books,15.72,13,0.02,200.27,West,8
+Electronics,133.78,4,0.14,460.2,West,8
+Books,23.53,10,0.1,211.77,West,10
+Electronics,94.77,5,0.05,450.16,North,5
+Books,18.61,13,0.01,239.51,East,6
+Home & Garden,54.2,10,0.04,520.32,North,5
+Electronics,22.58,11,0.07,230.99,North,8
+Food,12.67,14,0.14,152.55,North,11
+Food,22.12,11,0.04,233.59,West,4
+Books,11.45,12,0.1,123.66,East,7
+Sports,90.16,8,0.02,706.85,West,7
+Electronics,60.49,8,0.02,474.24,West,1
+Books,15.36,16,0.07,228.56,East,12
+Sports,49.39,6,0.1,266.71,North,4
+Clothing,66.88,9,0.04,577.84,South,1
+Clothing,42.41,7,0.16,249.37,South,8
+Food,11.76,14,0.03,159.7,South,8
+Food,16.45,10,0.09,149.7,West,6
+Clothing,68.91,4,0.15,234.29,South,7
+Books,16.84,15,0.04,242.5,West,12
+Electronics,197.91,4,0.03,767.89,North,8
+Electronics,362.65,6,0.02,2132.38,South,8
+Food,14.14,11,0.0,155.54,South,8
+Clothing,26.79,9,0.07,224.23,South,9
+Books,17.99,14,0.08,231.71,South,10
+Books,11.31,11,0.08,114.46,West,10
+Home & Garden,224.19,4,0.05,851.92,North,8
+Food,12.61,11,0.05,131.77,West,4
+Food,6.14,14,0.01,85.1,East,10
+Food,9.79,9,0.13,76.66,North,1
+Electronics,190.71,4,0.08,701.81,North,6
+Clothing,61.3,7,0.06,403.35,West,10
+Clothing,40.33,11,0.04,425.88,North,1
+Food,9.91,15,0.02,145.68,South,12
+Electronics,74.69,7,0.02,512.37,South,12
+Books,22.82,11,0.07,233.45,North,2
+Books,25.38,10,0.07,236.03,North,11
+Clothing,50.85,13,0.08,608.17,East,7
+Books,18.65,10,0.11,165.98,East,4
+Home & Garden,67.75,9,0.06,573.16,South,11
+Home & Garden,45.13,9,0.07,377.74,East,2
+Electronics,109.82,4,0.04,421.71,East,12
+Electronics,207.59,5,0.03,1006.81,North,12
+Sports,60.02,10,0.03,582.19,East,12
+Home & Garden,79.71,8,0.05,605.8,West,7
+Clothing,30.02,8,0.07,223.35,South,10
+Clothing,62.9,9,0.02,554.78,South,3
+Clothing,26.12,12,0.06,294.63,North,12
+Electronics,331.58,2,0.04,636.63,East,10
+Home & Garden,55.51,10,0.01,549.55,South,9
+Books,19.19,8,0.07,142.77,South,1
+Food,8.84,11,0.04,93.35,North,9
+Books,17.08,11,0.06,176.61,East,12
+Books,14.03,12,0.05,159.94,North,3
+Home & Garden,67.27,9,0.12,532.78,West,1
+Food,5.74,16,0.1,82.66,North,5
+Sports,91.92,5,0.08,422.83,West,4
+Clothing,47.35,11,0.07,484.39,West,1
+Clothing,60.56,11,0.04,639.51,West,12
+Books,16.9,13,0.1,197.73,North,11
+Electronics,199.47,4,0.04,765.96,East,2
+Home & Garden,40.81,8,0.12,287.3,East,1
+Clothing,27.8,8,0.02,217.95,East,12
+Clothing,35.07,6,0.07,195.69,East,10
+Electronics,51.31,7,0.09,326.84,East,12
+Electronics,241.56,1,0.12,212.57,East,12
+Food,10.07,13,0.06,123.06,East,6
+Food,10.62,13,0.05,131.16,North,3
+Books,13.65,13,0.09,161.48,West,2
+Clothing,55.71,9,0.03,486.35,West,1
+Home & Garden,114.57,7,0.03,777.93,West,8
+Clothing,36.59,8,0.06,275.16,South,9
+Food,17.72,11,0.04,187.12,East,1
+Food,13.18,13,0.03,166.2,East,4
+Electronics,163.62,8,0.12,1151.88,North,12
+Books,10.69,9,0.12,84.66,North,1
+Food,8.17,11,0.16,75.49,South,10
+Electronics,320.99,2,0.11,571.36,East,8
+Clothing,72.76,5,0.06,341.97,North,4
+Books,33.61,8,0.01,266.19,South,12
+Clothing,32.29,10,0.03,313.21,North,1
+Sports,78.91,5,0.02,386.66,South,8
+Food,6.53,16,0.0,104.48,East,12
+Home & Garden,38.41,10,0.1,345.69,South,7
+Clothing,25.87,12,0.01,307.34,West,6
+Food,8.5,14,0.05,113.05,South,8
+Electronics,181.29,6,0.05,1033.35,South,10
+Home & Garden,148.32,1,0.14,127.56,West,10
+Clothing,48.97,10,0.06,460.32,North,11
+Food,7.33,12,0.04,84.44,West,9
+Sports,105.22,10,0.02,1031.16,South,9
+Electronics,190.7,3,0.02,560.66,East,4
+Electronics,51.48,9,0.03,449.42,East,11
+Electronics,387.04,1,0.04,371.56,East,4
+Clothing,46.07,6,0.1,248.78,South,3
+Clothing,65.75,8,0.05,499.7,West,2
+Clothing,33.24,10,0.01,329.08,East,10
+Clothing,34.96,12,0.07,390.15,West,3
+Sports,67.57,9,0.11,541.24,West,6
+Food,6.38,17,0.07,100.87,South,5
+Books,18.33,15,0.06,258.45,West,10
+Clothing,69.75,4,0.02,273.42,East,2
+Electronics,204.25,7,0.07,1329.67,North,2
+Food,11.66,11,0.07,119.28,East,10
+Electronics,113.12,7,0.05,752.25,West,3
+Home & Garden,50.98,8,0.08,375.21,West,10
+Electronics,418.09,4,0.05,1588.74,West,7
+Home & Garden,77.05,9,0.13,603.3,East,8
+Home & Garden,72.55,8,0.11,516.56,West,8
+Clothing,28.67,9,0.05,245.13,West,3
+Food,14.07,8,0.08,103.56,South,6
+Food,16.21,12,0.02,190.63,North,12
+Books,9.18,13,0.04,114.57,North,3
+Clothing,102.64,6,0.07,572.73,South,1
+Home & Garden,105.98,7,0.03,719.6,East,2
+Clothing,40.98,13,0.01,527.41,South,8
+Sports,22.48,13,0.04,280.55,South,6
+Food,31.54,11,0.07,322.65,North,6
+Electronics,241.93,3,0.02,711.27,East,4
+Clothing,35.13,7,0.03,238.53,South,9
+Books,11.68,16,0.1,168.19,North,11
+Clothing,75.23,9,0.1,609.36,East,1
+Clothing,18.02,11,0.01,196.24,East,1
+Food,11.86,10,0.02,116.23,South,5
+Sports,46.76,8,0.07,347.89,South,6
+Clothing,24.37,12,0.08,269.04,East,1
+Electronics,88.66,8,0.11,631.26,East,10
+Food,8.96,12,0.07,99.99,West,5
+Books,23.33,11,0.04,246.36,North,12
+Electronics,195.82,4,0.0,783.28,South,2
+Clothing,78.9,6,0.09,430.79,South,5
+Electronics,73.07,10,0.12,643.02,South,3
+Food,19.92,13,0.05,246.01,East,10
+Electronics,188.94,5,0.02,925.81,South,1
+Clothing,83.08,6,0.02,488.51,East,7
+Food,10.54,16,0.04,161.89,East,6
+Books,20.7,8,0.05,157.32,East,1
+Home & Garden,36.34,10,0.01,359.77,North,9
+Books,25.26,8,0.1,181.87,South,12
+Food,12.41,8,0.08,91.34,West,6
+Electronics,96.48,6,0.17,480.47,West,3
+Food,11.21,9,0.1,90.8,North,10
+Sports,55.84,7,0.04,375.24,North,12
+Clothing,17.41,9,0.02,153.56,West,5
+Sports,55.88,8,0.14,384.45,East,1
+Home & Garden,32.45,9,0.02,286.21,South,10
+Home & Garden,57.62,5,0.04,276.58,South,2
+Food,12.39,11,0.03,132.2,East,11
+Electronics,728.51,1,0.03,706.65,North,2
+Sports,64.63,10,0.2,517.04,South,3
+Clothing,22.1,13,0.1,258.57,East,6
+Clothing,56.6,9,0.05,483.93,East,10
+Electronics,62.75,9,0.05,536.51,South,5
+Clothing,25.71,15,0.08,354.8,South,9
+Books,13.98,12,0.07,156.02,North,5
+Books,23.13,11,0.02,249.34,North,12
+Food,22.65,14,0.02,310.76,East,12
+Sports,74.3,8,0.03,576.57,West,11
+Home & Garden,28.06,8,0.06,211.01,West,7
+Books,18.35,14,0.02,251.76,East,5
+Electronics,249.31,4,0.04,957.35,North,11
+Electronics,23.88,13,0.07,288.71,West,12
+Electronics,108.71,9,0.02,958.82,North,5
+Electronics,835.09,1,0.04,801.69,East,4
+Home & Garden,26.67,10,0.18,218.69,West,9
+Food,7.69,15,0.13,100.35,East,5
+Sports,29.3,7,0.07,190.74,West,11
+Food,20.43,9,0.09,167.32,West,12
+Electronics,278.08,4,0.07,1034.46,West,5
+Clothing,64.07,8,0.05,486.93,South,6
+Home & Garden,128.7,4,0.06,483.91,North,2
+Food,9.05,13,0.03,114.12,East,2
+Food,5.5,15,0.06,77.55,East,11
+Books,20.99,9,0.04,181.35,West,6
+Electronics,46.04,7,0.03,312.61,East,12
+Electronics,230.07,3,0.08,634.99,North,9
+Clothing,57.9,6,0.05,330.03,South,9
+Electronics,166.79,3,0.01,495.37,South,1
+Electronics,371.76,2,0.09,676.6,East,5
+Electronics,198.63,1,0.11,176.78,North,11
+Books,12.44,11,0.09,124.52,East,6
+Electronics,86.49,7,0.05,575.16,East,5
+Books,22.15,9,0.02,195.36,East,6
+Electronics,96.02,9,0.0,864.18,West,10
+Books,21.85,11,0.04,230.74,East,6
+Electronics,125.04,8,0.02,980.31,West,10
+Food,13.5,12,0.04,155.52,West,7
+Sports,34.48,11,0.04,364.11,South,12
+Electronics,136.33,5,0.1,613.49,South,12
+Electronics,48.57,6,0.05,276.85,North,10
+Sports,38.97,10,0.03,378.01,North,12
+Home & Garden,91.58,5,0.05,435.0,South,7
+Clothing,32.78,11,0.07,335.34,South,5
+Clothing,28.03,8,0.04,215.27,East,9
+Home & Garden,111.06,6,0.08,613.05,West,12
+Electronics,260.96,3,0.03,759.39,South,12
+Food,7.57,16,0.09,110.22,North,12
+Sports,62.46,7,0.07,406.61,South,7
+Food,14.74,14,0.05,196.04,North,2
+Clothing,29.06,11,0.12,281.3,South,4
+Electronics,88.83,10,0.03,861.65,East,10
+Electronics,134.63,5,0.09,612.57,North,1
+Clothing,95.95,8,0.14,660.14,South,1
+Sports,54.29,10,0.02,532.04,North,12
+Home & Garden,63.31,9,0.01,564.09,North,12
+Books,8.13,14,0.11,101.3,West,8
+Electronics,193.95,7,0.04,1303.34,North,8
+Food,17.69,9,0.01,157.62,West,12
+Clothing,25.89,12,0.1,279.61,South,12
+Clothing,66.38,6,0.03,386.33,East,6
+Books,20.11,12,0.1,217.19,East,7
+Electronics,263.57,5,0.04,1265.14,North,5
+Food,11.98,13,0.01,154.18,East,5
+Food,12.19,12,0.08,134.58,South,11
+Food,32.67,8,0.1,235.22,South,10
+Electronics,547.24,1,0.04,525.35,East,12
+Electronics,79.03,6,0.05,450.47,South,12
+Electronics,47.14,9,0.03,411.53,South,9
+Home & Garden,82.46,4,0.09,300.15,West,12
+Food,14.42,17,0.01,242.69,North,12
+Food,12.63,12,0.03,147.01,West,3
+Sports,51.65,7,0.03,350.7,South,11
+Books,27.87,12,0.01,331.1,West,1
+Food,3.6,18,0.02,63.5,South,2
+Food,8.1,14,0.04,108.86,North,5
+Electronics,232.98,2,0.07,433.34,North,1
+Food,14.61,12,0.04,168.31,South,3
+Books,20.8,13,0.01,267.7,South,12
+Food,8.86,15,0.05,126.25,North,8
+Books,29.91,6,0.06,168.69,West,10
+Electronics,295.73,5,0.08,1360.36,South,12
+Electronics,269.96,7,0.08,1738.54,East,4
+Sports,68.61,6,0.07,382.84,North,3
+Clothing,21.68,7,0.09,138.1,East,3
+Food,9.41,12,0.08,103.89,North,9
+Sports,28.43,10,0.1,255.87,East,4
+Food,11.71,12,0.11,125.06,South,1
+Books,11.21,12,0.21,106.27,East,5
+Food,11.38,6,0.03,66.23,South,6
+Clothing,30.53,8,0.05,232.03,South,9
+Electronics,133.73,4,0.08,492.13,South,12
+Electronics,28.81,10,0.02,282.34,East,3
+Food,7.26,16,0.02,113.84,South,7
+Food,11.71,11,0.06,121.08,South,5
+Home & Garden,88.94,9,0.05,760.44,North,12
+Clothing,21.84,13,0.05,269.72,South,2
+Electronics,206.5,6,0.04,1189.44,South,8
+Food,30.77,9,0.1,249.24,East,1
+Electronics,117.88,8,0.05,895.89,West,11
+Food,8.15,12,0.05,92.91,West,4
+Electronics,35.59,9,0.01,317.11,South,1
+Food,5.75,11,0.08,58.19,East,7
+Electronics,87.68,5,0.05,416.48,East,12
+Food,9.77,11,0.02,105.32,West,7
+Clothing,53.61,11,0.11,524.84,West,12
+Electronics,460.76,2,0.04,884.66,North,3
+Home & Garden,34.17,10,0.07,317.78,East,2
+Clothing,46.89,8,0.01,371.37,West,9
+Sports,106.96,5,0.06,502.71,South,9
+Home & Garden,84.97,5,0.02,416.35,East,12
+Sports,57.98,7,0.06,381.51,North,3
+Books,18.38,14,0.08,236.73,East,1
+Sports,27.27,9,0.03,238.07,West,12
+Clothing,21.41,15,0.07,298.67,South,1
+Clothing,63.09,9,0.04,545.1,West,8
+Clothing,85.88,6,0.05,489.52,North,2
+Electronics,302.73,5,0.01,1498.51,South,1
+Electronics,297.69,3,0.05,848.42,South,6
+Home & Garden,168.31,7,0.05,1119.26,North,12
+Sports,112.39,5,0.06,528.23,North,12
+Electronics,113.27,9,0.06,958.26,South,12
+Electronics,175.97,5,0.05,835.86,South,9
+Electronics,30.11,10,0.01,298.09,South,9
+Electronics,304.5,5,0.05,1446.38,South,12
+Books,18.75,10,0.04,180.0,East,5
+Clothing,46.81,4,0.07,174.13,East,11
+Clothing,73.09,5,0.03,354.49,East,12
+Clothing,23.03,12,0.16,232.14,South,10
+Sports,58.68,11,0.06,606.75,South,10
+Food,8.43,11,0.16,77.89,West,12
+Home & Garden,163.15,6,0.06,920.17,North,12
+Home & Garden,29.98,11,0.04,316.59,East,6
+Electronics,97.77,3,0.13,255.18,North,3
+Books,20.33,7,0.13,123.81,North,7
+Clothing,102.31,10,0.05,971.94,South,8
+Sports,53.38,9,0.05,456.4,South,7
+Clothing,21.87,10,0.1,196.83,South,12
+Clothing,30.94,11,0.04,326.73,East,1
+Home & Garden,77.44,4,0.05,294.27,North,9
+Clothing,58.01,8,0.01,459.44,North,11
+Books,12.3,12,0.04,141.7,South,12
+Home & Garden,126.29,5,0.02,618.82,North,12
+Sports,34.77,11,0.11,340.4,South,12
+Sports,33.81,9,0.11,270.82,South,10
+Books,16.75,11,0.02,180.56,North,6
+Clothing,24.14,9,0.11,193.36,South,9
+Food,7.26,12,0.05,82.76,West,6
+Electronics,124.3,5,0.1,559.35,North,3
+Electronics,27.0,13,0.01,347.49,North,12
+Food,10.09,9,0.04,87.18,North,11
+Electronics,61.78,5,0.04,296.54,East,2
+Sports,61.75,6,0.05,351.98,West,7
+Books,13.3,13,0.05,164.26,East,5
+Home & Garden,106.53,4,0.03,413.34,East,5
+Clothing,51.61,9,0.1,418.04,West,5
+Books,20.47,6,0.06,115.45,West,2
+Clothing,48.58,6,0.01,288.57,West,1
+Food,8.31,14,0.07,108.2,South,9
+Food,13.59,7,0.07,88.47,North,4
+Electronics,219.45,4,0.05,833.91,South,4
+Books,18.27,13,0.05,225.63,West,1
+Food,13.32,13,0.06,162.77,North,9
+Clothing,51.72,9,0.05,442.21,South,3
+Books,16.46,9,0.06,139.25,South,10
+Electronics,99.75,5,0.06,468.82,East,7
+Electronics,156.43,7,0.06,1029.31,South,2
+Books,18.52,11,0.09,185.39,East,5
+Clothing,59.83,11,0.05,625.22,North,5
+Electronics,334.54,3,0.08,923.33,West,9
+Electronics,116.97,6,0.18,575.49,South,1
+Books,15.51,11,0.02,167.2,North,12
+Clothing,116.83,8,0.04,897.25,East,11
+Electronics,140.42,7,0.08,904.3,West,7
+Books,17.61,10,0.07,163.77,North,12
+Electronics,82.35,8,0.06,619.27,North,5
+Food,13.78,10,0.05,130.91,North,12
+Clothing,14.88,13,0.09,176.03,West,12
+Clothing,30.44,9,0.07,254.78,South,5
+Books,16.51,14,0.03,224.21,East,1
+Books,14.36,15,0.13,187.4,North,3
+Home & Garden,72.11,9,0.14,558.13,South,12
+Food,18.43,8,0.06,138.59,North,10
+Clothing,52.35,7,0.19,296.82,North,8
+Sports,44.37,9,0.03,387.35,South,5
+Electronics,27.16,10,0.09,247.16,South,10
+Electronics,82.18,7,0.08,529.24,East,2
+Electronics,333.07,5,0.02,1632.04,South,2
+Food,21.11,9,0.04,182.39,South,8
+Clothing,57.65,5,0.05,273.84,East,4
+Clothing,65.76,4,0.12,231.48,North,7
+Food,15.89,14,0.04,213.56,East,6
+Clothing,20.8,12,0.07,232.13,West,12
+Electronics,105.07,5,0.13,457.05,North,1
+Books,14.9,11,0.04,157.34,West,7
+Sports,70.21,10,0.06,659.97,East,1
+Food,17.73,10,0.1,159.57,West,6
+Books,17.66,12,0.01,209.8,East,3
+Electronics,507.51,3,0.17,1263.7,South,9
+Electronics,125.79,6,0.07,701.91,North,1
+Sports,39.89,10,0.02,390.92,East,8
+Clothing,32.17,12,0.08,355.16,East,1
+Food,5.1,14,0.03,69.26,North,10
+Food,15.1,8,0.14,103.89,East,12
+Home & Garden,44.14,8,0.08,324.87,West,6
+Sports,71.19,4,0.04,273.37,East,10
+Food,13.57,8,0.02,106.39,South,4
+Home & Garden,83.17,8,0.04,638.75,South,8
+Books,10.65,10,0.03,103.3,East,12
+Home & Garden,48.16,7,0.04,323.64,East,4
+Sports,45.06,9,0.07,377.15,South,12
+Clothing,49.36,6,0.02,290.24,West,7
+Books,12.81,13,0.07,154.87,South,10
+Clothing,25.02,14,0.07,325.76,North,11
+Sports,90.78,4,0.08,334.07,West,8
+Clothing,20.76,10,0.05,197.22,East,3
+Clothing,46.83,3,0.04,134.87,East,3
+Books,12.43,10,0.05,118.08,West,5
+Home & Garden,95.18,10,0.08,875.66,West,12
+Sports,40.31,8,0.08,296.68,North,1
+Home & Garden,47.6,7,0.09,303.21,West,5
+Clothing,26.37,11,0.08,266.86,North,8
+Electronics,34.55,8,0.07,257.05,North,8
+Electronics,456.89,4,0.1,1644.8,West,12
+Books,16.92,11,0.08,171.23,South,4
+Books,26.71,8,0.07,198.72,West,12
+Sports,71.45,6,0.02,420.13,West,3
+Food,7.74,8,0.05,58.82,North,8
+Books,14.8,12,0.06,166.94,West,8
+Electronics,202.41,5,0.05,961.45,West,3
+Home & Garden,62.92,4,0.02,246.65,East,10
+Sports,36.91,3,0.03,107.41,North,9
+Electronics,179.48,3,0.1,484.6,East,2
+Clothing,64.79,8,0.01,513.14,East,12
+Books,24.88,13,0.02,316.97,East,1
+Clothing,97.89,4,0.04,375.9,South,4
+Books,17.93,9,0.07,150.07,North,12
+Electronics,109.75,6,0.03,638.74,West,2
+Food,10.07,15,0.0,151.05,North,12
+Books,8.2,11,0.11,80.28,South,10
+Electronics,359.84,1,0.03,349.04,West,5
+Electronics,438.96,1,0.09,399.45,West,10
+Sports,8.14,15,0.03,118.44,South,6
+Clothing,46.17,11,0.15,431.69,North,7
+Clothing,32.75,13,0.04,408.72,West,8
+Clothing,37.78,12,0.05,430.69,South,9
+Clothing,17.63,13,0.11,203.98,South,12
+Electronics,125.38,4,0.04,481.46,North,5
+Clothing,14.96,13,0.03,188.65,South,8
+Electronics,210.66,6,0.06,1188.12,North,7
+Electronics,262.98,5,0.04,1262.3,North,12
+Clothing,77.85,5,0.11,346.43,North,12
+Food,5.8,14,0.07,75.52,South,6
+Sports,28.15,9,0.02,248.28,South,7
+Electronics,87.16,8,0.01,690.31,East,4
+Electronics,348.75,3,0.02,1025.32,South,12
+Electronics,115.27,5,0.01,570.59,North,4
+Sports,110.77,7,0.05,736.62,East,11
+Electronics,153.27,6,0.01,910.42,West,6
+Food,14.66,10,0.09,133.41,South,12
+Electronics,48.58,10,0.06,456.65,North,12
+Food,5.76,14,0.06,75.8,East,5
+Electronics,76.69,7,0.08,493.88,South,3
+Books,11.92,10,0.03,115.62,North,12
+Food,6.18,14,0.06,81.33,East,12
+Clothing,54.62,9,0.07,457.17,East,12
+Clothing,91.25,2,0.06,171.55,North,1
+Sports,34.87,8,0.04,267.8,South,7
+Sports,48.21,7,0.04,323.97,West,5
+Clothing,81.89,8,0.01,648.57,West,12
+Clothing,43.55,6,0.09,237.78,North,1
+Food,15.44,15,0.01,229.28,South,11
+Electronics,227.42,3,0.01,675.44,East,6
+Books,24.93,8,0.03,193.46,East,9
+Food,18.12,11,0.04,191.35,South,2
+Books,19.04,13,0.01,245.04,East,12
+Home & Garden,33.86,9,0.07,283.41,South,8
+Electronics,301.43,1,0.02,295.4,North,6
+Home & Garden,31.73,10,0.13,276.05,West,1
+Books,18.33,11,0.03,195.58,North,11
+Books,20.22,11,0.09,202.4,West,12
+Sports,228.46,1,0.14,196.48,West,7
+Clothing,63.0,8,0.05,478.8,East,6
+Food,14.16,20,0.01,280.37,South,3
+Electronics,114.04,5,0.01,564.5,South,11
+Clothing,40.88,9,0.05,349.52,East,11
+Home & Garden,25.35,6,0.04,146.02,South,2
+Electronics,30.41,9,0.06,257.27,North,3
+Food,11.07,13,0.03,139.59,East,10
+Food,12.58,11,0.02,135.61,North,9
+Food,9.75,12,0.02,114.66,North,4
+Clothing,38.36,7,0.04,257.78,South,12
+Sports,46.88,10,0.03,454.74,East,11
+Food,24.01,10,0.03,232.9,South,7
+Books,14.62,9,0.05,125.0,South,3
+Clothing,115.44,5,0.06,542.57,South,12
+Food,8.87,13,0.08,106.09,South,8
+Clothing,39.4,9,0.04,340.42,East,12
+Sports,52.52,13,0.05,648.62,West,12
+Books,21.3,10,0.05,202.35,South,5
+Food,21.25,11,0.04,224.4,West,1
+Sports,90.35,4,0.03,350.56,East,12
+Home & Garden,126.55,6,0.06,713.74,South,8
+Electronics,185.61,2,0.05,352.66,West,12
+Home & Garden,65.12,8,0.06,489.7,South,3
+Clothing,42.58,7,0.08,274.22,East,3
+Books,12.71,10,0.04,122.02,West,5
+Electronics,705.8,1,0.01,698.74,South,1
+Clothing,43.32,12,0.02,509.44,North,11
+Food,8.98,10,0.01,88.9,West,2
+Sports,30.16,12,0.19,293.16,North,4
+Books,16.42,11,0.05,171.59,East,12
+Electronics,69.64,4,0.07,259.06,North,6
+Food,18.04,10,0.06,169.58,West,3
+Electronics,337.58,1,0.06,317.33,South,2
+Food,9.09,14,0.06,119.62,East,11
+Food,19.96,13,0.06,243.91,East,4
+Electronics,264.42,7,0.1,1665.85,North,10
+Electronics,190.24,3,0.06,536.48,East,8
+Electronics,182.05,3,0.08,502.46,North,3
+Clothing,39.05,7,0.06,256.95,South,12
+Electronics,287.16,3,0.02,844.25,North,9
+Home & Garden,23.28,9,0.12,184.38,West,9
+Food,16.15,15,0.09,220.45,South,12
+Food,11.65,12,0.08,128.62,South,11
+Clothing,14.02,11,0.06,144.97,South,3
+Books,16.22,5,0.01,80.29,East,6
+Food,12.68,12,0.04,146.07,West,12
+Electronics,230.49,1,0.12,202.83,West,6
+Sports,57.23,13,0.02,729.11,East,5
+Clothing,27.59,11,0.06,285.28,North,12
+Food,13.09,11,0.06,135.35,East,1
+Sports,57.62,9,0.12,456.35,East,9
+Clothing,8.52,17,0.1,130.36,West,12
+Home & Garden,31.97,10,0.11,284.53,South,11
+Food,10.14,14,0.09,129.18,East,3
+Food,9.01,9,0.03,78.66,North,12
+Books,18.65,9,0.11,149.39,East,2
+Sports,150.48,2,0.04,288.92,West,10
+Sports,53.85,9,0.08,445.88,South,10
+Home & Garden,46.78,5,0.05,222.2,East,6
+Home & Garden,59.29,4,0.04,227.67,North,5
+Electronics,73.32,6,0.14,378.33,East,1
+Food,9.14,13,0.01,117.63,South,5
+Sports,36.33,10,0.04,348.77,East,5
+Food,14.6,15,0.04,210.24,East,1
+Food,9.34,15,0.09,127.49,North,12
+Sports,55.67,8,0.05,423.09,North,12
+Electronics,180.89,5,0.08,832.09,West,12
+Clothing,25.61,6,0.05,145.98,East,9
+Clothing,57.98,10,0.02,568.2,West,2
+Electronics,441.52,1,0.09,401.78,East,1
+Food,10.53,12,0.03,122.57,North,9
+Food,12.97,12,0.06,146.3,South,11
+Clothing,76.37,5,0.04,366.58,North,1
+Electronics,363.76,2,0.04,698.42,West,12
+Sports,61.49,9,0.08,509.14,East,3
+Food,10.72,15,0.11,143.11,North,9
+Food,14.5,16,0.11,206.48,North,1
+Sports,30.82,11,0.06,318.68,South,2
+Clothing,29.01,9,0.04,250.65,East,5
+Clothing,32.96,10,0.07,306.53,South,12
+Sports,66.14,5,0.1,297.63,South,7
+Home & Garden,31.57,4,0.06,118.7,West,12
+Food,12.95,13,0.08,154.88,West,5
+Food,5.95,13,0.02,75.8,South,9
+Clothing,26.38,9,0.03,230.3,West,12
+Home & Garden,36.57,7,0.02,250.87,North,11
+Food,14.62,15,0.08,201.76,West,7
+Electronics,505.95,1,0.14,435.12,West,7
+Clothing,19.56,13,0.03,246.65,North,12
+Food,12.91,12,0.03,150.27,South,4
+Electronics,130.19,6,0.05,742.08,East,9
+Books,19.99,11,0.15,186.91,West,5
+Clothing,32.57,12,0.03,379.11,North,9
+Electronics,258.29,1,0.08,237.63,North,10
+Electronics,32.28,9,0.12,255.66,South,5
+Home & Garden,111.05,4,0.08,408.66,East,1
+Home & Garden,149.05,6,0.03,867.47,North,6
+Food,8.33,12,0.09,90.96,West,6
+Electronics,159.55,5,0.05,757.86,North,5
+Electronics,64.44,6,0.01,382.77,East,1
+Clothing,36.74,7,0.04,246.89,North,1
+Books,16.2,12,0.11,173.02,South,9
+Home & Garden,12.1,14,0.03,164.32,East,12
+Books,22.84,11,0.09,228.63,South,7
+Books,21.52,7,0.05,143.11,South,10
+Home & Garden,190.38,2,0.06,357.91,South,5
+Food,11.28,14,0.05,150.02,East,10
+Food,12.26,11,0.08,124.07,South,12
+Clothing,78.98,8,0.06,593.93,North,4
+Clothing,17.2,11,0.08,174.06,East,7
+Books,20.79,13,0.09,245.95,North,12
+Books,15.88,9,0.01,141.49,East,4
+Electronics,557.13,1,0.02,545.99,West,3
+Food,10.97,14,0.05,145.9,East,12
+Sports,89.65,7,0.0,627.55,North,12
+Clothing,35.24,6,0.01,209.33,East,9
+Home & Garden,8.77,11,0.04,92.61,East,5
+Books,27.23,9,0.05,232.82,East,6
+Books,24.6,8,0.06,184.99,East,3
+Home & Garden,118.46,4,0.04,454.89,East,11
+Electronics,118.17,4,0.06,444.32,East,11
+Food,19.3,10,0.11,171.77,North,12
+Clothing,27.24,9,0.09,223.1,South,12
+Electronics,83.93,5,0.16,352.51,South,7
+Electronics,291.86,4,0.04,1120.74,North,10
+Home & Garden,104.6,8,0.12,736.38,North,4
+Food,25.26,10,0.05,239.97,West,3
+Sports,38.07,11,0.07,389.46,North,12
+Electronics,207.88,6,0.04,1197.39,West,12
+Sports,72.48,6,0.09,395.74,North,8
+Food,18.8,14,0.02,257.94,North,2
+Sports,31.87,12,0.02,374.79,South,12
+Books,18.58,13,0.03,234.29,South,12
+Electronics,112.47,5,0.03,545.48,North,2
+Electronics,220.92,4,0.07,821.82,East,3
+Home & Garden,395.21,1,0.02,387.31,West,8
+Books,22.65,12,0.07,252.77,North,2
+Home & Garden,174.08,4,0.13,605.8,North,1
+Electronics,240.09,1,0.09,218.48,West,10
+Food,10.6,10,0.07,98.58,North,12
+Clothing,53.31,7,0.03,361.97,South,12
+Sports,56.33,6,0.08,310.94,North,7
+Electronics,142.32,6,0.06,802.68,East,3
+Electronics,282.29,4,0.05,1072.7,North,12
+Electronics,232.91,4,0.13,810.53,North,12
+Food,8.71,12,0.03,101.38,East,4
+Food,5.22,14,0.1,65.77,South,5
+Food,9.83,12,0.06,110.88,North,1
+Sports,69.68,5,0.03,337.95,South,1
+Clothing,93.7,7,0.06,616.55,East,9
+Clothing,50.88,7,0.05,338.35,South,10
+Clothing,60.8,9,0.1,492.48,North,12
+Electronics,325.95,1,0.02,319.43,East,1
+Food,19.72,8,0.1,141.98,West,3
+Books,14.69,12,0.02,172.75,South,9
+Food,11.35,18,0.02,200.21,West,1
+Sports,80.01,7,0.08,515.26,East,10
+Clothing,35.52,7,0.08,228.75,North,9
+Books,14.06,15,0.05,200.36,South,11
+Food,11.1,12,0.11,118.55,East,12
+Books,18.56,10,0.1,167.04,North,8
+Food,19.17,8,0.05,145.69,South,4
+Food,10.2,14,0.06,134.23,East,12
+Clothing,31.04,8,0.04,238.39,East,5
+Clothing,38.97,7,0.06,256.42,South,12
+Food,17.69,10,0.02,173.36,West,5
+Home & Garden,23.63,12,0.02,277.89,North,3
+Clothing,56.37,9,0.02,497.18,South,6
+Home & Garden,130.1,3,0.08,359.08,East,2
+Electronics,124.86,1,0.05,118.62,West,3
+Clothing,35.93,12,0.07,400.98,North,12
+Food,7.91,13,0.1,92.55,South,7
+Electronics,86.76,11,0.06,897.1,North,8
+Home & Garden,64.56,8,0.04,495.82,East,1
+Home & Garden,151.14,6,0.06,852.43,South,4
+Clothing,63.8,7,0.02,437.67,North,7
+Clothing,39.4,9,0.06,333.32,North,1
+Books,12.07,13,0.03,152.2,West,5
+Sports,32.16,9,0.07,269.18,West,12
+Home & Garden,135.56,8,0.02,1062.79,West,7
+Clothing,23.52,10,0.07,218.74,West,7
+Clothing,78.95,6,0.06,445.28,South,10
+Books,19.55,13,0.12,223.65,East,3
+Food,18.95,9,0.07,158.61,West,2
+Food,14.65,11,0.02,157.93,East,8
+Home & Garden,49.79,8,0.04,382.39,North,9
+Sports,57.65,4,0.05,219.07,North,6
+Food,10.63,13,0.06,129.9,West,9
+Clothing,25.35,10,0.05,240.82,North,11
+Clothing,42.16,10,0.07,392.09,South,2
+Clothing,45.17,9,0.1,365.88,East,12
+Clothing,26.77,7,0.06,176.15,North,6
+Books,16.95,8,0.07,126.11,South,4
+Electronics,264.03,1,0.02,258.75,North,5
+Electronics,157.27,4,0.18,515.85,South,2
+Electronics,71.5,6,0.09,390.39,West,2
+Food,22.94,10,0.05,217.93,North,12
+Electronics,95.88,7,0.04,644.31,West,10
+Home & Garden,136.32,2,0.02,267.19,North,12
+Clothing,55.69,6,0.02,327.46,East,7
+Sports,100.12,9,0.08,828.99,West,8
+Food,13.78,11,0.06,142.49,North,4
+Books,13.2,12,0.05,150.48,East,10
+Books,26.73,11,0.05,279.33,North,4
+Electronics,96.25,3,0.03,280.09,East,6
+Electronics,57.45,8,0.11,409.04,West,7
+Electronics,56.07,7,0.17,325.77,West,8
+Books,20.9,9,0.15,159.88,North,12
+Books,15.82,12,0.07,176.55,West,8
+Sports,45.24,11,0.09,452.85,West,6
+Clothing,22.29,11,0.05,232.93,South,5
+Home & Garden,215.59,3,0.02,633.83,South,6
+Food,16.54,14,0.1,208.4,North,5
+Books,25.36,11,0.08,256.64,North,3
+Clothing,52.62,12,0.01,625.13,West,3
+Sports,105.67,9,0.06,893.97,West,9
+Electronics,115.92,6,0.13,605.1,North,12
+Books,28.19,8,0.04,216.5,North,3
+Books,18.49,10,0.04,177.5,East,12
+Clothing,38.4,11,0.09,384.38,South,12
+Clothing,71.6,4,0.13,249.17,North,10
+Food,15.16,16,0.1,218.3,South,6
+Books,21.06,5,0.06,98.98,North,7
+Food,6.77,15,0.08,93.43,West,12
+Sports,36.87,11,0.05,385.29,South,12
+Home & Garden,32.64,7,0.03,221.63,North,4
+Books,14.87,7,0.03,100.97,South,8
+Clothing,51.19,7,0.01,354.75,South,11
+Clothing,29.43,9,0.01,262.22,West,9
+Clothing,48.62,10,0.14,418.13,West,6
+Home & Garden,37.53,9,0.02,331.01,South,4
+Food,11.14,13,0.09,131.79,North,9
+Food,15.94,11,0.05,166.57,West,11
+Books,26.59,13,0.02,338.76,South,7
+Books,33.25,8,0.09,242.06,East,3
+Clothing,54.56,7,0.04,366.64,East,4
+Food,14.5,12,0.07,161.82,East,1
+Clothing,103.96,12,0.08,1147.72,West,4
+Home & Garden,27.75,3,0.03,80.75,West,10
+Food,8.41,8,0.04,64.59,East,5
+Home & Garden,126.34,4,0.02,495.25,North,3
+Sports,102.08,4,0.14,351.16,North,11
+Clothing,128.44,5,0.12,565.14,North,2
+Books,32.42,11,0.05,338.79,East,12
+Books,31.05,11,0.06,321.06,South,6
+Home & Garden,121.79,5,0.15,517.61,South,5
+Food,13.4,10,0.03,129.98,East,7
+Home & Garden,153.05,4,0.11,544.86,East,4
+Clothing,19.97,9,0.01,177.93,North,3
+Home & Garden,66.38,11,0.13,635.26,East,11
+Sports,28.52,12,0.07,318.28,West,9
+Electronics,145.99,5,0.12,642.36,West,7
+Home & Garden,13.13,13,0.02,167.28,West,4
+Home & Garden,94.08,5,0.09,428.06,East,12
+Electronics,161.65,4,0.03,627.2,South,5
+Books,26.28,10,0.14,226.01,East,10
+Home & Garden,27.31,7,0.05,181.61,East,7
+Electronics,129.77,5,0.04,622.9,East,9
+Food,18.13,10,0.11,161.36,West,4
+Food,6.29,15,0.08,86.8,West,5
+Books,17.65,9,0.05,150.91,South,2
+Books,9.64,11,0.04,101.8,West,3
+Food,26.79,11,0.03,285.85,East,4
+Home & Garden,38.92,12,0.04,448.36,West,11
+Electronics,164.43,6,0.06,927.39,East,3
+Clothing,55.01,9,0.06,465.38,West,12
+Books,10.63,10,0.02,104.17,East,12
+Sports,42.02,7,0.01,291.2,West,10
+Clothing,20.05,11,0.01,218.34,West,10
+Food,15.25,11,0.09,152.65,North,2
+Clothing,95.35,6,0.02,560.66,North,4
+Clothing,14.44,14,0.05,192.05,South,9
+Sports,54.36,11,0.03,580.02,East,5
+Clothing,22.14,9,0.02,195.27,West,8
+Food,14.12,10,0.11,125.67,North,2
+Electronics,228.44,1,0.03,221.59,East,12
+Food,17.58,11,0.08,177.91,South,1
+Food,15.65,13,0.1,183.1,West,12
+Electronics,48.44,11,0.06,500.87,North,12
+Clothing,23.51,9,0.1,190.43,East,1
+Electronics,143.81,4,0.04,552.23,North,5
+Food,15.85,10,0.11,141.06,North,7
+Electronics,86.42,11,0.07,884.08,South,3
+Clothing,36.98,13,0.14,413.44,North,5
+Books,20.81,10,0.02,203.94,North,9
+Electronics,167.66,5,0.1,754.47,South,10
+Sports,95.94,5,0.03,465.31,South,1
+Food,7.78,13,0.01,100.13,East,9
+Electronics,219.41,8,0.04,1685.07,South,4
+Books,18.82,10,0.13,163.73,East,11
+Home & Garden,70.81,7,0.01,490.71,North,8
+Clothing,42.25,9,0.08,349.83,West,8
+Electronics,105.7,3,0.08,291.73,North,3
+Books,27.39,7,0.04,184.06,North,4
+Home & Garden,45.89,4,0.05,174.38,East,8
+Electronics,205.79,6,0.07,1148.31,South,3
+Books,18.85,9,0.05,161.17,South,7
+Books,14.94,10,0.13,129.98,East,12
+Books,19.89,13,0.05,245.64,South,5
+Electronics,195.48,2,0.05,371.41,South,12
+Clothing,102.44,5,0.01,507.08,North,7
+Books,14.52,10,0.06,136.49,South,11
+Sports,76.85,8,0.07,571.76,South,9
+Sports,74.72,6,0.01,443.84,West,12
+Electronics,305.55,1,0.09,278.05,South,12
+Home & Garden,44.9,11,0.0,493.9,South,7
+Books,20.05,14,0.04,269.47,East,10
+Sports,30.41,10,0.04,291.94,South,9
+Books,20.25,10,0.05,192.38,South,5
+Books,25.77,10,0.02,252.55,North,2
+Clothing,99.18,4,0.09,361.02,East,7
+Food,5.09,14,0.1,64.13,South,7
+Clothing,38.07,11,0.04,402.02,East,8
+Clothing,56.51,8,0.1,406.87,East,12
+Clothing,19.0,8,0.04,145.92,West,11
+Electronics,914.97,1,0.02,896.67,South,5
+Food,14.1,11,0.05,147.34,North,3
+Clothing,19.79,13,0.0,257.27,West,6
+Electronics,1436.19,1,0.07,1335.66,South,2
+Clothing,59.18,8,0.18,388.22,East,6
+Food,5.69,16,0.06,85.58,South,7
+Clothing,29.91,8,0.08,220.14,North,12
+Home & Garden,44.02,9,0.04,380.33,West,11
+Clothing,44.72,8,0.13,311.25,South,2
+Clothing,108.82,3,0.07,303.61,West,6
+Electronics,99.65,7,0.06,655.7,South,12
+Clothing,36.26,6,0.04,208.86,West,12
+Clothing,47.7,8,0.04,366.34,South,4
+Books,21.97,13,0.02,279.9,West,12
+Sports,66.78,5,0.01,330.56,South,9
+Home & Garden,30.9,12,0.04,355.97,North,9
+Clothing,73.14,10,0.04,702.14,North,8
+Electronics,87.21,8,0.04,669.77,North,8
+Electronics,90.39,6,0.05,515.22,South,4
+Clothing,162.56,4,0.07,604.72,West,11
+Sports,23.69,10,0.11,210.84,South,12
+Electronics,155.14,5,0.07,721.4,East,8
+Books,13.48,10,0.11,119.97,East,9
+Clothing,67.3,8,0.04,516.86,East,12
+Clothing,57.83,11,0.11,566.16,South,12
+Clothing,29.62,7,0.04,199.05,East,5
+Food,10.35,16,0.09,150.7,South,10
+Food,10.11,10,0.02,99.08,West,6
+Electronics,230.74,2,0.04,443.02,South,10
+Books,11.01,12,0.09,120.23,West,4
+Electronics,203.96,4,0.05,775.05,West,7
+Home & Garden,81.59,7,0.03,554.0,West,1
+Electronics,161.26,8,0.02,1264.28,East,9
+Sports,46.37,10,0.04,445.15,North,10
+Home & Garden,105.28,9,0.03,919.09,East,2
+Sports,77.7,6,0.04,447.55,East,12
+Clothing,53.19,9,0.13,416.48,South,7
+Electronics,170.49,1,0.04,163.67,South,10
+Clothing,67.16,5,0.06,315.65,South,6
+Electronics,259.35,8,0.02,2033.3,West,11
+Clothing,27.2,10,0.03,263.84,West,12
+Electronics,67.87,9,0.03,592.51,West,4
+Electronics,121.04,7,0.1,762.55,East,6
+Home & Garden,44.45,10,0.02,435.61,South,4
+Food,9.9,10,0.08,91.08,South,12
+Electronics,140.03,5,0.11,623.13,South,9
+Home & Garden,159.74,9,0.04,1380.15,East,1
+Electronics,170.5,7,0.03,1157.7,North,5
+Electronics,185.91,3,0.1,501.96,West,12
+Electronics,292.15,3,0.13,762.51,West,10
+Sports,41.94,8,0.04,322.1,North,7
+Food,11.02,13,0.11,127.5,North,4
+Home & Garden,22.55,11,0.1,223.24,West,8
+Sports,37.29,9,0.08,308.76,South,12
+Books,22.33,9,0.06,188.91,North,9
+Electronics,121.41,2,0.06,228.25,South,4
+Sports,48.54,9,0.0,436.86,South,3
+Food,23.3,11,0.01,253.74,East,6
+Clothing,111.58,7,0.09,710.76,West,10
+Home & Garden,76.18,9,0.1,617.06,West,9
+Home & Garden,41.39,8,0.08,304.63,West,12
+Food,7.5,16,0.02,117.6,South,1
+Electronics,158.0,4,0.01,625.68,East,11
+Books,13.21,14,0.08,170.14,East,12
+Clothing,45.57,10,0.02,446.59,East,7
+Clothing,35.83,8,0.07,266.58,West,4
+Sports,52.5,10,0.04,504.0,East,12
+Sports,46.88,9,0.1,379.73,North,2
+Clothing,84.78,7,0.05,563.79,East,12
+Clothing,42.47,9,0.11,340.18,West,3
+Books,29.93,10,0.03,290.32,East,10
+Electronics,116.35,4,0.02,456.09,North,4
+Electronics,484.27,1,0.08,445.53,East,9
+Home & Garden,37.27,9,0.1,301.89,South,12
+Books,19.87,13,0.08,237.65,North,7
+Clothing,39.01,9,0.04,337.05,South,11
+Home & Garden,35.66,11,0.05,372.65,North,5
+Food,28.04,7,0.07,182.54,West,12
+Electronics,172.86,8,0.06,1299.91,East,4
+Food,8.35,14,0.04,112.22,West,1
+Home & Garden,26.41,10,0.02,258.82,East,8
+Food,15.31,12,0.07,170.86,East,6
+Food,16.05,12,0.07,179.12,South,12
+Electronics,168.84,5,0.03,818.87,South,4
+Sports,40.41,10,0.07,375.81,North,11
+Electronics,108.61,3,0.05,309.54,East,6
+Electronics,62.18,9,0.02,548.43,West,2
+Electronics,101.71,6,0.14,524.82,West,9
+Food,10.3,10,0.01,101.97,North,6
+Sports,76.02,9,0.04,656.81,South,1
+Electronics,259.21,3,0.02,762.08,West,4
+Books,12.87,15,0.0,193.05,East,12
+Books,9.77,12,0.04,112.55,West,5
+Electronics,527.59,4,0.02,2068.15,South,7
+Electronics,157.26,6,0.04,905.82,East,5
+Sports,36.7,8,0.08,270.11,North,12
+Books,19.02,13,0.08,227.48,West,2
+Electronics,81.27,8,0.12,572.14,East,11
+Clothing,34.17,11,0.06,353.32,West,12
+Food,4.31,14,0.01,59.74,East,6
+Electronics,104.99,1,0.09,95.54,West,8
+Home & Garden,160.58,4,0.06,603.78,North,12
+Sports,78.03,7,0.06,513.44,East,7
+Home & Garden,52.17,10,0.04,500.83,West,7
+Clothing,44.21,11,0.07,452.27,East,10
+Electronics,223.67,6,0.09,1221.24,South,12
+Electronics,288.77,4,0.02,1131.98,North,8
+Electronics,78.21,7,0.02,536.52,South,8
+Clothing,37.26,8,0.04,286.16,South,7
+Clothing,46.46,10,0.05,441.37,East,7
+Electronics,256.82,3,0.1,693.41,West,4
+Clothing,35.69,10,0.04,342.62,West,12
+Electronics,193.42,4,0.03,750.47,West,9
+Home & Garden,97.98,8,0.03,760.32,East,12
+Home & Garden,62.78,7,0.02,430.67,West,10
+Sports,68.01,6,0.03,395.82,West,4
+Books,25.18,9,0.12,199.43,North,4
+Home & Garden,30.03,11,0.03,320.42,North,8
+Books,18.61,10,0.02,182.38,West,12
+Electronics,177.98,7,0.05,1183.57,South,2
+Sports,155.23,3,0.05,442.41,North,8
+Sports,20.43,12,0.01,242.71,West,12
+Food,8.6,13,0.03,108.45,South,12
+Sports,25.47,8,0.05,193.57,West,6
+Food,7.75,13,0.06,94.7,North,9
+Home & Garden,74.69,8,0.07,555.69,East,12
+Books,13.06,13,0.02,166.38,South,7
+Sports,49.53,8,0.03,384.35,West,7
+Food,11.64,10,0.05,110.58,North,3
+Food,10.62,11,0.02,114.48,North,6
+Clothing,66.0,6,0.13,344.52,North,10
+Clothing,51.84,12,0.11,553.65,West,1
+Electronics,80.93,4,0.07,301.06,West,12
+Electronics,105.71,6,0.04,608.89,West,7
+Clothing,50.52,13,0.06,617.35,South,12
+Electronics,95.75,4,0.03,371.51,West,9
+Home & Garden,83.04,10,0.1,747.36,West,7
+Books,17.56,14,0.07,228.63,West,12
+Books,15.16,13,0.05,187.23,South,2
+Books,16.09,13,0.01,207.08,North,12
+Books,12.76,9,0.02,112.54,West,6
+Food,13.26,12,0.04,152.76,South,7
+Clothing,33.0,9,0.06,279.18,West,1
+Food,8.85,16,0.06,133.1,West,3
+Sports,46.4,11,0.12,449.15,North,7
+Sports,158.77,2,0.02,311.19,South,10
+Home & Garden,125.91,1,0.05,119.61,East,6
+Home & Garden,43.3,7,0.03,294.01,West,12
+Sports,32.48,14,0.04,436.53,East,9
+Clothing,62.63,8,0.04,481.0,West,12
+Books,13.2,12,0.09,144.14,West,1
+Food,18.79,13,0.04,234.5,West,7
+Home & Garden,42.34,8,0.11,301.46,North,3
+Books,24.74,11,0.03,263.98,North,12
+Sports,151.85,3,0.06,428.22,North,5
+Food,10.54,11,0.04,111.3,South,4
+Sports,76.81,8,0.01,608.34,East,1
+Clothing,66.23,8,0.03,513.94,North,8
+Sports,181.97,6,0.03,1059.07,East,7
+Books,37.75,9,0.03,329.56,East,12
+Sports,36.93,11,0.08,373.73,West,9
+Electronics,383.87,3,0.05,1094.03,West,4
+Electronics,328.03,3,0.05,934.89,North,5
+Electronics,194.24,7,0.01,1346.08,North,12
+Books,21.51,11,0.04,227.15,North,2
+Books,13.38,10,0.02,131.12,East,1
+Books,14.19,10,0.08,130.55,West,8
+Sports,54.77,8,0.05,416.25,North,12
+Home & Garden,30.99,12,0.08,342.13,East,10
+Food,14.41,11,0.05,150.58,North,12
+Books,19.63,10,0.08,180.6,South,9
+Sports,124.74,8,0.03,967.98,West,3
+Home & Garden,36.32,12,0.05,414.05,East,1
+Sports,115.23,3,0.1,311.12,West,3
+Home & Garden,88.64,4,0.07,329.74,South,6
+Clothing,56.29,8,0.09,409.79,South,7
+Sports,59.22,8,0.1,426.38,East,12
+Clothing,49.27,7,0.01,341.44,North,4
+Home & Garden,47.52,5,0.05,225.72,North,12
+Books,14.29,16,0.08,210.35,South,1
+Clothing,92.23,7,0.07,600.42,South,10
+Sports,19.26,14,0.03,261.55,West,7
+Clothing,80.62,9,0.04,696.56,North,9
+Clothing,59.81,9,0.07,500.61,West,11
+Food,14.29,8,0.12,100.6,South,3
+Clothing,84.27,8,0.05,640.45,West,11
+Home & Garden,74.73,8,0.02,585.88,South,4
+Books,20.69,11,0.11,202.56,North,1
+Books,23.44,9,0.02,206.74,East,6
+Clothing,47.41,6,0.08,261.7,North,11
+Food,19.35,11,0.09,193.69,West,5
+Books,25.07,12,0.01,297.83,East,8
+Food,12.55,14,0.14,151.1,North,2
+Clothing,62.06,8,0.07,461.73,East,11
+Clothing,31.76,6,0.07,177.22,North,2
+Books,20.83,10,0.11,185.39,South,8
+Electronics,189.82,3,0.05,540.99,West,8
+Sports,29.53,8,0.03,229.15,West,12
+Sports,60.54,5,0.08,278.48,West,6
+Home & Garden,100.51,7,0.13,612.11,North,6
+Clothing,30.62,8,0.07,227.81,West,2
+Sports,31.44,10,0.01,311.26,West,11
+Electronics,165.18,6,0.01,981.17,North,7
+Books,15.92,10,0.07,148.06,North,12
+Electronics,85.79,6,0.07,478.71,North,7
+Home & Garden,74.3,6,0.14,383.39,East,4
+Electronics,86.72,9,0.13,679.02,South,3
+Sports,63.27,6,0.1,341.66,South,9
+Electronics,353.85,1,0.07,329.08,West,12
+Electronics,210.45,6,0.06,1186.94,West,12
+Clothing,53.44,3,0.09,145.89,East,10
+Sports,35.95,12,0.08,396.89,North,12
+Electronics,416.34,3,0.11,1111.63,North,12
+Electronics,140.41,6,0.02,825.61,North,6
+Food,25.45,11,0.06,263.15,South,2
+Clothing,37.27,9,0.06,315.3,West,3
+Sports,61.0,9,0.08,505.08,East,4
+Home & Garden,33.12,4,0.07,123.21,East,2
+Sports,70.0,7,0.15,416.5,South,7
+Sports,29.83,7,0.07,194.19,South,10
+Food,13.06,8,0.04,100.3,West,6
+Home & Garden,194.58,2,0.03,377.49,South,12
+Electronics,275.32,2,0.09,501.08,South,12
+Food,7.57,14,0.02,103.86,North,2
+Clothing,76.24,5,0.04,365.95,West,9
+Books,13.1,10,0.04,125.76,West,11
+Food,11.13,15,0.01,165.28,East,9
+Home & Garden,50.31,9,0.01,448.26,South,12
+Electronics,123.91,4,0.01,490.68,East,2
+Clothing,46.31,7,0.08,298.24,West,11
+Food,4.79,15,0.04,68.98,West,1
+Home & Garden,128.36,7,0.1,808.67,West,9
+Books,17.87,10,0.03,173.34,North,7
+Electronics,76.63,7,0.11,477.4,West,7
+Sports,66.42,9,0.11,532.02,East,9
+Sports,117.38,2,0.01,232.41,West,10
+Home & Garden,36.69,9,0.07,307.1,North,1
+Food,16.09,11,0.11,157.52,South,10
+Electronics,148.57,3,0.06,418.97,West,2
+Clothing,48.75,8,0.05,370.5,North,5
+Food,9.91,14,0.04,133.19,North,12
+Books,18.66,10,0.01,184.73,North,12
+Home & Garden,97.88,5,0.03,474.72,South,7
+Books,11.54,15,0.02,169.64,West,3
+Sports,38.38,9,0.05,328.15,South,3
+Clothing,35.62,7,0.06,234.38,West,12
+Home & Garden,47.15,9,0.11,377.67,North,6
+Electronics,46.91,10,0.04,450.34,East,2
+Sports,41.65,8,0.08,306.54,North,7
+Electronics,67.42,3,0.06,190.12,East,6
+Food,14.03,10,0.11,124.87,North,8
+Clothing,44.92,6,0.03,261.43,North,8
+Clothing,48.99,11,0.09,490.39,East,11
+Books,20.2,9,0.02,178.16,North,7
+Books,15.62,15,0.05,222.58,South,6
+Clothing,27.35,10,0.15,232.48,South,6
+Food,15.92,12,0.02,187.22,North,6
+Electronics,112.54,6,0.03,654.98,West,12
+Books,14.99,15,0.08,206.86,East,7
+Home & Garden,172.82,2,0.06,324.9,South,8
+Food,6.7,13,0.03,84.49,North,7
+Books,23.26,10,0.1,209.34,West,3
+Electronics,389.49,3,0.1,1051.62,South,2
+Sports,46.84,7,0.02,321.32,East,2
+Home & Garden,45.82,9,0.05,391.76,South,4
+Clothing,54.69,10,0.05,519.55,North,11
+Clothing,30.26,9,0.1,245.11,East,9
+Clothing,16.86,14,0.01,233.68,West,5
+Food,18.82,11,0.06,194.6,West,3
+Home & Garden,172.05,4,0.01,681.32,East,2
+Electronics,60.19,9,0.02,530.88,West,3
+Electronics,249.95,3,0.05,712.36,East,4
+Clothing,50.32,9,0.06,425.71,South,9
+Food,12.02,11,0.02,129.58,East,11

@@ -22,12 +22,14 @@ import json
 
 load_dotenv()
 
-# Local imports
+from locales import SUPPORTED_LOCALES
 from profiler import read_uploaded_file, profile_dataframe
 from tabular import generate_tabular
 from privacy import apply_privacy
 from quality import compare_datasets
 from relational import generate_relational, export_relational_zip, generate_sql_dump, DEFAULT_TEMPLATE
+from session_store import dataset_store
+from association import association_matrix, _build_column_types_from_schema
 from documents import (
     generate_invoice_data, render_invoice_pdf, render_invoice_html,
     generate_bank_statement, render_statement_pdf, render_statement_html,
@@ -71,8 +73,11 @@ app.add_middleware(RateLimitMiddleware)
 app.add_middleware(SecureHeadersMiddleware)
 
 
-# ── In-memory storage for uploaded profiles ──
+# ── In-memory storage for uploaded profiles (legacy, kept for compat) ──
 _uploaded_profiles: dict[str, dict] = {}  # session_key -> {df, schema}
+
+# ── Sample datasets directory ──
+SAMPLE_DATA_DIR = Path(__file__).resolve().parent / "sample_data"
 
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -86,6 +91,12 @@ async def health():
         "version": "1.0.0",
         "service": "Synthetic Data Platform",
     }
+
+
+@app.get("/api/v1/locales")
+async def get_locales():
+    """Return all supported locales with metadata and currency info."""
+    return {"locales": list(SUPPORTED_LOCALES.values())}
 
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -104,7 +115,10 @@ async def tabular_profile(file: UploadFile = File(...)):
         df = read_uploaded_file(contents, file.filename or "data.csv")
         schema = profile_dataframe(df)
 
-        # Store for later use
+        # Store in the new dataset session store
+        dataset_id = dataset_store.store(df, schema, filename=file.filename or "data.csv")
+
+        # Also keep the legacy session_key for backward compat
         session_key = f"profile_{hash(file.filename)}_{len(df)}"
         _uploaded_profiles[session_key] = {
             'df': df,
@@ -119,6 +133,7 @@ async def tabular_profile(file: UploadFile = File(...)):
             "row_count": len(df),
             "columns": len(schema),
             "session_key": session_key,
+            "dataset_id": dataset_id,
         }
     except HTTPException:
         raise
@@ -157,8 +172,9 @@ async def tabular_generate(request: Request):
         if has_privacy:
             df = apply_privacy(df, privacy_rules, seed=seed)
 
-        # Return preview (first 20 rows)
-        preview = df.head(20).replace({np.nan: None}).to_dict(orient='records')
+        # Return preview with all requested rows up to 1,000 for browser display
+        preview_limit = min(row_count, 1000)
+        preview = df.head(preview_limit).replace({np.nan: None}).to_dict(orient='records')
         columns = list(df.columns)
 
         elapsed = (time.time() - start) * 1000
@@ -259,6 +275,7 @@ async def tabular_quality(request: Request):
         seed = body.get("seed", 42)
         locale = body.get("locale", "en_US")
         session_key = body.get("session_key", "")
+        dataset_id = body.get("dataset_id", "")
 
         if not schema:
             raise HTTPException(status_code=400, detail="Schema is required.")
@@ -266,15 +283,108 @@ async def tabular_quality(request: Request):
         # Generate synthetic data
         synth_df = generate_tabular(schema=schema, row_count=row_count, seed=seed, locale=locale)
 
-        # Get original data
-        if session_key and session_key in _uploaded_profiles:
+        # Get original data — prefer dataset_store, fallback to legacy
+        real_df = None
+        if dataset_id:
+            entry = dataset_store.get(dataset_id)
+            if entry:
+                real_df = entry.df
+        if real_df is None and session_key and session_key in _uploaded_profiles:
             real_df = _uploaded_profiles[session_key]['df']
-        else:
+        if real_df is None:
             # Use the same schema to generate a "real" baseline
             real_df = generate_tabular(schema=schema, row_count=row_count, seed=seed + 1, locale=locale)
 
         report = compare_datasets(real_df, synth_df, schema)
         return report
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#  SAMPLE DATASETS
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# Metadata for bundled demo datasets
+SAMPLE_DATASETS = {
+    "hr_employees": {
+        "name": "hr_employees",
+        "title": "HR Employees",
+        "description": "Employee data with age, experience, department, city, salary, and performance. Strong relationships: salary depends on experience, department, and city.",
+        "rows": 2000,
+        "columns": 6,
+    },
+    "retail_sales": {
+        "name": "retail_sales",
+        "title": "Retail Sales",
+        "description": "Sales transactions with category-dependent pricing, inverse price-quantity relationship, seasonal December peak, and computed revenue.",
+        "rows": 2000,
+        "columns": 7,
+    },
+    "patient_vitals": {
+        "name": "patient_vitals",
+        "title": "Patient Vitals",
+        "description": "Patient health data with age-linked BMI, blood pressure tied to age/BMI/smoking, cholesterol, and risk-based diagnosis.",
+        "rows": 2000,
+        "columns": 6,
+    },
+}
+
+
+@app.get("/api/v1/samples")
+async def list_samples():
+    """List available bundled demo datasets."""
+    return {"samples": list(SAMPLE_DATASETS.values())}
+
+
+@app.post("/api/v1/samples/{name}/load")
+async def load_sample(name: str):
+    """Load a bundled demo dataset into the session store and return its profile."""
+    if name not in SAMPLE_DATASETS:
+        raise HTTPException(status_code=404, detail=f"Sample dataset '{name}' not found. Available: {list(SAMPLE_DATASETS.keys())}")
+
+    csv_path = SAMPLE_DATA_DIR / f"{name}.csv"
+    if not csv_path.exists():
+        raise HTTPException(status_code=500, detail=f"Sample CSV file not found on disk: {name}.csv")
+
+    df = pd.read_csv(csv_path)
+    schema = profile_dataframe(df)
+    dataset_id = dataset_store.store(df, schema, filename=f"{name}.csv")
+
+    return {
+        "dataset_id": dataset_id,
+        "schema": schema,
+        "row_count": len(df),
+        "columns": len(schema),
+        "sample_info": SAMPLE_DATASETS[name],
+    }
+
+
+@app.get("/api/v1/datasets")
+async def list_datasets():
+    """List all active datasets in the session store."""
+    return {"datasets": dataset_store.list_datasets()}
+
+
+@app.post("/api/v1/association")
+async def compute_association(request: Request):
+    """Compute association matrix for a stored dataset."""
+    try:
+        body = await request.json()
+        dataset_id = body.get("dataset_id", "")
+
+        if not dataset_id:
+            raise HTTPException(status_code=400, detail="dataset_id is required.")
+
+        entry = dataset_store.get(dataset_id)
+        if entry is None:
+            raise HTTPException(status_code=404, detail="Dataset not found or expired.")
+
+        col_types = _build_column_types_from_schema(entry.schema)
+        result = association_matrix(entry.df, column_types=col_types)
+        return result
 
     except HTTPException:
         raise
@@ -312,7 +422,7 @@ async def relational_generate(request: Request):
         for name, df in tables.items():
             previews[name] = {
                 "columns": list(df.columns),
-                "rows": df.head(20).replace({np.nan: None}).to_dict(orient='records'),
+                "rows": df.head(min(len(df), 500)).replace({np.nan: None}).to_dict(orient='records'),
                 "total_rows": len(df),
             }
 
