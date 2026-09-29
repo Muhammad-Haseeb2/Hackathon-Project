@@ -103,7 +103,8 @@ export default function TabularTab() {
   const [isHowItWorksOpen, setIsHowItWorksOpen] = useState(false)
   const [uploading, setUploading] = useState(false)
   const [generating, setGenerating] = useState(false)
-  const [exporting, setExporting] = useState(false)
+  const [exportingFormat, setExportingFormat] = useState(null)
+  const [isDragging, setIsDragging] = useState(false)
   const [error, setError] = useState('')
   const [aiSource, setAiSource] = useState('')
 
@@ -273,20 +274,124 @@ export default function TabularTab() {
     [rowCount, seed, locale, runGeneration]
   )
 
+  const handleDragOver = useCallback((e) => {
+    e.preventDefault()
+    e.stopPropagation()
+    setIsDragging(true)
+  }, [])
+
+  const handleDragLeave = useCallback((e) => {
+    e.preventDefault()
+    e.stopPropagation()
+    setIsDragging(false)
+  }, [])
+
   const handleDrop = useCallback(
     (e) => {
       e.preventDefault()
       e.stopPropagation()
-      const file = e.dataTransfer.files[0]
+      setIsDragging(false)
+      const file = e.dataTransfer.files?.[0]
       if (file) handleFileUpload(file)
     },
     [handleFileUpload]
   )
 
-  const handleDragOver = useCallback((e) => {
-    e.preventDefault()
-    e.stopPropagation()
-  }, [])
+  // ── Privacy Helper Functions ──
+  const isPrivacyActive = useCallback(
+    (type) => {
+      if (!schema.length) return false
+      if (type === 'mask_email') {
+        const emailCols = schema.filter(
+          (c) => c.type === 'email' || c.name.toLowerCase().includes('email') || c.name.toLowerCase().includes('mail')
+        )
+        return emailCols.length > 0 && emailCols.every((c) => privacyRules[c.name] === 'mask')
+      }
+      if (type === 'mask_phone') {
+        const phoneCols = schema.filter(
+          (c) => c.type === 'phone' || c.name.toLowerCase().includes('phone') || c.name.toLowerCase().includes('tel') || c.name.toLowerCase().includes('mobile')
+        )
+        return phoneCols.length > 0 && phoneCols.every((c) => privacyRules[c.name] === 'mask')
+      }
+      if (type === 'pseudonymize_name') {
+        const nameCols = schema.filter(
+          (c) =>
+            c.type === 'name' ||
+            c.name.toLowerCase().includes('name') ||
+            c.name.toLowerCase().includes('customer') ||
+            c.name.toLowerCase().includes('patient') ||
+            c.name.toLowerCase().includes('employee') ||
+            c.name.toLowerCase().includes('holder')
+        )
+        return nameCols.length > 0 && nameCols.every((c) => privacyRules[c.name] === 'pseudonymize')
+      }
+      if (type === 'laplace_noise') {
+        const numCols = schema.filter(
+          (c) => c.type === 'integer' || c.type === 'float' || c.type === 'currency'
+        )
+        return numCols.length > 0 && numCols.some((c) => privacyRules[c.name] === 'noise')
+      }
+      return false
+    },
+    [schema, privacyRules]
+  )
+
+  const togglePrivacyOption = useCallback(
+    async (type) => {
+      if (!schema.length) return
+      const updated = { ...privacyRules }
+
+      if (type === 'mask_email') {
+        const currentlyActive = isPrivacyActive('mask_email')
+        schema.forEach((col) => {
+          if (col.type === 'email' || col.name.toLowerCase().includes('email') || col.name.toLowerCase().includes('mail')) {
+            updated[col.name] = currentlyActive ? 'none' : 'mask'
+          }
+        })
+      } else if (type === 'mask_phone') {
+        const currentlyActive = isPrivacyActive('mask_phone')
+        schema.forEach((col) => {
+          if (col.type === 'phone' || col.name.toLowerCase().includes('phone') || col.name.toLowerCase().includes('tel') || col.name.toLowerCase().includes('mobile')) {
+            updated[col.name] = currentlyActive ? 'none' : 'mask'
+          }
+        })
+      } else if (type === 'pseudonymize_name') {
+        const currentlyActive = isPrivacyActive('pseudonymize_name')
+        schema.forEach((col) => {
+          if (
+            col.type === 'name' ||
+            col.name.toLowerCase().includes('name') ||
+            col.name.toLowerCase().includes('customer') ||
+            col.name.toLowerCase().includes('patient') ||
+            col.name.toLowerCase().includes('employee') ||
+            col.name.toLowerCase().includes('holder')
+          ) {
+            updated[col.name] = currentlyActive ? 'none' : 'pseudonymize'
+          }
+        })
+      } else if (type === 'laplace_noise') {
+        const currentlyActive = isPrivacyActive('laplace_noise')
+        schema.forEach((col) => {
+          if (col.type === 'integer' || col.type === 'float' || col.type === 'currency') {
+            updated[col.name] = currentlyActive ? 'none' : 'noise'
+          }
+        })
+      }
+
+      setPrivacyRules(updated)
+      await runGeneration(schema, updated, rowCount, seed, locale, datasetId)
+    },
+    [schema, privacyRules, isPrivacyActive, runGeneration, rowCount, seed, locale, datasetId]
+  )
+
+  const setColumnPrivacy = useCallback(
+    async (colName, method) => {
+      const updated = { ...privacyRules, [colName]: method }
+      setPrivacyRules(updated)
+      await runGeneration(schema, updated, rowCount, seed, locale, datasetId)
+    },
+    [privacyRules, runGeneration, schema, rowCount, seed, locale, datasetId]
+  )
 
   // ── Manual Generate ──
   const handleGenerate = useCallback(async () => {
@@ -351,7 +456,7 @@ export default function TabularTab() {
   const handleExport = useCallback(
     async (format) => {
       if (!schema.length && !datasetId) return
-      setExporting(true)
+      setExportingFormat(format)
       setError('')
       try {
         const rules = Object.entries(privacyRules)
@@ -376,7 +481,7 @@ export default function TabularTab() {
       } catch (e) {
         setError(e.message)
       } finally {
-        setExporting(false)
+        setExportingFormat(null)
       }
     },
     [schema, datasetId, rowCount, seed, locale, nullRate, outlierRate, privacyRules]
@@ -494,91 +599,134 @@ export default function TabularTab() {
         </div>
       )}
 
-      {/* ── 1. UNIFIED COMMAND & DATASET ACTION BAR ── */}
-      <div className="bg-white p-4 rounded-3xl border border-slate-200 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
-        {/* Left: Dataset Selector & Upload */}
-        <div className="flex flex-wrap items-center gap-3">
-          <div className="flex items-center gap-2">
-            <span className="text-sm">📊</span>
-            <span className="text-xs font-bold text-slate-800 uppercase tracking-wider">
-              Training Data:
-            </span>
+      {/* ── 1. HEADER & TOP-RIGHT DRAG-AND-DROP CSV DROPZONE ── */}
+      <div className="bg-white p-5 rounded-3xl border border-slate-200 shadow-xs flex flex-col lg:flex-row lg:items-center justify-between gap-5">
+        {/* Left: Engine Identity & Quick Dataset Controls */}
+        <div className="space-y-3">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-teal-500 to-teal-700 text-white flex items-center justify-center text-xl shadow-sm font-bold">
+              🧬
+            </div>
+            <div>
+              <div className="flex items-center gap-2.5">
+                <h1 className="text-base font-extrabold text-slate-900 tracking-tight">
+                  Synthetia Tabular Studio
+                </h1>
+                <span className="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-teal-50 text-teal-800 border border-teal-200/80">
+                  {datasetId ? 'Gaussian Copula Engine' : 'Marginal Copula Engine'}
+                </span>
+              </div>
+              <p className="text-xs text-slate-500">
+                Preserve statistical dependencies, correlation matrices, and enforce privacy masking.
+              </p>
+            </div>
           </div>
 
-          <select
-            value={datasetName ? samplesList.find((s) => s.title === datasetName || s.name === datasetName)?.name || '' : ''}
-            onChange={(e) => handleLoadSample(e.target.value)}
-            className="px-3 py-1.5 text-xs bg-slate-50 border border-slate-300 rounded-xl font-semibold text-slate-800 focus:ring-2 focus:ring-teal-500 outline-none shadow-2xs"
-          >
-            <option value="">⚡ Load Bundled Sample Dataset...</option>
-            {samplesList.map((sample) => (
-              <option key={sample.name} value={sample.name}>
-                {sample.title}
-              </option>
-            ))}
-          </select>
+          {/* Quick Dataset Selector & Controls */}
+          <div className="flex flex-wrap items-center gap-2.5 pt-1">
+            <select
+              value={datasetName ? samplesList.find((s) => s.title === datasetName || s.name === datasetName)?.name || '' : ''}
+              onChange={(e) => handleLoadSample(e.target.value)}
+              className="px-3 py-1.5 text-xs bg-slate-50 border border-slate-300 rounded-xl font-semibold text-slate-800 focus:ring-2 focus:ring-teal-500 outline-none shadow-2xs"
+            >
+              <option value="">⚡ Load Sample Dataset...</option>
+              {samplesList.map((sample) => (
+                <option key={sample.name} value={sample.name}>
+                  {sample.title}
+                </option>
+              ))}
+            </select>
 
-          <button
-            onClick={() => fileInputRef.current?.click()}
-            className="px-3 py-1.5 text-xs font-semibold rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition flex items-center gap-1.5"
-            title="Upload your own CSV to fit Copula"
-          >
-            <span>📁</span> Upload CSV
-          </button>
+            {datasetName && (
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-teal-50 text-teal-800 border border-teal-200">
+                <span>✓ Active: {datasetName}</span>
+                <button
+                  onClick={() => {
+                    setDatasetId('')
+                    setDatasetName('')
+                    setSessionKey('')
+                    setFidelityReport(null)
+                  }}
+                  className="hover:text-red-500 ml-1 font-bold"
+                  title="Clear active dataset"
+                >
+                  ✕
+                </button>
+              </span>
+            )}
 
-          {datasetName && (
-            <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold bg-teal-50 text-teal-800 border border-teal-200">
-              <span>✓ Active: {datasetName}</span>
-              <button
-                onClick={() => {
-                  setDatasetId('')
-                  setDatasetName('')
-                  setSessionKey('')
-                  setFidelityReport(null)
-                }}
-                className="hover:text-red-500 ml-1 font-bold"
-                title="Clear loaded dataset"
-              >
-                ✕
-              </button>
-            </span>
-          )}
+            <button
+              onClick={handleGenerateAndCompare}
+              disabled={fidelityLoading || (!datasetId && !schema.length)}
+              className="px-3.5 py-1.5 text-xs font-bold rounded-xl bg-gradient-to-r from-teal-700 to-teal-800 text-white hover:from-teal-800 hover:to-teal-900 disabled:opacity-50 transition shadow-sm flex items-center gap-1.5"
+            >
+              {fidelityLoading ? (
+                <>
+                  <span className="animate-spin text-xs">⏳</span> Computing...
+                </>
+              ) : (
+                <>
+                  <span>⚡</span> Generate &amp; Compare
+                </>
+              )}
+            </button>
+
+            <button
+              onClick={() => setShowConfig(!showConfig)}
+              className={`px-3 py-1.5 text-xs font-semibold rounded-xl border transition flex items-center gap-1.5 ${
+                showConfig
+                  ? 'bg-slate-100 text-slate-800 border-slate-300'
+                  : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'
+              }`}
+              title="Toggle Configuration Drawer"
+            >
+              <span>⚙️</span>
+              <span>{showConfig ? 'Hide Config' : 'Config'}</span>
+            </button>
+          </div>
         </div>
 
-        {/* Right: Engine Indicator, Generate & Compare CTA, and Settings Toggle */}
-        <div className="flex items-center gap-2.5">
-          <span className="hidden xl:inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-slate-100 text-slate-700">
-            <span>🧠</span> {datasetId ? 'Gaussian Copula Mode' : 'Marginal Generator'}
-          </span>
-
-          <button
-            onClick={handleGenerateAndCompare}
-            disabled={fidelityLoading || (!datasetId && !schema.length)}
-            className="px-4 py-2 text-xs font-bold rounded-xl bg-gradient-to-r from-teal-700 to-teal-800 text-white hover:from-teal-800 hover:to-teal-900 disabled:opacity-50 transition shadow-sm flex items-center gap-2"
-          >
-            {fidelityLoading ? (
-              <>
-                <span className="animate-spin text-sm">⏳</span> Computing Fidelity...
-              </>
+        {/* Top-Right: Prominent Drag & Drop CSV Dropzone */}
+        <div
+          onDragOver={handleDragOver}
+          onDragLeave={handleDragLeave}
+          onDrop={handleDrop}
+          onClick={() => fileInputRef.current?.click()}
+          className={`relative border-2 border-dashed rounded-2xl p-4 transition-all duration-200 cursor-pointer flex items-center gap-3.5 select-none w-full lg:w-[360px] shrink-0 ${
+            isDragging
+              ? 'border-teal-600 bg-teal-50/90 scale-[1.02] shadow-md ring-4 ring-teal-100'
+              : 'border-slate-300 hover:border-teal-500 bg-slate-50/70 hover:bg-teal-50/30'
+          } ${uploading ? 'opacity-70 pointer-events-none' : ''}`}
+          title="Drag & drop your CSV or click to browse"
+        >
+          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-teal-600 to-teal-700 text-white flex items-center justify-center text-xl shadow-sm shrink-0">
+            {uploading ? (
+              <span className="animate-spin text-sm">⏳</span>
+            ) : isDragging ? (
+              '📥'
             ) : (
-              <>
-                <span>⚡</span> Generate &amp; Compare
-              </>
+              '☁️'
             )}
-          </button>
-
-          <button
-            onClick={() => setShowConfig(!showConfig)}
-            className={`px-3 py-2 text-xs font-semibold rounded-xl border transition flex items-center gap-1.5 ${
-              showConfig
-                ? 'bg-slate-100 text-slate-800 border-slate-300'
-                : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'
-            }`}
-            title="Toggle Configuration Drawer"
-          >
-            <span>⚙️</span>
-            <span>{showConfig ? 'Hide Config' : 'Config'}</span>
-          </button>
+          </div>
+          <div className="text-left flex-1 min-w-0">
+            <div className="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+              <span className="truncate">
+                {uploading
+                  ? 'Fitting Copula & Generating...'
+                  : isDragging
+                  ? 'Drop CSV File Here'
+                  : 'Upload CSV (Drag & Drop)'}
+              </span>
+              <span className="text-[10px] text-teal-700 bg-teal-100/80 px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">
+                CSV
+              </span>
+            </div>
+            <div className="text-[11px] text-slate-500 truncate">
+              {uploading
+                ? 'Synthesizing correlated dataset...'
+                : 'Drop file here or click to browse'}
+            </div>
+          </div>
         </div>
       </div>
 
@@ -696,6 +844,123 @@ export default function TabularTab() {
             badge={datasetId ? 'Modelled' : 'Standard'}
           >
             <div className="space-y-4">
+              {/* 🛡️ DATA PRIVACY & MASKING OPTIONS */}
+              <div className="bg-slate-50/90 p-3.5 rounded-2xl border border-slate-200/90 space-y-3">
+                <div className="flex items-center justify-between">
+                  <label className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
+                    <span>🛡️</span> Data Privacy &amp; Masking
+                  </label>
+                  {Object.values(privacyRules).filter((m) => m !== 'none').length > 0 && (
+                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-teal-100 text-teal-800">
+                      {Object.values(privacyRules).filter((m) => m !== 'none').length} active
+                    </span>
+                  )}
+                </div>
+                <p className="text-[11px] text-slate-500 leading-tight">
+                  Protect sensitive PII in real-time before export:
+                </p>
+
+                <div className="space-y-2">
+                  {/* Mask Emails */}
+                  <label className="flex items-center justify-between p-2 rounded-xl bg-white border border-slate-200 hover:border-teal-300 transition cursor-pointer text-xs">
+                    <div className="flex items-center gap-2">
+                      <span>✉️</span>
+                      <div>
+                        <div className="font-semibold text-slate-800">Mask Emails</div>
+                        <div className="text-[10px] text-slate-500">e.g. j***@domain.com</div>
+                      </div>
+                    </div>
+                    <input
+                      type="checkbox"
+                      checked={isPrivacyActive('mask_email')}
+                      onChange={() => togglePrivacyOption('mask_email')}
+                      className="w-4 h-4 text-teal-600 rounded border-slate-300 focus:ring-teal-500 accent-teal-600 cursor-pointer"
+                    />
+                  </label>
+
+                  {/* Mask Phone Numbers */}
+                  <label className="flex items-center justify-between p-2 rounded-xl bg-white border border-slate-200 hover:border-teal-300 transition cursor-pointer text-xs">
+                    <div className="flex items-center gap-2">
+                      <span>📞</span>
+                      <div>
+                        <div className="font-semibold text-slate-800">Mask Phone Numbers</div>
+                        <div className="text-[10px] text-slate-500">e.g. ***-***-1234</div>
+                      </div>
+                    </div>
+                    <input
+                      type="checkbox"
+                      checked={isPrivacyActive('mask_phone')}
+                      onChange={() => togglePrivacyOption('mask_phone')}
+                      className="w-4 h-4 text-teal-600 rounded border-slate-300 focus:ring-teal-500 accent-teal-600 cursor-pointer"
+                    />
+                  </label>
+
+                  {/* Pseudonymize Names */}
+                  <label className="flex items-center justify-between p-2 rounded-xl bg-white border border-slate-200 hover:border-teal-300 transition cursor-pointer text-xs">
+                    <div className="flex items-center gap-2">
+                      <span>👤</span>
+                      <div>
+                        <div className="font-semibold text-slate-800">Pseudonymize Names</div>
+                        <div className="text-[10px] text-slate-500">Salted SHA-256 tokens</div>
+                      </div>
+                    </div>
+                    <input
+                      type="checkbox"
+                      checked={isPrivacyActive('pseudonymize_name')}
+                      onChange={() => togglePrivacyOption('pseudonymize_name')}
+                      className="w-4 h-4 text-teal-600 rounded border-slate-300 focus:ring-teal-500 accent-teal-600 cursor-pointer"
+                    />
+                  </label>
+
+                  {/* Differential Privacy Noise */}
+                  <label className="flex items-center justify-between p-2 rounded-xl bg-white border border-slate-200 hover:border-teal-300 transition cursor-pointer text-xs">
+                    <div className="flex items-center gap-2">
+                      <span>🔒</span>
+                      <div>
+                        <div className="font-semibold text-slate-800">Laplace DP Noise</div>
+                        <div className="text-[10px] text-slate-500">ε = 1.0 numeric perturbation</div>
+                      </div>
+                    </div>
+                    <input
+                      type="checkbox"
+                      checked={isPrivacyActive('laplace_noise')}
+                      onChange={() => togglePrivacyOption('laplace_noise')}
+                      className="w-4 h-4 text-teal-600 rounded border-slate-300 focus:ring-teal-500 accent-teal-600 cursor-pointer"
+                    />
+                  </label>
+                </div>
+
+                {/* Per-column fine-tuning if schema exists */}
+                {schema.length > 0 && (
+                  <details className="mt-2 text-xs">
+                    <summary className="text-[11px] font-bold text-teal-700 hover:text-teal-900 cursor-pointer">
+                      ⚙️ Fine-tune per column ({schema.length})
+                    </summary>
+                    <div className="mt-2 space-y-1.5 max-h-44 overflow-y-auto pr-1">
+                      {schema.map((col) => (
+                        <div key={col.name} className="flex items-center justify-between py-1 px-1.5 bg-white rounded-lg border border-slate-200 text-[11px]">
+                          <span className="font-mono font-medium text-slate-700 truncate max-w-[130px]" title={col.name}>
+                            {col.name}
+                          </span>
+                          <select
+                            value={privacyRules[col.name] || 'none'}
+                            onChange={(e) => setColumnPrivacy(col.name, e.target.value)}
+                            className="text-[10px] py-0.5 px-1 bg-slate-50 border border-slate-300 rounded font-semibold text-slate-800 outline-none"
+                          >
+                            <option value="none">None</option>
+                            <option value="mask">Mask</option>
+                            <option value="pseudonymize">Pseudo</option>
+                            <option value="noise">DP Noise</option>
+                          </select>
+                        </div>
+                      ))}
+                    </div>
+                  </details>
+                )}
+              </div>
+
+              <hr className="border-slate-100" />
+
               {/* Quick Presets */}
               <div>
                 <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
@@ -855,24 +1120,35 @@ export default function TabularTab() {
                   Export Dataset ({rowCount.toLocaleString()} rows)
                 </div>
                 <div className="grid grid-cols-3 gap-2">
-                  <ExportButton
+                  <button
+                    id="export-csv-btn"
                     onClick={() => handleExport('csv')}
-                    disabled={exporting || (!schema.length && !datasetId)}
-                    label="CSV"
-                    loading={exporting}
-                  />
-                  <ExportButton
-                    onClick={() => handleExport('json')}
-                    disabled={exporting || (!schema.length && !datasetId)}
-                    label="JSON"
-                    loading={false}
-                  />
-                  <ExportButton
+                    disabled={exportingFormat !== null || (!schema.length && !datasetId)}
+                    className="flex flex-col items-center justify-center p-2.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 hover:border-teal-500 hover:shadow-xs disabled:opacity-50 transition text-slate-800 text-xs font-semibold"
+                  >
+                    <span className="text-base mb-1">📄</span>
+                    <span>{exportingFormat === 'csv' ? 'Saving...' : 'CSV'}</span>
+                  </button>
+
+                  <button
+                    id="export-excel-btn"
                     onClick={() => handleExport('excel')}
-                    disabled={exporting || (!schema.length && !datasetId)}
-                    label="Excel"
-                    loading={false}
-                  />
+                    disabled={exportingFormat !== null || (!schema.length && !datasetId)}
+                    className="flex flex-col items-center justify-center p-2.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 hover:border-teal-500 hover:shadow-xs disabled:opacity-50 transition text-slate-800 text-xs font-semibold"
+                  >
+                    <span className="text-base mb-1">📊</span>
+                    <span>{exportingFormat === 'excel' ? 'Saving...' : 'Excel (.xlsx)'}</span>
+                  </button>
+
+                  <button
+                    id="export-json-btn"
+                    onClick={() => handleExport('json')}
+                    disabled={exportingFormat !== null || (!schema.length && !datasetId)}
+                    className="flex flex-col items-center justify-center p-2.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 hover:border-teal-500 hover:shadow-xs disabled:opacity-50 transition text-slate-800 text-xs font-semibold"
+                  >
+                    <span className="text-base mb-1">📦</span>
+                    <span>{exportingFormat === 'json' ? 'Saving...' : 'JSON'}</span>
+                  </button>
                 </div>
               </div>
             </div>

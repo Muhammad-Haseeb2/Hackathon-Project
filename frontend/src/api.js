@@ -43,16 +43,20 @@ async function blobRequest(endpoint, options = {}) {
   return res.blob();
 }
 
-/** Download a blob as a file */
-function downloadBlob(blob, filename) {
-  const url = URL.createObjectURL(blob);
+/** Download a blob as a file with strict MIME type and extension */
+function downloadBlob(blob, filename, mimeType) {
+  const finalBlob = mimeType ? new Blob([blob], { type: mimeType }) : blob;
+  const url = URL.createObjectURL(finalBlob);
   const a = document.createElement('a');
+  a.style.display = 'none';
   a.href = url;
-  a.download = filename;
+  a.setAttribute('download', filename);
   document.body.appendChild(a);
   a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
+  setTimeout(() => {
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }, 200);
 }
 
 // ── Health ──
@@ -78,12 +82,27 @@ export async function generateTabular(config) {
 }
 
 export async function exportTabular(config) {
+  const fmt = (config.format || 'csv').toLowerCase();
   const blob = await blobRequest('/v1/tabular/export', {
     method: 'POST',
-    body: JSON.stringify(config),
+    body: JSON.stringify({ ...config, format: fmt }),
   });
-  const ext = config.format === 'excel' ? 'xlsx' : config.format === 'json' ? 'json' : 'csv';
-  downloadBlob(blob, `synthetic_data.${ext}`);
+
+  let filename = 'synthetia_data.csv';
+  let mimeType = 'text/csv';
+
+  if (fmt === 'excel' || fmt === 'xlsx') {
+    filename = 'synthetia_data.xlsx';
+    mimeType = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
+  } else if (fmt === 'json') {
+    filename = 'synthetia_data.json';
+    mimeType = 'application/json';
+  } else {
+    filename = 'synthetia_data.csv';
+    mimeType = 'text/csv';
+  }
+
+  downloadBlob(blob, filename, mimeType);
 }
 
 export async function getQualityReport(config) {
@@ -137,12 +156,14 @@ export async function generateRelational(config) {
 }
 
 export async function exportRelational(config) {
+  const fmt = (config.format || 'zip').toLowerCase();
   const blob = await blobRequest('/v1/relational/export', {
     method: 'POST',
-    body: JSON.stringify(config),
+    body: JSON.stringify({ ...config, format: fmt }),
   });
-  const ext = config.format === 'sql' ? 'sql' : 'zip';
-  downloadBlob(blob, `relational_data.${ext}`);
+  const ext = fmt === 'sql' ? 'sql' : 'zip';
+  const mimeType = fmt === 'sql' ? 'text/plain' : 'application/zip';
+  downloadBlob(blob, `synthetia_relational.${ext}`, mimeType);
 }
 
 // ── Documents ──

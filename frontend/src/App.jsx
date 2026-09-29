@@ -7,7 +7,7 @@ import DocumentsTab from './tabs/DocumentsTab'
 import AdminTab from './tabs/AdminTab'
 
 const TABS = [
-  { id: 'tabular', label: 'Tabular', icon: '📊' },
+  { id: 'tabular', label: 'Tabular', icon: '🧬' },
   { id: 'relational', label: 'Relational', icon: '🔗' },
   { id: 'documents', label: 'Documents', icon: '📄' },
   { id: 'admin', label: 'Admin & Security', icon: '🛡️' },

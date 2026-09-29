@@ -4,16 +4,18 @@ export default function Sidebar({ tabs, activeTab, onTabChange, backendStatus })
       {/* Logo area */}
       <div className="p-5 border-b border-white/10">
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-lg bg-teal flex items-center justify-center">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-              <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-              <line x1="12" y1="22.08" x2="12" y2="12" />
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-teal-600 via-teal-500 to-emerald-400 flex items-center justify-center shadow-lg shadow-teal-500/20 ring-1 ring-white/20">
+            {/* Developer code / terminal logo */}
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+              <line x1="13.5" y1="4" x2="10.5" y2="20" stroke="rgba(255,255,255,0.7)" />
             </svg>
           </div>
-          <div>
-            <h2 className="text-white font-semibold text-sm leading-tight">Synthetic Data</h2>
-            <p className="text-white/50 text-xs">Platform v0.1</p>
+          <div className="flex flex-col">
+            <span className="text-xl font-black tracking-tight text-white font-sans bg-gradient-to-r from-white via-slate-100 to-teal-200 bg-clip-text text-transparent">
+              Synthetia
+            </span>
           </div>
         </div>
       </div>

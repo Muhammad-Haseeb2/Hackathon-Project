@@ -75,6 +75,7 @@ app.add_middleware(
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+    expose_headers=["Content-Disposition"],
 )
 app.add_middleware(RateLimitMiddleware)
 app.add_middleware(SecureHeadersMiddleware)
@@ -290,7 +291,7 @@ async def tabular_export(request: Request):
         null_rate = body.get("null_rate", 0.0)
         outlier_rate = body.get("outlier_rate", 0.0)
         privacy_rules = body.get("privacy_rules", [])
-        fmt = body.get("format", "csv")
+        fmt = str(body.get("format", "csv")).strip().lower()
         dataset_id = body.get("dataset_id", "")
         method = body.get("method", "auto")
 
@@ -331,25 +332,25 @@ async def tabular_export(request: Request):
             data = df.replace({np.nan: None}).to_dict(orient='records')
             content = json.dumps(data, indent=2, default=str)
             return StreamingResponse(
-                io.BytesIO(content.encode()),
-                media_type="application/json",
-                headers={"Content-Disposition": "attachment; filename=synthetic_data.json"},
+                io.BytesIO(content.encode("utf-8")),
+                media_type="application/json; charset=utf-8",
+                headers={"Content-Disposition": 'attachment; filename="synthetia_data.json"'},
             )
-        elif fmt == "excel":
+        elif fmt in ("excel", "xlsx"):
             buf = io.BytesIO()
             df.to_excel(buf, index=False, engine='openpyxl')
             buf.seek(0)
             return StreamingResponse(
                 buf,
                 media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                headers={"Content-Disposition": "attachment; filename=synthetic_data.xlsx"},
+                headers={"Content-Disposition": 'attachment; filename="synthetia_data.xlsx"'},
             )
         else:  # csv
             content = df.to_csv(index=False)
             return StreamingResponse(
-                io.BytesIO(content.encode()),
-                media_type="text/csv",
-                headers={"Content-Disposition": "attachment; filename=synthetic_data.csv"},
+                io.BytesIO(content.encode("utf-8")),
+                media_type="text/csv; charset=utf-8",
+                headers={"Content-Disposition": 'attachment; filename="synthetia_data.csv"'},
             )
     except HTTPException:
         raise
