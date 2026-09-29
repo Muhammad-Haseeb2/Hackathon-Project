@@ -26,7 +26,7 @@ from locales import SUPPORTED_LOCALES
 from profiler import read_uploaded_file, profile_dataframe
 from tabular import generate_tabular
 from privacy import apply_privacy
-from quality import compare_datasets
+from quality import compare_datasets, generate_fidelity_report
 from relational import generate_relational, export_relational_zip, generate_sql_dump, DEFAULT_TEMPLATE
 from session_store import dataset_store
 from association import association_matrix, _build_column_types_from_schema
@@ -389,6 +389,67 @@ async def tabular_quality(request: Request):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+
+@app.post("/api/quality/report")
+@app.post("/api/v1/quality/report")
+async def quality_fidelity_report(request: Request):
+    """
+    Generate comprehensive fidelity report comparing real data with both
+    Copula-synthesized and independent-baseline data.
+    """
+    try:
+        body = await request.json()
+        dataset_id = body.get("dataset_id", "")
+        row_count = validate_row_count(body.get("row_count", 1000))
+        seed = body.get("seed", 42)
+        locale = body.get("locale", "en_US")
+        privacy_settings = body.get("privacy_settings", {})
+        privacy_rules = body.get("privacy_rules", [])
+
+        if not dataset_id:
+            raise HTTPException(status_code=400, detail="dataset_id is required.")
+
+        entry = dataset_store.get(dataset_id)
+        if entry is None:
+            raise HTTPException(status_code=404, detail="Dataset not found or expired.")
+
+        real_df = entry.df
+        schema = entry.schema
+        col_types = _build_column_types_from_schema(schema)
+
+        # 1. Copula synthetic generation
+        synth = CopulaSynthesizer()
+        synth.fit(real_df, col_types)
+        synth_copula = synth.sample(row_count, seed=seed)
+
+        # Apply privacy noise to copula output if requested
+        if privacy_rules:
+            synth_copula = apply_privacy(synth_copula, privacy_rules, seed=seed)
+
+        # 2. Independent baseline generation
+        synth_indep = generate_tabular(
+            schema=schema,
+            row_count=row_count,
+            seed=seed,
+            locale=locale,
+        )
+
+        # 3. Produce fidelity report
+        report = generate_fidelity_report(
+            real_df=real_df,
+            synth_copula=synth_copula,
+            synth_independent=synth_indep,
+            schema=schema,
+            privacy_settings=privacy_settings,
+        )
+
+        return report
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 #  SAMPLE DATASETS
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -419,12 +480,14 @@ SAMPLE_DATASETS = {
 }
 
 
+@app.get("/api/samples")
 @app.get("/api/v1/samples")
 async def list_samples():
     """List available bundled demo datasets."""
     return {"samples": list(SAMPLE_DATASETS.values())}
 
 
+@app.post("/api/samples/{name}/load")
 @app.post("/api/v1/samples/{name}/load")
 async def load_sample(name: str):
     """Load a bundled demo dataset into the session store and return its profile."""

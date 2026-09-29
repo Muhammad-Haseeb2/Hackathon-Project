@@ -22,6 +22,11 @@ def _classify_column(series: pd.Series, col_type: str | None = None) -> str:
     if col_type in ("integer", "float", "datetime"):
         return "numeric"
     if col_type in ("categorical", "boolean"):
+        non_null = series.dropna()
+        if len(non_null) > 0:
+            as_num = pd.to_numeric(non_null, errors="coerce")
+            if as_num.notna().all() and len(non_null.unique()) > 10:
+                return "numeric"
         return "categorical"
     # Fallback: try pandas dtype
     if pd.api.types.is_numeric_dtype(series):

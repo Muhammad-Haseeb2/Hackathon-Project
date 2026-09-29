@@ -109,7 +109,7 @@ def _detect_column_type(series: pd.Series, col_name: str) -> str:
     # Try parsing as datetime
     if series.dtype == object:
         try:
-            parsed = pd.to_datetime(non_null.head(100), infer_datetime_format=True, format='mixed')
+            parsed = pd.to_datetime(non_null.head(100), format='mixed', errors='coerce')
             if parsed.notna().mean() > 0.8:
                 return 'datetime'
         except (ValueError, TypeError):
