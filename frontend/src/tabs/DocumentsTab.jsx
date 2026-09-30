@@ -1,11 +1,11 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useRef } from 'react'
 import ConfigPanel from '../components/ConfigPanel'
 import ExportButton from '../components/ExportButton'
-import { generateInvoice, exportInvoice, generateStatement, exportStatement } from '../api'
+import { generateInvoice, exportInvoice, generateStatement, exportStatement, cloneDocument } from '../api'
 import { LOCALES } from '../locales'
 
 export default function DocumentsTab() {
-  const [docType, setDocType] = useState('invoice') // 'invoice' | 'statement'
+  const [docType, setDocType] = useState('invoice') // 'invoice' | 'statement' | 'clone'
   const [seed, setSeed] = useState(42)
   const [locale, setLocale] = useState('en_US')
 
@@ -21,12 +21,102 @@ export default function DocumentsTab() {
   const [allowOverdraft, setAllowOverdraft] = useState(false)
   const [salaryOn1st, setSalaryOn1st] = useState(false)
 
+  // Clone config
+  const [pdfFile, setPdfFile] = useState(null)
+  const [clonedPdfBase64, setClonedPdfBase64] = useState('')
+  const [clonedMeta, setClonedMeta] = useState(null)
+  const fileInputRef = useRef(null)
+
   // State
   const [htmlPreview, setHtmlPreview] = useState('')
   const [balanceValidation, setBalanceValidation] = useState(null)
   const [generating, setGenerating] = useState(false)
   const [exporting, setExporting] = useState(false)
   const [error, setError] = useState('')
+
+  // ── Download Generated Base64 PDF ──
+  const downloadClonedPdf = useCallback(() => {
+    if (!clonedPdfBase64) return
+    try {
+      const byteCharacters = atob(clonedPdfBase64)
+      const byteNumbers = new Array(byteCharacters.length)
+      for (let i = 0; i < byteCharacters.length; i++) {
+        byteNumbers[i] = byteCharacters.charCodeAt(i)
+      }
+      const byteArray = new Uint8Array(byteNumbers)
+      const blob = new Blob([byteArray], { type: 'application/pdf' })
+      const url = URL.createObjectURL(blob)
+      const a = document.createElement('a')
+      a.href = url
+      const invNum = clonedMeta?.invoice?.invoice_number || 'synthetic_clone'
+      a.download = `${invNum}.pdf`
+      document.body.appendChild(a)
+      a.click()
+      document.body.removeChild(a)
+      URL.revokeObjectURL(url)
+    } catch (e) {
+      setError('Failed to download PDF: ' + e.message)
+    }
+  }, [clonedPdfBase64, clonedMeta])
+
+  // ── Clone / Generate from PDF ──
+  const handleClonePdf = useCallback(async (fileToUse) => {
+    const file = fileToUse || pdfFile
+    if (!file) {
+      setError('Please select or upload a PDF file first.')
+      return
+    }
+    setGenerating(true)
+    setError('')
+    setBalanceValidation(null)
+    try {
+      const result = await cloneDocument(file, seed)
+      setHtmlPreview(result.html_preview)
+      setClonedPdfBase64(result.pdf_base64)
+      setClonedMeta(result)
+    } catch (e) {
+      setError(e.message || 'Failed to clone document from PDF')
+    } finally {
+      setGenerating(false)
+    }
+  }, [pdfFile, seed])
+
+  // ── Drag & Drop Handlers ──
+  const [isDragging, setIsDragging] = useState(false)
+
+  const handleDragOver = (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+    if (!isDragging) setIsDragging(true)
+  }
+
+  const handleDragLeave = (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+    if (e.currentTarget && e.relatedTarget && e.currentTarget.contains(e.relatedTarget)) return
+    setIsDragging(false)
+  }
+
+  const handleDrop = (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+    setIsDragging(false)
+    const files = e.dataTransfer?.files
+    if (files && files.length > 0) {
+      const file = files[0]
+      setPdfFile(file)
+      setDocType('clone')
+      handleClonePdf(file)
+    }
+  }
+
+  const handleFileChange = (e) => {
+    const file = e.target.files?.[0]
+    if (file) {
+      setPdfFile(file)
+      handleClonePdf(file)
+    }
+  }
 
   // ── Generate Invoice ──
   const handleGenerateInvoice = useCallback(async () => {
@@ -76,7 +166,14 @@ export default function DocumentsTab() {
     setExporting(true)
     setError('')
     try {
-      if (docType === 'invoice') {
+      if (docType === 'clone') {
+        if (format === 'pdf' && clonedPdfBase64) {
+          downloadClonedPdf()
+        } else if (pdfFile) {
+          await handleClonePdf(pdfFile)
+          if (clonedPdfBase64) downloadClonedPdf()
+        }
+      } else if (docType === 'invoice') {
         await exportInvoice({ seed, locale, count: bulkCount, format })
       } else {
         await exportStatement({
@@ -90,7 +187,7 @@ export default function DocumentsTab() {
     } finally {
       setExporting(false)
     }
-  }, [docType, seed, locale, bulkCount, nTransactions, openingBalance, days, allowOverdraft, salaryOn1st])
+  }, [docType, seed, locale, bulkCount, nTransactions, openingBalance, days, allowOverdraft, salaryOn1st, clonedPdfBase64, pdfFile, handleClonePdf, downloadClonedPdf])
 
   // ── Presets ──
   const loadPreset = (preset) => {
@@ -121,8 +218,22 @@ export default function DocumentsTab() {
 
   return (
     <div className="flex gap-6 h-full">
-      {/* Main content */}
-      <div className="flex-1 flex flex-col gap-4 min-w-0">
+      {/* Main content with drag and drop support */}
+      <div
+        className="flex-1 flex flex-col gap-4 min-w-0 relative"
+        onDragOver={handleDragOver}
+        onDragLeave={handleDragLeave}
+        onDrop={handleDrop}
+      >
+        {/* Dragging Overlay */}
+        {isDragging && (
+          <div className="absolute inset-0 bg-teal/15 border-2 border-dashed border-teal rounded-xl flex flex-col items-center justify-center z-50 backdrop-blur-xs pointer-events-none transition-all">
+            <div className="text-5xl animate-bounce">📑</div>
+            <div className="text-base font-bold text-navy mt-3">Drop your PDF here to Clone & Generate</div>
+            <div className="text-xs text-teal font-medium mt-1">Extracts layout and generates synthetic PDF immediately</div>
+          </div>
+        )}
+
         {/* Error */}
         {error && (
           <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg text-sm flex items-center justify-between animate-fade-in">
@@ -156,21 +267,48 @@ export default function DocumentsTab() {
         {/* HTML Preview */}
         {htmlPreview ? (
           <div className="flex-1 bg-white rounded-xl border border-gray-200 shadow-sm overflow-auto">
-            <div className="px-5 py-3 border-b border-gray-100 bg-gray-50/50">
+            <div className="px-5 py-3 border-b border-gray-100 bg-gray-50/50 flex items-center justify-between">
               <h3 className="text-sm font-semibold text-navy">
-                {docType === 'invoice' ? '📄 Invoice Preview' : '🏦 Bank Statement Preview'}
+                {docType === 'invoice'
+                  ? '📄 Invoice Preview'
+                  : docType === 'statement'
+                  ? '🏦 Bank Statement Preview'
+                  : `⚡ Generated Synthetic PDF (Cloned from ${clonedMeta?.cloned_from || 'Uploaded Document'})`}
               </h3>
+              {clonedPdfBase64 && (
+                <button
+                  onClick={downloadClonedPdf}
+                  className="px-3 py-1 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold rounded-lg shadow-sm transition-all flex items-center gap-1.5"
+                >
+                  <span>⬇️</span> Download Generated PDF
+                </button>
+              )}
             </div>
             <div className="p-4" dangerouslySetInnerHTML={{ __html: htmlPreview }} />
           </div>
         ) : (
           <div className="flex-1 bg-white rounded-xl border border-gray-200 shadow-sm flex items-center justify-center min-h-[300px]">
-            <div className="text-center">
+            <div className="text-center p-6 max-w-sm">
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-50 flex items-center justify-center">
-                <span className="text-2xl">{docType === 'invoice' ? '📄' : '🏦'}</span>
+                <span className="text-2xl">{docType === 'invoice' ? '📄' : docType === 'statement' ? '🏦' : '⚡'}</span>
               </div>
-              <p className="text-sm text-gray-400 font-medium">No document generated yet</p>
-              <p className="text-xs text-gray-300 mt-1">Configure and generate to see a live preview</p>
+              <p className="text-sm text-gray-600 font-semibold">
+                {docType === 'clone' ? 'Drag & drop a PDF here' : 'No document generated yet'}
+              </p>
+              <p className="text-xs text-gray-400 mt-1">
+                {docType === 'clone'
+                  ? 'Drop any PDF invoice or document right here to immediately view its structure and generate a synthetic PDF clone'
+                  : 'Configure and generate to see a live preview or drag & drop a PDF'}
+              </p>
+              <button
+                onClick={() => {
+                  setDocType('clone')
+                  fileInputRef.current?.click()
+                }}
+                className="mt-4 px-4 py-2 bg-teal hover:bg-teal-600 text-white text-xs font-semibold rounded-lg transition-all shadow-sm"
+              >
+                Choose or Drop PDF
+              </button>
             </div>
           </div>
         )}
@@ -183,40 +321,95 @@ export default function DocumentsTab() {
           <div className="flex rounded-lg border border-gray-200 overflow-hidden">
             <button
               onClick={() => { setDocType('invoice'); setHtmlPreview(''); setBalanceValidation(null) }}
-              className={`flex-1 px-3 py-2 text-xs font-semibold transition-all ${
+              className={`flex-1 px-2 py-2 text-xs font-semibold transition-all ${
                 docType === 'invoice' ? 'bg-teal text-white' : 'bg-white text-gray-500 hover:bg-gray-50'
               }`}
             >📄 Invoice</button>
             <button
               onClick={() => { setDocType('statement'); setHtmlPreview(''); setBalanceValidation(null) }}
-              className={`flex-1 px-3 py-2 text-xs font-semibold transition-all ${
+              className={`flex-1 px-2 py-2 text-xs font-semibold transition-all ${
                 docType === 'statement' ? 'bg-teal text-white' : 'bg-white text-gray-500 hover:bg-gray-50'
               }`}
             >🏦 Statement</button>
+            <button
+              onClick={() => { setDocType('clone'); setHtmlPreview(''); setBalanceValidation(null) }}
+              className={`flex-1 px-2 py-2 text-xs font-semibold transition-all ${
+                docType === 'clone' ? 'bg-teal text-white' : 'bg-white text-gray-500 hover:bg-gray-50'
+              }`}
+            >⚡ Clone PDF</button>
           </div>
 
-          {/* Presets */}
-          <div>
-            <label className="block text-xs font-medium text-gray-600 mb-2">Quick Presets</label>
-            <div className="space-y-1.5">
-              <button onClick={() => loadPreset('pakistan_invoice')} className="w-full text-left px-3 py-2 text-xs rounded-lg border border-gray-100 hover:border-teal/40 hover:bg-teal/5 transition-all">
-                🇵🇰 Pakistan Invoice (PKR, GST)
-              </button>
-              <button onClick={() => loadPreset('uk_invoice')} className="w-full text-left px-3 py-2 text-xs rounded-lg border border-gray-100 hover:border-teal/40 hover:bg-teal/5 transition-all">
-                🇬🇧 UK Invoice (GBP, VAT)
-              </button>
-              <button onClick={() => loadPreset('eu_invoice')} className="w-full text-left px-3 py-2 text-xs rounded-lg border border-gray-100 hover:border-teal/40 hover:bg-teal/5 transition-all">
-                🇪🇺 EU Invoice (EUR, MwSt)
-              </button>
-              <button onClick={() => loadPreset('monthly_statement')} className="w-full text-left px-3 py-2 text-xs rounded-lg border border-gray-100 hover:border-teal/40 hover:bg-teal/5 transition-all">
-                💰 Monthly Bank Statement
-              </button>
+          {/* Clone PDF Specific Controls */}
+          {docType === 'clone' && (
+            <div className="space-y-3">
+              <div>
+                <label className="block text-xs font-semibold text-gray-700 mb-1.5">Input Document (PDF)</label>
+                <div
+                  onClick={() => fileInputRef.current?.click()}
+                  onDragOver={handleDragOver}
+                  onDragLeave={handleDragLeave}
+                  onDrop={handleDrop}
+                  className={`border-2 border-dashed rounded-xl p-4 text-center cursor-pointer transition-all ${
+                    isDragging ? 'border-teal bg-teal/20 scale-[1.02]' : 'border-teal/40 hover:border-teal bg-teal/5 hover:bg-teal/10'
+                  }`}
+                >
+                  <input
+                    ref={fileInputRef}
+                    type="file"
+                    accept=".pdf"
+                    className="hidden"
+                    onChange={handleFileChange}
+                  />
+                  <div className="text-2xl mb-1">📑</div>
+                  <div className="text-xs font-bold text-navy truncate">
+                    {pdfFile ? pdfFile.name : 'Click to Upload or Drag & Drop PDF'}
+                  </div>
+                  <div className="text-[10px] text-gray-500 mt-0.5">
+                    {pdfFile ? `${(pdfFile.size / 1024).toFixed(1)} KB • Ready to generate` : 'Drop file here to generate immediately'}
+                  </div>
+                </div>
+              </div>
+
+              {clonedMeta && (
+                <div className="p-3 bg-emerald-50 border border-emerald-200 rounded-lg text-xs space-y-1 animate-fade-in">
+                  <div className="font-semibold text-emerald-800 flex items-center justify-between">
+                    <span>✅ Cloned Successfully</span>
+                    <span className="text-[10px] bg-emerald-200 text-emerald-800 px-1.5 py-0.5 rounded font-mono">
+                      {clonedMeta.detected_locale}
+                    </span>
+                  </div>
+                  <div className="text-emerald-700 text-[11px]">
+                    Generated {clonedMeta.item_count} items mathematically balanced
+                  </div>
+                </div>
+              )}
             </div>
-          </div>
+          )}
+
+          {/* Presets (for invoice / statement) */}
+          {docType !== 'clone' && (
+            <div>
+              <label className="block text-xs font-medium text-gray-600 mb-2">Quick Presets</label>
+              <div className="space-y-1.5">
+                <button onClick={() => loadPreset('pakistan_invoice')} className="w-full text-left px-3 py-2 text-xs rounded-lg border border-gray-100 hover:border-teal/40 hover:bg-teal/5 transition-all">
+                  🇵🇰 Pakistan Invoice (PKR, GST)
+                </button>
+                <button onClick={() => loadPreset('uk_invoice')} className="w-full text-left px-3 py-2 text-xs rounded-lg border border-gray-100 hover:border-teal/40 hover:bg-teal/5 transition-all">
+                  🇬🇧 UK Invoice (GBP, VAT)
+                </button>
+                <button onClick={() => loadPreset('eu_invoice')} className="w-full text-left px-3 py-2 text-xs rounded-lg border border-gray-100 hover:border-teal/40 hover:bg-teal/5 transition-all">
+                  🇪🇺 EU Invoice (EUR, MwSt)
+                </button>
+                <button onClick={() => loadPreset('monthly_statement')} className="w-full text-left px-3 py-2 text-xs rounded-lg border border-gray-100 hover:border-teal/40 hover:bg-teal/5 transition-all">
+                  💰 Monthly Bank Statement
+                </button>
+              </div>
+            </div>
+          )}
 
           <hr className="border-gray-100" />
 
-          {/* Common: Seed & Locale */}
+          {/* Common: Seed */}
           <div>
             <div className="flex items-center justify-between mb-1.5">
               <label className="text-xs font-semibold text-gray-700">Random Seed</label>
@@ -236,22 +429,25 @@ export default function DocumentsTab() {
             />
           </div>
 
-          <div>
-            <label className="block text-xs font-semibold text-gray-700 mb-1.5">Locale & Currency</label>
-            <select
-              value={locale}
-              onChange={(e) => setLocale(e.target.value)}
-              className="w-full px-3 py-2 text-xs border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal/20 focus:border-teal outline-none transition-all bg-white"
-            >
-              {LOCALES.map((loc) => (
-                <option key={loc.code} value={loc.code}>
-                  {loc.flag} {loc.label}
-                </option>
-              ))}
-            </select>
-          </div>
+          {/* Locale & Currency (for invoice / statement) */}
+          {docType !== 'clone' && (
+            <div>
+              <label className="block text-xs font-semibold text-gray-700 mb-1.5">Locale & Currency</label>
+              <select
+                value={locale}
+                onChange={(e) => setLocale(e.target.value)}
+                className="w-full px-3 py-2 text-xs border border-gray-200 rounded-lg focus:ring-2 focus:ring-teal/20 focus:border-teal outline-none transition-all bg-white"
+              >
+                {LOCALES.map((loc) => (
+                  <option key={loc.code} value={loc.code}>
+                    {loc.flag} {loc.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
 
-          <hr className="border-gray-100" />
+          {docType !== 'clone' && <hr className="border-gray-100" />}
 
           {/* Invoice-specific */}
           {docType === 'invoice' && (
@@ -322,25 +518,49 @@ export default function DocumentsTab() {
 
           <hr className="border-gray-100" />
 
-          {/* Generate */}
-          <button
-            onClick={docType === 'invoice' ? handleGenerateInvoice : handleGenerateStatement}
-            disabled={generating}
-            className={`w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-sm font-semibold transition-all ${
-              generating ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-navy text-white hover:bg-navy-600'
-            }`}
-          >
-            {generating ? '⏳ Generating...' : '▶ Generate Preview'}
-          </button>
+          {/* Action Buttons */}
+          {docType === 'clone' ? (
+            <div className="space-y-2">
+              <button
+                onClick={() => handleClonePdf()}
+                disabled={generating || !pdfFile}
+                className={`w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-sm font-semibold transition-all ${
+                  generating || !pdfFile ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-navy text-white hover:bg-navy-600 shadow-sm'
+                }`}
+              >
+                {generating ? '⏳ Generating PDF...' : '⚡ Generate Cloned PDF'}
+              </button>
+              {clonedPdfBase64 && (
+                <button
+                  onClick={downloadClonedPdf}
+                  className="w-full flex items-center justify-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold bg-emerald-600 hover:bg-emerald-700 text-white shadow-sm transition-all"
+                >
+                  ⬇️ Download Generated PDF
+                </button>
+              )}
+            </div>
+          ) : (
+            <>
+              <button
+                onClick={docType === 'invoice' ? handleGenerateInvoice : handleGenerateStatement}
+                disabled={generating}
+                className={`w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-sm font-semibold transition-all ${
+                  generating ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-navy text-white hover:bg-navy-600'
+                }`}
+              >
+                {generating ? '⏳ Generating...' : '▶ Generate Preview'}
+              </button>
 
-          {/* Export */}
-          <div className="grid grid-cols-3 gap-2">
-            <ExportButton onClick={() => handleExport('pdf')} disabled={exporting} label="PDF" loading={exporting} />
-            <ExportButton onClick={() => handleExport('csv')} disabled={exporting} label="CSV" loading={false} />
-            <ExportButton onClick={() => handleExport('json')} disabled={exporting} label="JSON" loading={false} />
-          </div>
+              <div className="grid grid-cols-3 gap-2">
+                <ExportButton onClick={() => handleExport('pdf')} disabled={exporting} label="PDF" loading={exporting} />
+                <ExportButton onClick={() => handleExport('csv')} disabled={exporting} label="CSV" loading={false} />
+                <ExportButton onClick={() => handleExport('json')} disabled={exporting} label="JSON" loading={false} />
+              </div>
+            </>
+          )}
         </div>
       </ConfigPanel>
     </div>
   )
 }
+

@@ -40,7 +40,7 @@ from synth_model import CopulaSynthesizer
 from documents import (
     generate_invoice_data, render_invoice_pdf, render_invoice_html,
     generate_bank_statement, render_statement_pdf, render_statement_html,
-    generate_bulk_invoices,
+    generate_bulk_invoices, mimic_invoice_from_file,
 )
 from validators import run_relational_validation, check_running_balance
 from llm import call_llm, infer_schema, get_content_pool, suggest_edge_cases, get_cache_stats
@@ -463,6 +463,13 @@ async def quality_fidelity_report(request: Request):
 
 # Metadata for bundled demo datasets
 SAMPLE_DATASETS = {
+    "customer_profiles": {
+        "name": "customer_profiles",
+        "title": "Customer Profiles (Email, Phone, Name, City, Spent)",
+        "description": "Full customer profiles with emails, phone numbers, full names, locations, and spending tiers. Perfect for testing privacy masking and pseudonymization.",
+        "rows": 2000,
+        "columns": 7,
+    },
     "hr_employees": {
         "name": "hr_employees",
         "title": "HR Employees",
@@ -820,7 +827,12 @@ async def invoice_export(request: Request):
             invoice = generate_invoice_data(seed=seed, locale=locale)
 
             if fmt == "json":
-                return JSONResponse(invoice)
+                content = json.dumps(invoice, indent=2, default=str)
+                return StreamingResponse(
+                    io.BytesIO(content.encode("utf-8")),
+                    media_type="application/json; charset=utf-8",
+                    headers={"Content-Disposition": f'attachment; filename="{invoice["invoice_number"]}.json"'},
+                )
             else:
                 pdf_bytes = render_invoice_pdf(invoice)
                 elapsed = (time.time() - start) * 1000
@@ -830,6 +842,43 @@ async def invoice_export(request: Request):
                     media_type="application/pdf",
                     headers={"Content-Disposition": f"attachment; filename={invoice['invoice_number']}.pdf"},
                 )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/v1/documents/clone")
+async def document_clone(file: UploadFile = File(...), seed: int = Form(42)):
+    """
+    Accept an uploaded PDF or document, inspect its content/structure,
+    and generate a synthetic PDF clone immediately.
+    """
+    start = time.time()
+    try:
+        contents = await file.read()
+        result = mimic_invoice_from_file(contents=contents, filename=file.filename or "uploaded.pdf", seed=seed)
+        elapsed = (time.time() - start) * 1000
+        audit_logger.log_event("/api/v1/documents/clone", row_count=result.get('item_count', 1), execution_time_ms=elapsed)
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/v1/documents/clone/export")
+async def document_clone_export(file: UploadFile = File(...), seed: int = Form(42)):
+    """
+    Accept an uploaded PDF, generate the synthetic cloned PDF, and return it directly as a downloadable PDF.
+    """
+    try:
+        import base64
+        contents = await file.read()
+        result = mimic_invoice_from_file(contents=contents, filename=file.filename or "uploaded.pdf", seed=seed)
+        pdf_bytes = base64.b64decode(result['pdf_base64'])
+        inv_num = result.get('invoice', {}).get('invoice_number', 'cloned_doc')
+        return StreamingResponse(
+            io.BytesIO(pdf_bytes),
+            media_type="application/pdf",
+            headers={"Content-Disposition": f"attachment; filename={inv_num}.pdf"},
+        )
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -898,7 +947,12 @@ async def statement_export(request: Request):
         audit_logger.log_event("/api/v1/documents/statement/export", row_count=len(statement['transactions']), execution_time_ms=elapsed)
 
         if fmt == "json":
-            return JSONResponse(statement)
+            content = json.dumps(statement, indent=2, default=str)
+            return StreamingResponse(
+                io.BytesIO(content.encode("utf-8")),
+                media_type="application/json; charset=utf-8",
+                headers={"Content-Disposition": 'attachment; filename="bank_statement.json"'},
+            )
         elif fmt == "csv":
             df = pd.DataFrame(statement['transactions'])
             csv = df.to_csv(index=False)

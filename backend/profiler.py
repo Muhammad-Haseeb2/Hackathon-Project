@@ -31,19 +31,58 @@ CATEGORICAL_THRESHOLD = 0.05  # If unique/total < 5%, treat as categorical
 CATEGORICAL_MAX_UNIQUE = 50   # Or if unique count <= 50
 
 
+import json
+
 def read_uploaded_file(file_bytes: bytes, filename: str) -> pd.DataFrame:
-    """Read CSV or Excel file bytes into a DataFrame."""
+    """Read CSV, JSON, Excel (.xlsx, .xls), or TSV file bytes into a DataFrame."""
     ext = filename.rsplit('.', 1)[-1].lower() if '.' in filename else ''
+    
     if ext in ('xlsx', 'xls'):
-        return pd.read_excel(io.BytesIO(file_bytes), engine='openpyxl')
-    else:
-        # Try CSV with different encodings
+        try:
+            return pd.read_excel(io.BytesIO(file_bytes), engine='openpyxl')
+        except Exception:
+            return pd.read_excel(io.BytesIO(file_bytes))
+            
+    elif ext == 'json':
+        try:
+            # Try reading as JSON table / records
+            return pd.read_json(io.BytesIO(file_bytes))
+        except Exception:
+            # Parse raw JSON and normalize records or list
+            raw_text = file_bytes.decode('utf-8', errors='replace')
+            data = json.loads(raw_text)
+            if isinstance(data, list):
+                return pd.json_normalize(data)
+            elif isinstance(data, dict):
+                for key in ('data', 'records', 'items', 'rows', 'results'):
+                    if key in data and isinstance(data[key], list):
+                        return pd.json_normalize(data[key])
+                return pd.DataFrame([data])
+            else:
+                raise ValueError("JSON file does not contain a list or table of records.")
+                
+    elif ext in ('tsv', 'tab'):
         for encoding in ['utf-8', 'latin-1', 'cp1252']:
             try:
-                return pd.read_csv(io.BytesIO(file_bytes), encoding=encoding)
-            except (UnicodeDecodeError, Exception):
+                return pd.read_csv(io.BytesIO(file_bytes), sep='\t', encoding=encoding)
+            except Exception:
                 continue
-        raise ValueError("Could not read file. Ensure it's a valid CSV or Excel file.")
+                
+    # Default: Try CSV with multiple encodings and auto-delimiter
+    for encoding in ['utf-8', 'latin-1', 'cp1252']:
+        try:
+            return pd.read_csv(io.BytesIO(file_bytes), encoding=encoding)
+        except (UnicodeDecodeError, Exception):
+            continue
+            
+    # Try comma / semicolon / tab separated fallback
+    for sep in [',', ';', '\t', '|']:
+        try:
+            return pd.read_csv(io.BytesIO(file_bytes), sep=sep, encoding='latin-1')
+        except Exception:
+            continue
+            
+    raise ValueError("Could not read file. Ensure it's a valid CSV, JSON, or Excel file.")
 
 
 def _detect_column_type(series: pd.Series, col_name: str) -> str:

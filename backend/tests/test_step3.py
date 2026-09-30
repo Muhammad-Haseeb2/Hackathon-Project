@@ -1,3 +1,4 @@
+
 """
 Tests for Step 3: Copula/independent method wiring into tabular routes.
 Tests the _generate_with_method helper and the API endpoint integration.

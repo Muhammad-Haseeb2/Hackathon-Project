@@ -1,0 +1,1802 @@
+[
+  {
+    "customer_id":"CUST-00001",
+    "full_name":"Danielle Johnson",
+    "email":"danielle.johnson@yahoo.com",
+    "phone":"232.318.1960",
+    "city":"Boston",
+    "total_spent":68.11,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00002",
+    "full_name":"Jeffery Wagner",
+    "email":"jeffery.wagner@gmail.com",
+    "phone":"+1-438-863-7940",
+    "city":"Boston",
+    "total_spent":159.73,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00003",
+    "full_name":"Matthew Moore",
+    "email":"matthew.moore@yahoo.com",
+    "phone":"916-315-5940",
+    "city":"Chicago",
+    "total_spent":82.63,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00004",
+    "full_name":"Teresa Gray",
+    "email":"teresa.gray@hotmail.com",
+    "phone":"695-993-1034x1316",
+    "city":"New York",
+    "total_spent":523.13,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00005",
+    "full_name":"Cynthia Diaz",
+    "email":"cynthia.diaz@yahoo.com",
+    "phone":"(534)719-2832x764",
+    "city":"Seattle",
+    "total_spent":55.93,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00006",
+    "full_name":"Megan Parsons",
+    "email":"megan.parsons@gmail.com",
+    "phone":"9568413953",
+    "city":"Austin",
+    "total_spent":29.53,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00007",
+    "full_name":"Nicole Day",
+    "email":"nicole.day@gmail.com",
+    "phone":"423-988-4969x653",
+    "city":"New York",
+    "total_spent":126.02,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00008",
+    "full_name":"Christopher Williams",
+    "email":"christopher.williams@gmail.com",
+    "phone":"(626)291-6697",
+    "city":"Seattle",
+    "total_spent":429.61,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00009",
+    "full_name":"Erin Wilson",
+    "email":"erin.wilson@hotmail.com",
+    "phone":"001-645-514-6270x48281",
+    "city":"Seattle",
+    "total_spent":114.76,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00010",
+    "full_name":"Eric Farmer",
+    "email":"eric.farmer@hotmail.com",
+    "phone":"001-380-395-7015x43039",
+    "city":"Boston",
+    "total_spent":558.78,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00011",
+    "full_name":"Jessica Cabrera",
+    "email":"jessica.cabrera@hotmail.com",
+    "phone":"001-822-778-2489x63834",
+    "city":"Austin",
+    "total_spent":127.06,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00012",
+    "full_name":"Samuel Holmes",
+    "email":"samuel.holmes@gmail.com",
+    "phone":"531.250.9839",
+    "city":"Seattle",
+    "total_spent":161.7,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00013",
+    "full_name":"Chad Welch",
+    "email":"chad.welch@gmail.com",
+    "phone":"405-918-3473",
+    "city":"Denver",
+    "total_spent":17.93,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00014",
+    "full_name":"John Kennedy",
+    "email":"john.kennedy@yahoo.com",
+    "phone":"311.265.6670",
+    "city":"Denver",
+    "total_spent":93.28,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00015",
+    "full_name":"Richard Morgan",
+    "email":"richard.morgan@gmail.com",
+    "phone":"933.587.2624",
+    "city":"Austin",
+    "total_spent":202.15,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00016",
+    "full_name":"Nancy Jones",
+    "email":"nancy.jones@hotmail.com",
+    "phone":"908-501-3267",
+    "city":"Chicago",
+    "total_spent":124.11,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00017",
+    "full_name":"Michelle Barrera",
+    "email":"michelle.barrera@gmail.com",
+    "phone":"(206)247-4687x2343",
+    "city":"Denver",
+    "total_spent":199.67,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00018",
+    "full_name":"Julie Brown",
+    "email":"julie.brown@hotmail.com",
+    "phone":"388.520.8121x9136",
+    "city":"New York",
+    "total_spent":230.06,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00019",
+    "full_name":"Beth Williams",
+    "email":"beth.williams@gmail.com",
+    "phone":"(799)385-4353x46247",
+    "city":"San Francisco",
+    "total_spent":861.25,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00020",
+    "full_name":"Albert Howell",
+    "email":"albert.howell@hotmail.com",
+    "phone":"518-738-4251",
+    "city":"Seattle",
+    "total_spent":153.25,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00021",
+    "full_name":"Justin Kim",
+    "email":"justin.kim@hotmail.com",
+    "phone":"001-449-680-8412x411",
+    "city":"New York",
+    "total_spent":603.75,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00022",
+    "full_name":"Juan Clark",
+    "email":"juan.clark@yahoo.com",
+    "phone":"248.274.0164",
+    "city":"Seattle",
+    "total_spent":75.0,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00023",
+    "full_name":"Matthew Anderson",
+    "email":"matthew.anderson@yahoo.com",
+    "phone":"(278)768-0112",
+    "city":"Austin",
+    "total_spent":51.94,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00024",
+    "full_name":"Brandi Hernandez",
+    "email":"brandi.hernandez@gmail.com",
+    "phone":"8454053315",
+    "city":"San Francisco",
+    "total_spent":810.81,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00025",
+    "full_name":"Sara Young",
+    "email":"sara.young@gmail.com",
+    "phone":"(360)825-6342",
+    "city":"Seattle",
+    "total_spent":990.04,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00026",
+    "full_name":"Monica Garrison",
+    "email":"monica.garrison@gmail.com",
+    "phone":"775.643.3036",
+    "city":"San Francisco",
+    "total_spent":402.55,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00027",
+    "full_name":"Michelle Rasmussen",
+    "email":"michelle.rasmussen@yahoo.com",
+    "phone":"(386)885-0142x940",
+    "city":"Boston",
+    "total_spent":47.44,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00028",
+    "full_name":"Michael Hartman",
+    "email":"michael.hartman@yahoo.com",
+    "phone":"+1-581-769-3406x088",
+    "city":"Boston",
+    "total_spent":131.39,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00029",
+    "full_name":"Ryan Rush",
+    "email":"ryan.rush@yahoo.com",
+    "phone":"+1-551-848-4656x482",
+    "city":"San Francisco",
+    "total_spent":1911.56,
+    "membership_tier":"Platinum"
+  },
+  {
+    "customer_id":"CUST-00030",
+    "full_name":"Elizabeth Gray",
+    "email":"elizabeth.gray@hotmail.com",
+    "phone":"(599)846-8044",
+    "city":"Denver",
+    "total_spent":134.25,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00031",
+    "full_name":"Kristi Lawson",
+    "email":"kristi.lawson@yahoo.com",
+    "phone":"377.538.7214x895",
+    "city":"New York",
+    "total_spent":230.21,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00032",
+    "full_name":"Emily Walker",
+    "email":"emily.walker@gmail.com",
+    "phone":"(500)837-9176",
+    "city":"Austin",
+    "total_spent":469.38,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00033",
+    "full_name":"Troy Sanchez",
+    "email":"troy.sanchez@hotmail.com",
+    "phone":"001-901-463-2870x831",
+    "city":"San Francisco",
+    "total_spent":94.88,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00034",
+    "full_name":"Laurie Contreras",
+    "email":"laurie.contreras@hotmail.com",
+    "phone":"+1-557-698-6872x774",
+    "city":"San Francisco",
+    "total_spent":120.79,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00035",
+    "full_name":"Katie Boyd",
+    "email":"katie.boyd@hotmail.com",
+    "phone":"347.414.3455",
+    "city":"San Francisco",
+    "total_spent":559.53,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00036",
+    "full_name":"Edward Reyes",
+    "email":"edward.reyes@gmail.com",
+    "phone":"001-831-266-5876x036",
+    "city":"Boston",
+    "total_spent":484.9,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00037",
+    "full_name":"Melissa Cannon",
+    "email":"melissa.cannon@yahoo.com",
+    "phone":"805.946.6889x3734",
+    "city":"Seattle",
+    "total_spent":468.51,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00038",
+    "full_name":"Anthony Rogers",
+    "email":"anthony.rogers@hotmail.com",
+    "phone":"(427)929-8069x9016",
+    "city":"Seattle",
+    "total_spent":602.75,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00039",
+    "full_name":"Hunter Green",
+    "email":"hunter.green@yahoo.com",
+    "phone":"975.256.4641",
+    "city":"Chicago",
+    "total_spent":294.17,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00040",
+    "full_name":"Kaitlyn Williams",
+    "email":"kaitlyn.williams@yahoo.com",
+    "phone":"510.403.3092",
+    "city":"San Francisco",
+    "total_spent":2066.37,
+    "membership_tier":"Platinum"
+  },
+  {
+    "customer_id":"CUST-00041",
+    "full_name":"Thomas Wilson",
+    "email":"thomas.wilson@gmail.com",
+    "phone":"645.829.9124x190",
+    "city":"Boston",
+    "total_spent":539.37,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00042",
+    "full_name":"Randy Espinoza",
+    "email":"randy.espinoza@gmail.com",
+    "phone":"001-831-749-1905",
+    "city":"Chicago",
+    "total_spent":534.28,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00043",
+    "full_name":"Casey Holland",
+    "email":"casey.holland@gmail.com",
+    "phone":"(971)865-7262x84987",
+    "city":"Denver",
+    "total_spent":673.07,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00044",
+    "full_name":"Margaret Vargas",
+    "email":"margaret.vargas@yahoo.com",
+    "phone":"714.273.7996",
+    "city":"New York",
+    "total_spent":132.06,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00045",
+    "full_name":"Troy Nguyen",
+    "email":"troy.nguyen@yahoo.com",
+    "phone":"554.354.9480",
+    "city":"New York",
+    "total_spent":750.75,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00046",
+    "full_name":"John Russell",
+    "email":"john.russell@hotmail.com",
+    "phone":"001-937-777-0143x63495",
+    "city":"Austin",
+    "total_spent":155.23,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00047",
+    "full_name":"Ronald Reese",
+    "email":"ronald.reese@yahoo.com",
+    "phone":"(574)544-3135x182",
+    "city":"Chicago",
+    "total_spent":1114.54,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00048",
+    "full_name":"Joanna Hill",
+    "email":"joanna.hill@hotmail.com",
+    "phone":"001-689-241-3435x24082",
+    "city":"Seattle",
+    "total_spent":955.7,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00049",
+    "full_name":"Terri Tran",
+    "email":"terri.tran@hotmail.com",
+    "phone":"(771)409-4777",
+    "city":"San Francisco",
+    "total_spent":122.57,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00050",
+    "full_name":"Tammy King",
+    "email":"tammy.king@yahoo.com",
+    "phone":"616-371-9022",
+    "city":"Austin",
+    "total_spent":241.61,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00051",
+    "full_name":"Victoria Wilson",
+    "email":"victoria.wilson@yahoo.com",
+    "phone":"+1-299-338-6774x964",
+    "city":"Boston",
+    "total_spent":291.33,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00052",
+    "full_name":"Stacey Clark",
+    "email":"stacey.clark@gmail.com",
+    "phone":"912-632-8120x679",
+    "city":"San Francisco",
+    "total_spent":82.68,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00053",
+    "full_name":"Antonio Roberts",
+    "email":"antonio.roberts@yahoo.com",
+    "phone":"001-671-434-9361x832",
+    "city":"Boston",
+    "total_spent":385.84,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00054",
+    "full_name":"Charles Martin",
+    "email":"charles.martin@yahoo.com",
+    "phone":"+1-994-371-7464x887",
+    "city":"San Francisco",
+    "total_spent":633.49,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00055",
+    "full_name":"Carly Preston",
+    "email":"carly.preston@hotmail.com",
+    "phone":"994-601-3990x49027",
+    "city":"Austin",
+    "total_spent":1041.47,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00056",
+    "full_name":"Howard Richards",
+    "email":"howard.richards@hotmail.com",
+    "phone":"817.256.5512x5674",
+    "city":"Austin",
+    "total_spent":217.24,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00057",
+    "full_name":"Shawn Edwards",
+    "email":"shawn.edwards@yahoo.com",
+    "phone":"768-908-7603",
+    "city":"Chicago",
+    "total_spent":335.57,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00058",
+    "full_name":"Colleen Wolf",
+    "email":"colleen.wolf@gmail.com",
+    "phone":"282-847-7109x324",
+    "city":"New York",
+    "total_spent":649.36,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00059",
+    "full_name":"Christopher Gay",
+    "email":"christopher.gay@gmail.com",
+    "phone":"412.874.8467x737",
+    "city":"Denver",
+    "total_spent":67.26,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00060",
+    "full_name":"James Greene",
+    "email":"james.greene@hotmail.com",
+    "phone":"(614)965-8404",
+    "city":"Boston",
+    "total_spent":93.45,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00061",
+    "full_name":"Michelle Griffin",
+    "email":"michelle.griffin@yahoo.com",
+    "phone":"(858)286-7533x963",
+    "city":"Boston",
+    "total_spent":261.81,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00062",
+    "full_name":"Louis Kennedy",
+    "email":"louis.kennedy@yahoo.com",
+    "phone":"(227)402-8951x7187",
+    "city":"New York",
+    "total_spent":233.59,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00063",
+    "full_name":"Robert Pena",
+    "email":"robert.pena@gmail.com",
+    "phone":"874-759-6158",
+    "city":"Seattle",
+    "total_spent":2513.52,
+    "membership_tier":"Platinum"
+  },
+  {
+    "customer_id":"CUST-00064",
+    "full_name":"Courtney Clay",
+    "email":"courtney.clay@yahoo.com",
+    "phone":"+1-309-313-4316",
+    "city":"Seattle",
+    "total_spent":145.31,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00065",
+    "full_name":"Scott Benson",
+    "email":"scott.benson@gmail.com",
+    "phone":"8504455623",
+    "city":"Seattle",
+    "total_spent":902.26,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00066",
+    "full_name":"George Miller",
+    "email":"george.miller@yahoo.com",
+    "phone":"+1-637-492-3747x407",
+    "city":"New York",
+    "total_spent":528.14,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00067",
+    "full_name":"Charles Landry",
+    "email":"charles.landry@hotmail.com",
+    "phone":"664-674-3671x3695",
+    "city":"New York",
+    "total_spent":530.16,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00068",
+    "full_name":"Andrew Greer",
+    "email":"andrew.greer@yahoo.com",
+    "phone":"609-409-7439x533",
+    "city":"Seattle",
+    "total_spent":640.42,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00069",
+    "full_name":"Courtney Berger",
+    "email":"courtney.berger@hotmail.com",
+    "phone":"7478095214",
+    "city":"Denver",
+    "total_spent":475.95,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00070",
+    "full_name":"Gregory Anderson",
+    "email":"gregory.anderson@hotmail.com",
+    "phone":"(488)542-4745x171",
+    "city":"New York",
+    "total_spent":171.34,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00071",
+    "full_name":"Michelle Ramsey",
+    "email":"michelle.ramsey@yahoo.com",
+    "phone":"+1-751-660-4817",
+    "city":"Chicago",
+    "total_spent":287.08,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00072",
+    "full_name":"Brenda Carson",
+    "email":"brenda.carson@yahoo.com",
+    "phone":"337-909-8593",
+    "city":"Boston",
+    "total_spent":953.83,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00073",
+    "full_name":"Regina Turner",
+    "email":"regina.turner@yahoo.com",
+    "phone":"420-804-7113",
+    "city":"San Francisco",
+    "total_spent":1622.2,
+    "membership_tier":"Platinum"
+  },
+  {
+    "customer_id":"CUST-00074",
+    "full_name":"Shawn Santiago",
+    "email":"shawn.santiago@hotmail.com",
+    "phone":"001-786-592-6179x640",
+    "city":"Denver",
+    "total_spent":103.56,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00075",
+    "full_name":"Scott Sampson",
+    "email":"scott.sampson@yahoo.com",
+    "phone":"958-350-6431",
+    "city":"New York",
+    "total_spent":934.9,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00076",
+    "full_name":"Elizabeth May",
+    "email":"elizabeth.may@hotmail.com",
+    "phone":"5055329318",
+    "city":"San Francisco",
+    "total_spent":844.38,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00077",
+    "full_name":"Lisa Hall",
+    "email":"lisa.hall@gmail.com",
+    "phone":"+1-704-522-8421x020",
+    "city":"Seattle",
+    "total_spent":437.54,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00078",
+    "full_name":"Brianna Smith",
+    "email":"brianna.smith@yahoo.com",
+    "phone":"3269811775",
+    "city":"Chicago",
+    "total_spent":225.72,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00079",
+    "full_name":"William Dougherty",
+    "email":"william.dougherty@gmail.com",
+    "phone":"001-384-770-0766x1771",
+    "city":"Chicago",
+    "total_spent":363.83,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00080",
+    "full_name":"Charlene Jones",
+    "email":"charlene.jones@yahoo.com",
+    "phone":"+1-398-356-9847x896",
+    "city":"Denver",
+    "total_spent":1165.48,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00081",
+    "full_name":"Melissa Curtis",
+    "email":"melissa.curtis@hotmail.com",
+    "phone":"001-736-673-6576x6156",
+    "city":"New York",
+    "total_spent":426.15,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00082",
+    "full_name":"Nicholas Hernandez",
+    "email":"nicholas.hernandez@yahoo.com",
+    "phone":"211-716-1528",
+    "city":"Austin",
+    "total_spent":23.85,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00083",
+    "full_name":"Elizabeth Jenkins",
+    "email":"elizabeth.jenkins@hotmail.com",
+    "phone":"001-360-749-4519x83273",
+    "city":"San Francisco",
+    "total_spent":964.35,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00084",
+    "full_name":"Megan Richardson",
+    "email":"megan.richardson@yahoo.com",
+    "phone":"001-636-289-9809",
+    "city":"Denver",
+    "total_spent":754.75,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00085",
+    "full_name":"Henry Park",
+    "email":"henry.park@yahoo.com",
+    "phone":"850-922-9612x01836",
+    "city":"Chicago",
+    "total_spent":41.85,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00086",
+    "full_name":"Matthew Wood",
+    "email":"matthew.wood@hotmail.com",
+    "phone":"999-810-2290x14767",
+    "city":"Seattle",
+    "total_spent":1336.43,
+    "membership_tier":"Platinum"
+  },
+  {
+    "customer_id":"CUST-00087",
+    "full_name":"Joshua Fischer",
+    "email":"joshua.fischer@gmail.com",
+    "phone":"(261)249-7840x369",
+    "city":"New York",
+    "total_spent":607.39,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00088",
+    "full_name":"James Dougherty",
+    "email":"james.dougherty@gmail.com",
+    "phone":"001-744-351-0762x26838",
+    "city":"Denver",
+    "total_spent":47.28,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00089",
+    "full_name":"Randy Harmon",
+    "email":"randy.harmon@yahoo.com",
+    "phone":"6713596966",
+    "city":"Denver",
+    "total_spent":357.36,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00090",
+    "full_name":"Richard Burch",
+    "email":"richard.burch@gmail.com",
+    "phone":"+1-875-616-1369x681",
+    "city":"Chicago",
+    "total_spent":76.84,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00091",
+    "full_name":"Julie Walker",
+    "email":"julie.walker@gmail.com",
+    "phone":"581-388-3552",
+    "city":"Austin",
+    "total_spent":1335.58,
+    "membership_tier":"Platinum"
+  },
+  {
+    "customer_id":"CUST-00092",
+    "full_name":"Dwayne Gonzalez",
+    "email":"dwayne.gonzalez@hotmail.com",
+    "phone":"(712)777-9979",
+    "city":"Chicago",
+    "total_spent":153.58,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00093",
+    "full_name":"Edward Jones",
+    "email":"edward.jones@yahoo.com",
+    "phone":"+1-744-690-5814x7700",
+    "city":"Denver",
+    "total_spent":434.81,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00094",
+    "full_name":"Chase Lin",
+    "email":"chase.lin@gmail.com",
+    "phone":"+1-998-467-9807x935",
+    "city":"Chicago",
+    "total_spent":1204.74,
+    "membership_tier":"Platinum"
+  },
+  {
+    "customer_id":"CUST-00095",
+    "full_name":"Susan Hayes",
+    "email":"susan.hayes@yahoo.com",
+    "phone":"001-718-720-3778x892",
+    "city":"Denver",
+    "total_spent":604.09,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00096",
+    "full_name":"Samantha Hughes",
+    "email":"samantha.hughes@yahoo.com",
+    "phone":"+1-390-451-5186x44925",
+    "city":"Chicago",
+    "total_spent":576.64,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00097",
+    "full_name":"Sabrina Collins",
+    "email":"sabrina.collins@hotmail.com",
+    "phone":"001-862-791-4865x281",
+    "city":"Austin",
+    "total_spent":2412.89,
+    "membership_tier":"Platinum"
+  },
+  {
+    "customer_id":"CUST-00098",
+    "full_name":"Andrew Parker",
+    "email":"andrew.parker@gmail.com",
+    "phone":"473-832-2141x88805",
+    "city":"Boston",
+    "total_spent":225.37,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00099",
+    "full_name":"Eric White",
+    "email":"eric.white@hotmail.com",
+    "phone":"001-592-670-6537x94738",
+    "city":"Seattle",
+    "total_spent":285.24,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00100",
+    "full_name":"Tammy Mueller",
+    "email":"tammy.mueller@gmail.com",
+    "phone":"(497)674-6886x239",
+    "city":"Chicago",
+    "total_spent":129.53,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00101",
+    "full_name":"Brett Castillo",
+    "email":"brett.castillo@yahoo.com",
+    "phone":"+1-418-814-1247",
+    "city":"San Francisco",
+    "total_spent":24.57,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00102",
+    "full_name":"Christopher Lozano",
+    "email":"christopher.lozano@yahoo.com",
+    "phone":"(206)706-8536x153",
+    "city":"Seattle",
+    "total_spent":132.68,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00103",
+    "full_name":"Sarah Combs",
+    "email":"sarah.combs@hotmail.com",
+    "phone":"522-404-7277x90104",
+    "city":"Chicago",
+    "total_spent":18.25,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00104",
+    "full_name":"Ana Acosta",
+    "email":"ana.acosta@hotmail.com",
+    "phone":"(214)534-1036x97117",
+    "city":"Boston",
+    "total_spent":463.76,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00105",
+    "full_name":"Jennifer Carter",
+    "email":"jennifer.carter@gmail.com",
+    "phone":"+1-253-896-2185x188",
+    "city":"Chicago",
+    "total_spent":46.4,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00106",
+    "full_name":"Morgan Williams",
+    "email":"morgan.williams@yahoo.com",
+    "phone":"(740)751-5319x520",
+    "city":"New York",
+    "total_spent":898.58,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00107",
+    "full_name":"Lisa Thompson",
+    "email":"lisa.thompson@hotmail.com",
+    "phone":"772.621.7043x030",
+    "city":"New York",
+    "total_spent":339.84,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00108",
+    "full_name":"Zachary Hays",
+    "email":"zachary.hays@hotmail.com",
+    "phone":"940.834.5054x1566",
+    "city":"San Francisco",
+    "total_spent":512.51,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00109",
+    "full_name":"Matthew Lopez",
+    "email":"matthew.lopez@hotmail.com",
+    "phone":"358.341.6169x2845",
+    "city":"Chicago",
+    "total_spent":363.69,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00110",
+    "full_name":"Mark Phillips",
+    "email":"mark.phillips@yahoo.com",
+    "phone":"+1-362-875-7059x640",
+    "city":"Boston",
+    "total_spent":1248.59,
+    "membership_tier":"Platinum"
+  },
+  {
+    "customer_id":"CUST-00111",
+    "full_name":"Michael Owen",
+    "email":"michael.owen@hotmail.com",
+    "phone":"(702)797-0213",
+    "city":"Seattle",
+    "total_spent":401.33,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00112",
+    "full_name":"Patrick Bradley",
+    "email":"patrick.bradley@hotmail.com",
+    "phone":"(775)857-1928",
+    "city":"Chicago",
+    "total_spent":705.91,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00113",
+    "full_name":"Leonard Ramirez",
+    "email":"leonard.ramirez@gmail.com",
+    "phone":"9275868144",
+    "city":"Denver",
+    "total_spent":250.2,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00114",
+    "full_name":"Wendy Mitchell",
+    "email":"wendy.mitchell@yahoo.com",
+    "phone":"712.317.2715",
+    "city":"New York",
+    "total_spent":60.88,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00115",
+    "full_name":"Andrea Roberts",
+    "email":"andrea.roberts@yahoo.com",
+    "phone":"(925)283-1323",
+    "city":"Austin",
+    "total_spent":211.84,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00116",
+    "full_name":"Michael Armstrong",
+    "email":"michael.armstrong@yahoo.com",
+    "phone":"+1-829-811-4678",
+    "city":"Austin",
+    "total_spent":298.18,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00117",
+    "full_name":"Madeline Jones",
+    "email":"madeline.jones@yahoo.com",
+    "phone":"+1-217-378-5289x2268",
+    "city":"Boston",
+    "total_spent":40.06,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00118",
+    "full_name":"April Torres",
+    "email":"april.torres@gmail.com",
+    "phone":"335-484-1438x42498",
+    "city":"Boston",
+    "total_spent":1880.5,
+    "membership_tier":"Platinum"
+  },
+  {
+    "customer_id":"CUST-00119",
+    "full_name":"Brittany Carpenter",
+    "email":"brittany.carpenter@gmail.com",
+    "phone":"+1-299-959-0010x94396",
+    "city":"New York",
+    "total_spent":43.14,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00120",
+    "full_name":"Pamela Gardner",
+    "email":"pamela.gardner@hotmail.com",
+    "phone":"573-764-7102x7677",
+    "city":"Boston",
+    "total_spent":201.51,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00121",
+    "full_name":"Catherine Edwards",
+    "email":"catherine.edwards@hotmail.com",
+    "phone":"556-425-8815x37147",
+    "city":"Denver",
+    "total_spent":67.07,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00122",
+    "full_name":"Colin Roberts",
+    "email":"colin.roberts@yahoo.com",
+    "phone":"+1-963-625-9532x787",
+    "city":"Chicago",
+    "total_spent":109.94,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00123",
+    "full_name":"Tyler Davis",
+    "email":"tyler.davis@yahoo.com",
+    "phone":"273.339.5004x79748",
+    "city":"Austin",
+    "total_spent":82.97,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00124",
+    "full_name":"Ryan Khan",
+    "email":"ryan.khan@hotmail.com",
+    "phone":"(365)806-0983x584",
+    "city":"Chicago",
+    "total_spent":161.92,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00125",
+    "full_name":"William Duran",
+    "email":"william.duran@yahoo.com",
+    "phone":"+1-891-221-6558x523",
+    "city":"Chicago",
+    "total_spent":948.9,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00126",
+    "full_name":"Brandon Taylor",
+    "email":"brandon.taylor@yahoo.com",
+    "phone":"687.729.8259x5269",
+    "city":"New York",
+    "total_spent":278.44,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00127",
+    "full_name":"William Hicks",
+    "email":"william.hicks@yahoo.com",
+    "phone":"001-994-670-5516x940",
+    "city":"Denver",
+    "total_spent":886.97,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00128",
+    "full_name":"Tammy Patton",
+    "email":"tammy.patton@hotmail.com",
+    "phone":"001-430-597-2896",
+    "city":"New York",
+    "total_spent":38.36,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00129",
+    "full_name":"Anthony Vaughan",
+    "email":"anthony.vaughan@gmail.com",
+    "phone":"907.256.2636",
+    "city":"Seattle",
+    "total_spent":828.63,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00130",
+    "full_name":"Janice Stone",
+    "email":"janice.stone@hotmail.com",
+    "phone":"578-565-2785x85497",
+    "city":"New York",
+    "total_spent":1188.9,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00131",
+    "full_name":"Joshua Evans",
+    "email":"joshua.evans@yahoo.com",
+    "phone":"001-843-775-7584x41986",
+    "city":"Denver",
+    "total_spent":136.36,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00132",
+    "full_name":"Stephanie Ballard",
+    "email":"stephanie.ballard@yahoo.com",
+    "phone":"6416574733",
+    "city":"Austin",
+    "total_spent":314.18,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00133",
+    "full_name":"Derrick Gilbert",
+    "email":"derrick.gilbert@hotmail.com",
+    "phone":"730.983.3016",
+    "city":"Chicago",
+    "total_spent":914.95,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00134",
+    "full_name":"Craig Townsend",
+    "email":"craig.townsend@gmail.com",
+    "phone":"+1-226-377-3454",
+    "city":"New York",
+    "total_spent":95.95,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00135",
+    "full_name":"Denise Hall",
+    "email":"denise.hall@hotmail.com",
+    "phone":"001-302-762-0672x4004",
+    "city":"New York",
+    "total_spent":1914.23,
+    "membership_tier":"Platinum"
+  },
+  {
+    "customer_id":"CUST-00136",
+    "full_name":"Justin Hays",
+    "email":"justin.hays@hotmail.com",
+    "phone":"772.687.4315x27420",
+    "city":"San Francisco",
+    "total_spent":1189.82,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00137",
+    "full_name":"Ashley Todd",
+    "email":"ashley.todd@gmail.com",
+    "phone":"+1-566-285-1612x275",
+    "city":"Denver",
+    "total_spent":288.14,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00138",
+    "full_name":"Jose Young",
+    "email":"jose.young@yahoo.com",
+    "phone":"649-390-4530x17426",
+    "city":"Austin",
+    "total_spent":551.7,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00139",
+    "full_name":"Danielle Shepard",
+    "email":"danielle.shepard@yahoo.com",
+    "phone":"+1-533-527-2795x687",
+    "city":"Boston",
+    "total_spent":2438.99,
+    "membership_tier":"Platinum"
+  },
+  {
+    "customer_id":"CUST-00140",
+    "full_name":"Erin Larson",
+    "email":"erin.larson@gmail.com",
+    "phone":"478.751.9108x83982",
+    "city":"Seattle",
+    "total_spent":502.95,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00141",
+    "full_name":"Melissa Ramos",
+    "email":"melissa.ramos@hotmail.com",
+    "phone":"897.918.7072",
+    "city":"Austin",
+    "total_spent":90.68,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00142",
+    "full_name":"Anne Hansen",
+    "email":"anne.hansen@hotmail.com",
+    "phone":"206-340-3910x6518",
+    "city":"San Francisco",
+    "total_spent":125.48,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00143",
+    "full_name":"Valerie Kennedy",
+    "email":"valerie.kennedy@yahoo.com",
+    "phone":"(422)865-6766x18251",
+    "city":"New York",
+    "total_spent":404.5,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00144",
+    "full_name":"Allison Luna",
+    "email":"allison.luna@gmail.com",
+    "phone":"5049786863",
+    "city":"Seattle",
+    "total_spent":43.3,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00145",
+    "full_name":"Michael Hill",
+    "email":"michael.hill@hotmail.com",
+    "phone":"001-210-569-0331x19079",
+    "city":"San Francisco",
+    "total_spent":41.49,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00146",
+    "full_name":"Joy Morales",
+    "email":"joy.morales@gmail.com",
+    "phone":"+1-730-528-4395",
+    "city":"Seattle",
+    "total_spent":306.5,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00147",
+    "full_name":"Kevin Thomas",
+    "email":"kevin.thomas@hotmail.com",
+    "phone":"836.744.0892x68705",
+    "city":"Denver",
+    "total_spent":355.84,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00148",
+    "full_name":"Heather Russell",
+    "email":"heather.russell@yahoo.com",
+    "phone":"(428)873-3427x0866",
+    "city":"New York",
+    "total_spent":1472.34,
+    "membership_tier":"Platinum"
+  },
+  {
+    "customer_id":"CUST-00149",
+    "full_name":"John Harris",
+    "email":"john.harris@hotmail.com",
+    "phone":"275-318-3046",
+    "city":"New York",
+    "total_spent":872.75,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00150",
+    "full_name":"Jacob Gill",
+    "email":"jacob.gill@hotmail.com",
+    "phone":"+1-583-873-5403x31739",
+    "city":"New York",
+    "total_spent":421.78,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00151",
+    "full_name":"Rose Arnold",
+    "email":"rose.arnold@yahoo.com",
+    "phone":"(578)754-4587x7175",
+    "city":"Boston",
+    "total_spent":905.64,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00152",
+    "full_name":"Lawrence Williams",
+    "email":"lawrence.williams@gmail.com",
+    "phone":"001-820-548-9964x2353",
+    "city":"Austin",
+    "total_spent":72.47,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00153",
+    "full_name":"Victor Pena",
+    "email":"victor.pena@hotmail.com",
+    "phone":"247-377-2522x87280",
+    "city":"Seattle",
+    "total_spent":142.19,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00154",
+    "full_name":"Sierra Barnett",
+    "email":"sierra.barnett@gmail.com",
+    "phone":"(923)212-0387x50997",
+    "city":"Seattle",
+    "total_spent":33.25,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00155",
+    "full_name":"Adam Arnold",
+    "email":"adam.arnold@gmail.com",
+    "phone":"3843840862",
+    "city":"New York",
+    "total_spent":259.53,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00156",
+    "full_name":"Alice Allen",
+    "email":"alice.allen@hotmail.com",
+    "phone":"245.346.1567x93341",
+    "city":"Seattle",
+    "total_spent":389.82,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00157",
+    "full_name":"Richard Bennett",
+    "email":"richard.bennett@yahoo.com",
+    "phone":"2025176591",
+    "city":"San Francisco",
+    "total_spent":1242.99,
+    "membership_tier":"Platinum"
+  },
+  {
+    "customer_id":"CUST-00158",
+    "full_name":"Jason Parrish",
+    "email":"jason.parrish@hotmail.com",
+    "phone":"440.814.8902x5039",
+    "city":"Chicago",
+    "total_spent":513.52,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00159",
+    "full_name":"Sarah Evans",
+    "email":"sarah.evans@hotmail.com",
+    "phone":"796.285.6218",
+    "city":"San Francisco",
+    "total_spent":137.72,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00160",
+    "full_name":"Connor Hall",
+    "email":"connor.hall@gmail.com",
+    "phone":"899-496-5047x73586",
+    "city":"Austin",
+    "total_spent":78.12,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00161",
+    "full_name":"Erin Guerrero",
+    "email":"erin.guerrero@gmail.com",
+    "phone":"001-394-231-1426x26551",
+    "city":"Boston",
+    "total_spent":175.5,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00162",
+    "full_name":"Sherry Wallace",
+    "email":"sherry.wallace@yahoo.com",
+    "phone":"821-326-7888",
+    "city":"San Francisco",
+    "total_spent":1205.4,
+    "membership_tier":"Platinum"
+  },
+  {
+    "customer_id":"CUST-00163",
+    "full_name":"Anthony Gomez",
+    "email":"anthony.gomez@gmail.com",
+    "phone":"+1-495-860-4661x839",
+    "city":"New York",
+    "total_spent":19.21,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00164",
+    "full_name":"Gavin Adams",
+    "email":"gavin.adams@yahoo.com",
+    "phone":"921.526.4647x1543",
+    "city":"Seattle",
+    "total_spent":2927.57,
+    "membership_tier":"Platinum"
+  },
+  {
+    "customer_id":"CUST-00165",
+    "full_name":"Stephen Taylor",
+    "email":"stephen.taylor@gmail.com",
+    "phone":"(559)965-7569x2459",
+    "city":"New York",
+    "total_spent":49.24,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00166",
+    "full_name":"Leon Oconnell",
+    "email":"leon.oconnell@yahoo.com",
+    "phone":"479-235-6465x1939",
+    "city":"Chicago",
+    "total_spent":332.24,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00167",
+    "full_name":"Stephanie Murray",
+    "email":"stephanie.murray@hotmail.com",
+    "phone":"674.416.7243",
+    "city":"Chicago",
+    "total_spent":1233.12,
+    "membership_tier":"Platinum"
+  },
+  {
+    "customer_id":"CUST-00168",
+    "full_name":"Jennifer Mccormick",
+    "email":"jennifer.mccormick@gmail.com",
+    "phone":"397.396.8868x058",
+    "city":"New York",
+    "total_spent":966.39,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00169",
+    "full_name":"Kayla Sandoval",
+    "email":"kayla.sandoval@yahoo.com",
+    "phone":"(390)696-5610",
+    "city":"San Francisco",
+    "total_spent":165.95,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00170",
+    "full_name":"Jeffrey Burgess",
+    "email":"jeffrey.burgess@hotmail.com",
+    "phone":"001-493-775-6798",
+    "city":"Austin",
+    "total_spent":822.4,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00171",
+    "full_name":"Whitney Webb",
+    "email":"whitney.webb@yahoo.com",
+    "phone":"(911)925-4573x87571",
+    "city":"Boston",
+    "total_spent":177.12,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00172",
+    "full_name":"Luis Evans",
+    "email":"luis.evans@hotmail.com",
+    "phone":"405-712-3828",
+    "city":"Denver",
+    "total_spent":492.56,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00173",
+    "full_name":"Anita Mullen",
+    "email":"anita.mullen@gmail.com",
+    "phone":"(522)566-0937x9660",
+    "city":"New York",
+    "total_spent":510.99,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00174",
+    "full_name":"Joshua Padilla",
+    "email":"joshua.padilla@gmail.com",
+    "phone":"001-618-925-5371",
+    "city":"Seattle",
+    "total_spent":175.1,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00175",
+    "full_name":"Allison Fowler",
+    "email":"allison.fowler@hotmail.com",
+    "phone":"(396)491-5579x2499",
+    "city":"Boston",
+    "total_spent":64.21,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00176",
+    "full_name":"Lawrence Allen",
+    "email":"lawrence.allen@gmail.com",
+    "phone":"(852)886-6929",
+    "city":"Chicago",
+    "total_spent":153.22,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00177",
+    "full_name":"Jacob Reid",
+    "email":"jacob.reid@hotmail.com",
+    "phone":"+1-228-927-4225x7905",
+    "city":"New York",
+    "total_spent":625.39,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00178",
+    "full_name":"Derrick Ochoa",
+    "email":"derrick.ochoa@hotmail.com",
+    "phone":"676.576.7721x90340",
+    "city":"Chicago",
+    "total_spent":158.07,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00179",
+    "full_name":"Amanda Jackson",
+    "email":"amanda.jackson@yahoo.com",
+    "phone":"001-778-281-9148",
+    "city":"Seattle",
+    "total_spent":121.43,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00180",
+    "full_name":"Kathleen Alexander",
+    "email":"kathleen.alexander@gmail.com",
+    "phone":"(713)840-7451x71339",
+    "city":"San Francisco",
+    "total_spent":117.44,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00181",
+    "full_name":"Gabriel Taylor",
+    "email":"gabriel.taylor@gmail.com",
+    "phone":"709.658.4982",
+    "city":"Boston",
+    "total_spent":877.53,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00182",
+    "full_name":"Keith Adams",
+    "email":"keith.adams@hotmail.com",
+    "phone":"+1-412-660-4223x25367",
+    "city":"Seattle",
+    "total_spent":316.71,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00183",
+    "full_name":"Courtney Brooks",
+    "email":"courtney.brooks@gmail.com",
+    "phone":"+1-716-384-5775x9017",
+    "city":"Denver",
+    "total_spent":38.46,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00184",
+    "full_name":"Laura Sanders",
+    "email":"laura.sanders@yahoo.com",
+    "phone":"974.754.5892",
+    "city":"Boston",
+    "total_spent":262.91,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00185",
+    "full_name":"Patricia Farmer",
+    "email":"patricia.farmer@gmail.com",
+    "phone":"570-412-7706",
+    "city":"San Francisco",
+    "total_spent":35.29,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00186",
+    "full_name":"Nicole Turner",
+    "email":"nicole.turner@yahoo.com",
+    "phone":"554-815-2064",
+    "city":"San Francisco",
+    "total_spent":678.55,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00187",
+    "full_name":"Diana Padilla",
+    "email":"diana.padilla@gmail.com",
+    "phone":"271.729.3870",
+    "city":"Boston",
+    "total_spent":1770.89,
+    "membership_tier":"Platinum"
+  },
+  {
+    "customer_id":"CUST-00188",
+    "full_name":"Lisa Mcneil",
+    "email":"lisa.mcneil@yahoo.com",
+    "phone":"001-427-813-6111x554",
+    "city":"Chicago",
+    "total_spent":623.32,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00189",
+    "full_name":"Kiara Mullins",
+    "email":"kiara.mullins@gmail.com",
+    "phone":"+1-921-589-0927x5326",
+    "city":"Seattle",
+    "total_spent":565.37,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00190",
+    "full_name":"Christopher Garcia",
+    "email":"christopher.garcia@gmail.com",
+    "phone":"001-565-665-2341",
+    "city":"Seattle",
+    "total_spent":19.37,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00191",
+    "full_name":"Kimberly Vaughn",
+    "email":"kimberly.vaughn@hotmail.com",
+    "phone":"538-998-3640x3761",
+    "city":"New York",
+    "total_spent":1320.61,
+    "membership_tier":"Platinum"
+  },
+  {
+    "customer_id":"CUST-00192",
+    "full_name":"Danielle Jones",
+    "email":"danielle.jones@gmail.com",
+    "phone":"(352)269-6582x710",
+    "city":"Boston",
+    "total_spent":1069.2,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00193",
+    "full_name":"Jose Williams",
+    "email":"jose.williams@gmail.com",
+    "phone":"(384)686-6618x8924",
+    "city":"Seattle",
+    "total_spent":31.51,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00194",
+    "full_name":"Christian Mccall",
+    "email":"christian.mccall@gmail.com",
+    "phone":"+1-556-391-4630",
+    "city":"San Francisco",
+    "total_spent":408.07,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00195",
+    "full_name":"Sandy Wilson",
+    "email":"sandy.wilson@hotmail.com",
+    "phone":"+1-604-421-0202x758",
+    "city":"Chicago",
+    "total_spent":267.79,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00196",
+    "full_name":"Nathan Brady",
+    "email":"nathan.brady@yahoo.com",
+    "phone":"001-710-256-4814x9177",
+    "city":"New York",
+    "total_spent":180.84,
+    "membership_tier":"Bronze"
+  },
+  {
+    "customer_id":"CUST-00197",
+    "full_name":"Victor Bradley",
+    "email":"victor.bradley@yahoo.com",
+    "phone":"(241)591-3800",
+    "city":"Denver",
+    "total_spent":1627.16,
+    "membership_tier":"Platinum"
+  },
+  {
+    "customer_id":"CUST-00198",
+    "full_name":"Brandon Cox",
+    "email":"brandon.cox@gmail.com",
+    "phone":"(608)363-5365",
+    "city":"New York",
+    "total_spent":1046.35,
+    "membership_tier":"Gold"
+  },
+  {
+    "customer_id":"CUST-00199",
+    "full_name":"Ashley Wilson",
+    "email":"ashley.wilson@hotmail.com",
+    "phone":"6237806174",
+    "city":"Chicago",
+    "total_spent":530.66,
+    "membership_tier":"Silver"
+  },
+  {
+    "customer_id":"CUST-00200",
+    "full_name":"Christopher Bryant",
+    "email":"christopher.bryant@yahoo.com",
+    "phone":"949.549.3759",
+    "city":"Boston",
+    "total_spent":63.81,
+    "membership_tier":"Bronze"
+  }
+]

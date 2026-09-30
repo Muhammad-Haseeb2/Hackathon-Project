@@ -43,20 +43,54 @@ async function blobRequest(endpoint, options = {}) {
   return res.blob();
 }
 
-/** Download a blob as a file with strict MIME type and extension */
-function downloadBlob(blob, filename, mimeType) {
+/** Download a blob as a file, prompting the user for location when supported */
+async function downloadBlob(blob, filename, mimeType) {
   const finalBlob = mimeType ? new Blob([blob], { type: mimeType }) : blob;
+  const ext = filename.split('.').pop().toLowerCase();
+
+  // Try modern File System Access API (prompts user for Save As location)
+  if (typeof window !== 'undefined' && 'showSaveFilePicker' in window) {
+    try {
+      const typeAccept = {};
+      typeAccept[mimeType || 'application/octet-stream'] = [`.${ext}`];
+      
+      const handle = await window.showSaveFilePicker({
+        suggestedName: filename,
+        types: [
+          {
+            description: `${ext.toUpperCase()} File (*.${ext})`,
+            accept: typeAccept,
+          },
+        ],
+      });
+      const writable = await handle.createWritable();
+      await writable.write(finalBlob);
+      await writable.close();
+      return;
+    } catch (err) {
+      if (err.name === 'AbortError') {
+        // User deliberately cancelled Save As dialog
+        return;
+      }
+      console.warn('showSaveFilePicker failed or unsupported, using standard download:', err);
+    }
+  }
+
+  // Fallback to standard <a> download
   const url = URL.createObjectURL(finalBlob);
   const a = document.createElement('a');
   a.style.display = 'none';
   a.href = url;
+  a.download = filename;
   a.setAttribute('download', filename);
   document.body.appendChild(a);
   a.click();
   setTimeout(() => {
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-  }, 200);
+    try {
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    } catch {}
+  }, 60000);
 }
 
 // ── Health ──
@@ -179,8 +213,15 @@ export async function exportInvoice(config) {
     method: 'POST',
     body: JSON.stringify(config),
   });
-  const ext = config.count > 1 ? 'zip' : config.format === 'json' ? 'json' : 'pdf';
-  downloadBlob(blob, `invoice.${ext}`);
+  const fmt = (config.format || 'pdf').toLowerCase();
+  const isZip = config.count > 1;
+  const ext = isZip ? 'zip' : fmt === 'json' ? 'json' : 'pdf';
+  const mimeType = isZip
+    ? 'application/zip'
+    : fmt === 'json'
+    ? 'application/json'
+    : 'application/pdf';
+  downloadBlob(blob, `invoice.${ext}`, mimeType);
 }
 
 export async function generateStatement(config) {
@@ -191,12 +232,30 @@ export async function generateStatement(config) {
 }
 
 export async function exportStatement(config) {
+  const fmt = (config.format || 'pdf').toLowerCase();
   const blob = await blobRequest('/v1/documents/statement/export', {
     method: 'POST',
-    body: JSON.stringify(config),
+    body: JSON.stringify({ ...config, format: fmt }),
   });
-  const ext = config.format === 'csv' ? 'csv' : config.format === 'json' ? 'json' : 'pdf';
-  downloadBlob(blob, `bank_statement.${ext}`);
+  const ext = fmt === 'csv' ? 'csv' : fmt === 'json' ? 'json' : 'pdf';
+  const mimeType =
+    fmt === 'csv'
+      ? 'text/csv;charset=utf-8'
+      : fmt === 'json'
+      ? 'application/json'
+      : 'application/pdf';
+  downloadBlob(blob, `bank_statement.${ext}`, mimeType);
+}
+
+// ── Clone / Mimic Document from PDF ──
+export async function cloneDocument(file, seed = 42) {
+  const formData = new FormData();
+  formData.append('file', file);
+  formData.append('seed', seed);
+  return jsonRequest('/v1/documents/clone', {
+    method: 'POST',
+    body: formData,
+  });
 }
 
 // ── AI ──

@@ -1,0 +1,2001 @@
+customer_id,full_name,email,phone,city,total_spent,membership_tier
+CUST-00001,Danielle Johnson,danielle.johnson@yahoo.com,232.318.1960,Boston,68.11,Bronze
+CUST-00002,Jeffery Wagner,jeffery.wagner@gmail.com,+1-438-863-7940,Boston,159.73,Bronze
+CUST-00003,Matthew Moore,matthew.moore@yahoo.com,916-315-5940,Chicago,82.63,Bronze
+CUST-00004,Teresa Gray,teresa.gray@hotmail.com,695-993-1034x1316,New York,523.13,Silver
+CUST-00005,Cynthia Diaz,cynthia.diaz@yahoo.com,(534)719-2832x764,Seattle,55.93,Bronze
+CUST-00006,Megan Parsons,megan.parsons@gmail.com,9568413953,Austin,29.53,Bronze
+CUST-00007,Nicole Day,nicole.day@gmail.com,423-988-4969x653,New York,126.02,Bronze
+CUST-00008,Christopher Williams,christopher.williams@gmail.com,(626)291-6697,Seattle,429.61,Silver
+CUST-00009,Erin Wilson,erin.wilson@hotmail.com,001-645-514-6270x48281,Seattle,114.76,Bronze
+CUST-00010,Eric Farmer,eric.farmer@hotmail.com,001-380-395-7015x43039,Boston,558.78,Silver
+CUST-00011,Jessica Cabrera,jessica.cabrera@hotmail.com,001-822-778-2489x63834,Austin,127.06,Bronze
+CUST-00012,Samuel Holmes,samuel.holmes@gmail.com,531.250.9839,Seattle,161.7,Bronze
+CUST-00013,Chad Welch,chad.welch@gmail.com,405-918-3473,Denver,17.93,Bronze
+CUST-00014,John Kennedy,john.kennedy@yahoo.com,311.265.6670,Denver,93.28,Bronze
+CUST-00015,Richard Morgan,richard.morgan@gmail.com,933.587.2624,Austin,202.15,Silver
+CUST-00016,Nancy Jones,nancy.jones@hotmail.com,908-501-3267,Chicago,124.11,Bronze
+CUST-00017,Michelle Barrera,michelle.barrera@gmail.com,(206)247-4687x2343,Denver,199.67,Bronze
+CUST-00018,Julie Brown,julie.brown@hotmail.com,388.520.8121x9136,New York,230.06,Silver
+CUST-00019,Beth Williams,beth.williams@gmail.com,(799)385-4353x46247,San Francisco,861.25,Gold
+CUST-00020,Albert Howell,albert.howell@hotmail.com,518-738-4251,Seattle,153.25,Bronze
+CUST-00021,Justin Kim,justin.kim@hotmail.com,001-449-680-8412x411,New York,603.75,Gold
+CUST-00022,Juan Clark,juan.clark@yahoo.com,248.274.0164,Seattle,75.0,Bronze
+CUST-00023,Matthew Anderson,matthew.anderson@yahoo.com,(278)768-0112,Austin,51.94,Bronze
+CUST-00024,Brandi Hernandez,brandi.hernandez@gmail.com,8454053315,San Francisco,810.81,Gold
+CUST-00025,Sara Young,sara.young@gmail.com,(360)825-6342,Seattle,990.04,Gold
+CUST-00026,Monica Garrison,monica.garrison@gmail.com,775.643.3036,San Francisco,402.55,Silver
+CUST-00027,Michelle Rasmussen,michelle.rasmussen@yahoo.com,(386)885-0142x940,Boston,47.44,Bronze
+CUST-00028,Michael Hartman,michael.hartman@yahoo.com,+1-581-769-3406x088,Boston,131.39,Bronze
+CUST-00029,Ryan Rush,ryan.rush@yahoo.com,+1-551-848-4656x482,San Francisco,1911.56,Platinum
+CUST-00030,Elizabeth Gray,elizabeth.gray@hotmail.com,(599)846-8044,Denver,134.25,Bronze
+CUST-00031,Kristi Lawson,kristi.lawson@yahoo.com,377.538.7214x895,New York,230.21,Silver
+CUST-00032,Emily Walker,emily.walker@gmail.com,(500)837-9176,Austin,469.38,Silver
+CUST-00033,Troy Sanchez,troy.sanchez@hotmail.com,001-901-463-2870x831,San Francisco,94.88,Bronze
+CUST-00034,Laurie Contreras,laurie.contreras@hotmail.com,+1-557-698-6872x774,San Francisco,120.79,Bronze
+CUST-00035,Katie Boyd,katie.boyd@hotmail.com,347.414.3455,San Francisco,559.53,Silver
+CUST-00036,Edward Reyes,edward.reyes@gmail.com,001-831-266-5876x036,Boston,484.9,Silver
+CUST-00037,Melissa Cannon,melissa.cannon@yahoo.com,805.946.6889x3734,Seattle,468.51,Silver
+CUST-00038,Anthony Rogers,anthony.rogers@hotmail.com,(427)929-8069x9016,Seattle,602.75,Gold
+CUST-00039,Hunter Green,hunter.green@yahoo.com,975.256.4641,Chicago,294.17,Silver
+CUST-00040,Kaitlyn Williams,kaitlyn.williams@yahoo.com,510.403.3092,San Francisco,2066.37,Platinum
+CUST-00041,Thomas Wilson,thomas.wilson@gmail.com,645.829.9124x190,Boston,539.37,Silver
+CUST-00042,Randy Espinoza,randy.espinoza@gmail.com,001-831-749-1905,Chicago,534.28,Silver
+CUST-00043,Casey Holland,casey.holland@gmail.com,(971)865-7262x84987,Denver,673.07,Gold
+CUST-00044,Margaret Vargas,margaret.vargas@yahoo.com,714.273.7996,New York,132.06,Bronze
+CUST-00045,Troy Nguyen,troy.nguyen@yahoo.com,554.354.9480,New York,750.75,Gold
+CUST-00046,John Russell,john.russell@hotmail.com,001-937-777-0143x63495,Austin,155.23,Bronze
+CUST-00047,Ronald Reese,ronald.reese@yahoo.com,(574)544-3135x182,Chicago,1114.54,Gold
+CUST-00048,Joanna Hill,joanna.hill@hotmail.com,001-689-241-3435x24082,Seattle,955.7,Gold
+CUST-00049,Terri Tran,terri.tran@hotmail.com,(771)409-4777,San Francisco,122.57,Bronze
+CUST-00050,Tammy King,tammy.king@yahoo.com,616-371-9022,Austin,241.61,Silver
+CUST-00051,Victoria Wilson,victoria.wilson@yahoo.com,+1-299-338-6774x964,Boston,291.33,Silver
+CUST-00052,Stacey Clark,stacey.clark@gmail.com,912-632-8120x679,San Francisco,82.68,Bronze
+CUST-00053,Antonio Roberts,antonio.roberts@yahoo.com,001-671-434-9361x832,Boston,385.84,Silver
+CUST-00054,Charles Martin,charles.martin@yahoo.com,+1-994-371-7464x887,San Francisco,633.49,Gold
+CUST-00055,Carly Preston,carly.preston@hotmail.com,994-601-3990x49027,Austin,1041.47,Gold
+CUST-00056,Howard Richards,howard.richards@hotmail.com,817.256.5512x5674,Austin,217.24,Silver
+CUST-00057,Shawn Edwards,shawn.edwards@yahoo.com,768-908-7603,Chicago,335.57,Silver
+CUST-00058,Colleen Wolf,colleen.wolf@gmail.com,282-847-7109x324,New York,649.36,Gold
+CUST-00059,Christopher Gay,christopher.gay@gmail.com,412.874.8467x737,Denver,67.26,Bronze
+CUST-00060,James Greene,james.greene@hotmail.com,(614)965-8404,Boston,93.45,Bronze
+CUST-00061,Michelle Griffin,michelle.griffin@yahoo.com,(858)286-7533x963,Boston,261.81,Silver
+CUST-00062,Louis Kennedy,louis.kennedy@yahoo.com,(227)402-8951x7187,New York,233.59,Silver
+CUST-00063,Robert Pena,robert.pena@gmail.com,874-759-6158,Seattle,2513.52,Platinum
+CUST-00064,Courtney Clay,courtney.clay@yahoo.com,+1-309-313-4316,Seattle,145.31,Bronze
+CUST-00065,Scott Benson,scott.benson@gmail.com,8504455623,Seattle,902.26,Gold
+CUST-00066,George Miller,george.miller@yahoo.com,+1-637-492-3747x407,New York,528.14,Silver
+CUST-00067,Charles Landry,charles.landry@hotmail.com,664-674-3671x3695,New York,530.16,Silver
+CUST-00068,Andrew Greer,andrew.greer@yahoo.com,609-409-7439x533,Seattle,640.42,Gold
+CUST-00069,Courtney Berger,courtney.berger@hotmail.com,7478095214,Denver,475.95,Silver
+CUST-00070,Gregory Anderson,gregory.anderson@hotmail.com,(488)542-4745x171,New York,171.34,Bronze
+CUST-00071,Michelle Ramsey,michelle.ramsey@yahoo.com,+1-751-660-4817,Chicago,287.08,Silver
+CUST-00072,Brenda Carson,brenda.carson@yahoo.com,337-909-8593,Boston,953.83,Gold
+CUST-00073,Regina Turner,regina.turner@yahoo.com,420-804-7113,San Francisco,1622.2,Platinum
+CUST-00074,Shawn Santiago,shawn.santiago@hotmail.com,001-786-592-6179x640,Denver,103.56,Bronze
+CUST-00075,Scott Sampson,scott.sampson@yahoo.com,958-350-6431,New York,934.9,Gold
+CUST-00076,Elizabeth May,elizabeth.may@hotmail.com,5055329318,San Francisco,844.38,Gold
+CUST-00077,Lisa Hall,lisa.hall@gmail.com,+1-704-522-8421x020,Seattle,437.54,Silver
+CUST-00078,Brianna Smith,brianna.smith@yahoo.com,3269811775,Chicago,225.72,Silver
+CUST-00079,William Dougherty,william.dougherty@gmail.com,001-384-770-0766x1771,Chicago,363.83,Silver
+CUST-00080,Charlene Jones,charlene.jones@yahoo.com,+1-398-356-9847x896,Denver,1165.48,Gold
+CUST-00081,Melissa Curtis,melissa.curtis@hotmail.com,001-736-673-6576x6156,New York,426.15,Silver
+CUST-00082,Nicholas Hernandez,nicholas.hernandez@yahoo.com,211-716-1528,Austin,23.85,Bronze
+CUST-00083,Elizabeth Jenkins,elizabeth.jenkins@hotmail.com,001-360-749-4519x83273,San Francisco,964.35,Gold
+CUST-00084,Megan Richardson,megan.richardson@yahoo.com,001-636-289-9809,Denver,754.75,Gold
+CUST-00085,Henry Park,henry.park@yahoo.com,850-922-9612x01836,Chicago,41.85,Bronze
+CUST-00086,Matthew Wood,matthew.wood@hotmail.com,999-810-2290x14767,Seattle,1336.43,Platinum
+CUST-00087,Joshua Fischer,joshua.fischer@gmail.com,(261)249-7840x369,New York,607.39,Gold
+CUST-00088,James Dougherty,james.dougherty@gmail.com,001-744-351-0762x26838,Denver,47.28,Bronze
+CUST-00089,Randy Harmon,randy.harmon@yahoo.com,6713596966,Denver,357.36,Silver
+CUST-00090,Richard Burch,richard.burch@gmail.com,+1-875-616-1369x681,Chicago,76.84,Bronze
+CUST-00091,Julie Walker,julie.walker@gmail.com,581-388-3552,Austin,1335.58,Platinum
+CUST-00092,Dwayne Gonzalez,dwayne.gonzalez@hotmail.com,(712)777-9979,Chicago,153.58,Bronze
+CUST-00093,Edward Jones,edward.jones@yahoo.com,+1-744-690-5814x7700,Denver,434.81,Silver
+CUST-00094,Chase Lin,chase.lin@gmail.com,+1-998-467-9807x935,Chicago,1204.74,Platinum
+CUST-00095,Susan Hayes,susan.hayes@yahoo.com,001-718-720-3778x892,Denver,604.09,Gold
+CUST-00096,Samantha Hughes,samantha.hughes@yahoo.com,+1-390-451-5186x44925,Chicago,576.64,Silver
+CUST-00097,Sabrina Collins,sabrina.collins@hotmail.com,001-862-791-4865x281,Austin,2412.89,Platinum
+CUST-00098,Andrew Parker,andrew.parker@gmail.com,473-832-2141x88805,Boston,225.37,Silver
+CUST-00099,Eric White,eric.white@hotmail.com,001-592-670-6537x94738,Seattle,285.24,Silver
+CUST-00100,Tammy Mueller,tammy.mueller@gmail.com,(497)674-6886x239,Chicago,129.53,Bronze
+CUST-00101,Brett Castillo,brett.castillo@yahoo.com,+1-418-814-1247,San Francisco,24.57,Bronze
+CUST-00102,Christopher Lozano,christopher.lozano@yahoo.com,(206)706-8536x153,Seattle,132.68,Bronze
+CUST-00103,Sarah Combs,sarah.combs@hotmail.com,522-404-7277x90104,Chicago,18.25,Bronze
+CUST-00104,Ana Acosta,ana.acosta@hotmail.com,(214)534-1036x97117,Boston,463.76,Silver
+CUST-00105,Jennifer Carter,jennifer.carter@gmail.com,+1-253-896-2185x188,Chicago,46.4,Bronze
+CUST-00106,Morgan Williams,morgan.williams@yahoo.com,(740)751-5319x520,New York,898.58,Gold
+CUST-00107,Lisa Thompson,lisa.thompson@hotmail.com,772.621.7043x030,New York,339.84,Silver
+CUST-00108,Zachary Hays,zachary.hays@hotmail.com,940.834.5054x1566,San Francisco,512.51,Silver
+CUST-00109,Matthew Lopez,matthew.lopez@hotmail.com,358.341.6169x2845,Chicago,363.69,Silver
+CUST-00110,Mark Phillips,mark.phillips@yahoo.com,+1-362-875-7059x640,Boston,1248.59,Platinum
+CUST-00111,Michael Owen,michael.owen@hotmail.com,(702)797-0213,Seattle,401.33,Silver
+CUST-00112,Patrick Bradley,patrick.bradley@hotmail.com,(775)857-1928,Chicago,705.91,Gold
+CUST-00113,Leonard Ramirez,leonard.ramirez@gmail.com,9275868144,Denver,250.2,Silver
+CUST-00114,Wendy Mitchell,wendy.mitchell@yahoo.com,712.317.2715,New York,60.88,Bronze
+CUST-00115,Andrea Roberts,andrea.roberts@yahoo.com,(925)283-1323,Austin,211.84,Silver
+CUST-00116,Michael Armstrong,michael.armstrong@yahoo.com,+1-829-811-4678,Austin,298.18,Silver
+CUST-00117,Madeline Jones,madeline.jones@yahoo.com,+1-217-378-5289x2268,Boston,40.06,Bronze
+CUST-00118,April Torres,april.torres@gmail.com,335-484-1438x42498,Boston,1880.5,Platinum
+CUST-00119,Brittany Carpenter,brittany.carpenter@gmail.com,+1-299-959-0010x94396,New York,43.14,Bronze
+CUST-00120,Pamela Gardner,pamela.gardner@hotmail.com,573-764-7102x7677,Boston,201.51,Silver
+CUST-00121,Catherine Edwards,catherine.edwards@hotmail.com,556-425-8815x37147,Denver,67.07,Bronze
+CUST-00122,Colin Roberts,colin.roberts@yahoo.com,+1-963-625-9532x787,Chicago,109.94,Bronze
+CUST-00123,Tyler Davis,tyler.davis@yahoo.com,273.339.5004x79748,Austin,82.97,Bronze
+CUST-00124,Ryan Khan,ryan.khan@hotmail.com,(365)806-0983x584,Chicago,161.92,Bronze
+CUST-00125,William Duran,william.duran@yahoo.com,+1-891-221-6558x523,Chicago,948.9,Gold
+CUST-00126,Brandon Taylor,brandon.taylor@yahoo.com,687.729.8259x5269,New York,278.44,Silver
+CUST-00127,William Hicks,william.hicks@yahoo.com,001-994-670-5516x940,Denver,886.97,Gold
+CUST-00128,Tammy Patton,tammy.patton@hotmail.com,001-430-597-2896,New York,38.36,Bronze
+CUST-00129,Anthony Vaughan,anthony.vaughan@gmail.com,907.256.2636,Seattle,828.63,Gold
+CUST-00130,Janice Stone,janice.stone@hotmail.com,578-565-2785x85497,New York,1188.9,Gold
+CUST-00131,Joshua Evans,joshua.evans@yahoo.com,001-843-775-7584x41986,Denver,136.36,Bronze
+CUST-00132,Stephanie Ballard,stephanie.ballard@yahoo.com,6416574733,Austin,314.18,Silver
+CUST-00133,Derrick Gilbert,derrick.gilbert@hotmail.com,730.983.3016,Chicago,914.95,Gold
+CUST-00134,Craig Townsend,craig.townsend@gmail.com,+1-226-377-3454,New York,95.95,Bronze
+CUST-00135,Denise Hall,denise.hall@hotmail.com,001-302-762-0672x4004,New York,1914.23,Platinum
+CUST-00136,Justin Hays,justin.hays@hotmail.com,772.687.4315x27420,San Francisco,1189.82,Gold
+CUST-00137,Ashley Todd,ashley.todd@gmail.com,+1-566-285-1612x275,Denver,288.14,Silver
+CUST-00138,Jose Young,jose.young@yahoo.com,649-390-4530x17426,Austin,551.7,Silver
+CUST-00139,Danielle Shepard,danielle.shepard@yahoo.com,+1-533-527-2795x687,Boston,2438.99,Platinum
+CUST-00140,Erin Larson,erin.larson@gmail.com,478.751.9108x83982,Seattle,502.95,Silver
+CUST-00141,Melissa Ramos,melissa.ramos@hotmail.com,897.918.7072,Austin,90.68,Bronze
+CUST-00142,Anne Hansen,anne.hansen@hotmail.com,206-340-3910x6518,San Francisco,125.48,Bronze
+CUST-00143,Valerie Kennedy,valerie.kennedy@yahoo.com,(422)865-6766x18251,New York,404.5,Silver
+CUST-00144,Allison Luna,allison.luna@gmail.com,5049786863,Seattle,43.3,Bronze
+CUST-00145,Michael Hill,michael.hill@hotmail.com,001-210-569-0331x19079,San Francisco,41.49,Bronze
+CUST-00146,Joy Morales,joy.morales@gmail.com,+1-730-528-4395,Seattle,306.5,Silver
+CUST-00147,Kevin Thomas,kevin.thomas@hotmail.com,836.744.0892x68705,Denver,355.84,Silver
+CUST-00148,Heather Russell,heather.russell@yahoo.com,(428)873-3427x0866,New York,1472.34,Platinum
+CUST-00149,John Harris,john.harris@hotmail.com,275-318-3046,New York,872.75,Gold
+CUST-00150,Jacob Gill,jacob.gill@hotmail.com,+1-583-873-5403x31739,New York,421.78,Silver
+CUST-00151,Rose Arnold,rose.arnold@yahoo.com,(578)754-4587x7175,Boston,905.64,Gold
+CUST-00152,Lawrence Williams,lawrence.williams@gmail.com,001-820-548-9964x2353,Austin,72.47,Bronze
+CUST-00153,Victor Pena,victor.pena@hotmail.com,247-377-2522x87280,Seattle,142.19,Bronze
+CUST-00154,Sierra Barnett,sierra.barnett@gmail.com,(923)212-0387x50997,Seattle,33.25,Bronze
+CUST-00155,Adam Arnold,adam.arnold@gmail.com,3843840862,New York,259.53,Silver
+CUST-00156,Alice Allen,alice.allen@hotmail.com,245.346.1567x93341,Seattle,389.82,Silver
+CUST-00157,Richard Bennett,richard.bennett@yahoo.com,2025176591,San Francisco,1242.99,Platinum
+CUST-00158,Jason Parrish,jason.parrish@hotmail.com,440.814.8902x5039,Chicago,513.52,Silver
+CUST-00159,Sarah Evans,sarah.evans@hotmail.com,796.285.6218,San Francisco,137.72,Bronze
+CUST-00160,Connor Hall,connor.hall@gmail.com,899-496-5047x73586,Austin,78.12,Bronze
+CUST-00161,Erin Guerrero,erin.guerrero@gmail.com,001-394-231-1426x26551,Boston,175.5,Bronze
+CUST-00162,Sherry Wallace,sherry.wallace@yahoo.com,821-326-7888,San Francisco,1205.4,Platinum
+CUST-00163,Anthony Gomez,anthony.gomez@gmail.com,+1-495-860-4661x839,New York,19.21,Bronze
+CUST-00164,Gavin Adams,gavin.adams@yahoo.com,921.526.4647x1543,Seattle,2927.57,Platinum
+CUST-00165,Stephen Taylor,stephen.taylor@gmail.com,(559)965-7569x2459,New York,49.24,Bronze
+CUST-00166,Leon Oconnell,leon.oconnell@yahoo.com,479-235-6465x1939,Chicago,332.24,Silver
+CUST-00167,Stephanie Murray,stephanie.murray@hotmail.com,674.416.7243,Chicago,1233.12,Platinum
+CUST-00168,Jennifer Mccormick,jennifer.mccormick@gmail.com,397.396.8868x058,New York,966.39,Gold
+CUST-00169,Kayla Sandoval,kayla.sandoval@yahoo.com,(390)696-5610,San Francisco,165.95,Bronze
+CUST-00170,Jeffrey Burgess,jeffrey.burgess@hotmail.com,001-493-775-6798,Austin,822.4,Gold
+CUST-00171,Whitney Webb,whitney.webb@yahoo.com,(911)925-4573x87571,Boston,177.12,Bronze
+CUST-00172,Luis Evans,luis.evans@hotmail.com,405-712-3828,Denver,492.56,Silver
+CUST-00173,Anita Mullen,anita.mullen@gmail.com,(522)566-0937x9660,New York,510.99,Silver
+CUST-00174,Joshua Padilla,joshua.padilla@gmail.com,001-618-925-5371,Seattle,175.1,Bronze
+CUST-00175,Allison Fowler,allison.fowler@hotmail.com,(396)491-5579x2499,Boston,64.21,Bronze
+CUST-00176,Lawrence Allen,lawrence.allen@gmail.com,(852)886-6929,Chicago,153.22,Bronze
+CUST-00177,Jacob Reid,jacob.reid@hotmail.com,+1-228-927-4225x7905,New York,625.39,Gold
+CUST-00178,Derrick Ochoa,derrick.ochoa@hotmail.com,676.576.7721x90340,Chicago,158.07,Bronze
+CUST-00179,Amanda Jackson,amanda.jackson@yahoo.com,001-778-281-9148,Seattle,121.43,Bronze
+CUST-00180,Kathleen Alexander,kathleen.alexander@gmail.com,(713)840-7451x71339,San Francisco,117.44,Bronze
+CUST-00181,Gabriel Taylor,gabriel.taylor@gmail.com,709.658.4982,Boston,877.53,Gold
+CUST-00182,Keith Adams,keith.adams@hotmail.com,+1-412-660-4223x25367,Seattle,316.71,Silver
+CUST-00183,Courtney Brooks,courtney.brooks@gmail.com,+1-716-384-5775x9017,Denver,38.46,Bronze
+CUST-00184,Laura Sanders,laura.sanders@yahoo.com,974.754.5892,Boston,262.91,Silver
+CUST-00185,Patricia Farmer,patricia.farmer@gmail.com,570-412-7706,San Francisco,35.29,Bronze
+CUST-00186,Nicole Turner,nicole.turner@yahoo.com,554-815-2064,San Francisco,678.55,Gold
+CUST-00187,Diana Padilla,diana.padilla@gmail.com,271.729.3870,Boston,1770.89,Platinum
+CUST-00188,Lisa Mcneil,lisa.mcneil@yahoo.com,001-427-813-6111x554,Chicago,623.32,Gold
+CUST-00189,Kiara Mullins,kiara.mullins@gmail.com,+1-921-589-0927x5326,Seattle,565.37,Silver
+CUST-00190,Christopher Garcia,christopher.garcia@gmail.com,001-565-665-2341,Seattle,19.37,Bronze
+CUST-00191,Kimberly Vaughn,kimberly.vaughn@hotmail.com,538-998-3640x3761,New York,1320.61,Platinum
+CUST-00192,Danielle Jones,danielle.jones@gmail.com,(352)269-6582x710,Boston,1069.2,Gold
+CUST-00193,Jose Williams,jose.williams@gmail.com,(384)686-6618x8924,Seattle,31.51,Bronze
+CUST-00194,Christian Mccall,christian.mccall@gmail.com,+1-556-391-4630,San Francisco,408.07,Silver
+CUST-00195,Sandy Wilson,sandy.wilson@hotmail.com,+1-604-421-0202x758,Chicago,267.79,Silver
+CUST-00196,Nathan Brady,nathan.brady@yahoo.com,001-710-256-4814x9177,New York,180.84,Bronze
+CUST-00197,Victor Bradley,victor.bradley@yahoo.com,(241)591-3800,Denver,1627.16,Platinum
+CUST-00198,Brandon Cox,brandon.cox@gmail.com,(608)363-5365,New York,1046.35,Gold
+CUST-00199,Ashley Wilson,ashley.wilson@hotmail.com,6237806174,Chicago,530.66,Silver
+CUST-00200,Christopher Bryant,christopher.bryant@yahoo.com,949.549.3759,Boston,63.81,Bronze
+CUST-00201,Jessica Payne,jessica.payne@gmail.com,(206)803-8505,Denver,384.32,Silver
+CUST-00202,Melinda Acosta,melinda.acosta@gmail.com,283.567.0241,Denver,249.68,Silver
+CUST-00203,Phyllis Meyer,phyllis.meyer@hotmail.com,(871)491-8261x990,Seattle,637.89,Gold
+CUST-00204,Joel Green,joel.green@yahoo.com,(455)974-3132x9121,Chicago,914.8,Gold
+CUST-00205,Steven Russell,steven.russell@hotmail.com,(537)747-4112x490,Denver,764.16,Gold
+CUST-00206,Eddie Dawson,eddie.dawson@yahoo.com,(980)344-2067x8831,Austin,26.29,Bronze
+CUST-00207,Linda Taylor,linda.taylor@gmail.com,6323365199,Boston,1177.55,Gold
+CUST-00208,Andrew Brown,andrew.brown@hotmail.com,921.251.0702x966,Denver,1216.94,Platinum
+CUST-00209,Patrick Simmons,patrick.simmons@yahoo.com,524.647.2099,Denver,513.77,Silver
+CUST-00210,Victor Andrade,victor.andrade@yahoo.com,2148626383,Boston,764.11,Gold
+CUST-00211,Kimberly Howard,kimberly.howard@hotmail.com,659.285.6420x5930,San Francisco,93.03,Bronze
+CUST-00212,Lindsey Ruiz,lindsey.ruiz@yahoo.com,001-493-421-3348x03965,Boston,66.48,Bronze
+CUST-00213,Joel Stewart,joel.stewart@hotmail.com,001-659-405-9929x378,Denver,32.77,Bronze
+CUST-00214,Tracy Davis,tracy.davis@gmail.com,+1-730-287-0593x252,Austin,128.21,Bronze
+CUST-00215,Andrew Willis,andrew.willis@gmail.com,001-818-951-5691x54522,Denver,1142.95,Gold
+CUST-00216,Debra Thompson,debra.thompson@hotmail.com,001-895-239-2644x220,San Francisco,178.85,Bronze
+CUST-00217,Ian Flores,ian.flores@hotmail.com,791.472.5135,Denver,937.7,Gold
+CUST-00218,Daisy Mccarty,daisy.mccarty@hotmail.com,+1-957-804-3315x41006,Chicago,25.78,Bronze
+CUST-00219,Tanya Wilkerson,tanya.wilkerson@yahoo.com,(258)761-7932x7104,Chicago,243.72,Silver
+CUST-00220,Jose Garcia,jose.garcia@yahoo.com,(962)218-1599,San Francisco,913.96,Gold
+CUST-00221,Ryan Valdez,ryan.valdez@hotmail.com,(320)215-3368x84443,Denver,162.28,Bronze
+CUST-00222,Philip Dunn,philip.dunn@yahoo.com,(505)306-1497,Boston,335.46,Silver
+CUST-00223,Anthony Jackson,anthony.jackson@yahoo.com,871-446-7741,Boston,1802.05,Platinum
+CUST-00224,Nathan James,nathan.james@gmail.com,304.777.4349x021,Seattle,195.99,Bronze
+CUST-00225,Lindsey Gutierrez,lindsey.gutierrez@hotmail.com,580.968.6879,New York,70.15,Bronze
+CUST-00226,Kent Foster,kent.foster@hotmail.com,4894899217,San Francisco,103.52,Bronze
+CUST-00227,Teresa Stokes,teresa.stokes@gmail.com,3613632945,San Francisco,32.55,Bronze
+CUST-00228,Paul Sanders,paul.sanders@yahoo.com,387-309-9861x622,Seattle,271.57,Silver
+CUST-00229,Anna Garcia,anna.garcia@yahoo.com,+1-256-446-7997,Boston,709.7,Gold
+CUST-00230,Joshua Thomas,joshua.thomas@hotmail.com,+1-660-965-3074x50544,Austin,434.37,Silver
+CUST-00231,Michele Cohen,michele.cohen@gmail.com,(947)554-6913,Seattle,70.3,Bronze
+CUST-00232,Robin Russell,robin.russell@yahoo.com,001-485-508-2148x62890,Seattle,109.87,Bronze
+CUST-00233,Nancy Gonzalez,nancy.gonzalez@gmail.com,807.305.3457,New York,570.16,Silver
+CUST-00234,Erin Allen,erin.allen@yahoo.com,+1-272-879-8552x414,New York,345.21,Silver
+CUST-00235,Brandon Nash,brandon.nash@gmail.com,433.446.8007,Denver,362.93,Silver
+CUST-00236,Carolyn Smith,carolyn.smith@yahoo.com,+1-844-366-5743x748,Boston,1283.01,Platinum
+CUST-00237,Adrian Key,adrian.key@yahoo.com,+1-699-744-1715,Boston,514.76,Silver
+CUST-00238,Michelle Green,michelle.green@hotmail.com,+1-643-628-3096x5207,San Francisco,268.98,Silver
+CUST-00239,Rebecca Sullivan,rebecca.sullivan@hotmail.com,6994353875,Boston,1155.93,Gold
+CUST-00240,Mary Walter,mary.walter@gmail.com,817-724-8251x3534,Seattle,184.54,Bronze
+CUST-00241,Nathan Richards,nathan.richards@yahoo.com,370-899-9173,Denver,74.9,Bronze
+CUST-00242,Alyssa Gutierrez,alyssa.gutierrez@gmail.com,(335)969-7252,San Francisco,333.37,Silver
+CUST-00243,Marvin Hatfield,marvin.hatfield@yahoo.com,+1-800-874-3292x7129,Boston,251.21,Silver
+CUST-00244,Richard Sanford,richard.sanford@yahoo.com,2082350583,Austin,552.62,Silver
+CUST-00245,Courtney Wright,courtney.wright@hotmail.com,(642)916-8942x104,Seattle,76.27,Bronze
+CUST-00246,Jessica Carlson,jessica.carlson@yahoo.com,(425)375-3260x33230,Austin,507.04,Silver
+CUST-00247,Michael Santos,michael.santos@gmail.com,(848)390-9010x0167,Austin,523.99,Silver
+CUST-00248,Amy Wells,amy.wells@gmail.com,404.861.8499,Chicago,445.13,Silver
+CUST-00249,Maria Garcia,maria.garcia@hotmail.com,+1-714-811-7393x483,San Francisco,249.45,Silver
+CUST-00250,Kenneth Williams,kenneth.williams@yahoo.com,975.430.0119,Denver,15.18,Bronze
+CUST-00251,Stacy Chan,stacy.chan@gmail.com,001-714-737-4470x1204,San Francisco,121.18,Bronze
+CUST-00252,Ronald Wilson,ronald.wilson@gmail.com,7227557941,Denver,405.36,Silver
+CUST-00253,Ian Morales,ian.morales@yahoo.com,967-962-1202x169,Boston,190.04,Bronze
+CUST-00254,Howard James,howard.james@yahoo.com,+1-202-577-1670x145,Austin,277.66,Silver
+CUST-00255,Tiffany Santiago,tiffany.santiago@yahoo.com,489.916.3756x28900,Chicago,337.09,Silver
+CUST-00256,Melissa Booth,melissa.booth@gmail.com,001-975-935-4083x86631,Denver,1056.51,Gold
+CUST-00257,Laurie West,laurie.west@yahoo.com,351.670.1660x880,Denver,614.25,Gold
+CUST-00258,Pamela Hart,pamela.hart@hotmail.com,+1-375-350-3758x99757,Boston,54.87,Bronze
+CUST-00259,Katherine Walker,katherine.walker@yahoo.com,(648)585-1027x261,Seattle,505.59,Silver
+CUST-00260,Jacob Conrad,jacob.conrad@yahoo.com,973.951.6091,Seattle,198.71,Bronze
+CUST-00261,Dominique Blanchard,dominique.blanchard@gmail.com,308.808.6978x2922,Denver,1381.45,Platinum
+CUST-00262,Diane Obrien,diane.obrien@yahoo.com,666.793.4654x72269,Chicago,517.73,Silver
+CUST-00263,Jennifer Walls,jennifer.walls@hotmail.com,733.394.5228,Chicago,754.26,Gold
+CUST-00264,Kathleen Hart,kathleen.hart@hotmail.com,001-868-446-0810,Chicago,26.13,Bronze
+CUST-00265,Brian Brown,brian.brown@yahoo.com,001-524-842-0438x05719,Chicago,1874.03,Platinum
+CUST-00266,John Mueller,john.mueller@hotmail.com,506-766-5800x4397,Seattle,867.92,Gold
+CUST-00267,Kari Payne,kari.payne@hotmail.com,334.872.1228,New York,288.48,Silver
+CUST-00268,Billy Ramirez,billy.ramirez@yahoo.com,(429)740-5720,Boston,400.76,Silver
+CUST-00269,Candice Ayala,candice.ayala@hotmail.com,+1-347-498-5158x328,Boston,551.35,Silver
+CUST-00270,Robert Herrera,robert.herrera@gmail.com,(233)355-5439x878,Austin,244.61,Silver
+CUST-00271,Elizabeth Griffin,elizabeth.griffin@hotmail.com,+1-793-905-6164x840,Chicago,495.28,Silver
+CUST-00272,Tommy Phillips,tommy.phillips@hotmail.com,358.511.2880,New York,1019.29,Gold
+CUST-00273,Ellen Ayala,ellen.ayala@hotmail.com,(413)686-1207x50110,Denver,676.44,Gold
+CUST-00274,Angela Andrews,angela.andrews@gmail.com,366-276-6506x180,New York,693.14,Gold
+CUST-00275,Jaclyn Jones,jaclyn.jones@hotmail.com,244-991-4766,Chicago,102.05,Bronze
+CUST-00276,Eric Robinson,eric.robinson@hotmail.com,(884)324-5088x2100,Boston,343.38,Silver
+CUST-00277,Kevin Goodman,kevin.goodman@hotmail.com,(436)282-2239x431,New York,381.8,Silver
+CUST-00278,Melissa Randolph,melissa.randolph@hotmail.com,481.541.4139x755,Denver,73.22,Bronze
+CUST-00279,Craig Harvey,craig.harvey@gmail.com,277-759-4929x95562,Chicago,742.45,Gold
+CUST-00280,John Walker,john.walker@hotmail.com,+1-364-452-5777x5478,Boston,355.85,Silver
+CUST-00281,Debbie Miller,debbie.miller@yahoo.com,(883)541-1080,Seattle,422.24,Silver
+CUST-00282,Rebecca Arnold,rebecca.arnold@hotmail.com,+1-972-356-3942,Denver,1014.15,Gold
+CUST-00283,Randy Shaw,randy.shaw@hotmail.com,492.982.7229,Seattle,774.35,Gold
+CUST-00284,Sheila Williams,sheila.williams@yahoo.com,814.953.0385,Seattle,265.39,Silver
+CUST-00285,Samantha Keith,samantha.keith@gmail.com,+1-351-684-4989x2665,Seattle,280.7,Silver
+CUST-00286,Nicholas Solomon,nicholas.solomon@hotmail.com,(655)577-9082x7231,Chicago,627.55,Gold
+CUST-00287,Edward Moore,edward.moore@hotmail.com,001-813-265-1777x392,Austin,284.08,Silver
+CUST-00288,John Anderson,john.anderson@hotmail.com,(428)809-2024,Denver,142.8,Bronze
+CUST-00289,Carol Elliott,carol.elliott@gmail.com,001-441-637-9772x3692,Boston,161.15,Bronze
+CUST-00290,Gary Jennings,gary.jennings@yahoo.com,+1-891-436-6210x388,Denver,346.51,Silver
+CUST-00291,Catherine Thompson,catherine.thompson@hotmail.com,+1-808-781-1729x806,Boston,138.05,Bronze
+CUST-00292,Nancy Wolfe,nancy.wolfe@yahoo.com,676.959.9162,Austin,51.29,Bronze
+CUST-00293,Katie Kent,katie.kent@gmail.com,898-564-3009x8180,San Francisco,135.25,Bronze
+CUST-00294,Gwendolyn Stewart,gwendolyn.stewart@yahoo.com,726-694-4869,San Francisco,188.36,Bronze
+CUST-00295,Victoria Sanders,victoria.sanders@gmail.com,(488)372-5887x44956,Seattle,52.8,Bronze
+CUST-00296,Julie Griffin,julie.griffin@hotmail.com,(413)886-5890,Chicago,133.35,Bronze
+CUST-00297,Tamara Smith,tamara.smith@gmail.com,(379)261-1435,Boston,89.62,Bronze
+CUST-00298,Jenny Arias,jenny.arias@yahoo.com,+1-584-290-2770x384,Chicago,44.87,Bronze
+CUST-00299,Kristen Dixon,kristen.dixon@hotmail.com,692.805.3021,Austin,195.81,Bronze
+CUST-00300,Michael Foster,michael.foster@hotmail.com,780.711.8489,Austin,256.86,Silver
+CUST-00301,Sylvia Hill,sylvia.hill@hotmail.com,376.390.4268,Chicago,820.1,Gold
+CUST-00302,Wesley Morgan,wesley.morgan@gmail.com,248.994.7697x35779,Austin,1073.48,Gold
+CUST-00303,Darren Jones,darren.jones@hotmail.com,535.665.8804,Seattle,1328.96,Platinum
+CUST-00304,Christopher Nunez,christopher.nunez@yahoo.com,482-575-5394,New York,889.37,Gold
+CUST-00305,Victor Gonzalez,victor.gonzalez@hotmail.com,343.333.3952,Denver,400.78,Silver
+CUST-00306,Samantha Lowe,samantha.lowe@hotmail.com,490.680.7595x7947,Austin,17.66,Bronze
+CUST-00307,Raymond Christensen,raymond.christensen@gmail.com,4869780856,San Francisco,174.61,Bronze
+CUST-00308,Tiffany Wolfe,tiffany.wolfe@yahoo.com,500-636-9155x94284,Austin,879.17,Gold
+CUST-00309,Thomas Austin,thomas.austin@yahoo.com,(976)436-5564,Denver,259.37,Silver
+CUST-00310,Ashley Krause,ashley.krause@hotmail.com,414.938.6632,Boston,611.99,Gold
+CUST-00311,Linda Thompson,linda.thompson@yahoo.com,(288)857-4489,Denver,431.0,Silver
+CUST-00312,Corey Martin,corey.martin@gmail.com,271-875-4558x845,Chicago,316.45,Silver
+CUST-00313,David Dillon,david.dillon@hotmail.com,999.982.4558,San Francisco,272.58,Silver
+CUST-00314,Pamela James,pamela.james@yahoo.com,522.756.9961x125,New York,236.59,Silver
+CUST-00315,Logan Carter,logan.carter@yahoo.com,+1-464-575-9876x220,Boston,526.54,Silver
+CUST-00316,Ebony Shepard,ebony.shepard@hotmail.com,001-313-326-1117x8006,Austin,594.61,Silver
+CUST-00317,Jose Moore,jose.moore@hotmail.com,(743)934-7228x2005,Denver,298.48,Silver
+CUST-00318,Tanner Pitts,tanner.pitts@yahoo.com,+1-872-682-9979,Chicago,1791.96,Platinum
+CUST-00319,Regina Olson,regina.olson@gmail.com,274-456-4240,Seattle,27.3,Bronze
+CUST-00320,Maurice Harrison,maurice.harrison@gmail.com,001-577-840-6493x085,Austin,418.3,Silver
+CUST-00321,Nicole Kim,nicole.kim@gmail.com,(666)634-1638,Boston,27.36,Bronze
+CUST-00322,Deborah Patel,deborah.patel@yahoo.com,(731)222-4179x74973,Boston,266.86,Silver
+CUST-00323,Edwin Booker,edwin.booker@gmail.com,(414)242-7031,Denver,293.7,Silver
+CUST-00324,Tristan Peterson,tristan.peterson@yahoo.com,457.505.1204x6187,New York,150.59,Bronze
+CUST-00325,Paula Wright,paula.wright@yahoo.com,3135673037,San Francisco,122.02,Bronze
+CUST-00326,Thomas Maldonado,thomas.maldonado@yahoo.com,520-888-1474x35031,San Francisco,200.28,Silver
+CUST-00327,Mark Jackson,mark.jackson@yahoo.com,001-416-730-0979,Austin,161.74,Bronze
+CUST-00328,Kelli Wright,kelli.wright@yahoo.com,495-900-5281,Denver,261.34,Silver
+CUST-00329,Jesse Holden,jesse.holden@hotmail.com,001-957-530-6524x07784,Denver,53.46,Bronze
+CUST-00330,Ashley Stephens,ashley.stephens@yahoo.com,001-774-998-2182x7448,New York,637.08,Gold
+CUST-00331,Aaron Little,aaron.little@yahoo.com,001-920-495-9351x8638,New York,4196.34,Platinum
+CUST-00332,Chloe Morris,chloe.morris@hotmail.com,211-881-0220x31731,San Francisco,129.25,Bronze
+CUST-00333,Diane Fox,diane.fox@hotmail.com,001-940-353-9103,New York,698.89,Gold
+CUST-00334,Taylor Fowler,taylor.fowler@yahoo.com,+1-665-309-4801,Boston,33.49,Bronze
+CUST-00335,Shirley Yu,shirley.yu@gmail.com,438-863-3839,New York,1359.6,Platinum
+CUST-00336,Julie Miranda,julie.miranda@hotmail.com,(976)712-2868x528,Chicago,837.5,Gold
+CUST-00337,Rachel Pierce,rachel.pierce@yahoo.com,(766)959-3983x684,Seattle,89.4,Bronze
+CUST-00338,Seth Sanders,seth.sanders@hotmail.com,5495082404,Chicago,303.73,Silver
+CUST-00339,Melissa Smith,melissa.smith@hotmail.com,488-689-9210x752,New York,388.52,Silver
+CUST-00340,Michael Perkins,michael.perkins@gmail.com,341-696-9315x727,Chicago,296.5,Silver
+CUST-00341,Benjamin Stokes,benjamin.stokes@yahoo.com,205-856-6139,San Francisco,670.33,Gold
+CUST-00342,Brian Warren,brian.warren@yahoo.com,+1-992-358-3206,Chicago,434.01,Silver
+CUST-00343,Jeffrey Roberts,jeffrey.roberts@yahoo.com,(625)317-9086,Boston,585.2,Silver
+CUST-00344,Raymond Hamilton,raymond.hamilton@hotmail.com,(527)583-7693,Denver,784.92,Gold
+CUST-00345,Charles Frank,charles.frank@yahoo.com,+1-491-716-6553x55904,San Francisco,66.48,Bronze
+CUST-00346,Christina Branch,christina.branch@yahoo.com,+1-427-603-3521x103,New York,1204.57,Platinum
+CUST-00347,Alexander Benson,alexander.benson@gmail.com,977-405-3833x8848,Seattle,524.03,Silver
+CUST-00348,Heather Barnett,heather.barnett@yahoo.com,001-680-242-0439,Austin,242.37,Silver
+CUST-00349,Steven Landry,steven.landry@gmail.com,(345)410-4636x8157,Boston,114.48,Bronze
+CUST-00350,James Rasmussen,james.rasmussen@hotmail.com,001-700-738-4576x205,Seattle,542.93,Silver
+CUST-00351,Colleen Young,colleen.young@hotmail.com,304-860-8432x562,Boston,140.19,Bronze
+CUST-00352,Abigail Gregory,abigail.gregory@hotmail.com,+1-436-539-2649x57823,Boston,681.23,Gold
+CUST-00353,Michelle Parker,michelle.parker@hotmail.com,226.729.2518x81252,Denver,533.77,Silver
+CUST-00354,Nicole Gutierrez,nicole.gutierrez@yahoo.com,574-523-1220x9949,Denver,73.06,Bronze
+CUST-00355,Jerry Johnson,jerry.johnson@gmail.com,001-472-589-7526x772,Seattle,701.78,Gold
+CUST-00356,Jeremy Ortiz,jeremy.ortiz@gmail.com,563-833-1279x757,San Francisco,357.4,Silver
+CUST-00357,Richard Williams,richard.williams@hotmail.com,(256)599-9880x8177,Boston,223.32,Silver
+CUST-00358,April Foster,april.foster@hotmail.com,6866803476,Seattle,484.27,Silver
+CUST-00359,Steven Henderson,steven.henderson@hotmail.com,4828771812,New York,867.43,Gold
+CUST-00360,Robert Hayes,robert.hayes@gmail.com,793.371.4521x117,Denver,318.18,Silver
+CUST-00361,Alexandria Cruz,alexandria.cruz@hotmail.com,+1-426-286-0259x222,Austin,1472.44,Platinum
+CUST-00362,Robert Collins,robert.collins@yahoo.com,221-923-0940x7778,Boston,1014.76,Gold
+CUST-00363,John Chapman,john.chapman@yahoo.com,567.219.9038x498,Austin,567.89,Silver
+CUST-00364,Jack Brown,jack.brown@yahoo.com,3208994510,Austin,102.19,Bronze
+CUST-00365,Victoria Martin,victoria.martin@yahoo.com,+1-799-882-7950x145,Seattle,1529.72,Platinum
+CUST-00366,Lori Chang,lori.chang@hotmail.com,547-521-4586,San Francisco,445.6,Silver
+CUST-00367,Cheryl Rodriguez,cheryl.rodriguez@hotmail.com,+1-781-479-4695x4899,Seattle,685.53,Gold
+CUST-00368,Christina Crawford,christina.crawford@hotmail.com,+1-577-829-3430x1071,Austin,272.38,Silver
+CUST-00369,Robert Cook,robert.cook@hotmail.com,+1-330-734-4144x8850,Boston,418.94,Silver
+CUST-00370,Matthew Ramsey,matthew.ramsey@hotmail.com,9234557702,San Francisco,873.87,Gold
+CUST-00371,Courtney Mcclain,courtney.mcclain@hotmail.com,776-308-4958x80395,Denver,1242.41,Platinum
+CUST-00372,Tara Ramirez,tara.ramirez@gmail.com,868-329-9629x14504,San Francisco,975.28,Gold
+CUST-00373,Tyler Young,tyler.young@yahoo.com,938-442-1503x1780,Chicago,639.69,Gold
+CUST-00374,James Mclean,james.mclean@hotmail.com,645.221.8230x76810,Seattle,439.11,Silver
+CUST-00375,Gloria Wheeler,gloria.wheeler@gmail.com,670-718-4094x35334,Austin,199.53,Bronze
+CUST-00376,Kendra Lambert,kendra.lambert@yahoo.com,(524)710-9881,Austin,871.57,Gold
+CUST-00377,Andrea Nelson,andrea.nelson@hotmail.com,993-221-4958x7020,Chicago,315.85,Silver
+CUST-00378,Daniel Brown,daniel.brown@yahoo.com,(429)397-9545x3817,San Francisco,734.4,Gold
+CUST-00379,Lisa Gillespie,lisa.gillespie@yahoo.com,674-777-3329,San Francisco,162.61,Bronze
+CUST-00380,Philip Lyons,philip.lyons@hotmail.com,457-370-1715x77245,Seattle,558.57,Silver
+CUST-00381,Richard Klein,richard.klein@gmail.com,981-848-7696x39382,San Francisco,380.16,Silver
+CUST-00382,Carl Clark,carl.clark@hotmail.com,001-966-395-8321,Seattle,1345.97,Platinum
+CUST-00383,Brittany Ford,brittany.ford@hotmail.com,872-746-1919,New York,139.3,Bronze
+CUST-00384,Troy Keller,troy.keller@gmail.com,829.902.2784,Austin,316.75,Silver
+CUST-00385,James Maldonado,james.maldonado@yahoo.com,294-765-1909x8624,Denver,138.69,Bronze
+CUST-00386,Rachel Faulkner,rachel.faulkner@gmail.com,001-885-814-0369x656,Austin,482.18,Silver
+CUST-00387,Ryan Clark,ryan.clark@gmail.com,223.486.5624x2201,Austin,282.54,Silver
+CUST-00388,Jennifer Tucker,jennifer.tucker@yahoo.com,(912)867-9692,New York,58.95,Bronze
+CUST-00389,Andrea Cole,andrea.cole@yahoo.com,626.890.9738,Chicago,248.18,Silver
+CUST-00390,Sara Johnston,sara.johnston@gmail.com,6979519712,Chicago,179.51,Bronze
+CUST-00391,Zachary Mills,zachary.mills@hotmail.com,737-218-9490,Seattle,222.22,Silver
+CUST-00392,Taylor Hunt,taylor.hunt@yahoo.com,001-656-654-4209,Seattle,355.64,Silver
+CUST-00393,Bryan Kennedy,bryan.kennedy@gmail.com,001-304-690-4712,Austin,2576.97,Platinum
+CUST-00394,Johnathan Gilbert,johnathan.gilbert@yahoo.com,901-492-9275x243,Seattle,195.75,Bronze
+CUST-00395,Lauren Atkins,lauren.atkins@yahoo.com,429-527-6637,Boston,287.1,Silver
+CUST-00396,Becky Wilkinson,becky.wilkinson@gmail.com,+1-841-902-7674x7836,San Francisco,145.3,Bronze
+CUST-00397,Jose Moreno,jose.moreno@yahoo.com,7478658018,New York,589.9,Silver
+CUST-00398,Cheryl Pearson,cheryl.pearson@yahoo.com,744-214-9673x93852,San Francisco,72.3,Bronze
+CUST-00399,Emily Decker,emily.decker@gmail.com,(218)517-5344x30091,Seattle,1371.05,Platinum
+CUST-00400,Stephanie Little,stephanie.little@hotmail.com,619-626-9212,Boston,107.14,Bronze
+CUST-00401,Steven Mayer,steven.mayer@hotmail.com,246.654.2140x665,Chicago,618.77,Gold
+CUST-00402,Stephanie Baker,stephanie.baker@yahoo.com,873-596-2712,San Francisco,595.26,Silver
+CUST-00403,Christina Rodriguez,christina.rodriguez@yahoo.com,001-241-201-1947x072,Denver,349.65,Silver
+CUST-00404,Elizabeth Adams,elizabeth.adams@hotmail.com,969-308-7766x18306,San Francisco,1787.05,Platinum
+CUST-00405,Ashley Donovan,ashley.donovan@yahoo.com,246-801-5851x74328,Denver,112.12,Bronze
+CUST-00406,Donna Evans,donna.evans@yahoo.com,257-517-3203,Chicago,216.45,Silver
+CUST-00407,Tracy Brown,tracy.brown@hotmail.com,+1-547-987-0050x5061,San Francisco,21.41,Bronze
+CUST-00408,Shelby Berg,shelby.berg@hotmail.com,(293)510-2707,Seattle,75.9,Bronze
+CUST-00409,Jacqueline Anderson,jacqueline.anderson@gmail.com,+1-504-317-9291x1179,New York,1662.48,Platinum
+CUST-00410,Linda Simmons,linda.simmons@hotmail.com,+1-365-619-8253x09251,Seattle,170.48,Bronze
+CUST-00411,Donald Perry,donald.perry@hotmail.com,(282)973-9021x962,Chicago,472.09,Silver
+CUST-00412,Christopher Smith,christopher.smith@gmail.com,001-594-467-2324x876,Denver,318.78,Silver
+CUST-00413,Cheryl Johnson,cheryl.johnson@gmail.com,001-379-714-5608x331,Denver,20.55,Bronze
+CUST-00414,Michelle Hatfield,michelle.hatfield@hotmail.com,973.440.3127,San Francisco,300.18,Silver
+CUST-00415,Ernest Livingston,ernest.livingston@gmail.com,+1-454-436-4597x0108,Austin,202.46,Silver
+CUST-00416,Kristen Washington,kristen.washington@gmail.com,537-399-5635,New York,145.95,Bronze
+CUST-00417,Mark Garcia,mark.garcia@hotmail.com,(436)831-7970x62397,Denver,307.31,Silver
+CUST-00418,Nathaniel Ellis,nathaniel.ellis@gmail.com,+1-954-835-2090x4217,Denver,45.41,Bronze
+CUST-00419,George Cooper,george.cooper@yahoo.com,+1-929-929-8316x873,Austin,49.64,Bronze
+CUST-00420,Joshua Blair,joshua.blair@hotmail.com,235.869.3929,Boston,536.91,Silver
+CUST-00421,Tina Williams,tina.williams@yahoo.com,001-280-868-6717x7318,Chicago,87.71,Bronze
+CUST-00422,Stephanie Anderson,stephanie.anderson@yahoo.com,210.974.2799,Seattle,1355.28,Platinum
+CUST-00423,Steven Taylor,steven.taylor@hotmail.com,(525)370-1658x0464,New York,2311.1,Platinum
+CUST-00424,Christine Rogers,christine.rogers@gmail.com,550.416.5790x55281,New York,382.47,Silver
+CUST-00425,Tina Allen,tina.allen@gmail.com,+1-779-733-5548x6401,Austin,434.49,Silver
+CUST-00426,Shaun Mason,shaun.mason@gmail.com,488.647.9513x7116,Denver,448.54,Silver
+CUST-00427,Susan Jones,susan.jones@gmail.com,912-772-3804x682,Denver,347.7,Silver
+CUST-00428,Robert Rojas,robert.rojas@gmail.com,931-903-8569x5579,Austin,1091.16,Gold
+CUST-00429,Kevin Anderson,kevin.anderson@yahoo.com,(643)975-4025,San Francisco,900.29,Gold
+CUST-00430,Stephanie Montgomery,stephanie.montgomery@gmail.com,001-484-922-2231x059,Austin,178.98,Bronze
+CUST-00431,Jorge Lopez,jorge.lopez@hotmail.com,001-205-852-5782x841,Seattle,42.95,Bronze
+CUST-00432,Sarah Mack,sarah.mack@yahoo.com,320-988-5474x92975,Boston,62.03,Bronze
+CUST-00433,Rachel Taylor,rachel.taylor@hotmail.com,740-269-3751,Denver,119.82,Bronze
+CUST-00434,Cathy Lee,cathy.lee@hotmail.com,843.501.8718,Chicago,153.33,Bronze
+CUST-00435,Tracy Morrison,tracy.morrison@hotmail.com,6567265650,New York,91.89,Bronze
+CUST-00436,Michael Madden,michael.madden@hotmail.com,437-367-4266,Chicago,376.33,Silver
+CUST-00437,Douglas Turner,douglas.turner@hotmail.com,519-461-0646x28792,Chicago,16.21,Bronze
+CUST-00438,Marisa Roberts,marisa.roberts@yahoo.com,2494478730,Austin,541.12,Silver
+CUST-00439,Jose Blanchard,jose.blanchard@hotmail.com,714.962.7301x4719,Austin,169.92,Bronze
+CUST-00440,Ariana Oneill,ariana.oneill@hotmail.com,+1-471-758-9042x90257,Chicago,167.92,Bronze
+CUST-00441,Frank Nelson,frank.nelson@yahoo.com,+1-750-744-8183x2192,San Francisco,561.29,Silver
+CUST-00442,Margaret Cohen,margaret.cohen@yahoo.com,951-889-5202x845,Austin,48.23,Bronze
+CUST-00443,Matthew Bartlett,matthew.bartlett@gmail.com,328.833.8988,Chicago,1174.13,Gold
+CUST-00444,Steven Jones,steven.jones@gmail.com,7754452798,Denver,719.97,Gold
+CUST-00445,Jennifer Johnson,jennifer.johnson@gmail.com,822.334.2321,Seattle,502.03,Silver
+CUST-00446,Chris Hampton,chris.hampton@yahoo.com,6312089071,Chicago,264.13,Silver
+CUST-00447,Carl Contreras,carl.contreras@gmail.com,493-693-2501,Seattle,129.59,Bronze
+CUST-00448,Stacy Bailey,stacy.bailey@gmail.com,293.389.1190x83342,Chicago,1090.7,Gold
+CUST-00449,Sandra Knapp,sandra.knapp@hotmail.com,859.327.1256x6383,Denver,84.04,Bronze
+CUST-00450,Kathleen Edwards,kathleen.edwards@yahoo.com,782-975-4801,New York,96.64,Bronze
+CUST-00451,Darrell Campbell,darrell.campbell@hotmail.com,001-247-938-6463x1752,San Francisco,421.79,Silver
+CUST-00452,Emily Sanders,emily.sanders@hotmail.com,+1-811-326-6912x15353,Denver,393.96,Silver
+CUST-00453,Jesse Coleman,jesse.coleman@yahoo.com,499-946-5796x784,San Francisco,275.24,Silver
+CUST-00454,Daniel King,daniel.king@yahoo.com,820.710.1702,Austin,540.12,Silver
+CUST-00455,Eric Howell,eric.howell@gmail.com,001-218-277-3477x84858,Boston,246.76,Silver
+CUST-00456,Vicki Beard,vicki.beard@gmail.com,(875)467-7002x8427,San Francisco,327.34,Silver
+CUST-00457,Larry Price,larry.price@gmail.com,001-278-889-7782,Austin,274.12,Silver
+CUST-00458,Jose Garza,jose.garza@yahoo.com,+1-254-750-0902x559,Seattle,33.3,Bronze
+CUST-00459,Oscar Patterson,oscar.patterson@yahoo.com,(250)733-3491x14152,Austin,611.82,Gold
+CUST-00460,Benjamin Barrett,benjamin.barrett@yahoo.com,001-886-840-7905,Seattle,144.68,Bronze
+CUST-00461,Marcus Davis,marcus.davis@yahoo.com,735-878-5294,New York,131.99,Bronze
+CUST-00462,James Reid,james.reid@gmail.com,+1-334-340-4963,Boston,828.44,Gold
+CUST-00463,Brittany Nelson,brittany.nelson@hotmail.com,876.635.1484x68536,Seattle,413.07,Silver
+CUST-00464,Colleen Chavez,colleen.chavez@hotmail.com,(808)229-7374,New York,3505.81,Platinum
+CUST-00465,Alexa Diaz,alexa.diaz@gmail.com,624.666.5136,Boston,790.23,Gold
+CUST-00466,Debbie Scott,debbie.scott@hotmail.com,963.912.3034,Seattle,33.48,Bronze
+CUST-00467,Anita Graham,anita.graham@hotmail.com,4322420448,Denver,101.67,Bronze
+CUST-00468,Tamara Tucker,tamara.tucker@gmail.com,8154941651,Seattle,489.36,Silver
+CUST-00469,Joel Duncan,joel.duncan@hotmail.com,389-784-7139,San Francisco,105.12,Bronze
+CUST-00470,Mark Silva,mark.silva@yahoo.com,001-236-932-1234x7649,Seattle,272.62,Silver
+CUST-00471,Amanda Lyons,amanda.lyons@gmail.com,286-573-4257x54090,Denver,319.53,Silver
+CUST-00472,Johnny Cruz,johnny.cruz@hotmail.com,001-551-683-7606x441,New York,300.7,Silver
+CUST-00473,Jason Zamora,jason.zamora@yahoo.com,+1-656-304-1776x5612,Austin,197.44,Bronze
+CUST-00474,Michael Guzman,michael.guzman@hotmail.com,001-357-300-2720x6345,Boston,64.72,Bronze
+CUST-00475,Eric Black,eric.black@hotmail.com,001-329-865-7724x29543,Chicago,195.08,Bronze
+CUST-00476,Michael Long,michael.long@yahoo.com,001-530-608-9317,Boston,322.86,Silver
+CUST-00477,Jacqueline Jackson,jacqueline.jackson@yahoo.com,+1-869-942-1529x108,Boston,1321.78,Platinum
+CUST-00478,Margaret Snyder,margaret.snyder@gmail.com,001-633-544-7626x393,Denver,658.14,Gold
+CUST-00479,Robert Ortiz,robert.ortiz@gmail.com,9443397359,New York,287.99,Silver
+CUST-00480,Alex Anderson,alex.anderson@yahoo.com,001-763-566-9411x800,San Francisco,145.9,Bronze
+CUST-00481,Thomas Gomez,thomas.gomez@hotmail.com,+1-490-604-8964x65280,New York,1595.73,Platinum
+CUST-00482,Geoffrey Vasquez,geoffrey.vasquez@yahoo.com,921.658.6241x502,Austin,915.82,Gold
+CUST-00483,Julie Howe,julie.howe@yahoo.com,294-585-6257x287,Denver,2009.77,Platinum
+CUST-00484,Edgar Hall,edgar.hall@gmail.com,942.376.1707x5877,Boston,930.92,Gold
+CUST-00485,Meghan Camacho,meghan.camacho@gmail.com,(213)442-2849x939,Austin,254.92,Silver
+CUST-00486,Robert Jones,robert.jones@yahoo.com,+1-915-904-1659x15201,Chicago,343.83,Silver
+CUST-00487,Shawn Moses,shawn.moses@hotmail.com,+1-305-809-7592x30450,Seattle,650.58,Gold
+CUST-00488,Christopher Scott,christopher.scott@gmail.com,001-661-403-2664x21476,Boston,277.56,Silver
+CUST-00489,Michael Davis,michael.davis@yahoo.com,437.876.7499x61659,New York,117.42,Bronze
+CUST-00490,Crystal Davis,crystal.davis@hotmail.com,473-427-8814x76174,Seattle,78.19,Bronze
+CUST-00491,Gabrielle Evans,gabrielle.evans@gmail.com,964.690.8108x18661,San Francisco,274.41,Silver
+CUST-00492,Michael Richards,michael.richards@hotmail.com,6177226016,Boston,313.36,Silver
+CUST-00493,Brenda Gibson,brenda.gibson@hotmail.com,294.252.3219x416,New York,1642.82,Platinum
+CUST-00494,Randall Smith,randall.smith@hotmail.com,476.297.4995x6412,Seattle,737.71,Gold
+CUST-00495,James Cabrera,james.cabrera@hotmail.com,303.672.3683,Boston,92.59,Bronze
+CUST-00496,Kayla Hernandez,kayla.hernandez@yahoo.com,5125277707,Seattle,21.2,Bronze
+CUST-00497,Kenneth Gallegos,kenneth.gallegos@yahoo.com,6502166799,Austin,59.03,Bronze
+CUST-00498,Tony Tucker,tony.tucker@hotmail.com,001-897-930-8069x5814,Denver,1113.47,Gold
+CUST-00499,Daryl Dean,daryl.dean@hotmail.com,(576)702-4375x738,Austin,1337.37,Platinum
+CUST-00500,Sandra Castaneda,sandra.castaneda@hotmail.com,+1-472-446-6572x93417,Boston,818.09,Gold
+CUST-00501,James Obrien,james.obrien@gmail.com,(274)333-8005x45228,Austin,1229.05,Platinum
+CUST-00502,Matthew Wilson,matthew.wilson@gmail.com,683-474-5508,San Francisco,334.97,Silver
+CUST-00503,Melissa Russo,melissa.russo@hotmail.com,+1-410-377-1199x18081,San Francisco,256.64,Silver
+CUST-00504,Monica Bartlett,monica.bartlett@gmail.com,001-847-287-1255x2137,Austin,1780.95,Platinum
+CUST-00505,John Lamb,john.lamb@yahoo.com,482-814-5653x2863,Chicago,289.61,Silver
+CUST-00506,Robert Ortiz,robert.ortiz@yahoo.com,250.872.0811x55626,Chicago,232.73,Silver
+CUST-00507,Katherine Keller,katherine.keller@hotmail.com,(790)784-6684,Seattle,334.39,Silver
+CUST-00508,Alan Ramirez,alan.ramirez@hotmail.com,+1-626-373-8997x563,Chicago,912.88,Gold
+CUST-00509,Benjamin Cook,benjamin.cook@hotmail.com,001-228-284-3188x4852,San Francisco,681.62,Gold
+CUST-00510,Pamela Fernandez,pamela.fernandez@yahoo.com,746.381.0548,Denver,256.22,Silver
+CUST-00511,Brandon Curtis,brandon.curtis@gmail.com,749.607.5399x893,Denver,333.93,Silver
+CUST-00512,Justin Glover,justin.glover@hotmail.com,001-526-783-1589,Denver,16.16,Bronze
+CUST-00513,Shawn Thomas,shawn.thomas@yahoo.com,(811)606-2737x15869,Boston,174.58,Bronze
+CUST-00514,Breanna Fields,breanna.fields@yahoo.com,001-376-522-8277x288,Seattle,405.29,Silver
+CUST-00515,Stanley Johnson,stanley.johnson@gmail.com,+1-651-296-1159,Boston,317.69,Silver
+CUST-00516,Alexandra Wilson,alexandra.wilson@yahoo.com,(544)470-2296x044,Chicago,281.21,Silver
+CUST-00517,Lori Burns,lori.burns@gmail.com,+1-951-706-7949,Austin,205.49,Silver
+CUST-00518,Kimberly Alvarez,kimberly.alvarez@hotmail.com,+1-822-887-7725x199,Seattle,662.62,Gold
+CUST-00519,Jesse Foster,jesse.foster@hotmail.com,3743120948,Austin,288.42,Silver
+CUST-00520,James Montgomery,james.montgomery@hotmail.com,001-509-983-7801x82043,San Francisco,931.72,Gold
+CUST-00521,Christopher Ferguson,christopher.ferguson@yahoo.com,(690)370-5626x0856,Boston,137.79,Bronze
+CUST-00522,Danny Garcia,danny.garcia@gmail.com,222-241-2462x0952,Austin,134.7,Bronze
+CUST-00523,Kenneth Garcia,kenneth.garcia@gmail.com,(854)361-0339x93788,Denver,253.03,Silver
+CUST-00524,Joseph Flores,joseph.flores@hotmail.com,(617)806-3048x91382,San Francisco,629.4,Gold
+CUST-00525,Sean Mathis,sean.mathis@hotmail.com,925.282.3868,Boston,1116.06,Gold
+CUST-00526,Aaron Marshall,aaron.marshall@hotmail.com,620-207-4946x5398,Austin,234.55,Silver
+CUST-00527,Evan Ferguson,evan.ferguson@gmail.com,616-912-8463x9855,Boston,722.45,Gold
+CUST-00528,Joshua Bates,joshua.bates@yahoo.com,937-895-0209x70026,Boston,1794.21,Platinum
+CUST-00529,Amanda Cobb,amanda.cobb@hotmail.com,+1-318-907-1569x5620,Austin,1521.33,Platinum
+CUST-00530,Mitchell Lee,mitchell.lee@gmail.com,504.953.1943,Chicago,328.98,Silver
+CUST-00531,Tammy Johnson,tammy.johnson@yahoo.com,001-593-403-6149x872,Seattle,196.56,Bronze
+CUST-00532,Cameron Anderson,cameron.anderson@gmail.com,(649)938-4308,New York,947.84,Gold
+CUST-00533,Aaron Simmons,aaron.simmons@hotmail.com,+1-505-266-4187x7580,Austin,62.27,Bronze
+CUST-00534,Joshua Fisher,joshua.fisher@yahoo.com,706-635-1903x61332,Austin,21.96,Bronze
+CUST-00535,Bryan Garrett,bryan.garrett@gmail.com,560.395.4317x3505,Chicago,252.42,Silver
+CUST-00536,Kimberly Harvey,kimberly.harvey@gmail.com,+1-279-611-0065x1207,Boston,1592.3,Platinum
+CUST-00537,Cheryl Reynolds,cheryl.reynolds@gmail.com,+1-908-804-6619x63990,New York,300.26,Silver
+CUST-00538,Steven Patterson,steven.patterson@hotmail.com,+1-315-507-8593x110,San Francisco,201.0,Silver
+CUST-00539,Rebecca Martinez,rebecca.martinez@hotmail.com,656-879-7232x002,Boston,242.99,Silver
+CUST-00540,William Pearson,william.pearson@yahoo.com,498-222-7495x4508,New York,874.03,Gold
+CUST-00541,John Fuentes,john.fuentes@hotmail.com,9659333153,Denver,519.88,Silver
+CUST-00542,Carol Rivera,carol.rivera@hotmail.com,001-259-946-5217,Seattle,230.12,Silver
+CUST-00543,Jeffrey Smith,jeffrey.smith@gmail.com,001-237-793-3756x362,San Francisco,458.54,Silver
+CUST-00544,Alejandro Howard,alejandro.howard@hotmail.com,524-573-9500,Denver,316.2,Silver
+CUST-00545,Justin Robinson,justin.robinson@yahoo.com,001-825-383-2302x4102,Seattle,31.45,Bronze
+CUST-00546,Matthew Clark,matthew.clark@yahoo.com,455.428.9611,New York,135.41,Bronze
+CUST-00547,Laura Lee,laura.lee@yahoo.com,001-455-796-3099x384,Boston,1156.83,Gold
+CUST-00548,John Soto,john.soto@yahoo.com,(489)873-1791,Chicago,633.05,Gold
+CUST-00549,Karen Newman,karen.newman@hotmail.com,(878)272-5587x774,Austin,1739.48,Platinum
+CUST-00550,Jamie Jacobson,jamie.jacobson@yahoo.com,663.346.6925,Denver,466.99,Silver
+CUST-00551,Dennis Miller,dennis.miller@yahoo.com,753.990.7895x67766,Denver,62.67,Bronze
+CUST-00552,Logan Reyes,logan.reyes@gmail.com,534.315.1488x814,Chicago,547.88,Silver
+CUST-00553,David Ward,david.ward@hotmail.com,453.654.4439,New York,36.19,Bronze
+CUST-00554,Alan Evans,alan.evans@yahoo.com,(969)907-8263x3373,Denver,40.99,Bronze
+CUST-00555,Matthew Miller,matthew.miller@gmail.com,(763)777-8052x92407,San Francisco,226.39,Silver
+CUST-00556,Jeremiah Simmons,jeremiah.simmons@yahoo.com,001-884-859-0902x25999,Chicago,140.99,Bronze
+CUST-00557,James Myers,james.myers@hotmail.com,(237)915-9741x2182,Austin,390.55,Silver
+CUST-00558,Anthony Gonzalez,anthony.gonzalez@yahoo.com,833-848-1705x8025,Denver,104.33,Bronze
+CUST-00559,Eric Rodriguez,eric.rodriguez@hotmail.com,(571)963-2346x72994,Chicago,52.02,Bronze
+CUST-00560,Joshua Smith,joshua.smith@gmail.com,216.393.8597x779,Denver,231.97,Silver
+CUST-00561,Keith Ibarra,keith.ibarra@yahoo.com,(446)392-6329x676,Boston,138.99,Bronze
+CUST-00562,Phillip Bautista,phillip.bautista@gmail.com,(348)741-3768,Seattle,84.5,Bronze
+CUST-00563,Charles Garcia,charles.garcia@yahoo.com,(572)843-8070x17656,Austin,472.13,Silver
+CUST-00564,Benjamin King,benjamin.king@hotmail.com,(957)477-1183,Austin,147.66,Bronze
+CUST-00565,Thomas Ramirez,thomas.ramirez@gmail.com,(409)312-4186,New York,1046.28,Gold
+CUST-00566,Emily Smith,emily.smith@yahoo.com,(275)323-0837,Austin,1056.64,Gold
+CUST-00567,Peter Parker,peter.parker@gmail.com,+1-200-263-3533x106,Boston,370.94,Silver
+CUST-00568,Matthew Lee,matthew.lee@hotmail.com,731-722-0681,New York,277.31,Silver
+CUST-00569,Anna Lopez,anna.lopez@gmail.com,+1-466-213-3155,San Francisco,1992.41,Platinum
+CUST-00570,Richard Stewart,richard.stewart@yahoo.com,573.814.9501,San Francisco,473.42,Silver
+CUST-00571,Kevin George,kevin.george@gmail.com,001-789-924-1956x252,Austin,542.49,Silver
+CUST-00572,Carlos Smith,carlos.smith@hotmail.com,568.838.9030x914,Austin,854.83,Gold
+CUST-00573,Katherine Harvey,katherine.harvey@gmail.com,(557)943-2630,Chicago,3333.96,Platinum
+CUST-00574,Jocelyn Murphy,jocelyn.murphy@yahoo.com,508-864-0355x33803,Denver,312.05,Silver
+CUST-00575,Adrienne White,adrienne.white@hotmail.com,3174130232,Chicago,231.11,Silver
+CUST-00576,Brittany Guerra,brittany.guerra@gmail.com,881.467.4233,San Francisco,399.85,Silver
+CUST-00577,Catherine Turner,catherine.turner@hotmail.com,834.471.5662x776,Boston,172.45,Bronze
+CUST-00578,Lori Leon,lori.leon@gmail.com,001-966-614-9828x24674,Denver,498.13,Silver
+CUST-00579,Nicholas Obrien,nicholas.obrien@gmail.com,727-832-3008x57666,San Francisco,18.66,Bronze
+CUST-00580,Tracy Davidson,tracy.davidson@hotmail.com,660-716-9236,Denver,535.98,Silver
+CUST-00581,William Burns,william.burns@hotmail.com,(906)463-3705x024,Boston,1650.52,Platinum
+CUST-00582,Jonathan Guzman,jonathan.guzman@hotmail.com,(501)816-6918,Seattle,630.23,Gold
+CUST-00583,Gabriel Simmons,gabriel.simmons@hotmail.com,588-869-4611x9524,Denver,1070.26,Gold
+CUST-00584,Holly Smith,holly.smith@gmail.com,401.516.8646x2252,San Francisco,687.73,Gold
+CUST-00585,Tom Shaw,tom.shaw@gmail.com,393.423.0234x679,Chicago,435.35,Silver
+CUST-00586,Christopher Miller,christopher.miller@gmail.com,215-209-3771x004,San Francisco,126.23,Bronze
+CUST-00587,Collin Boyd,collin.boyd@gmail.com,(598)747-7596x5555,Chicago,451.47,Silver
+CUST-00588,Elizabeth Gray,elizabeth.gray@gmail.com,(551)707-6209x184,Boston,648.99,Gold
+CUST-00589,Shannon Parks,shannon.parks@yahoo.com,363.705.0505x73976,Denver,499.38,Silver
+CUST-00590,Ronnie Huynh,ronnie.huynh@yahoo.com,+1-616-949-3289x80271,Denver,81.19,Bronze
+CUST-00591,Gary Griffin,gary.griffin@gmail.com,683.533.2116x0256,New York,1066.75,Gold
+CUST-00592,Jennifer Wade,jennifer.wade@hotmail.com,328-771-5399,Boston,33.1,Bronze
+CUST-00593,Nicholas Love,nicholas.love@hotmail.com,001-568-363-3414x1115,Denver,276.58,Silver
+CUST-00594,Ashley Anderson,ashley.anderson@yahoo.com,(590)340-9836x6552,Seattle,219.26,Silver
+CUST-00595,Randall Medina,randall.medina@yahoo.com,324-637-7294x20954,Chicago,57.51,Bronze
+CUST-00596,Wendy Mccarthy,wendy.mccarthy@yahoo.com,+1-837-646-0523x3027,San Francisco,193.02,Bronze
+CUST-00597,Tracey Hopkins,tracey.hopkins@gmail.com,3866567566,Austin,101.92,Bronze
+CUST-00598,Justin Leblanc,justin.leblanc@hotmail.com,+1-461-425-9047,Chicago,709.88,Gold
+CUST-00599,Scott Olson,scott.olson@gmail.com,833.405.9126,San Francisco,355.58,Silver
+CUST-00600,Sara Davis,sara.davis@yahoo.com,(501)285-9626,San Francisco,813.63,Gold
+CUST-00601,David Sanders,david.sanders@yahoo.com,001-392-361-7647x501,San Francisco,1119.29,Gold
+CUST-00602,David May,david.may@hotmail.com,409.899.7419,Austin,1555.33,Platinum
+CUST-00603,Todd Newman,todd.newman@yahoo.com,992-315-1826x0688,San Francisco,632.68,Gold
+CUST-00604,April Richards,april.richards@hotmail.com,+1-413-512-9208x7510,San Francisco,748.87,Gold
+CUST-00605,Denise Miller,denise.miller@yahoo.com,001-601-918-4582x60340,Austin,1497.28,Platinum
+CUST-00606,Donald Henry,donald.henry@yahoo.com,459.588.3103x03243,Chicago,646.37,Gold
+CUST-00607,Brittany Ramirez,brittany.ramirez@hotmail.com,+1-861-484-4626x714,Chicago,900.2,Gold
+CUST-00608,Amanda Jones,amanda.jones@hotmail.com,235-598-9262x566,Boston,519.95,Silver
+CUST-00609,Chris Martinez,chris.martinez@gmail.com,+1-886-515-1554x23401,Austin,1553.75,Platinum
+CUST-00610,Nicholas Garcia,nicholas.garcia@gmail.com,(684)697-1859,Denver,381.7,Silver
+CUST-00611,Catherine Mosley,catherine.mosley@gmail.com,462-458-8967x92408,New York,718.76,Gold
+CUST-00612,Douglas Bradley,douglas.bradley@yahoo.com,9536967275,New York,153.22,Bronze
+CUST-00613,Joshua Patterson,joshua.patterson@hotmail.com,541.346.5111,New York,287.96,Silver
+CUST-00614,Frederick Brown,frederick.brown@hotmail.com,287-506-8277x8816,Boston,637.06,Gold
+CUST-00615,Rhonda Reese,rhonda.reese@hotmail.com,(785)438-9097x28321,San Francisco,410.29,Silver
+CUST-00616,Willie Farley,willie.farley@yahoo.com,662.551.5381x4474,Denver,472.93,Silver
+CUST-00617,Aaron Welch,aaron.welch@yahoo.com,248.907.9705,San Francisco,66.6,Bronze
+CUST-00618,Mark Gomez,mark.gomez@gmail.com,(426)850-1673x188,Chicago,301.95,Silver
+CUST-00619,David Freeman,david.freeman@gmail.com,001-943-476-5456x28417,Seattle,985.29,Gold
+CUST-00620,Donald Burgess,donald.burgess@gmail.com,(531)934-0266x502,Seattle,193.88,Bronze
+CUST-00621,Susan Bird,susan.bird@gmail.com,(478)772-5686x21102,Seattle,127.6,Bronze
+CUST-00622,Vincent Saunders,vincent.saunders@gmail.com,9563906744,New York,469.03,Silver
+CUST-00623,Kathleen Wright,kathleen.wright@gmail.com,001-482-534-1436x3718,Austin,1095.52,Gold
+CUST-00624,Victoria Garza,victoria.garza@hotmail.com,(831)226-0432,San Francisco,486.44,Silver
+CUST-00625,Christina Davis,christina.davis@gmail.com,(668)343-3567x0860,New York,82.75,Bronze
+CUST-00626,Joseph Ramirez,joseph.ramirez@yahoo.com,001-963-650-2000x534,New York,178.32,Bronze
+CUST-00627,Rebekah Garcia,rebekah.garcia@gmail.com,775-754-1108x255,Austin,70.55,Bronze
+CUST-00628,John Hill,john.hill@hotmail.com,(711)629-1093x3711,Chicago,997.2,Gold
+CUST-00629,Jessica Mayo,jessica.mayo@gmail.com,+1-720-723-6848,Chicago,236.44,Silver
+CUST-00630,Shane Love,shane.love@yahoo.com,476-688-0294,San Francisco,514.56,Silver
+CUST-00631,Brandon Knight,brandon.knight@hotmail.com,867.888.1278,Boston,551.54,Silver
+CUST-00632,Richard Nelson,richard.nelson@gmail.com,6296390878,Seattle,259.45,Silver
+CUST-00633,Melissa Phillips,melissa.phillips@yahoo.com,+1-412-630-8340,Boston,598.57,Silver
+CUST-00634,Sara Nelson,sara.nelson@gmail.com,+1-433-881-0595x5184,Austin,493.79,Silver
+CUST-00635,Rachel Phillips,rachel.phillips@gmail.com,+1-505-934-2408x9164,Denver,317.43,Silver
+CUST-00636,Jeffrey Adams,jeffrey.adams@hotmail.com,+1-462-473-6527x1727,Austin,1273.99,Platinum
+CUST-00637,Jacob Henry,jacob.henry@hotmail.com,(340)442-2693,San Francisco,29.97,Bronze
+CUST-00638,Charles Sanchez,charles.sanchez@hotmail.com,(418)520-9166x0100,San Francisco,125.24,Bronze
+CUST-00639,Kayla Adams,kayla.adams@hotmail.com,+1-400-618-5132x797,Austin,1368.1,Platinum
+CUST-00640,Martin Moore,martin.moore@gmail.com,+1-348-810-0184,Denver,217.72,Silver
+CUST-00641,Donald Barr,donald.barr@gmail.com,966.425.4361,Boston,221.02,Silver
+CUST-00642,Vicki Walker,vicki.walker@yahoo.com,(719)451-5109x226,Boston,214.9,Silver
+CUST-00643,Erin Hernandez,erin.hernandez@hotmail.com,+1-749-445-1475x41022,Austin,160.26,Bronze
+CUST-00644,Peter Griffith,peter.griffith@yahoo.com,419-864-2152,New York,1354.26,Platinum
+CUST-00645,Michael Snyder,michael.snyder@yahoo.com,001-969-552-3668x788,Denver,287.9,Silver
+CUST-00646,Patrick Carpenter,patrick.carpenter@yahoo.com,293.713.5030x58721,Boston,122.28,Bronze
+CUST-00647,Michael Atkinson,michael.atkinson@gmail.com,272-886-3330x2126,Boston,424.13,Silver
+CUST-00648,Nathan Miles,nathan.miles@hotmail.com,001-317-592-0252,New York,38.36,Bronze
+CUST-00649,Chris Carroll,chris.carroll@yahoo.com,(927)228-4765,San Francisco,140.61,Bronze
+CUST-00650,Justin Moore,justin.moore@hotmail.com,6926820667,Chicago,710.86,Gold
+CUST-00651,Jenna Henderson,jenna.henderson@gmail.com,318-962-3690x362,Chicago,46.98,Bronze
+CUST-00652,Thomas Delgado,thomas.delgado@yahoo.com,(220)556-3411x1595,Denver,378.56,Silver
+CUST-00653,Julian Weaver,julian.weaver@gmail.com,690.343.8303,Seattle,124.48,Bronze
+CUST-00654,Tiffany Cunningham,tiffany.cunningham@hotmail.com,800.751.4054x6835,Denver,134.37,Bronze
+CUST-00655,Terri Park,terri.park@gmail.com,468-918-2096x79042,Denver,86.84,Bronze
+CUST-00656,Christian Garrett,christian.garrett@hotmail.com,932.428.8985,Seattle,16.28,Bronze
+CUST-00657,Matthew Ward,matthew.ward@yahoo.com,9633399129,Denver,1876.62,Platinum
+CUST-00658,Linda Thomas,linda.thomas@yahoo.com,+1-317-617-5242,Chicago,364.65,Silver
+CUST-00659,Barbara Gomez,barbara.gomez@gmail.com,(974)274-7219,Denver,101.29,Bronze
+CUST-00660,Michael Mitchell,michael.mitchell@yahoo.com,+1-627-258-9551x687,Boston,920.97,Gold
+CUST-00661,Christine Schneider,christine.schneider@hotmail.com,880.321.4629,Chicago,21.74,Bronze
+CUST-00662,Jeffrey Sawyer,jeffrey.sawyer@hotmail.com,357-878-7112,Denver,713.94,Gold
+CUST-00663,Kayla Gonzalez,kayla.gonzalez@yahoo.com,955-297-3714,Seattle,191.05,Bronze
+CUST-00664,Amy Fry,amy.fry@gmail.com,+1-535-290-9605x6730,Chicago,153.77,Bronze
+CUST-00665,Stephanie Sutton,stephanie.sutton@yahoo.com,521-621-4614x768,Chicago,624.17,Gold
+CUST-00666,Jack Brown,jack.brown@yahoo.com,242-535-6778x26596,Seattle,69.29,Bronze
+CUST-00667,Christian Contreras,christian.contreras@hotmail.com,(355)802-7275,New York,306.03,Silver
+CUST-00668,Jose Bowen,jose.bowen@yahoo.com,(479)810-3368,Denver,217.27,Silver
+CUST-00669,Javier Clark,javier.clark@gmail.com,+1-790-755-0448x17766,Seattle,66.96,Bronze
+CUST-00670,Maria Simmons,maria.simmons@yahoo.com,827-865-2892,Seattle,127.7,Bronze
+CUST-00671,Justin Keller,justin.keller@hotmail.com,(349)911-1109x61798,Seattle,34.95,Bronze
+CUST-00672,Wesley Shaffer,wesley.shaffer@hotmail.com,863-837-8613x7157,Denver,1092.38,Gold
+CUST-00673,Adrian Brooks,adrian.brooks@gmail.com,744.744.6306x00025,Boston,346.65,Silver
+CUST-00674,George Armstrong,george.armstrong@yahoo.com,486.839.6096,Austin,478.94,Silver
+CUST-00675,Tiffany Thompson,tiffany.thompson@yahoo.com,526.331.2819x64825,New York,43.24,Bronze
+CUST-00676,Christopher Kim,christopher.kim@hotmail.com,001-592-509-8196x02752,Austin,860.67,Gold
+CUST-00677,Kenneth Nichols,kenneth.nichols@gmail.com,001-364-304-1209x1179,Austin,536.4,Silver
+CUST-00678,Donald Green,donald.green@gmail.com,817-353-6170,Austin,575.79,Silver
+CUST-00679,Tommy Garrett,tommy.garrett@gmail.com,+1-766-757-2240x29901,Austin,49.35,Bronze
+CUST-00680,Timothy Mendez,timothy.mendez@hotmail.com,2284413908,New York,189.95,Bronze
+CUST-00681,Javier Diaz,javier.diaz@gmail.com,5523312447,Chicago,45.57,Bronze
+CUST-00682,Michael Arnold,michael.arnold@yahoo.com,676.486.3423x461,San Francisco,455.55,Silver
+CUST-00683,Laura Mckay,laura.mckay@yahoo.com,(776)394-5919x66395,Seattle,372.69,Silver
+CUST-00684,Shannon Preston,shannon.preston@hotmail.com,896-449-8560x125,San Francisco,230.77,Silver
+CUST-00685,Michael Jones,michael.jones@hotmail.com,(752)551-0505x379,Seattle,355.29,Silver
+CUST-00686,Anna Cruz,anna.cruz@hotmail.com,883.818.4919,Austin,331.94,Silver
+CUST-00687,Louis Flores,louis.flores@gmail.com,4777046117,Austin,62.0,Bronze
+CUST-00688,Brittany Young,brittany.young@gmail.com,209-307-4260x8805,Boston,69.68,Bronze
+CUST-00689,Terry Gallegos,terry.gallegos@yahoo.com,001-644-955-6185x7906,Boston,488.6,Silver
+CUST-00690,Trevor Davidson,trevor.davidson@gmail.com,(491)303-0021x563,Denver,375.67,Silver
+CUST-00691,James Barrera,james.barrera@yahoo.com,+1-600-740-1041,Denver,123.95,Bronze
+CUST-00692,Hailey Conner,hailey.conner@yahoo.com,322-597-1252x967,Austin,1000.53,Gold
+CUST-00693,Becky Stanley,becky.stanley@yahoo.com,273-514-4158x33117,Austin,201.25,Silver
+CUST-00694,Alexander Robinson,alexander.robinson@yahoo.com,671.953.9885,Austin,243.92,Silver
+CUST-00695,Diana Abbott,diana.abbott@gmail.com,(535)367-9836,Boston,59.96,Bronze
+CUST-00696,Joshua Martin,joshua.martin@yahoo.com,001-412-671-1307,Austin,183.63,Bronze
+CUST-00697,Anthony Stanley,anthony.stanley@yahoo.com,(741)281-5632x686,San Francisco,226.0,Silver
+CUST-00698,Scott Wood,scott.wood@gmail.com,+1-866-334-3629x4897,Chicago,537.44,Silver
+CUST-00699,Erin Lucas,erin.lucas@gmail.com,310.609.4318,Austin,46.27,Bronze
+CUST-00700,Jeremy Oliver,jeremy.oliver@hotmail.com,(666)213-4732x3549,Denver,55.15,Bronze
+CUST-00701,Clinton Gordon,clinton.gordon@hotmail.com,+1-274-932-5122x572,Austin,60.7,Bronze
+CUST-00702,Ronnie Smith,ronnie.smith@yahoo.com,520-995-7907,Boston,224.81,Silver
+CUST-00703,Daniel Fuentes,daniel.fuentes@hotmail.com,+1-643-988-2211x45775,Chicago,380.74,Silver
+CUST-00704,Jon Ellis,jon.ellis@yahoo.com,758-997-1480x2632,Seattle,1427.04,Platinum
+CUST-00705,Anthony Lane,anthony.lane@hotmail.com,(753)813-6148x78245,Seattle,194.98,Bronze
+CUST-00706,Brianna Landry,brianna.landry@yahoo.com,330-298-5916x7954,New York,253.05,Silver
+CUST-00707,Victor Jennings,victor.jennings@yahoo.com,+1-228-549-8247x41407,Denver,507.59,Silver
+CUST-00708,Justin Watkins,justin.watkins@gmail.com,440.365.0042x5488,Denver,262.41,Silver
+CUST-00709,Jennifer Thomas,jennifer.thomas@hotmail.com,569.814.3075,Boston,38.77,Bronze
+CUST-00710,Roberto Rasmussen,roberto.rasmussen@gmail.com,449-842-9659x234,San Francisco,427.79,Silver
+CUST-00711,Angela Turner,angela.turner@gmail.com,797-982-6612x8758,San Francisco,64.22,Bronze
+CUST-00712,Michael Owens,michael.owens@yahoo.com,708.406.1294x398,Seattle,122.64,Bronze
+CUST-00713,Christine Yoder,christine.yoder@yahoo.com,3622607870,Boston,311.17,Silver
+CUST-00714,Joseph Andersen,joseph.andersen@gmail.com,491-949-7501x98038,Denver,66.54,Bronze
+CUST-00715,Derek Jacobson,derek.jacobson@hotmail.com,(244)407-9311,Denver,380.64,Silver
+CUST-00716,Cassandra Martinez,cassandra.martinez@gmail.com,331.670.8760,New York,662.11,Gold
+CUST-00717,Richard Mcgrath,richard.mcgrath@gmail.com,+1-449-479-1620,Seattle,130.38,Bronze
+CUST-00718,Lori Sandoval,lori.sandoval@gmail.com,383.977.4419x75466,Austin,854.4,Gold
+CUST-00719,Robert Coleman,robert.coleman@gmail.com,471-996-0940x9705,Denver,782.74,Gold
+CUST-00720,Nicole Ellis,nicole.ellis@gmail.com,(358)483-5868,Seattle,520.74,Silver
+CUST-00721,Diana Bell,diana.bell@hotmail.com,001-857-924-4617,Seattle,26.97,Bronze
+CUST-00722,Catherine White,catherine.white@hotmail.com,484.525.9959x96100,Boston,810.96,Gold
+CUST-00723,Colin Rodriguez,colin.rodriguez@hotmail.com,253.331.2661x0941,San Francisco,28.22,Bronze
+CUST-00724,Scott Brooks,scott.brooks@hotmail.com,5255176298,San Francisco,560.85,Silver
+CUST-00725,Johnny Kim,johnny.kim@yahoo.com,332.568.3190,San Francisco,1160.31,Gold
+CUST-00726,Arthur Taylor,arthur.taylor@gmail.com,(969)781-5287x339,San Francisco,17.76,Bronze
+CUST-00727,Michael Yoder,michael.yoder@gmail.com,676-361-9128,Denver,84.57,Bronze
+CUST-00728,David Hall,david.hall@hotmail.com,+1-450-634-4651,Boston,245.46,Silver
+CUST-00729,Charles Johnston,charles.johnston@hotmail.com,+1-284-769-0819x740,Chicago,622.86,Gold
+CUST-00730,Robert Gonzalez,robert.gonzalez@gmail.com,(238)750-3719,New York,58.31,Bronze
+CUST-00731,Tina Dodson,tina.dodson@hotmail.com,001-791-887-2401x0783,Seattle,124.01,Bronze
+CUST-00732,Tim Harrington,tim.harrington@gmail.com,9002389608,Austin,287.02,Silver
+CUST-00733,Paul Bennett,paul.bennett@gmail.com,(568)521-7195x53560,Chicago,222.95,Silver
+CUST-00734,Christopher Smith,christopher.smith@yahoo.com,001-289-700-3010x2724,Boston,191.46,Bronze
+CUST-00735,Michael Rios,michael.rios@gmail.com,529-967-1114x8375,Seattle,423.1,Silver
+CUST-00736,Jennifer Pugh,jennifer.pugh@hotmail.com,638-345-8810x5697,New York,91.1,Bronze
+CUST-00737,James Taylor,james.taylor@hotmail.com,948.931.5203,Denver,447.86,Silver
+CUST-00738,Stephanie Smith,stephanie.smith@gmail.com,849-864-1049x670,Boston,53.3,Bronze
+CUST-00739,Scott Walker,scott.walker@yahoo.com,(768)604-0850,Austin,503.04,Silver
+CUST-00740,Lisa Garza,lisa.garza@gmail.com,696-460-1864x87699,Austin,435.36,Silver
+CUST-00741,Susan Mcdonald,susan.mcdonald@gmail.com,(804)241-3845,Austin,158.58,Bronze
+CUST-00742,Christina Ward,christina.ward@hotmail.com,990-214-9542x770,Denver,338.17,Silver
+CUST-00743,Steven Church,steven.church@yahoo.com,+1-483-660-9149x8517,San Francisco,267.89,Silver
+CUST-00744,Katie Hill,katie.hill@yahoo.com,(432)929-0310,San Francisco,525.25,Silver
+CUST-00745,Bethany Williams,bethany.williams@hotmail.com,504.740.5809,Seattle,315.04,Silver
+CUST-00746,Daniel Hunter,daniel.hunter@gmail.com,713.735.9561x64205,Boston,180.95,Bronze
+CUST-00747,Theresa Merritt,theresa.merritt@yahoo.com,549.702.5042x9019,Chicago,241.33,Silver
+CUST-00748,William Norman,william.norman@hotmail.com,001-353-569-0261,Seattle,40.35,Bronze
+CUST-00749,Ariana Cuevas,ariana.cuevas@hotmail.com,+1-968-718-0978,Chicago,176.42,Bronze
+CUST-00750,Joseph Huff,joseph.huff@yahoo.com,953.853.7513,Chicago,671.2,Gold
+CUST-00751,Michael Bell,michael.bell@hotmail.com,457-593-7639,Denver,147.78,Bronze
+CUST-00752,Kimberly Russell,kimberly.russell@hotmail.com,+1-929-544-5511x66829,San Francisco,72.52,Bronze
+CUST-00753,Rachel Walter,rachel.walter@gmail.com,(816)248-7120,Austin,633.49,Gold
+CUST-00754,Hannah Fritz,hannah.fritz@gmail.com,386.265.2683x41559,Chicago,77.25,Bronze
+CUST-00755,Charles Mccall,charles.mccall@yahoo.com,(776)947-2298x12099,Seattle,562.33,Silver
+CUST-00756,Nicolas Gonzales,nicolas.gonzales@hotmail.com,001-894-613-4750x9889,Seattle,383.14,Silver
+CUST-00757,Marcus Flores,marcus.flores@gmail.com,(303)768-4995,Boston,753.42,Gold
+CUST-00758,Justin Wilson,justin.wilson@yahoo.com,473.224.4913x4213,New York,242.68,Silver
+CUST-00759,Carmen Williams,carmen.williams@hotmail.com,+1-830-970-5349,Boston,34.45,Bronze
+CUST-00760,Abigail Guerra,abigail.guerra@yahoo.com,317-767-4124,New York,292.08,Silver
+CUST-00761,Linda Garner,linda.garner@gmail.com,001-315-728-5478x1506,New York,906.58,Gold
+CUST-00762,James Grant,james.grant@hotmail.com,9034296334,Seattle,267.39,Silver
+CUST-00763,Todd Lopez,todd.lopez@yahoo.com,423-218-3061x7893,Austin,571.27,Silver
+CUST-00764,Robert Baker,robert.baker@yahoo.com,+1-793-957-8243x4776,Austin,168.81,Bronze
+CUST-00765,Kenneth Robinson,kenneth.robinson@yahoo.com,(975)836-1275x15627,Austin,24.48,Bronze
+CUST-00766,Grace Johnson,grace.johnson@yahoo.com,236.608.5456x67664,San Francisco,99.87,Bronze
+CUST-00767,Todd Robinson,todd.robinson@hotmail.com,3477639283,Seattle,292.36,Silver
+CUST-00768,David Fernandez,david.fernandez@hotmail.com,5617558108,Boston,1150.28,Gold
+CUST-00769,Amanda Galloway,amanda.galloway@hotmail.com,(334)825-5638x3000,New York,273.28,Silver
+CUST-00770,Lacey Williams,lacey.williams@yahoo.com,303-830-4166x2411,New York,140.46,Bronze
+CUST-00771,Andrew Newton,andrew.newton@hotmail.com,+1-621-696-3945x680,Seattle,245.21,Silver
+CUST-00772,Stephen Garcia,stephen.garcia@hotmail.com,001-676-946-1368,New York,241.71,Silver
+CUST-00773,Justin Warner,justin.warner@hotmail.com,560.276.5817,San Francisco,631.34,Gold
+CUST-00774,Ray Hall,ray.hall@yahoo.com,591.345.2118x2379,Chicago,197.28,Bronze
+CUST-00775,Donald Jensen,donald.jensen@yahoo.com,893.207.4645x20599,Chicago,50.75,Bronze
+CUST-00776,Joseph Clark,joseph.clark@hotmail.com,387.853.5778x8116,Boston,69.48,Bronze
+CUST-00777,David Smith,david.smith@hotmail.com,001-812-837-1067x2872,Seattle,112.0,Bronze
+CUST-00778,Albert Wilson,albert.wilson@yahoo.com,001-748-659-5922x4839,Denver,208.42,Silver
+CUST-00779,Thomas Clark,thomas.clark@yahoo.com,001-622-587-0562x2710,Boston,1443.94,Platinum
+CUST-00780,James Davis,james.davis@yahoo.com,610-697-9215x83503,Boston,774.42,Gold
+CUST-00781,Lori Parrish,lori.parrish@hotmail.com,001-545-696-4883x1921,Chicago,63.82,Bronze
+CUST-00782,Gregory Elliott,gregory.elliott@gmail.com,596.359.9949x73203,San Francisco,113.88,Bronze
+CUST-00783,Sarah Mendez,sarah.mendez@gmail.com,(870)951-0287,Seattle,89.66,Bronze
+CUST-00784,Mark Mason,mark.mason@gmail.com,786.366.7548,Denver,494.56,Silver
+CUST-00785,Nicole Wilkinson,nicole.wilkinson@gmail.com,+1-242-768-7741x8652,Chicago,1374.86,Platinum
+CUST-00786,Melissa Townsend,melissa.townsend@yahoo.com,001-563-298-3652x0375,Boston,321.65,Silver
+CUST-00787,Brenda Murphy,brenda.murphy@yahoo.com,280-294-0476x044,Denver,388.28,Silver
+CUST-00788,Michelle Pennington,michelle.pennington@hotmail.com,+1-477-327-8105x0922,Seattle,283.13,Silver
+CUST-00789,Robert Singleton,robert.singleton@gmail.com,705.218.4390x552,Seattle,478.5,Silver
+CUST-00790,Shelia Powell,shelia.powell@hotmail.com,+1-801-438-2412x70493,Seattle,190.68,Bronze
+CUST-00791,Cynthia Wilkinson,cynthia.wilkinson@gmail.com,348-451-5791x9711,Boston,186.0,Bronze
+CUST-00792,Jessica Lopez,jessica.lopez@hotmail.com,+1-202-803-5713x4324,Austin,46.83,Bronze
+CUST-00793,Janice Thompson,janice.thompson@gmail.com,001-656-933-4324,Austin,464.1,Silver
+CUST-00794,Joseph Burns,joseph.burns@hotmail.com,(858)772-0962x893,Denver,159.51,Bronze
+CUST-00795,Debbie Fleming,debbie.fleming@yahoo.com,558.984.1834,New York,210.2,Silver
+CUST-00796,Jose Weeks,jose.weeks@hotmail.com,+1-727-227-9559x69051,New York,182.24,Bronze
+CUST-00797,Erik Alvarez,erik.alvarez@yahoo.com,+1-812-854-2782x0797,Austin,32.25,Bronze
+CUST-00798,Thomas Sanchez,thomas.sanchez@hotmail.com,(695)876-4038x166,San Francisco,816.89,Gold
+CUST-00799,Brittany Martin,brittany.martin@gmail.com,998-839-2250x1425,New York,480.61,Silver
+CUST-00800,Frederick Smith,frederick.smith@gmail.com,324.541.2336,Denver,57.59,Bronze
+CUST-00801,Eric Peters,eric.peters@yahoo.com,9728517863,Seattle,333.32,Silver
+CUST-00802,Marie Mccarthy,marie.mccarthy@gmail.com,(925)226-5469x6815,Austin,405.73,Silver
+CUST-00803,Jeffrey Franklin,jeffrey.franklin@gmail.com,(555)280-9961x327,Denver,619.32,Gold
+CUST-00804,Jason Graham,jason.graham@yahoo.com,(826)324-4670x4622,New York,283.81,Silver
+CUST-00805,Steven Miller,steven.miller@hotmail.com,001-816-802-5298x6707,Denver,396.52,Silver
+CUST-00806,Kelsey Turner,kelsey.turner@yahoo.com,001-819-378-5758x5126,Chicago,189.56,Bronze
+CUST-00807,Edward Rogers,edward.rogers@hotmail.com,001-643-289-7607,Austin,328.15,Silver
+CUST-00808,David Burns,david.burns@yahoo.com,6954465408,New York,284.45,Silver
+CUST-00809,Kelly Butler,kelly.butler@yahoo.com,440-491-5086x32181,Denver,1047.25,Gold
+CUST-00810,Cynthia Jordan,cynthia.jordan@yahoo.com,(479)338-9701x550,San Francisco,1832.57,Platinum
+CUST-00811,Patrick Baird,patrick.baird@gmail.com,546-260-2416x13944,New York,331.03,Silver
+CUST-00812,Nicholas Kennedy,nicholas.kennedy@yahoo.com,524-280-9624x406,Chicago,32.97,Bronze
+CUST-00813,Kimberly Sandoval,kimberly.sandoval@yahoo.com,679-951-3305x319,Boston,274.12,Silver
+CUST-00814,Brianna Walters,brianna.walters@yahoo.com,+1-967-480-5555,Austin,349.12,Silver
+CUST-00815,Steven Newton,steven.newton@gmail.com,+1-726-346-0917,Seattle,92.79,Bronze
+CUST-00816,Jared Mercer,jared.mercer@yahoo.com,845-877-0299x2959,San Francisco,1140.12,Gold
+CUST-00817,Wendy Johnson,wendy.johnson@yahoo.com,+1-373-868-2691,Austin,251.5,Silver
+CUST-00818,Jeffery Gay,jeffery.gay@hotmail.com,322-768-6536x9455,San Francisco,526.2,Silver
+CUST-00819,Wayne Patel,wayne.patel@gmail.com,(477)347-2264x0857,New York,715.64,Gold
+CUST-00820,Patrick Delgado,patrick.delgado@yahoo.com,(730)593-2998x19960,Boston,198.35,Bronze
+CUST-00821,Garrett Garrett,garrett.garrett@hotmail.com,950-796-8832,San Francisco,59.67,Bronze
+CUST-00822,Jennifer Allen,jennifer.allen@yahoo.com,001-935-524-1039x773,Boston,234.91,Silver
+CUST-00823,Laura Kaufman,laura.kaufman@hotmail.com,+1-819-352-3710x0687,San Francisco,593.88,Silver
+CUST-00824,Krista Rosario,krista.rosario@hotmail.com,+1-819-280-7704,Boston,1516.06,Platinum
+CUST-00825,Michael Moran,michael.moran@hotmail.com,+1-476-511-2491x2565,Seattle,944.6,Gold
+CUST-00826,Laura Clark,laura.clark@gmail.com,217-473-4547x57494,San Francisco,53.26,Bronze
+CUST-00827,Earl Roberts,earl.roberts@gmail.com,(495)444-2947x742,Boston,83.62,Bronze
+CUST-00828,Catherine Villarreal,catherine.villarreal@yahoo.com,+1-830-939-4290x4588,San Francisco,182.13,Bronze
+CUST-00829,Christine Jackson,christine.jackson@yahoo.com,+1-929-885-8567x2872,Boston,554.51,Silver
+CUST-00830,Alexis Arroyo,alexis.arroyo@yahoo.com,743.932.4913,Austin,77.13,Bronze
+CUST-00831,Stephen Durham,stephen.durham@gmail.com,001-383-235-0615x8148,Boston,1266.3,Platinum
+CUST-00832,Sean Mills,sean.mills@gmail.com,523-337-2094x841,San Francisco,383.34,Silver
+CUST-00833,Rebecca Anderson,rebecca.anderson@yahoo.com,2337399771,Boston,720.87,Gold
+CUST-00834,Kristy Jones,kristy.jones@yahoo.com,971-673-1893,Denver,76.53,Bronze
+CUST-00835,Ashley Perkins,ashley.perkins@gmail.com,001-773-999-7046x9472,Boston,809.63,Gold
+CUST-00836,Willie Bean,willie.bean@yahoo.com,283-754-8847x127,Boston,2654.43,Platinum
+CUST-00837,Patricia Hicks,patricia.hicks@yahoo.com,(421)564-1758,Seattle,59.15,Bronze
+CUST-00838,Kimberly Hines,kimberly.hines@gmail.com,484-558-7149x3925,Boston,262.78,Silver
+CUST-00839,Katie Floyd,katie.floyd@gmail.com,+1-725-487-9643x474,San Francisco,23.28,Bronze
+CUST-00840,Kevin Acosta,kevin.acosta@hotmail.com,674-269-6606x06527,San Francisco,104.45,Bronze
+CUST-00841,Lori Harris,lori.harris@hotmail.com,001-544-950-5665x883,Chicago,203.16,Silver
+CUST-00842,Melissa Rodriguez,melissa.rodriguez@gmail.com,(657)897-0673,Denver,314.73,Silver
+CUST-00843,Brian Brown,brian.brown@yahoo.com,485-674-1721x562,Chicago,4813.65,Platinum
+CUST-00844,Audrey Hoffman,audrey.hoffman@yahoo.com,459.384.8840,Chicago,51.14,Bronze
+CUST-00845,Monica Lyons,monica.lyons@hotmail.com,257-432-5737x55344,Denver,713.28,Gold
+CUST-00846,David Jenkins,david.jenkins@yahoo.com,908.608.5096x0858,Seattle,678.07,Gold
+CUST-00847,Bailey Walters,bailey.walters@hotmail.com,991-581-8281,Denver,618.84,Gold
+CUST-00848,Karen Wang,karen.wang@yahoo.com,277-825-1295x786,Seattle,32.32,Bronze
+CUST-00849,Autumn Smith,autumn.smith@yahoo.com,7039562439,San Francisco,955.79,Gold
+CUST-00850,Desiree Gonzalez,desiree.gonzalez@hotmail.com,(292)432-3421x089,Seattle,78.21,Bronze
+CUST-00851,Amber Blevins,amber.blevins@yahoo.com,333-834-2643x35027,Austin,90.39,Bronze
+CUST-00852,Anthony Dillon,anthony.dillon@hotmail.com,360.377.6336,Chicago,815.96,Gold
+CUST-00853,Tanya Hunter,tanya.hunter@hotmail.com,001-381-723-1795x5633,Denver,456.06,Silver
+CUST-00854,Timothy Hicks,timothy.hicks@yahoo.com,3068661554,Chicago,589.74,Silver
+CUST-00855,Sonya Pearson,sonya.pearson@gmail.com,001-216-470-4502x329,New York,253.09,Silver
+CUST-00856,April Taylor,april.taylor@yahoo.com,001-400-493-4596x26228,Boston,587.17,Silver
+CUST-00857,Michael Buckley,michael.buckley@gmail.com,2732465495,Austin,439.41,Silver
+CUST-00858,Martin Oneal,martin.oneal@gmail.com,001-526-308-6982x2105,Denver,636.21,Gold
+CUST-00859,Robert Jones,robert.jones@yahoo.com,768.772.9047x742,Austin,134.96,Bronze
+CUST-00860,Summer Barnett,summer.barnett@gmail.com,679.332.3822x3116,Chicago,181.63,Bronze
+CUST-00861,John King,john.king@hotmail.com,+1-245-879-8894x25652,Denver,705.39,Gold
+CUST-00862,Crystal Bauer,crystal.bauer@gmail.com,9209326509,Denver,112.06,Bronze
+CUST-00863,Mia Lopez,mia.lopez@hotmail.com,(473)679-4871x4855,Boston,1337.97,Platinum
+CUST-00864,Matthew Wiggins,matthew.wiggins@hotmail.com,515.984.1560x821,Austin,293.69,Silver
+CUST-00865,Maria Martinez,maria.martinez@hotmail.com,425-547-6818x2683,San Francisco,692.54,Gold
+CUST-00866,Kimberly Gonzalez,kimberly.gonzalez@hotmail.com,(489)729-8808x583,Seattle,352.33,Silver
+CUST-00867,Erik Becker,erik.becker@hotmail.com,+1-893-928-9634x0646,Chicago,778.95,Gold
+CUST-00868,Taylor Taylor,taylor.taylor@yahoo.com,2148843991,Denver,432.61,Silver
+CUST-00869,Donald Castillo,donald.castillo@gmail.com,001-836-326-6933x51342,Denver,144.46,Bronze
+CUST-00870,Jessica Willis,jessica.willis@hotmail.com,(637)324-5018,Boston,309.78,Silver
+CUST-00871,Kelsey George,kelsey.george@gmail.com,+1-374-918-9721x54064,San Francisco,378.89,Silver
+CUST-00872,Ronald Jackson,ronald.jackson@hotmail.com,001-874-838-1199x537,New York,574.22,Silver
+CUST-00873,Brian Garcia,brian.garcia@yahoo.com,001-944-585-6451x0173,Seattle,872.22,Gold
+CUST-00874,Brittany Wade,brittany.wade@gmail.com,001-378-399-6986x09191,San Francisco,54.42,Bronze
+CUST-00875,Tammy Allen,tammy.allen@hotmail.com,+1-596-460-5779x80660,Chicago,158.34,Bronze
+CUST-00876,Andrew Bautista,andrew.bautista@gmail.com,960-674-5553x4705,Seattle,86.73,Bronze
+CUST-00877,Kayla Martin,kayla.martin@hotmail.com,001-685-365-2715x59835,Austin,58.29,Bronze
+CUST-00878,Robin Davis,robin.davis@yahoo.com,797-226-3475x57522,Chicago,778.49,Gold
+CUST-00879,Daniel Perkins,daniel.perkins@hotmail.com,001-884-688-2691x311,San Francisco,1214.71,Platinum
+CUST-00880,Dustin Peterson,dustin.peterson@yahoo.com,(426)614-9915x3703,Austin,39.63,Bronze
+CUST-00881,Anthony Walker,anthony.walker@hotmail.com,233.973.2043,Seattle,225.75,Silver
+CUST-00882,Mary Perry,mary.perry@hotmail.com,001-636-728-9696,Austin,2358.43,Platinum
+CUST-00883,Linda Baker,linda.baker@yahoo.com,(335)985-1253x892,San Francisco,129.43,Bronze
+CUST-00884,Amanda Garcia,amanda.garcia@hotmail.com,958.937.4907,San Francisco,1217.01,Platinum
+CUST-00885,Brittany Brown,brittany.brown@gmail.com,7873805721,Denver,579.4,Silver
+CUST-00886,Stephanie Hill,stephanie.hill@yahoo.com,001-509-876-2637x4845,San Francisco,720.26,Gold
+CUST-00887,Douglas Ryan,douglas.ryan@hotmail.com,001-350-890-5911,Chicago,32.58,Bronze
+CUST-00888,Jessica Oconnor,jessica.oconnor@gmail.com,+1-822-807-1511x696,Denver,302.78,Silver
+CUST-00889,Heather Taylor,heather.taylor@yahoo.com,(414)652-6471,Denver,82.24,Bronze
+CUST-00890,Richard Perez,richard.perez@hotmail.com,+1-315-471-8409x0805,Boston,299.94,Silver
+CUST-00891,Aaron Galloway,aaron.galloway@gmail.com,4565409951,Seattle,17.37,Bronze
+CUST-00892,Dana Jimenez,dana.jimenez@hotmail.com,451.429.5927,New York,23.63,Bronze
+CUST-00893,Lisa Wallace,lisa.wallace@hotmail.com,4813441529,Chicago,825.71,Gold
+CUST-00894,Tyler Munoz,tyler.munoz@hotmail.com,578-867-1815x35237,Seattle,1282.73,Platinum
+CUST-00895,Bob Brown,bob.brown@yahoo.com,+1-691-781-5899x88683,Seattle,352.63,Silver
+CUST-00896,Derek Gallagher,derek.gallagher@yahoo.com,+1-866-666-1707x1587,New York,688.6,Gold
+CUST-00897,Tyler Hartman,tyler.hartman@yahoo.com,001-208-203-1499x82508,Chicago,176.24,Bronze
+CUST-00898,Tammy Cruz,tammy.cruz@yahoo.com,+1-506-388-2850,New York,137.57,Bronze
+CUST-00899,Stephen Lopez,stephen.lopez@gmail.com,001-351-637-3990x063,Boston,725.73,Gold
+CUST-00900,Adam Allen,adam.allen@yahoo.com,(563)656-0229,Austin,44.19,Bronze
+CUST-00901,Nicole Henderson,nicole.henderson@hotmail.com,001-643-246-0666x437,Denver,1074.94,Gold
+CUST-00902,Courtney Foster,courtney.foster@hotmail.com,001-672-831-1127x12852,Seattle,360.59,Silver
+CUST-00903,Justin Mitchell,justin.mitchell@hotmail.com,911-963-1873x280,Boston,340.97,Silver
+CUST-00904,Daniel Perez,daniel.perez@yahoo.com,(911)236-9572,Chicago,585.5,Silver
+CUST-00905,Elizabeth Gordon,elizabeth.gordon@gmail.com,001-835-809-0254x25730,San Francisco,267.35,Silver
+CUST-00906,Eric Carter,eric.carter@gmail.com,623.457.0713,Seattle,210.81,Silver
+CUST-00907,Douglas Brandt,douglas.brandt@gmail.com,716-288-0925,Seattle,257.47,Silver
+CUST-00908,Douglas Garcia,douglas.garcia@gmail.com,2603906913,Boston,511.47,Silver
+CUST-00909,Andrew Holloway,andrew.holloway@yahoo.com,001-664-796-7379,Seattle,1668.82,Platinum
+CUST-00910,Tina Fields,tina.fields@yahoo.com,(678)453-2426,New York,1394.81,Platinum
+CUST-00911,Micheal Smith,micheal.smith@yahoo.com,(507)868-3625,Seattle,333.56,Silver
+CUST-00912,Robert Butler,robert.butler@hotmail.com,576.575.5562x833,Seattle,378.5,Silver
+CUST-00913,Ashley Gould,ashley.gould@hotmail.com,+1-995-678-6543x62718,Austin,944.78,Gold
+CUST-00914,Rebecca Sosa,rebecca.sosa@hotmail.com,(803)435-8268x62703,New York,469.36,Silver
+CUST-00915,Joshua Reese,joshua.reese@hotmail.com,001-226-393-2657x32759,San Francisco,146.65,Bronze
+CUST-00916,Kristin Miller,kristin.miller@gmail.com,3517553234,New York,213.79,Silver
+CUST-00917,Cindy Stewart,cindy.stewart@yahoo.com,852.444.1822x2618,New York,205.27,Silver
+CUST-00918,Anna Fuller,anna.fuller@hotmail.com,431-227-1026x767,Boston,496.65,Silver
+CUST-00919,Brenda Huerta,brenda.huerta@yahoo.com,399.427.0795x515,New York,679.3,Gold
+CUST-00920,Dennis Evans,dennis.evans@yahoo.com,(213)854-1597,Boston,651.02,Gold
+CUST-00921,Victoria Diaz,victoria.diaz@yahoo.com,584.680.7520,Chicago,35.41,Bronze
+CUST-00922,Jose Ferrell,jose.ferrell@yahoo.com,2472158029,Seattle,200.99,Silver
+CUST-00923,Kevin Gonzalez,kevin.gonzalez@yahoo.com,(660)546-5586x6525,Boston,101.62,Bronze
+CUST-00924,Tracy Adams,tracy.adams@yahoo.com,+1-515-381-0213x12512,Denver,534.38,Silver
+CUST-00925,Michelle Smith,michelle.smith@gmail.com,001-559-312-9751x9102,Boston,308.0,Silver
+CUST-00926,Jacob Higgins,jacob.higgins@gmail.com,5639301658,Chicago,765.89,Gold
+CUST-00927,Lisa Erickson,lisa.erickson@yahoo.com,+1-527-649-0728x012,New York,581.52,Silver
+CUST-00928,Douglas Weaver,douglas.weaver@gmail.com,001-811-632-5326x949,Austin,31.96,Bronze
+CUST-00929,Jeffery King,jeffery.king@yahoo.com,001-838-304-4210x1750,Chicago,35.16,Bronze
+CUST-00930,Emily Roach,emily.roach@yahoo.com,7159959194,Chicago,991.37,Gold
+CUST-00931,Michael Shepherd,michael.shepherd@yahoo.com,947.758.3392x0567,San Francisco,1233.88,Platinum
+CUST-00932,Sandra Mathis,sandra.mathis@yahoo.com,877.722.6602x562,Seattle,243.54,Silver
+CUST-00933,Alexis Moody,alexis.moody@hotmail.com,(429)623-1067,Denver,367.41,Silver
+CUST-00934,Matthew Smith,matthew.smith@yahoo.com,(848)843-3797,San Francisco,31.79,Bronze
+CUST-00935,Stacey Moore,stacey.moore@hotmail.com,5519157942,Boston,110.44,Bronze
+CUST-00936,Linda Butler,linda.butler@gmail.com,725-449-6919x2845,San Francisco,906.68,Gold
+CUST-00937,Mike Waller,mike.waller@gmail.com,9756633535,New York,918.79,Gold
+CUST-00938,Angela Ray,angela.ray@yahoo.com,001-932-259-3993x379,San Francisco,158.61,Bronze
+CUST-00939,Lawrence Gilmore,lawrence.gilmore@yahoo.com,001-629-451-8779x41763,Denver,221.5,Silver
+CUST-00940,Michael Strickland,michael.strickland@yahoo.com,630.755.9782,Austin,626.94,Gold
+CUST-00941,Todd Edwards,todd.edwards@hotmail.com,639.591.4038,Austin,201.33,Silver
+CUST-00942,Krystal Henderson,krystal.henderson@gmail.com,843-424-0061x5727,Chicago,323.51,Silver
+CUST-00943,Brittney Blake,brittney.blake@gmail.com,374-239-7429x250,Austin,221.02,Silver
+CUST-00944,Mindy Tran,mindy.tran@yahoo.com,(756)280-6562,Denver,344.61,Silver
+CUST-00945,Dawn Nguyen,dawn.nguyen@hotmail.com,3804271122,Denver,53.8,Bronze
+CUST-00946,Shelby Young,shelby.young@yahoo.com,(851)465-1768x086,Austin,52.0,Bronze
+CUST-00947,Amy Davis,amy.davis@gmail.com,221.243.3080x037,Seattle,2408.17,Platinum
+CUST-00948,Jeffery Hall,jeffery.hall@gmail.com,(985)256-6084,Chicago,369.83,Silver
+CUST-00949,Elizabeth Terry,elizabeth.terry@hotmail.com,203-790-3397,San Francisco,63.71,Bronze
+CUST-00950,Jacqueline Perkins,jacqueline.perkins@yahoo.com,426.532.8094x48586,San Francisco,501.68,Silver
+CUST-00951,Karen Scott,karen.scott@gmail.com,246-814-7079x86321,San Francisco,280.7,Silver
+CUST-00952,Linda Newton,linda.newton@gmail.com,594.639.4570,Boston,264.9,Silver
+CUST-00953,Jay Johnson,jay.johnson@gmail.com,425.937.6576,Boston,279.07,Silver
+CUST-00954,Timothy Carlson,timothy.carlson@hotmail.com,619.210.0900,Austin,34.48,Bronze
+CUST-00955,Kevin James,kevin.james@hotmail.com,(610)853-3651,Denver,1106.68,Gold
+CUST-00956,Desiree Evans,desiree.evans@gmail.com,442-247-3107,Seattle,2846.8,Platinum
+CUST-00957,Daniel Hardy,daniel.hardy@yahoo.com,001-584-340-9712,San Francisco,474.08,Silver
+CUST-00958,Raymond Bennett,raymond.bennett@gmail.com,667.262.0901x4473,Denver,1344.6,Platinum
+CUST-00959,Emily Richmond,emily.richmond@gmail.com,270.609.6873,New York,515.52,Silver
+CUST-00960,Michael George,michael.george@yahoo.com,882.755.8825x5629,Austin,218.16,Silver
+CUST-00961,Taylor Reed,taylor.reed@yahoo.com,(478)765-6194,Denver,638.65,Gold
+CUST-00962,Sandy Brewer,sandy.brewer@yahoo.com,001-882-305-8295x82923,Chicago,1388.91,Platinum
+CUST-00963,Madeline Gilmore,madeline.gilmore@hotmail.com,+1-508-719-0482,Chicago,864.73,Gold
+CUST-00964,Tracy Nguyen,tracy.nguyen@yahoo.com,+1-568-963-9561,Boston,699.05,Gold
+CUST-00965,Eric Benson,eric.benson@gmail.com,001-308-517-2143x643,New York,75.72,Bronze
+CUST-00966,Andrew Johnson,andrew.johnson@gmail.com,821.214.7165,Chicago,693.33,Gold
+CUST-00967,Heidi Evans,heidi.evans@yahoo.com,(934)769-9799x070,San Francisco,217.34,Silver
+CUST-00968,Michael Scott,michael.scott@yahoo.com,(981)669-9570x6071,Seattle,29.81,Bronze
+CUST-00969,Amy Miller,amy.miller@hotmail.com,001-917-565-3970x548,Chicago,526.43,Silver
+CUST-00970,Christina Davis,christina.davis@hotmail.com,(690)887-1827,San Francisco,224.36,Silver
+CUST-00971,Laurie Nichols,laurie.nichols@hotmail.com,4492187274,Denver,51.0,Bronze
+CUST-00972,Kelly Rivera,kelly.rivera@gmail.com,+1-521-737-7306x26042,Chicago,354.24,Silver
+CUST-00973,Michelle Silva,michelle.silva@yahoo.com,271.912.2299,Austin,184.85,Bronze
+CUST-00974,Tyler Bauer,tyler.bauer@yahoo.com,8858816704,San Francisco,144.22,Bronze
+CUST-00975,Carl Miller,carl.miller@hotmail.com,(576)983-2102x192,New York,26.81,Bronze
+CUST-00976,Donna Gardner,donna.gardner@hotmail.com,671-429-6180x332,Chicago,326.06,Silver
+CUST-00977,Julie Myers,julie.myers@yahoo.com,6804184980,Austin,1116.65,Gold
+CUST-00978,Luis Sanchez,luis.sanchez@yahoo.com,337.477.3126,New York,151.58,Bronze
+CUST-00979,Elizabeth Hodge,elizabeth.hodge@gmail.com,001-817-281-9236x53460,San Francisco,562.89,Silver
+CUST-00980,Monica Norman,monica.norman@gmail.com,856.479.3279,Chicago,2542.73,Platinum
+CUST-00981,John Boyd,john.boyd@yahoo.com,001-616-990-6181x20546,San Francisco,547.85,Silver
+CUST-00982,Debra Hatfield,debra.hatfield@yahoo.com,489-954-7876x9899,Austin,115.51,Bronze
+CUST-00983,Matthew Holt,matthew.holt@yahoo.com,+1-589-714-4449,Chicago,877.26,Gold
+CUST-00984,Sara Nguyen,sara.nguyen@gmail.com,001-635-843-5864,Austin,100.29,Bronze
+CUST-00985,Elizabeth Lopez,elizabeth.lopez@hotmail.com,(443)358-8537,Boston,280.04,Silver
+CUST-00986,Jenny Walter,jenny.walter@hotmail.com,939.652.7536,New York,763.55,Gold
+CUST-00987,Sarah Stevens,sarah.stevens@yahoo.com,(249)314-1686,Denver,1954.78,Platinum
+CUST-00988,Jacob Villa,jacob.villa@yahoo.com,389.948.9634x067,Boston,207.07,Silver
+CUST-00989,Samuel Edwards,samuel.edwards@gmail.com,(615)400-1418,New York,374.33,Silver
+CUST-00990,Kristen Frost,kristen.frost@hotmail.com,(530)690-0159x44633,San Francisco,1013.75,Gold
+CUST-00991,Sarah Gomez,sarah.gomez@gmail.com,(208)495-3263,Denver,92.12,Bronze
+CUST-00992,Christopher Yang,christopher.yang@yahoo.com,311.236.3379x2234,Boston,1194.79,Gold
+CUST-00993,John Parker,john.parker@hotmail.com,+1-867-233-1167x726,Boston,101.07,Bronze
+CUST-00994,Amber Nelson,amber.nelson@hotmail.com,768.455.0789x6793,San Francisco,334.87,Silver
+CUST-00995,Jade Burke,jade.burke@hotmail.com,+1-962-263-3556x43436,New York,1908.86,Platinum
+CUST-00996,Glenda Elliott,glenda.elliott@hotmail.com,001-917-806-9556x076,Denver,82.28,Bronze
+CUST-00997,Christopher Scott,christopher.scott@gmail.com,254-872-2398x983,Denver,321.57,Silver
+CUST-00998,Michael Hodges,michael.hodges@gmail.com,001-621-498-0418x472,San Francisco,378.37,Silver
+CUST-00999,Michele Ramirez,michele.ramirez@gmail.com,264.428.1319,San Francisco,298.5,Silver
+CUST-01000,Keith Harrison,keith.harrison@yahoo.com,(430)339-1114,Seattle,77.55,Bronze
+CUST-01001,Kimberly Tran,kimberly.tran@yahoo.com,001-222-882-3052x4808,New York,45.6,Bronze
+CUST-01002,Dennis Williams,dennis.williams@gmail.com,(439)359-4737,Austin,3530.28,Platinum
+CUST-01003,Jennifer Martin,jennifer.martin@hotmail.com,001-901-762-0478x76886,Boston,308.11,Silver
+CUST-01004,Kristin Ray,kristin.ray@hotmail.com,(648)362-8720x3195,Austin,674.72,Gold
+CUST-01005,Cassandra Gutierrez,cassandra.gutierrez@yahoo.com,650-857-3036x2792,Denver,399.94,Silver
+CUST-01006,John Smith,john.smith@gmail.com,547.467.7537x260,Chicago,1630.14,Platinum
+CUST-01007,Penny Livingston,penny.livingston@yahoo.com,(905)276-6194x588,Boston,49.68,Bronze
+CUST-01008,Sarah Melton,sarah.melton@yahoo.com,455-634-8201,Austin,527.9,Silver
+CUST-01009,Brian Hicks,brian.hicks@hotmail.com,350.976.5975x95450,San Francisco,76.81,Bronze
+CUST-01010,Katherine Hamilton,katherine.hamilton@hotmail.com,6894812657,Denver,696.9,Gold
+CUST-01011,Douglas Herman,douglas.herman@gmail.com,+1-564-863-0040x236,Boston,413.8,Silver
+CUST-01012,Lauren Ware,lauren.ware@yahoo.com,+1-994-330-1204,Denver,1540.14,Platinum
+CUST-01013,Jeffery Herman,jeffery.herman@gmail.com,+1-771-417-5957x49885,Austin,329.5,Silver
+CUST-01014,Elizabeth Conley,elizabeth.conley@hotmail.com,249.633.0674x58476,Denver,40.65,Bronze
+CUST-01015,Laurie Scott,laurie.scott@gmail.com,+1-733-837-2188,New York,343.51,Silver
+CUST-01016,Julia Barnes,julia.barnes@yahoo.com,813-929-7150x6662,San Francisco,95.96,Bronze
+CUST-01017,Tiffany Cook,tiffany.cook@yahoo.com,843-577-6936,San Francisco,1243.2,Platinum
+CUST-01018,Justin Bishop,justin.bishop@gmail.com,929-359-6111x10286,Chicago,206.11,Silver
+CUST-01019,Sarah Leon,sarah.leon@hotmail.com,+1-220-407-2024x5591,Seattle,1028.89,Gold
+CUST-01020,Patricia Rivera,patricia.rivera@gmail.com,001-310-690-3267,Denver,51.96,Bronze
+CUST-01021,Brittney Gilbert,brittney.gilbert@hotmail.com,394-921-7942,Chicago,468.61,Silver
+CUST-01022,Catherine Barker,catherine.barker@gmail.com,(752)577-5844x6634,Seattle,159.37,Bronze
+CUST-01023,John Hernandez,john.hernandez@gmail.com,4103912172,Boston,177.32,Bronze
+CUST-01024,Justin Cook,justin.cook@yahoo.com,001-537-966-1894,Seattle,59.14,Bronze
+CUST-01025,Diana Diaz,diana.diaz@yahoo.com,951.800.4627,Boston,98.11,Bronze
+CUST-01026,Kristen Huffman,kristen.huffman@yahoo.com,(856)359-2024,Seattle,90.36,Bronze
+CUST-01027,Tommy Mcneil,tommy.mcneil@gmail.com,8232897432,Boston,455.75,Silver
+CUST-01028,Kelli Welch,kelli.welch@hotmail.com,895-550-1783x32584,Seattle,200.36,Silver
+CUST-01029,Ryan Dodson,ryan.dodson@gmail.com,398.948.7045x069,Seattle,33.93,Bronze
+CUST-01030,Maria Butler,maria.butler@yahoo.com,+1-693-859-3744x039,Denver,27.95,Bronze
+CUST-01031,Joseph Schmidt,joseph.schmidt@gmail.com,873.260.6014,New York,1350.19,Platinum
+CUST-01032,Warren Cisneros,warren.cisneros@hotmail.com,790-479-3884x1368,Denver,401.93,Silver
+CUST-01033,Amy Gonzalez,amy.gonzalez@hotmail.com,(815)537-0124x24462,Boston,121.54,Bronze
+CUST-01034,Jessica Ward,jessica.ward@yahoo.com,988-711-2103x1421,Seattle,257.49,Silver
+CUST-01035,David Miranda,david.miranda@hotmail.com,581.679.4151x526,Boston,28.84,Bronze
+CUST-01036,Jessica Bartlett,jessica.bartlett@hotmail.com,001-811-822-5288x37505,Boston,369.93,Silver
+CUST-01037,Dale Hunt,dale.hunt@yahoo.com,923.897.9137,Boston,1427.3,Platinum
+CUST-01038,Marco Wood,marco.wood@gmail.com,8732095055,Austin,141.39,Bronze
+CUST-01039,Tara Atkins,tara.atkins@gmail.com,(919)788-1927,Denver,534.82,Silver
+CUST-01040,David Cochran,david.cochran@hotmail.com,634-786-4010x42462,San Francisco,286.94,Silver
+CUST-01041,Melissa Zavala,melissa.zavala@hotmail.com,(417)344-6004x521,Boston,42.8,Bronze
+CUST-01042,Michael Davis,michael.davis@yahoo.com,001-355-612-9391x30448,Austin,256.74,Silver
+CUST-01043,Rebecca Barrett,rebecca.barrett@gmail.com,(304)961-5402x1190,Austin,117.68,Bronze
+CUST-01044,Brad Pacheco,brad.pacheco@yahoo.com,+1-414-429-8315,Seattle,84.79,Bronze
+CUST-01045,Deborah Carroll,deborah.carroll@gmail.com,+1-507-932-2836x0849,Denver,585.21,Silver
+CUST-01046,Amy Brown,amy.brown@gmail.com,+1-663-584-5269x694,Boston,2006.16,Platinum
+CUST-01047,Christina Preston,christina.preston@hotmail.com,(349)570-1693x42929,San Francisco,1681.78,Platinum
+CUST-01048,David Williams,david.williams@gmail.com,001-801-362-3419x0310,Chicago,658.45,Gold
+CUST-01049,Matthew West,matthew.west@gmail.com,001-715-556-6847x3236,Seattle,386.13,Silver
+CUST-01050,Molly Hodge,molly.hodge@hotmail.com,977.446.0406,San Francisco,139.53,Bronze
+CUST-01051,Bryan Small,bryan.small@gmail.com,001-278-943-6142x4426,New York,155.06,Bronze
+CUST-01052,Kristi Moreno,kristi.moreno@hotmail.com,554.937.3476x427,Chicago,83.33,Bronze
+CUST-01053,Rebecca Smith,rebecca.smith@gmail.com,+1-676-638-8214x5841,New York,169.26,Bronze
+CUST-01054,Julie Smith,julie.smith@hotmail.com,434-943-8998,Austin,913.34,Gold
+CUST-01055,Tiffany Smith,tiffany.smith@gmail.com,586-895-0732x14644,Austin,143.42,Bronze
+CUST-01056,Elizabeth Yu,elizabeth.yu@hotmail.com,001-251-767-9335,Denver,1061.68,Gold
+CUST-01057,Michael Blake,michael.blake@hotmail.com,973-868-0119x23603,Denver,193.5,Bronze
+CUST-01058,Amanda Rodgers,amanda.rodgers@gmail.com,+1-387-623-3351x04096,Seattle,589.65,Silver
+CUST-01059,Dawn Wu,dawn.wu@gmail.com,553-291-1498,Chicago,663.09,Gold
+CUST-01060,Thomas Hill,thomas.hill@gmail.com,+1-807-736-5118x93940,Austin,2496.23,Platinum
+CUST-01061,Sarah Mullins,sarah.mullins@hotmail.com,001-420-519-0432x230,Austin,325.8,Silver
+CUST-01062,Margaret Gonzalez,margaret.gonzalez@yahoo.com,407.339.2013x546,San Francisco,324.56,Silver
+CUST-01063,Martha Moore,martha.moore@yahoo.com,4255082611,New York,1322.1,Platinum
+CUST-01064,Charles Perry,charles.perry@yahoo.com,924.488.8995,Seattle,289.98,Silver
+CUST-01065,Maria Wheeler,maria.wheeler@hotmail.com,001-637-562-9745,Chicago,124.02,Bronze
+CUST-01066,Sara Yates,sara.yates@gmail.com,464.268.7191,San Francisco,37.45,Bronze
+CUST-01067,Jerry Graves,jerry.graves@gmail.com,+1-576-492-0828,San Francisco,322.34,Silver
+CUST-01068,John Williams,john.williams@hotmail.com,+1-313-688-1588,Denver,492.93,Silver
+CUST-01069,Jose Dunn,jose.dunn@gmail.com,9673323182,Austin,166.43,Bronze
+CUST-01070,Robert Schultz,robert.schultz@gmail.com,001-757-424-5000x0001,New York,860.3,Gold
+CUST-01071,Katherine Morton,katherine.morton@hotmail.com,213-471-7850,Austin,79.71,Bronze
+CUST-01072,Vanessa Edwards,vanessa.edwards@hotmail.com,984-644-2182,San Francisco,600.07,Gold
+CUST-01073,Travis Kent,travis.kent@gmail.com,(224)889-0567,Denver,247.32,Silver
+CUST-01074,Tanner Williams,tanner.williams@gmail.com,6434655158,New York,245.31,Silver
+CUST-01075,Richard Hart,richard.hart@gmail.com,(224)983-5505x42960,Seattle,386.3,Silver
+CUST-01076,Brian Clark,brian.clark@yahoo.com,+1-298-679-5098x221,San Francisco,377.56,Silver
+CUST-01077,Laurie Hebert,laurie.hebert@yahoo.com,581-588-0442x877,New York,234.75,Silver
+CUST-01078,Nicholas Gallagher,nicholas.gallagher@hotmail.com,+1-616-843-2126x9428,Austin,665.54,Gold
+CUST-01079,Kenneth Smith,kenneth.smith@yahoo.com,001-825-486-3144x17064,San Francisco,800.14,Gold
+CUST-01080,Michael Christensen,michael.christensen@yahoo.com,5262355824,Seattle,528.31,Silver
+CUST-01081,Elizabeth Harrison,elizabeth.harrison@yahoo.com,(444)689-8803x15388,New York,76.98,Bronze
+CUST-01082,Martin Compton,martin.compton@yahoo.com,+1-505-604-0433x335,New York,240.32,Silver
+CUST-01083,Brenda Stephenson,brenda.stephenson@gmail.com,(532)511-1978x7180,Denver,1961.97,Platinum
+CUST-01084,Brittney Mccoy,brittney.mccoy@gmail.com,932.765.3060x1198,Seattle,1273.22,Platinum
+CUST-01085,Victoria Davis,victoria.davis@hotmail.com,(488)200-2300x91561,Denver,85.11,Bronze
+CUST-01086,John Bennett,john.bennett@yahoo.com,+1-774-449-1609x3659,Seattle,335.2,Silver
+CUST-01087,Norma Jones,norma.jones@hotmail.com,518-894-1843,Seattle,33.49,Bronze
+CUST-01088,Alyssa Cooper,alyssa.cooper@gmail.com,001-426-332-2399,New York,81.32,Bronze
+CUST-01089,John Hill,john.hill@yahoo.com,(511)940-4288x60505,San Francisco,748.26,Gold
+CUST-01090,Selena Patterson,selena.patterson@hotmail.com,2815126003,Seattle,289.78,Silver
+CUST-01091,Michael Sanders,michael.sanders@hotmail.com,406-527-1531,Seattle,1021.27,Gold
+CUST-01092,Jonathan Peterson,jonathan.peterson@gmail.com,(688)626-9177x68293,Chicago,193.85,Bronze
+CUST-01093,Kara Williams,kara.williams@gmail.com,880-287-3543x7882,Seattle,187.58,Bronze
+CUST-01094,Jason Brewer,jason.brewer@hotmail.com,001-310-615-7090x8599,Austin,2115.92,Platinum
+CUST-01095,Justin White,justin.white@gmail.com,001-874-692-6999x699,Boston,847.04,Gold
+CUST-01096,Maria May,maria.may@hotmail.com,001-771-384-2859x6932,Seattle,199.52,Bronze
+CUST-01097,Kelly Barton,kelly.barton@yahoo.com,001-493-823-1234,Denver,335.74,Silver
+CUST-01098,Richard Castro,richard.castro@gmail.com,(690)587-2617x60723,Austin,570.09,Silver
+CUST-01099,Abigail Robinson,abigail.robinson@hotmail.com,+1-895-738-2804x05612,San Francisco,304.87,Silver
+CUST-01100,Anthony Ballard,anthony.ballard@gmail.com,(895)382-6418x6965,New York,221.74,Silver
+CUST-01101,Sandra Robinson,sandra.robinson@hotmail.com,861.423.8595x1434,Boston,67.24,Bronze
+CUST-01102,John Hogan,john.hogan@yahoo.com,340.202.7300x86966,Austin,409.36,Silver
+CUST-01103,Darryl Petty,darryl.petty@yahoo.com,631.313.9500x16809,Denver,1045.65,Gold
+CUST-01104,Kelly Obrien,kelly.obrien@hotmail.com,607-662-8397x62053,Denver,539.2,Silver
+CUST-01105,Andre Simpson,andre.simpson@yahoo.com,+1-746-220-7266x292,New York,423.87,Silver
+CUST-01106,Angela Davis,angela.davis@yahoo.com,001-676-302-9914x0688,San Francisco,1551.03,Platinum
+CUST-01107,Tara Gonzalez,tara.gonzalez@yahoo.com,312.955.2356,Denver,1624.91,Platinum
+CUST-01108,Amy Miller,amy.miller@gmail.com,521.819.2061,Seattle,402.85,Silver
+CUST-01109,John Palmer,john.palmer@hotmail.com,627-678-9561x33718,Boston,38.72,Bronze
+CUST-01110,Joseph Williams,joseph.williams@gmail.com,001-850-626-4801,Austin,99.13,Bronze
+CUST-01111,Justin Brown,justin.brown@yahoo.com,941.467.8127,Boston,589.74,Silver
+CUST-01112,Rose Jones,rose.jones@gmail.com,+1-717-998-2134x8629,Denver,842.96,Gold
+CUST-01113,Kristen Mcdaniel,kristen.mcdaniel@yahoo.com,763.883.1828,Chicago,790.83,Gold
+CUST-01114,Anthony Perez,anthony.perez@yahoo.com,001-507-898-6617x7067,Chicago,29.44,Bronze
+CUST-01115,April Aguirre,april.aguirre@gmail.com,(306)882-1223x552,Boston,67.39,Bronze
+CUST-01116,Erika Keller,erika.keller@gmail.com,001-458-771-4692x18219,New York,276.75,Silver
+CUST-01117,Ashley Novak,ashley.novak@hotmail.com,6892843699,Austin,88.89,Bronze
+CUST-01118,Stephanie Martinez,stephanie.martinez@gmail.com,309-338-6948x42495,Boston,117.61,Bronze
+CUST-01119,Justin Hayes,justin.hayes@hotmail.com,470.271.5238x67673,Seattle,686.19,Gold
+CUST-01120,Sarah Hayes,sarah.hayes@yahoo.com,001-819-917-7987x68299,Austin,942.96,Gold
+CUST-01121,Jennifer Moore,jennifer.moore@gmail.com,289-637-0858x06235,Boston,599.89,Silver
+CUST-01122,Nicole Alvarado,nicole.alvarado@yahoo.com,001-766-795-7900x12482,Boston,81.87,Bronze
+CUST-01123,Joseph White,joseph.white@hotmail.com,(679)863-2594x2328,Chicago,385.35,Silver
+CUST-01124,Maria Walker,maria.walker@gmail.com,+1-491-756-2415,Boston,307.86,Silver
+CUST-01125,Jennifer Randolph,jennifer.randolph@gmail.com,562-392-6933x58951,Austin,184.43,Bronze
+CUST-01126,Ann Myers,ann.myers@yahoo.com,7789468509,Chicago,292.0,Silver
+CUST-01127,Kendra Mitchell,kendra.mitchell@yahoo.com,303.949.1891,Seattle,203.57,Silver
+CUST-01128,Carol Martin,carol.martin@gmail.com,959.334.0153x64154,San Francisco,521.97,Silver
+CUST-01129,Mark Murphy,mark.murphy@gmail.com,525.893.6781,Denver,589.32,Silver
+CUST-01130,Seth Stewart,seth.stewart@gmail.com,+1-342-914-1052x769,Boston,747.54,Gold
+CUST-01131,Anna Jacobs,anna.jacobs@gmail.com,001-770-845-2388x85622,San Francisco,438.81,Silver
+CUST-01132,Robert Sosa,robert.sosa@hotmail.com,767.887.4422x75854,Chicago,1434.49,Platinum
+CUST-01133,Tamara Hogan,tamara.hogan@yahoo.com,001-294-428-2491x165,San Francisco,382.49,Silver
+CUST-01134,Sarah Smith,sarah.smith@gmail.com,4243539313,Chicago,1292.32,Platinum
+CUST-01135,Lauren Oneill,lauren.oneill@gmail.com,405.357.0836,San Francisco,678.66,Gold
+CUST-01136,Justin Mitchell,justin.mitchell@hotmail.com,896.469.9727x36774,Boston,119.53,Bronze
+CUST-01137,Julie Anderson,julie.anderson@hotmail.com,001-325-443-1832x8123,Boston,317.13,Silver
+CUST-01138,James Thomas,james.thomas@hotmail.com,5498106018,Austin,208.02,Silver
+CUST-01139,Jose Moore,jose.moore@hotmail.com,+1-375-908-2768,Denver,590.52,Silver
+CUST-01140,Gregory White,gregory.white@yahoo.com,775.445.8472x6290,San Francisco,73.48,Bronze
+CUST-01141,Christine Dixon,christine.dixon@hotmail.com,001-476-383-1608x2717,Boston,367.57,Silver
+CUST-01142,Stephen Lewis,stephen.lewis@yahoo.com,001-539-892-0522x299,Austin,782.62,Gold
+CUST-01143,Nicole Moses,nicole.moses@hotmail.com,(559)714-3882x32553,Denver,749.75,Gold
+CUST-01144,Angela Parker,angela.parker@yahoo.com,277-773-2643,San Francisco,34.34,Bronze
+CUST-01145,Jose King,jose.king@yahoo.com,+1-312-479-9702x927,Boston,52.05,Bronze
+CUST-01146,Brian Wright,brian.wright@hotmail.com,487.413.7529x883,Austin,495.16,Silver
+CUST-01147,Anthony Leonard,anthony.leonard@gmail.com,(656)908-3200,Boston,308.47,Silver
+CUST-01148,Catherine Case,catherine.case@yahoo.com,288.297.5358x52386,Chicago,806.99,Gold
+CUST-01149,James Ramirez,james.ramirez@yahoo.com,761.499.5171,San Francisco,1231.54,Platinum
+CUST-01150,Stephanie Wiggins,stephanie.wiggins@hotmail.com,602-592-9501,Boston,157.62,Bronze
+CUST-01151,Timothy Valdez,timothy.valdez@hotmail.com,330.493.0967x13971,New York,445.32,Silver
+CUST-01152,Raymond Schultz,raymond.schultz@hotmail.com,(213)321-7672,Seattle,138.07,Bronze
+CUST-01153,Catherine Reese,catherine.reese@gmail.com,216-961-2201,New York,513.67,Silver
+CUST-01154,Derek Cooper,derek.cooper@hotmail.com,273.439.3049x36653,Seattle,130.09,Bronze
+CUST-01155,Stanley Mcdowell,stanley.mcdowell@yahoo.com,001-781-224-2114x08682,Chicago,39.26,Bronze
+CUST-01156,Barbara Nguyen,barbara.nguyen@gmail.com,(794)862-0935,Austin,195.41,Bronze
+CUST-01157,Mary Jones,mary.jones@hotmail.com,001-303-499-5297x0137,Austin,62.68,Bronze
+CUST-01158,Joshua Coleman,joshua.coleman@yahoo.com,+1-658-356-4230,Denver,81.55,Bronze
+CUST-01159,Pamela Osborne,pamela.osborne@gmail.com,(570)961-5927,Seattle,1730.7,Platinum
+CUST-01160,Joshua Jackson,joshua.jackson@hotmail.com,4714669063,Chicago,250.08,Silver
+CUST-01161,Michelle Schmidt,michelle.schmidt@gmail.com,854-920-3403x01095,Austin,307.06,Silver
+CUST-01162,Anne Tate,anne.tate@yahoo.com,(464)591-5795x546,Chicago,649.6,Gold
+CUST-01163,John Skinner,john.skinner@gmail.com,576-201-0801x810,San Francisco,189.32,Bronze
+CUST-01164,Linda Doyle,linda.doyle@yahoo.com,+1-831-276-4172,Boston,42.44,Bronze
+CUST-01165,Amy Black,amy.black@hotmail.com,+1-257-812-9015x07138,Denver,57.17,Bronze
+CUST-01166,Shawn Wright,shawn.wright@yahoo.com,001-835-410-4584x743,Seattle,133.91,Bronze
+CUST-01167,Danny Gonzalez,danny.gonzalez@gmail.com,001-862-658-8576,Boston,592.87,Silver
+CUST-01168,Tyler Harris,tyler.harris@hotmail.com,8538396274,New York,1115.02,Gold
+CUST-01169,Samuel Hernandez,samuel.hernandez@yahoo.com,001-618-832-7000,Chicago,258.49,Silver
+CUST-01170,Robert Garcia,robert.garcia@yahoo.com,+1-290-611-0797x7140,Denver,102.0,Bronze
+CUST-01171,Brenda Stephens,brenda.stephens@hotmail.com,494-290-5315,New York,2655.65,Platinum
+CUST-01172,Jonathan Lynch,jonathan.lynch@gmail.com,001-349-576-9873,Austin,712.94,Gold
+CUST-01173,Steven Gonzales,steven.gonzales@gmail.com,(969)984-1661x23740,Chicago,1256.29,Platinum
+CUST-01174,Ashley Wright,ashley.wright@gmail.com,001-256-323-8994x99197,Denver,1186.9,Gold
+CUST-01175,Jennifer Bartlett,jennifer.bartlett@gmail.com,(420)237-0878x21160,New York,19.19,Bronze
+CUST-01176,Crystal Guerrero,crystal.guerrero@yahoo.com,981-435-9989,Seattle,430.47,Silver
+CUST-01177,Phyllis Miller,phyllis.miller@yahoo.com,8886948018,San Francisco,165.69,Bronze
+CUST-01178,Kevin Taylor,kevin.taylor@gmail.com,458.283.9785x708,Boston,367.68,Silver
+CUST-01179,Lisa Green,lisa.green@gmail.com,(375)471-2369x14961,Austin,1005.26,Gold
+CUST-01180,William Porter,william.porter@hotmail.com,629-268-8276x970,Chicago,871.89,Gold
+CUST-01181,Brianna Perez,brianna.perez@gmail.com,919-661-5607x832,Austin,158.37,Bronze
+CUST-01182,Emily Stokes,emily.stokes@hotmail.com,+1-435-665-1796,Denver,68.78,Bronze
+CUST-01183,Danielle Dyer,danielle.dyer@yahoo.com,001-949-666-8349x604,Chicago,606.07,Gold
+CUST-01184,Edward Wallace,edward.wallace@gmail.com,+1-851-662-2593,Boston,148.84,Bronze
+CUST-01185,Amy Martinez,amy.martinez@hotmail.com,001-234-886-8839,Chicago,21.38,Bronze
+CUST-01186,Derrick Green,derrick.green@yahoo.com,(387)399-1609,San Francisco,718.94,Gold
+CUST-01187,Kevin Lewis,kevin.lewis@gmail.com,001-535-992-3613,Seattle,519.94,Silver
+CUST-01188,Jennifer Kline,jennifer.kline@yahoo.com,(730)245-8816,Chicago,101.84,Bronze
+CUST-01189,Renee Ward,renee.ward@yahoo.com,001-247-824-1916x50344,Denver,473.15,Silver
+CUST-01190,Richard Brown,richard.brown@hotmail.com,818.924.9898x0880,Austin,804.48,Gold
+CUST-01191,Martha Thomas,martha.thomas@yahoo.com,474-868-1359,Seattle,193.82,Bronze
+CUST-01192,Courtney Valentine,courtney.valentine@hotmail.com,(698)393-9698x74869,Austin,512.88,Silver
+CUST-01193,Mark Chapman,mark.chapman@yahoo.com,+1-701-319-2920x75360,Chicago,1815.02,Platinum
+CUST-01194,Chad Miller,chad.miller@hotmail.com,001-303-698-8636x5362,Austin,190.94,Bronze
+CUST-01195,Mark Greene,mark.greene@yahoo.com,200.609.9424x8942,Chicago,18.08,Bronze
+CUST-01196,Samantha Lutz,samantha.lutz@hotmail.com,289-666-7605x642,Austin,135.85,Bronze
+CUST-01197,Leroy Grimes,leroy.grimes@yahoo.com,001-875-480-9745x33890,Denver,154.77,Bronze
+CUST-01198,John Casey,john.casey@yahoo.com,(762)526-5401x6599,San Francisco,176.76,Bronze
+CUST-01199,Sara Smith,sara.smith@hotmail.com,(422)712-2427x67746,Boston,397.81,Silver
+CUST-01200,Christina Price,christina.price@gmail.com,824-211-5848,San Francisco,492.18,Silver
+CUST-01201,Adam Strong,adam.strong@hotmail.com,4175986778,Boston,136.31,Bronze
+CUST-01202,Nancy Thompson,nancy.thompson@hotmail.com,(370)447-2642x612,Boston,71.62,Bronze
+CUST-01203,Brian Rice,brian.rice@gmail.com,001-475-736-5968x0785,San Francisco,93.31,Bronze
+CUST-01204,Tonya Gould,tonya.gould@gmail.com,621-683-8545x4006,Boston,329.19,Silver
+CUST-01205,Denise Mitchell,denise.mitchell@yahoo.com,323-911-2327x48979,Boston,676.04,Gold
+CUST-01206,Samuel Ayala,samuel.ayala@gmail.com,842.472.0388,Boston,71.21,Bronze
+CUST-01207,Lori Hurst,lori.hurst@yahoo.com,001-208-801-9630x453,San Francisco,221.17,Silver
+CUST-01208,Chelsea Mcguire,chelsea.mcguire@gmail.com,388-824-9353x40018,Chicago,126.31,Bronze
+CUST-01209,Scott Wagner,scott.wagner@hotmail.com,665-824-4454,Chicago,307.7,Silver
+CUST-01210,Brian Schmidt,brian.schmidt@hotmail.com,(317)499-3781x053,Austin,634.77,Gold
+CUST-01211,Amanda Horne,amanda.horne@hotmail.com,+1-648-769-9969x88290,Seattle,225.51,Silver
+CUST-01212,Timothy Warner,timothy.warner@yahoo.com,847-624-6301,Boston,373.56,Silver
+CUST-01213,Gregory Anderson,gregory.anderson@gmail.com,+1-339-472-8339,Austin,652.26,Gold
+CUST-01214,Theresa Galloway,theresa.galloway@hotmail.com,+1-270-562-9328,Denver,505.92,Silver
+CUST-01215,Gary Martinez,gary.martinez@gmail.com,9238200186,Chicago,660.7,Gold
+CUST-01216,Nicolas Williams,nicolas.williams@gmail.com,698.276.1081x43561,Boston,647.45,Gold
+CUST-01217,Samantha Young,samantha.young@hotmail.com,753-619-8074x6823,Denver,711.69,Gold
+CUST-01218,Ricky Haas,ricky.haas@yahoo.com,+1-810-903-0762x05459,Seattle,281.37,Silver
+CUST-01219,Mary Rivera,mary.rivera@hotmail.com,8667664110,Boston,217.09,Silver
+CUST-01220,Kerry Miller,kerry.miller@gmail.com,001-934-207-8516x994,Seattle,68.56,Bronze
+CUST-01221,Alexandra Smith,alexandra.smith@hotmail.com,001-836-468-3482x68999,Denver,371.98,Silver
+CUST-01222,Paul Stevens,paul.stevens@gmail.com,738.268.8891x78791,Seattle,116.63,Bronze
+CUST-01223,Nathan Garza,nathan.garza@gmail.com,(471)897-6093x201,Seattle,88.06,Bronze
+CUST-01224,Nicole Gallagher,nicole.gallagher@yahoo.com,789.482.6041x809,San Francisco,882.37,Gold
+CUST-01225,Shelley Bowers,shelley.bowers@yahoo.com,485-317-7741x27469,Austin,70.61,Bronze
+CUST-01226,Colin Chambers,colin.chambers@hotmail.com,+1-624-419-9626,Chicago,582.91,Silver
+CUST-01227,Francisco Morrison,francisco.morrison@yahoo.com,789-917-0454x21854,Austin,57.91,Bronze
+CUST-01228,Martha Williams,martha.williams@yahoo.com,001-882-509-2257x09001,Seattle,280.35,Silver
+CUST-01229,Sara Roach,sara.roach@yahoo.com,707-623-2472x828,New York,286.84,Silver
+CUST-01230,Adam Davis,adam.davis@hotmail.com,+1-782-224-7312x6168,Seattle,256.59,Silver
+CUST-01231,Timothy Brown,timothy.brown@yahoo.com,+1-901-319-5092,Seattle,41.76,Bronze
+CUST-01232,Tina Sandoval,tina.sandoval@yahoo.com,(461)505-3709,Austin,517.69,Silver
+CUST-01233,Bradley Ford,bradley.ford@yahoo.com,001-650-707-4189,San Francisco,593.14,Silver
+CUST-01234,Holly Perez,holly.perez@hotmail.com,(898)776-9893,Austin,147.14,Bronze
+CUST-01235,David Scott,david.scott@yahoo.com,001-216-619-8273x48131,New York,631.34,Gold
+CUST-01236,Martin Hernandez,martin.hernandez@hotmail.com,+1-796-432-1743x57483,Seattle,49.13,Bronze
+CUST-01237,Robert Brown,robert.brown@yahoo.com,+1-660-667-3983,Austin,205.08,Silver
+CUST-01238,Sarah Gordon,sarah.gordon@hotmail.com,925-936-4628x0550,New York,365.58,Silver
+CUST-01239,Sara Bush,sara.bush@yahoo.com,(279)255-1562x392,New York,1242.14,Platinum
+CUST-01240,Amber Cook,amber.cook@yahoo.com,307-340-9131,New York,1940.35,Platinum
+CUST-01241,Steven Romero,steven.romero@yahoo.com,490-425-4760,Austin,29.51,Bronze
+CUST-01242,Cynthia Sullivan,cynthia.sullivan@hotmail.com,(735)241-2012x275,Austin,104.29,Bronze
+CUST-01243,Alex Heath,alex.heath@hotmail.com,6159153259,Chicago,668.26,Gold
+CUST-01244,Cynthia Williamson,cynthia.williamson@gmail.com,740.771.7327x980,Boston,482.15,Silver
+CUST-01245,Dawn Mcintyre,dawn.mcintyre@hotmail.com,001-610-706-4934x03910,Austin,226.11,Silver
+CUST-01246,David Johnson,david.johnson@gmail.com,(408)794-1184x91359,Austin,282.83,Silver
+CUST-01247,Michael Brady,michael.brady@yahoo.com,+1-295-220-5610x06799,Austin,226.97,Silver
+CUST-01248,Raymond Patterson,raymond.patterson@hotmail.com,9186677403,Boston,1512.71,Platinum
+CUST-01249,Heather Martinez,heather.martinez@gmail.com,+1-439-744-9530x06776,Denver,363.75,Silver
+CUST-01250,Mark Robinson,mark.robinson@hotmail.com,(301)973-6542x624,Boston,900.67,Gold
+CUST-01251,Amanda White,amanda.white@gmail.com,+1-229-823-3451x1009,New York,103.47,Bronze
+CUST-01252,Mary Williams,mary.williams@gmail.com,3883684302,Seattle,239.7,Silver
+CUST-01253,Patrick Wallace,patrick.wallace@gmail.com,+1-404-357-5988x759,Chicago,600.64,Gold
+CUST-01254,George Mclaughlin,george.mclaughlin@yahoo.com,426-303-3620x2755,Chicago,825.33,Gold
+CUST-01255,Jonathan Lucero,jonathan.lucero@gmail.com,001-492-507-1152x380,Denver,25.35,Bronze
+CUST-01256,Ryan Bernard,ryan.bernard@gmail.com,+1-392-815-8189x7059,San Francisco,294.79,Silver
+CUST-01257,Daniel Rodriguez,daniel.rodriguez@yahoo.com,985.958.8195,Boston,368.81,Silver
+CUST-01258,Gary Vazquez,gary.vazquez@yahoo.com,+1-580-305-3789,Seattle,229.59,Silver
+CUST-01259,Amy Bennett,amy.bennett@gmail.com,497.228.4540x18227,Chicago,142.97,Bronze
+CUST-01260,Brian Arnold,brian.arnold@hotmail.com,582-432-2041x4474,San Francisco,90.85,Bronze
+CUST-01261,Sandra Dalton,sandra.dalton@hotmail.com,216-459-9302,Chicago,1262.02,Platinum
+CUST-01262,Barry Clark,barry.clark@gmail.com,523-222-7752x135,Boston,667.62,Gold
+CUST-01263,Rachel Malone,rachel.malone@hotmail.com,265-706-4630,New York,761.09,Gold
+CUST-01264,Jennifer Larson,jennifer.larson@yahoo.com,475.369.1983x210,Austin,444.44,Silver
+CUST-01265,Robert Stephenson,robert.stephenson@hotmail.com,001-617-546-9029x8310,New York,138.89,Bronze
+CUST-01266,Megan Harmon,megan.harmon@yahoo.com,396-862-2913,New York,62.86,Bronze
+CUST-01267,Tommy Mason,tommy.mason@yahoo.com,(885)766-7063x6219,New York,281.12,Silver
+CUST-01268,Michael Turner,michael.turner@yahoo.com,001-744-207-6634x93396,Boston,561.74,Silver
+CUST-01269,Kevin Munoz,kevin.munoz@gmail.com,532.826.2611x424,New York,141.31,Bronze
+CUST-01270,Elizabeth Gillespie,elizabeth.gillespie@hotmail.com,885-442-1880x87991,New York,246.57,Silver
+CUST-01271,Danielle Ramsey,danielle.ramsey@hotmail.com,599-464-3385,Chicago,364.2,Silver
+CUST-01272,Jennifer Rivers,jennifer.rivers@yahoo.com,525.305.8333x430,Denver,911.9,Gold
+CUST-01273,Christian Davenport,christian.davenport@hotmail.com,876.605.4576x94757,New York,82.94,Bronze
+CUST-01274,Jennifer Bender,jennifer.bender@hotmail.com,335-836-5974x66986,San Francisco,135.05,Bronze
+CUST-01275,Jason Ramirez,jason.ramirez@gmail.com,(654)350-8095,Boston,401.23,Silver
+CUST-01276,Lisa Lopez,lisa.lopez@yahoo.com,+1-225-959-6647x213,Seattle,424.99,Silver
+CUST-01277,Molly Hill,molly.hill@gmail.com,(591)542-6140x489,Boston,782.63,Gold
+CUST-01278,Laura Moore,laura.moore@yahoo.com,545-943-0796,Chicago,176.64,Bronze
+CUST-01279,Jeremy Woodward,jeremy.woodward@hotmail.com,3083178522,Chicago,1926.23,Platinum
+CUST-01280,Micheal Dunn,micheal.dunn@gmail.com,+1-945-623-5426,Seattle,127.41,Bronze
+CUST-01281,Joseph Frazier,joseph.frazier@hotmail.com,901.973.2086x5237,San Francisco,159.81,Bronze
+CUST-01282,David Jordan,david.jordan@hotmail.com,363-237-0140x05278,Seattle,1349.96,Platinum
+CUST-01283,Sara Richardson,sara.richardson@hotmail.com,300.802.7221x42573,Boston,1106.53,Gold
+CUST-01284,Anthony Turner,anthony.turner@hotmail.com,001-813-768-1720x313,Boston,525.99,Silver
+CUST-01285,Michael Moore,michael.moore@yahoo.com,(709)729-7352,Seattle,322.99,Silver
+CUST-01286,Margaret Heath,margaret.heath@hotmail.com,432.222.7393,San Francisco,1293.09,Platinum
+CUST-01287,Justin Farrell,justin.farrell@hotmail.com,001-935-832-3661x850,Boston,230.95,Silver
+CUST-01288,Christopher Williams,christopher.williams@yahoo.com,5828697182,Seattle,187.71,Bronze
+CUST-01289,Benjamin Smith,benjamin.smith@gmail.com,(361)958-3882,Austin,251.11,Silver
+CUST-01290,Elizabeth Wilkinson,elizabeth.wilkinson@yahoo.com,001-548-546-7357x422,San Francisco,227.55,Silver
+CUST-01291,Tina Haas,tina.haas@gmail.com,(480)419-4425,Denver,362.42,Silver
+CUST-01292,Gregory Mullen,gregory.mullen@yahoo.com,5629953506,Chicago,866.73,Gold
+CUST-01293,Michelle Sanchez,michelle.sanchez@hotmail.com,280-946-7413,San Francisco,891.92,Gold
+CUST-01294,Elizabeth Perez,elizabeth.perez@hotmail.com,618-852-0136x2608,Chicago,752.43,Gold
+CUST-01295,Jermaine Clayton,jermaine.clayton@yahoo.com,+1-356-715-4705x54912,New York,386.89,Silver
+CUST-01296,Christopher Madden,christopher.madden@yahoo.com,319-855-6409,Austin,381.67,Silver
+CUST-01297,Brittany Lewis,brittany.lewis@yahoo.com,887.452.0702x042,Chicago,236.27,Silver
+CUST-01298,Elizabeth Jones,elizabeth.jones@hotmail.com,912.912.4139x3696,San Francisco,117.3,Bronze
+CUST-01299,Richard Knight,richard.knight@hotmail.com,831.226.7731x9227,Boston,52.07,Bronze
+CUST-01300,Steven Morgan,steven.morgan@hotmail.com,389.878.6533x94319,Austin,860.19,Gold
+CUST-01301,Mark Lopez,mark.lopez@hotmail.com,+1-795-923-1202x19150,New York,360.19,Silver
+CUST-01302,Lindsey Nelson,lindsey.nelson@yahoo.com,001-974-870-0026,Denver,110.09,Bronze
+CUST-01303,Kevin Gardner,kevin.gardner@yahoo.com,864.297.9741x6365,San Francisco,228.07,Silver
+CUST-01304,Jonathan Rivera,jonathan.rivera@gmail.com,(435)953-7309x64969,Seattle,430.63,Silver
+CUST-01305,Scott Rodriguez,scott.rodriguez@hotmail.com,001-752-996-3530,Denver,49.01,Bronze
+CUST-01306,Jennifer White,jennifer.white@yahoo.com,528-327-6364,Denver,660.39,Gold
+CUST-01307,Melissa Mendez,melissa.mendez@hotmail.com,+1-789-659-6546x634,Boston,515.88,Silver
+CUST-01308,Nancy Mcmahon,nancy.mcmahon@yahoo.com,001-534-641-4916x9993,Chicago,308.74,Silver
+CUST-01309,Joshua Hayes,joshua.hayes@gmail.com,001-546-240-8822,Denver,1083.98,Gold
+CUST-01310,Brittney Mason,brittney.mason@gmail.com,+1-273-998-8941x321,San Francisco,1431.16,Platinum
+CUST-01311,David Vazquez,david.vazquez@gmail.com,407.454.8534x6557,New York,122.11,Bronze
+CUST-01312,Benjamin Smith,benjamin.smith@yahoo.com,496-746-1293x900,Chicago,1487.5,Platinum
+CUST-01313,Daniel Maxwell,daniel.maxwell@gmail.com,001-275-865-8963x5957,New York,633.25,Gold
+CUST-01314,Tara Miller,tara.miller@hotmail.com,+1-531-345-8434x566,Denver,308.33,Silver
+CUST-01315,Charles Michael,charles.michael@hotmail.com,(603)942-3622x033,Chicago,550.27,Silver
+CUST-01316,Kelly Baker,kelly.baker@gmail.com,+1-710-443-7968x6800,Boston,117.96,Bronze
+CUST-01317,Ashley Ramirez,ashley.ramirez@hotmail.com,5212774174,Chicago,376.41,Silver
+CUST-01318,Kevin Skinner,kevin.skinner@gmail.com,(638)850-2289,Denver,164.74,Bronze
+CUST-01319,Peter White,peter.white@yahoo.com,001-723-832-8293x0202,Austin,358.27,Silver
+CUST-01320,Ashley Rodriguez,ashley.rodriguez@gmail.com,3303334677,San Francisco,180.95,Bronze
+CUST-01321,Ellen Patterson,ellen.patterson@yahoo.com,(407)662-7995x530,San Francisco,338.6,Silver
+CUST-01322,Darlene Clark,darlene.clark@gmail.com,(539)684-7230,Austin,297.32,Silver
+CUST-01323,Jennifer Sampson,jennifer.sampson@gmail.com,9284471901,Denver,1806.1,Platinum
+CUST-01324,Susan Stanley,susan.stanley@gmail.com,605-807-6487x1775,Austin,660.27,Gold
+CUST-01325,Daniel Buchanan,daniel.buchanan@hotmail.com,(440)965-8387,San Francisco,1120.77,Gold
+CUST-01326,Cristina Morgan,cristina.morgan@gmail.com,(625)690-9566,San Francisco,183.89,Bronze
+CUST-01327,Robin Hardy,robin.hardy@gmail.com,473.337.9121,New York,387.03,Silver
+CUST-01328,Christopher Williams,christopher.williams@hotmail.com,980.635.8690x170,Chicago,623.36,Gold
+CUST-01329,Heather Yates,heather.yates@gmail.com,+1-325-919-9945x295,New York,150.97,Bronze
+CUST-01330,Curtis Thompson,curtis.thompson@yahoo.com,(343)838-7220x5422,Seattle,404.46,Silver
+CUST-01331,Gregory Shelton,gregory.shelton@hotmail.com,996-233-0833x444,Austin,172.42,Bronze
+CUST-01332,Kevin Pittman,kevin.pittman@yahoo.com,799.350.4702x05968,Chicago,195.12,Bronze
+CUST-01333,Cheryl Golden,cheryl.golden@gmail.com,+1-677-449-2663x29563,Austin,394.57,Silver
+CUST-01334,Shaun Jimenez,shaun.jimenez@yahoo.com,(725)392-0616,Chicago,326.29,Silver
+CUST-01335,Donald Jacobs,donald.jacobs@gmail.com,+1-459-722-9411x5630,Boston,1307.8,Platinum
+CUST-01336,Leslie Ortega,leslie.ortega@hotmail.com,(836)337-2629x4206,San Francisco,148.87,Bronze
+CUST-01337,Matthew Green,matthew.green@hotmail.com,2852133138,Denver,316.79,Silver
+CUST-01338,Joseph Ferguson,joseph.ferguson@gmail.com,001-321-712-2121x548,Boston,476.87,Silver
+CUST-01339,Amanda Kane,amanda.kane@hotmail.com,(287)864-0191x85488,Austin,292.98,Silver
+CUST-01340,Kyle Torres,kyle.torres@gmail.com,+1-700-862-9877x87358,Boston,728.08,Gold
+CUST-01341,Dana Campbell,dana.campbell@yahoo.com,001-441-496-2342x1926,Chicago,82.85,Bronze
+CUST-01342,Charles White,charles.white@yahoo.com,001-310-342-9483x147,Seattle,316.52,Silver
+CUST-01343,Thomas Gilbert,thomas.gilbert@gmail.com,001-269-299-9498x12831,Seattle,2102.13,Platinum
+CUST-01344,Jeffrey Reynolds,jeffrey.reynolds@yahoo.com,7205005328,New York,349.0,Silver
+CUST-01345,Amy Lopez,amy.lopez@gmail.com,2507524383,Denver,858.9,Gold
+CUST-01346,Angela Martin,angela.martin@yahoo.com,+1-829-590-0768x627,Denver,511.47,Silver
+CUST-01347,Michaela Thompson,michaela.thompson@hotmail.com,789.363.3761,Denver,17.88,Bronze
+CUST-01348,Nicole Richmond,nicole.richmond@yahoo.com,(267)313-6841,Chicago,846.88,Gold
+CUST-01349,James Beck,james.beck@gmail.com,439.921.8835,Chicago,46.67,Bronze
+CUST-01350,Jillian Chandler,jillian.chandler@gmail.com,275.306.7761x06592,Chicago,19.13,Bronze
+CUST-01351,Melissa Li,melissa.li@gmail.com,001-819-527-9761x78159,Seattle,288.97,Silver
+CUST-01352,Amber Evans,amber.evans@hotmail.com,320.426.6568x6295,New York,447.86,Silver
+CUST-01353,Mario Harris,mario.harris@hotmail.com,299.925.5394x60742,Boston,1237.49,Platinum
+CUST-01354,Joseph Alvarez,joseph.alvarez@hotmail.com,(969)641-7996x70808,Austin,499.52,Silver
+CUST-01355,Gina Jimenez,gina.jimenez@hotmail.com,(399)846-4183x984,New York,17.99,Bronze
+CUST-01356,Steven Roberts,steven.roberts@yahoo.com,653.769.8816x49804,Seattle,253.46,Silver
+CUST-01357,Alejandro Jacobs,alejandro.jacobs@hotmail.com,+1-886-805-2102x6270,New York,354.2,Silver
+CUST-01358,Kelly Guzman,kelly.guzman@gmail.com,5822484581,San Francisco,360.29,Silver
+CUST-01359,Angela Ryan,angela.ryan@hotmail.com,905.674.8839,San Francisco,22.78,Bronze
+CUST-01360,Martha Paul,martha.paul@gmail.com,+1-256-230-2750,Denver,553.59,Silver
+CUST-01361,Jason Frazier,jason.frazier@hotmail.com,(661)599-5305x6418,Austin,753.34,Gold
+CUST-01362,Margaret Irwin,margaret.irwin@hotmail.com,267-290-8701x8726,Chicago,65.93,Bronze
+CUST-01363,Daniel Christensen,daniel.christensen@yahoo.com,(810)934-4442x990,New York,349.42,Silver
+CUST-01364,Joshua Cooper,joshua.cooper@yahoo.com,+1-365-724-0622,Chicago,110.9,Bronze
+CUST-01365,Renee Carr,renee.carr@yahoo.com,625.962.2219x0533,Seattle,145.91,Bronze
+CUST-01366,Laura Green,laura.green@yahoo.com,364.584.5593x9652,San Francisco,154.97,Bronze
+CUST-01367,Amanda Edwards,amanda.edwards@yahoo.com,224-255-3129,Austin,52.04,Bronze
+CUST-01368,Joyce Foster,joyce.foster@hotmail.com,(811)673-2772,Austin,291.45,Silver
+CUST-01369,Amanda Gardner,amanda.gardner@gmail.com,+1-758-455-8522x942,Chicago,2097.94,Platinum
+CUST-01370,Jennifer Edwards,jennifer.edwards@yahoo.com,285-775-9171,Chicago,175.49,Bronze
+CUST-01371,Sabrina Rice,sabrina.rice@hotmail.com,6549914774,Denver,862.35,Gold
+CUST-01372,Jerry Diaz,jerry.diaz@gmail.com,(924)578-4171x594,Boston,2169.81,Platinum
+CUST-01373,Jordan Boone,jordan.boone@hotmail.com,505.337.8803,Boston,656.43,Gold
+CUST-01374,Alyssa Fisher,alyssa.fisher@gmail.com,001-433-389-2608x788,New York,248.85,Silver
+CUST-01375,Michael Thompson,michael.thompson@hotmail.com,630.848.6251x5217,Austin,377.04,Silver
+CUST-01376,Mark Guerrero,mark.guerrero@yahoo.com,001-637-680-1891x5673,New York,470.7,Silver
+CUST-01377,Molly Crawford,molly.crawford@hotmail.com,676.829.6914x3362,Boston,99.6,Bronze
+CUST-01378,Crystal Jordan,crystal.jordan@yahoo.com,7999990010,Austin,854.91,Gold
+CUST-01379,Jeremy Smith,jeremy.smith@gmail.com,+1-652-611-8968x44246,Boston,705.4,Gold
+CUST-01380,Christine Crosby,christine.crosby@hotmail.com,+1-479-357-2857x595,Seattle,1719.01,Platinum
+CUST-01381,Megan Williams,megan.williams@gmail.com,579-978-9124,New York,1028.31,Gold
+CUST-01382,Rachel Murray,rachel.murray@yahoo.com,001-398-344-5143x67286,New York,132.48,Bronze
+CUST-01383,Ian Robinson,ian.robinson@gmail.com,588.956.8119,Denver,545.37,Silver
+CUST-01384,Mary Miller,mary.miller@yahoo.com,001-200-799-2177,Seattle,305.39,Silver
+CUST-01385,Leslie Castro,leslie.castro@yahoo.com,(493)835-1588x07053,New York,1175.6,Gold
+CUST-01386,Andrew Garner,andrew.garner@gmail.com,001-939-610-3829,Boston,1184.14,Gold
+CUST-01387,Dennis Cline,dennis.cline@yahoo.com,336-309-0858,Seattle,388.05,Silver
+CUST-01388,Brad Murphy,brad.murphy@gmail.com,937-336-1587x3662,New York,103.95,Bronze
+CUST-01389,Jay Bailey,jay.bailey@hotmail.com,+1-769-833-5390x058,Denver,184.91,Bronze
+CUST-01390,Christopher Chen,christopher.chen@yahoo.com,731.356.6397x925,Chicago,412.98,Silver
+CUST-01391,Craig Roberts,craig.roberts@yahoo.com,+1-890-828-3772x70289,Denver,788.39,Gold
+CUST-01392,Robert Cooper,robert.cooper@gmail.com,928-716-4416x1019,Denver,243.6,Silver
+CUST-01393,Cynthia Harris,cynthia.harris@hotmail.com,+1-946-540-5103x8802,New York,175.04,Bronze
+CUST-01394,Alan Thomas,alan.thomas@yahoo.com,362.581.4447,Seattle,138.78,Bronze
+CUST-01395,Brittany Bauer,brittany.bauer@gmail.com,001-269-406-7649,Denver,867.03,Gold
+CUST-01396,Glen Herrera,glen.herrera@yahoo.com,+1-987-345-5135x872,Boston,1035.79,Gold
+CUST-01397,Shawn Beasley,shawn.beasley@gmail.com,+1-368-981-1640x3439,San Francisco,232.92,Silver
+CUST-01398,Jamie Harrison,jamie.harrison@hotmail.com,001-558-233-3647x7041,Boston,82.84,Bronze
+CUST-01399,Cassidy Dean,cassidy.dean@gmail.com,(438)260-2826x254,Boston,594.58,Silver
+CUST-01400,Sandra Jones,sandra.jones@gmail.com,619.605.7720,Seattle,630.73,Gold
+CUST-01401,Carl Brown,carl.brown@hotmail.com,994.619.3245x3810,San Francisco,39.84,Bronze
+CUST-01402,Corey Walters,corey.walters@gmail.com,(848)670-9872,Austin,133.87,Bronze
+CUST-01403,Michelle Andrews,michelle.andrews@gmail.com,(225)617-4224,New York,202.39,Silver
+CUST-01404,Marisa Benson,marisa.benson@hotmail.com,526.611.8900,Denver,443.21,Silver
+CUST-01405,Patrick Reynolds,patrick.reynolds@hotmail.com,(230)770-2867x2020,Seattle,242.41,Silver
+CUST-01406,Kimberly Young,kimberly.young@yahoo.com,001-921-795-3689x0057,Denver,192.79,Bronze
+CUST-01407,Anthony Davis,anthony.davis@gmail.com,(359)500-7397,Boston,158.68,Bronze
+CUST-01408,Karen Johnson,karen.johnson@yahoo.com,(921)313-8690,Austin,318.54,Silver
+CUST-01409,Diana Simpson,diana.simpson@gmail.com,404-354-6171,San Francisco,377.38,Silver
+CUST-01410,Thomas Smith,thomas.smith@yahoo.com,836-202-3442x2521,Austin,269.41,Silver
+CUST-01411,Douglas White,douglas.white@hotmail.com,212-509-4477x269,Boston,411.71,Silver
+CUST-01412,Emily Fisher,emily.fisher@hotmail.com,(251)432-7617x948,Austin,55.32,Bronze
+CUST-01413,Joseph Cooper,joseph.cooper@hotmail.com,(798)351-6021x191,Seattle,172.54,Bronze
+CUST-01414,George Jordan,george.jordan@yahoo.com,001-849-286-4786x86237,Chicago,576.89,Silver
+CUST-01415,Rebecca Porter,rebecca.porter@yahoo.com,974-608-3781x9190,New York,155.37,Bronze
+CUST-01416,Christine Bradley,christine.bradley@gmail.com,(640)606-9836x92353,Austin,574.65,Silver
+CUST-01417,William Nelson,william.nelson@gmail.com,321.439.8654x62202,Boston,90.4,Bronze
+CUST-01418,James Acosta,james.acosta@hotmail.com,001-820-555-0330x0008,Austin,186.36,Bronze
+CUST-01419,Laura Manning,laura.manning@yahoo.com,339.619.0088x991,New York,58.19,Bronze
+CUST-01420,David Yates,david.yates@gmail.com,001-916-992-3273,San Francisco,279.74,Silver
+CUST-01421,Jody Williamson,jody.williamson@yahoo.com,6858481867,Denver,156.48,Bronze
+CUST-01422,John Williams,john.williams@hotmail.com,001-984-333-6113,Chicago,56.11,Bronze
+CUST-01423,Sarah Mills,sarah.mills@gmail.com,619-285-4582x94203,Austin,283.08,Silver
+CUST-01424,Casey Harris,casey.harris@gmail.com,666-807-5699x944,Seattle,338.25,Silver
+CUST-01425,Ryan Hernandez,ryan.hernandez@gmail.com,408-424-0281,New York,26.98,Bronze
+CUST-01426,Denise Palmer,denise.palmer@hotmail.com,001-440-926-2085x81745,San Francisco,378.57,Silver
+CUST-01427,Jeremy Durham,jeremy.durham@hotmail.com,664.323.5700,Seattle,425.14,Silver
+CUST-01428,Erik Davis,erik.davis@hotmail.com,(785)718-1612,San Francisco,911.86,Gold
+CUST-01429,Anne Mitchell,anne.mitchell@yahoo.com,800-879-2304,New York,170.29,Bronze
+CUST-01430,Andrew Miller,andrew.miller@hotmail.com,482.871.0123,Austin,694.66,Gold
+CUST-01431,Casey Davis,casey.davis@gmail.com,+1-248-650-7665x3446,Boston,1056.3,Gold
+CUST-01432,Diana English,diana.english@yahoo.com,(634)960-1915x30573,Chicago,396.84,Silver
+CUST-01433,Megan Green,megan.green@yahoo.com,+1-361-476-8225,Chicago,535.28,Silver
+CUST-01434,Margaret Barnett,margaret.barnett@gmail.com,(970)886-6656x2241,Chicago,82.26,Bronze
+CUST-01435,Melissa Ramos,melissa.ramos@yahoo.com,+1-847-371-2903x500,San Francisco,155.64,Bronze
+CUST-01436,Linda Turner,linda.turner@hotmail.com,442.323.5434x0466,Chicago,44.41,Bronze
+CUST-01437,Edward Rogers,edward.rogers@hotmail.com,(349)352-5492x06441,Austin,160.31,Bronze
+CUST-01438,Ellen Salazar,ellen.salazar@gmail.com,+1-581-682-7306,San Francisco,312.94,Silver
+CUST-01439,Jeremiah Byrd,jeremiah.byrd@yahoo.com,282.718.8496x80664,New York,216.62,Silver
+CUST-01440,Melanie Velasquez,melanie.velasquez@gmail.com,(512)254-3412,Chicago,589.28,Silver
+CUST-01441,David Morales,david.morales@yahoo.com,+1-586-403-7218x600,Austin,420.42,Silver
+CUST-01442,Bryan Hale,bryan.hale@gmail.com,+1-578-699-9011x400,Chicago,290.51,Silver
+CUST-01443,Samantha Wells,samantha.wells@gmail.com,317.819.7860,Chicago,178.51,Bronze
+CUST-01444,Nicole Moore,nicole.moore@yahoo.com,+1-390-584-1947x85501,Austin,196.71,Bronze
+CUST-01445,Susan Peterson,susan.peterson@yahoo.com,221.507.2887x80727,Seattle,230.04,Silver
+CUST-01446,Taylor Dougherty,taylor.dougherty@gmail.com,(908)981-9722x39964,Denver,194.91,Bronze
+CUST-01447,Kimberly Nichols,kimberly.nichols@yahoo.com,730-976-8102x48085,San Francisco,268.44,Silver
+CUST-01448,Michelle Mason,michelle.mason@gmail.com,(344)832-3622,Denver,898.17,Gold
+CUST-01449,Brenda Clarke,brenda.clarke@yahoo.com,+1-368-857-4670x675,Seattle,80.85,Bronze
+CUST-01450,Christine Wilson,christine.wilson@hotmail.com,(921)250-1642x610,San Francisco,430.96,Silver
+CUST-01451,Jeff Cox,jeff.cox@hotmail.com,342.543.1983x92484,Boston,115.89,Bronze
+CUST-01452,Andrew Turner,andrew.turner@gmail.com,001-969-710-5302x1516,San Francisco,103.01,Bronze
+CUST-01453,Kathryn Klein,kathryn.klein@yahoo.com,001-246-733-9534x811,Austin,1574.22,Platinum
+CUST-01454,Andre Wilson,andre.wilson@yahoo.com,764.727.8961x5738,San Francisco,612.4,Gold
+CUST-01455,Julie Rocha,julie.rocha@gmail.com,(781)977-5123,Boston,318.89,Silver
+CUST-01456,William Peterson,william.peterson@yahoo.com,(460)697-2360,Seattle,700.41,Gold
+CUST-01457,Kristin Graham,kristin.graham@hotmail.com,(946)577-2051x710,San Francisco,227.26,Silver
+CUST-01458,Bruce Porter,bruce.porter@gmail.com,(664)578-3703x175,Denver,708.52,Gold
+CUST-01459,Alyssa Parsons,alyssa.parsons@yahoo.com,614-885-7260x2925,San Francisco,69.41,Bronze
+CUST-01460,Gina Powell,gina.powell@gmail.com,928.884.0766x420,Seattle,115.3,Bronze
+CUST-01461,Felicia Thomas,felicia.thomas@gmail.com,001-535-838-6762x592,Seattle,104.26,Bronze
+CUST-01462,Jennifer Huff,jennifer.huff@hotmail.com,4602488693,Denver,374.43,Silver
+CUST-01463,Heather Deleon,heather.deleon@gmail.com,705-908-9273x961,Boston,293.64,Silver
+CUST-01464,Roy Scott,roy.scott@gmail.com,435-867-0789x77554,Boston,120.87,Bronze
+CUST-01465,Melissa Willis,melissa.willis@gmail.com,984.522.7362,Denver,169.97,Bronze
+CUST-01466,Henry Mccarthy,henry.mccarthy@gmail.com,+1-327-811-1757x6917,Boston,47.25,Bronze
+CUST-01467,Frank Chan,frank.chan@gmail.com,+1-785-414-4869x830,Denver,729.58,Gold
+CUST-01468,Shelby Houston,shelby.houston@hotmail.com,2393220269,Austin,517.98,Silver
+CUST-01469,Wendy Zamora,wendy.zamora@gmail.com,+1-364-871-0680x17703,Chicago,466.49,Silver
+CUST-01470,Sandra Griffin,sandra.griffin@gmail.com,500-349-3326x72446,Chicago,146.07,Bronze
+CUST-01471,Michelle Alexander,michelle.alexander@hotmail.com,676-238-0839x065,Chicago,580.24,Silver
+CUST-01472,Eric Bailey,eric.bailey@hotmail.com,+1-485-319-3932x727,Denver,227.94,Silver
+CUST-01473,Ernest Armstrong,ernest.armstrong@yahoo.com,850.949.6026,Austin,2120.01,Platinum
+CUST-01474,Randall Rivera,randall.rivera@gmail.com,228.945.3974x995,Austin,407.79,Silver
+CUST-01475,Jennifer Wagner,jennifer.wagner@hotmail.com,(440)267-5602x08019,Seattle,332.91,Silver
+CUST-01476,Gabriel Ingram,gabriel.ingram@yahoo.com,001-743-590-4489x09322,Denver,544.52,Silver
+CUST-01477,John Thompson,john.thompson@gmail.com,351.502.5550,Seattle,31.86,Bronze
+CUST-01478,Veronica Campbell,veronica.campbell@hotmail.com,+1-403-669-8884x39333,San Francisco,559.25,Silver
+CUST-01479,Melissa Long,melissa.long@gmail.com,001-562-308-0598,Denver,361.42,Silver
+CUST-01480,David Church,david.church@yahoo.com,001-441-229-0759x65999,Boston,1121.14,Gold
+CUST-01481,David Sanchez,david.sanchez@yahoo.com,(431)677-4954x2106,New York,674.31,Gold
+CUST-01482,Danielle Knight,danielle.knight@yahoo.com,891-492-2671x31753,Boston,506.72,Silver
+CUST-01483,Sherry Wyatt,sherry.wyatt@yahoo.com,952.586.4612x0961,Chicago,483.58,Silver
+CUST-01484,Anthony Duncan,anthony.duncan@gmail.com,+1-784-252-4032x11535,New York,387.75,Silver
+CUST-01485,Louis Nelson,louis.nelson@hotmail.com,001-621-991-4308x77972,Boston,524.2,Silver
+CUST-01486,Catherine Martinez,catherine.martinez@hotmail.com,001-442-221-8834x5819,Austin,1547.49,Platinum
+CUST-01487,Kevin Daniels,kevin.daniels@yahoo.com,8677693332,San Francisco,1532.89,Platinum
+CUST-01488,Cody Salas,cody.salas@gmail.com,(757)784-6408,Austin,65.39,Bronze
+CUST-01489,Jill Moreno,jill.moreno@hotmail.com,+1-625-867-2620,New York,149.73,Bronze
+CUST-01490,Timothy Barrett,timothy.barrett@gmail.com,(443)755-1962x822,Seattle,633.2,Gold
+CUST-01491,Alan Rodriguez,alan.rodriguez@gmail.com,(262)347-2863x942,Seattle,405.93,Silver
+CUST-01492,Melissa Jackson,melissa.jackson@gmail.com,241.849.9290,Seattle,127.4,Bronze
+CUST-01493,Preston Decker,preston.decker@yahoo.com,7268604509,San Francisco,238.27,Silver
+CUST-01494,James Jones,james.jones@yahoo.com,+1-400-439-1019x3353,Denver,527.12,Silver
+CUST-01495,Ethan Huff,ethan.huff@gmail.com,493-960-0608,Boston,327.34,Silver
+CUST-01496,Todd Johnson,todd.johnson@yahoo.com,761-260-7626x438,San Francisco,2749.21,Platinum
+CUST-01497,Alexis Nguyen,alexis.nguyen@yahoo.com,(334)561-7623,Austin,64.69,Bronze
+CUST-01498,Tonya Mercado,tonya.mercado@yahoo.com,509-344-1642,Austin,1154.67,Gold
+CUST-01499,Paul Hill,paul.hill@yahoo.com,937-827-7685,New York,70.52,Bronze
+CUST-01500,Patricia Goodwin,patricia.goodwin@yahoo.com,001-734-794-2904x617,Boston,83.75,Bronze
+CUST-01501,Craig Pierce,craig.pierce@gmail.com,279-499-3242,San Francisco,204.08,Silver
+CUST-01502,Justin Robinson,justin.robinson@yahoo.com,841-672-3456x538,Denver,119.29,Bronze
+CUST-01503,Shane Hodges,shane.hodges@gmail.com,(254)685-3626,Austin,207.68,Silver
+CUST-01504,Haley Thompson,haley.thompson@hotmail.com,(341)800-9538x55742,New York,274.45,Silver
+CUST-01505,Jessica Young,jessica.young@hotmail.com,+1-900-893-7814x604,Boston,286.03,Silver
+CUST-01506,Jillian Carter,jillian.carter@yahoo.com,684.843.7066x18756,New York,175.67,Bronze
+CUST-01507,Melinda Anderson,melinda.anderson@yahoo.com,001-236-481-5418x58990,Denver,573.25,Silver
+CUST-01508,Shawn Middleton,shawn.middleton@gmail.com,001-810-284-5078,New York,866.25,Gold
+CUST-01509,Kelly Young,kelly.young@yahoo.com,001-260-850-3374x69833,Boston,67.12,Bronze
+CUST-01510,Timothy Alexander,timothy.alexander@gmail.com,8679182226,Denver,95.8,Bronze
+CUST-01511,Rhonda Day,rhonda.day@gmail.com,+1-208-878-8653x859,Boston,140.82,Bronze
+CUST-01512,Thomas Harris,thomas.harris@yahoo.com,742.789.8760,Chicago,376.24,Silver
+CUST-01513,Melanie Anthony,melanie.anthony@hotmail.com,992-221-7048x6186,San Francisco,384.29,Silver
+CUST-01514,Richard Harris,richard.harris@gmail.com,001-416-929-0739x92891,Austin,133.7,Bronze
+CUST-01515,David Moore,david.moore@hotmail.com,633-471-7086x49426,Austin,462.12,Silver
+CUST-01516,Anthony Robbins,anthony.robbins@hotmail.com,+1-631-735-4901,Chicago,475.34,Silver
+CUST-01517,Kimberly Bishop,kimberly.bishop@yahoo.com,706.692.1958x730,Austin,241.57,Silver
+CUST-01518,Wendy Moreno,wendy.moreno@yahoo.com,388.843.0217,Boston,443.49,Silver
+CUST-01519,Thomas Dalton,thomas.dalton@gmail.com,(464)331-5890x1649,Chicago,283.68,Silver
+CUST-01520,Mark Gonzalez,mark.gonzalez@yahoo.com,001-201-370-9264x07030,Austin,236.58,Silver
+CUST-01521,Shawn Morales,shawn.morales@hotmail.com,(296)282-4485,Boston,123.82,Bronze
+CUST-01522,Stephen Black,stephen.black@hotmail.com,001-259-827-4116,San Francisco,643.04,Gold
+CUST-01523,Sharon Jennings,sharon.jennings@hotmail.com,+1-461-227-6620x808,Denver,730.35,Gold
+CUST-01524,John Wilson,john.wilson@gmail.com,+1-726-934-4435x9624,Seattle,63.29,Bronze
+CUST-01525,Rachel Miller,rachel.miller@gmail.com,001-542-942-5369x0912,Denver,361.4,Silver
+CUST-01526,Michael Smith,michael.smith@hotmail.com,597-860-3967x024,San Francisco,192.53,Bronze
+CUST-01527,Lucas Richard,lucas.richard@hotmail.com,205-553-6481x8754,Austin,69.44,Bronze
+CUST-01528,Morgan Wilcox,morgan.wilcox@yahoo.com,482.515.9773x85466,Boston,908.31,Gold
+CUST-01529,Susan Hall,susan.hall@gmail.com,(667)999-8649x1259,Seattle,1535.52,Platinum
+CUST-01530,Tammy Wyatt,tammy.wyatt@hotmail.com,(420)842-9862,San Francisco,423.94,Silver
+CUST-01531,Anne Anderson,anne.anderson@yahoo.com,(461)579-9623x56999,Seattle,239.31,Silver
+CUST-01532,Jason Walton,jason.walton@hotmail.com,368.587.7792x5604,New York,207.42,Silver
+CUST-01533,Jonathan Thompson,jonathan.thompson@hotmail.com,493-815-3983x912,Denver,290.5,Silver
+CUST-01534,Alejandro Smith,alejandro.smith@gmail.com,340-576-2914x3049,Chicago,771.27,Gold
+CUST-01535,Kevin Smith,kevin.smith@hotmail.com,001-875-728-7209,Boston,740.63,Gold
+CUST-01536,Marissa Reyes,marissa.reyes@gmail.com,001-224-905-9208x2353,Seattle,416.4,Silver
+CUST-01537,Victoria Patterson,victoria.patterson@gmail.com,+1-448-296-2980x568,Boston,79.71,Bronze
+CUST-01538,Christopher Hopkins,christopher.hopkins@gmail.com,+1-607-296-6186x9572,New York,137.65,Bronze
+CUST-01539,Kyle Pope,kyle.pope@yahoo.com,241.225.3137x9561,New York,105.98,Bronze
+CUST-01540,Tyler Simpson,tyler.simpson@hotmail.com,(417)250-3619,Boston,83.58,Bronze
+CUST-01541,Dwayne Cook,dwayne.cook@hotmail.com,001-699-419-3873x3703,Austin,258.76,Silver
+CUST-01542,Lisa Christian,lisa.christian@yahoo.com,874-489-0476x078,Chicago,399.84,Silver
+CUST-01543,Kim Edwards,kim.edwards@gmail.com,7763519170,Austin,107.47,Bronze
+CUST-01544,Timothy Allen,timothy.allen@hotmail.com,(689)251-4563,Boston,361.88,Silver
+CUST-01545,Cassidy Jones,cassidy.jones@yahoo.com,505.358.1157x44965,Boston,1216.16,Platinum
+CUST-01546,Sandra Williams,sandra.williams@yahoo.com,600.240.9304x5418,Chicago,379.27,Silver
+CUST-01547,Virginia Wright,virginia.wright@hotmail.com,+1-822-418-0396,Austin,168.38,Bronze
+CUST-01548,Katie Rodgers,katie.rodgers@gmail.com,285.488.6407,Chicago,184.98,Bronze
+CUST-01549,Peter Moore,peter.moore@hotmail.com,516-946-9333x56230,Austin,449.71,Silver
+CUST-01550,Kevin Horn,kevin.horn@hotmail.com,306.670.8987x09201,Denver,215.15,Silver
+CUST-01551,Michelle Miller,michelle.miller@gmail.com,+1-426-861-1584x85805,New York,313.27,Silver
+CUST-01552,John Barrett,john.barrett@gmail.com,+1-260-947-2205x397,Chicago,774.86,Gold
+CUST-01553,Thomas Nelson,thomas.nelson@hotmail.com,347-708-2317x146,Seattle,331.84,Silver
+CUST-01554,Jessica Ray,jessica.ray@yahoo.com,266.426.2359x6053,Austin,251.77,Silver
+CUST-01555,Kaitlyn Jones,kaitlyn.jones@hotmail.com,702-257-8703x6860,Austin,256.75,Silver
+CUST-01556,Phillip Williams,phillip.williams@yahoo.com,660.250.2816,Denver,279.02,Silver
+CUST-01557,Claire Matthews,claire.matthews@gmail.com,490.791.2030,Chicago,53.83,Bronze
+CUST-01558,Derek Franklin,derek.franklin@yahoo.com,(337)459-7953,New York,730.07,Gold
+CUST-01559,Tanya Williams,tanya.williams@hotmail.com,001-486-202-7574x544,Chicago,170.45,Bronze
+CUST-01560,Luis Burgess,luis.burgess@hotmail.com,845-738-1180x8189,San Francisco,129.61,Bronze
+CUST-01561,Crystal Moreno,crystal.moreno@yahoo.com,256-762-2952x1797,San Francisco,97.88,Bronze
+CUST-01562,Holly James,holly.james@gmail.com,(816)224-8607x04726,Austin,390.26,Silver
+CUST-01563,David Gomez,david.gomez@gmail.com,(885)901-5301x731,Denver,668.44,Gold
+CUST-01564,Lisa Stewart,lisa.stewart@gmail.com,(587)790-5224x413,Seattle,336.75,Silver
+CUST-01565,Kyle Bradley,kyle.bradley@gmail.com,001-364-353-1579x057,Seattle,69.57,Bronze
+CUST-01566,Katherine Randolph,katherine.randolph@hotmail.com,001-786-864-6936,Denver,367.49,Silver
+CUST-01567,Nicole Spencer,nicole.spencer@gmail.com,997-948-7680x57023,San Francisco,366.44,Silver
+CUST-01568,Laurie Davis,laurie.davis@yahoo.com,801.992.2095,Denver,34.13,Bronze
+CUST-01569,John Lopez,john.lopez@gmail.com,001-497-732-3964x402,Boston,277.02,Silver
+CUST-01570,John Martin,john.martin@yahoo.com,569.792.4277x392,Chicago,2077.35,Platinum
+CUST-01571,Denise Williams,denise.williams@gmail.com,+1-620-691-4016x93328,New York,614.29,Gold
+CUST-01572,Devon Nixon,devon.nixon@yahoo.com,+1-719-498-2907x55154,Boston,641.26,Gold
+CUST-01573,Peggy Brown,peggy.brown@yahoo.com,569-599-1383x10064,San Francisco,950.06,Gold
+CUST-01574,Emily Lopez,emily.lopez@yahoo.com,+1-822-877-7733x1680,New York,283.81,Silver
+CUST-01575,Sarah Blair,sarah.blair@gmail.com,403.685.0360x595,San Francisco,906.88,Gold
+CUST-01576,Derek Roberts,derek.roberts@hotmail.com,9747027406,New York,275.17,Silver
+CUST-01577,William Patterson,william.patterson@yahoo.com,(859)506-2003,New York,687.51,Gold
+CUST-01578,Linda Bates,linda.bates@yahoo.com,+1-564-361-4974x5979,Chicago,121.01,Bronze
+CUST-01579,Alexandra Robinson,alexandra.robinson@hotmail.com,001-297-798-4914x986,Boston,413.95,Silver
+CUST-01580,Lisa Smith,lisa.smith@yahoo.com,+1-832-366-4322x394,San Francisco,903.13,Gold
+CUST-01581,David Moore,david.moore@hotmail.com,001-581-615-9485,Seattle,465.8,Silver
+CUST-01582,Allen Lyons,allen.lyons@gmail.com,+1-876-922-3984x74225,Chicago,445.88,Silver
+CUST-01583,Julie Horton,julie.horton@gmail.com,388.822.3788x70584,Denver,119.15,Bronze
+CUST-01584,Alexa Cruz,alexa.cruz@gmail.com,001-234-795-6479x9846,Chicago,751.66,Gold
+CUST-01585,Zachary Parks,zachary.parks@hotmail.com,396-238-3097x236,Seattle,209.42,Silver
+CUST-01586,Mary Brown,mary.brown@gmail.com,(616)762-0165x55786,San Francisco,423.81,Silver
+CUST-01587,Victor Mcintosh,victor.mcintosh@yahoo.com,855-975-1247x64000,Chicago,190.97,Bronze
+CUST-01588,Matthew Buchanan,matthew.buchanan@yahoo.com,624.605.1665x45122,Boston,170.79,Bronze
+CUST-01589,Jordan Carrillo,jordan.carrillo@hotmail.com,+1-574-702-3386x860,Seattle,154.98,Bronze
+CUST-01590,Lori Camacho,lori.camacho@hotmail.com,670-436-3094,Denver,340.08,Silver
+CUST-01591,Sabrina Hunt,sabrina.hunt@yahoo.com,2206508983,Boston,774.77,Gold
+CUST-01592,Julie Lewis,julie.lewis@hotmail.com,001-909-461-9797,Chicago,1495.81,Platinum
+CUST-01593,Mary Rogers,mary.rogers@gmail.com,+1-241-635-6948,Denver,253.65,Silver
+CUST-01594,Louis Williams,louis.williams@gmail.com,(267)748-0957x394,New York,2215.96,Platinum
+CUST-01595,Breanna Burton,breanna.burton@hotmail.com,2265029442,Denver,495.07,Silver
+CUST-01596,Tara Gomez,tara.gomez@hotmail.com,+1-525-384-9073x420,Boston,919.73,Gold
+CUST-01597,Anna Alexander,anna.alexander@yahoo.com,648.467.5951x4186,Chicago,86.15,Bronze
+CUST-01598,James Mason,james.mason@hotmail.com,(895)486-8419,San Francisco,808.38,Gold
+CUST-01599,John Miranda,john.miranda@gmail.com,(305)986-9427x67483,Denver,849.77,Gold
+CUST-01600,James Smith,james.smith@yahoo.com,(493)615-1817,Austin,317.53,Silver
+CUST-01601,Kimberly Mercado,kimberly.mercado@yahoo.com,594-969-8906x23272,Seattle,465.34,Silver
+CUST-01602,David Weber,david.weber@hotmail.com,7226379006,Boston,255.67,Silver
+CUST-01603,Monique Klein,monique.klein@hotmail.com,+1-970-784-7795x4176,Austin,50.33,Bronze
+CUST-01604,Lee Watkins,lee.watkins@gmail.com,+1-789-307-3781,Denver,969.59,Gold
+CUST-01605,Luke Morrison,luke.morrison@hotmail.com,001-545-689-6268,New York,247.01,Silver
+CUST-01606,Andrea Ramos,andrea.ramos@gmail.com,202.707.6123x96121,Boston,161.72,Bronze
+CUST-01607,Joanna Payne,joanna.payne@hotmail.com,229-988-6182,San Francisco,287.89,Silver
+CUST-01608,Adrian Morales,adrian.morales@hotmail.com,001-890-510-7923x72982,Austin,193.4,Bronze
+CUST-01609,Jeffrey Whitehead,jeffrey.whitehead@hotmail.com,+1-864-597-0350x67578,New York,929.33,Gold
+CUST-01610,Wendy Lee,wendy.lee@yahoo.com,001-770-277-3123x155,Denver,608.76,Gold
+CUST-01611,Erin Saunders,erin.saunders@yahoo.com,+1-205-621-8799x38444,Boston,1626.42,Platinum
+CUST-01612,Michael Hicks,michael.hicks@gmail.com,514-714-7012,Boston,505.98,Silver
+CUST-01613,Melissa Gonzalez,melissa.gonzalez@hotmail.com,915.268.9109x779,San Francisco,869.02,Gold
+CUST-01614,Morgan Thomas,morgan.thomas@hotmail.com,845-868-4467x9403,Denver,359.02,Silver
+CUST-01615,Stephanie Olsen,stephanie.olsen@gmail.com,(732)995-7378x31597,Chicago,1565.72,Platinum
+CUST-01616,Jasmine Moore,jasmine.moore@hotmail.com,+1-727-631-8683x02915,Denver,122.13,Bronze
+CUST-01617,Dawn Ferrell,dawn.ferrell@gmail.com,624.516.5185,San Francisco,190.45,Bronze
+CUST-01618,Brandy Robles,brandy.robles@gmail.com,734.646.7462x159,San Francisco,200.45,Silver
+CUST-01619,Debra Dorsey,debra.dorsey@yahoo.com,391-861-7050x221,Seattle,77.98,Bronze
+CUST-01620,Anne Jones,anne.jones@yahoo.com,534-947-6094,Denver,313.91,Silver
+CUST-01621,Lisa Roberts,lisa.roberts@hotmail.com,(492)886-4330,San Francisco,1025.6,Gold
+CUST-01622,Suzanne Walters,suzanne.walters@hotmail.com,8999621836,Denver,37.33,Bronze
+CUST-01623,Steve Greene,steve.greene@yahoo.com,(466)510-2563x42022,New York,457.79,Silver
+CUST-01624,Joseph Chapman,joseph.chapman@gmail.com,237-368-3675,Denver,291.94,Silver
+CUST-01625,Thomas Chavez,thomas.chavez@gmail.com,324-946-1440x92335,New York,1208.04,Platinum
+CUST-01626,Kevin Foster,kevin.foster@yahoo.com,(742)860-1863x72631,Chicago,276.95,Silver
+CUST-01627,Patricia Schultz,patricia.schultz@yahoo.com,001-222-277-6414,New York,2178.73,Platinum
+CUST-01628,Javier Garrison,javier.garrison@hotmail.com,402-555-1344x48672,Austin,116.72,Bronze
+CUST-01629,Ashley Turner,ashley.turner@gmail.com,614.554.6157,Boston,1095.62,Gold
+CUST-01630,Eduardo Davis,eduardo.davis@yahoo.com,001-697-288-7953x120,Boston,176.7,Bronze
+CUST-01631,Brandy Mitchell,brandy.mitchell@yahoo.com,966.518.3085x8001,Denver,1229.54,Platinum
+CUST-01632,Christopher Harris,christopher.harris@gmail.com,311-943-6786x21078,San Francisco,59.09,Bronze
+CUST-01633,Connor Gilbert,connor.gilbert@yahoo.com,+1-885-564-2570x6802,San Francisco,144.69,Bronze
+CUST-01634,John Stokes,john.stokes@gmail.com,(842)730-6002x302,San Francisco,506.47,Silver
+CUST-01635,Tiffany Vazquez,tiffany.vazquez@yahoo.com,001-805-922-4114x206,Boston,96.43,Bronze
+CUST-01636,Benjamin Edwards,benjamin.edwards@yahoo.com,499-620-1663x38222,Austin,457.1,Silver
+CUST-01637,Benjamin Esparza,benjamin.esparza@gmail.com,001-322-220-5620,Boston,555.95,Silver
+CUST-01638,Melissa Wilson,melissa.wilson@gmail.com,884-333-9133x252,Chicago,267.35,Silver
+CUST-01639,Laura Moore,laura.moore@hotmail.com,+1-645-664-5234x286,New York,562.37,Silver
+CUST-01640,Chelsea Patterson,chelsea.patterson@gmail.com,(249)786-6342,New York,123.03,Bronze
+CUST-01641,John Christensen,john.christensen@hotmail.com,+1-773-449-8529x73561,New York,79.07,Bronze
+CUST-01642,Wendy Holden,wendy.holden@yahoo.com,(859)814-7625x380,Chicago,344.77,Silver
+CUST-01643,Kevin Adams,kevin.adams@yahoo.com,836.895.2474,Austin,19.2,Bronze
+CUST-01644,Jennifer Estrada,jennifer.estrada@yahoo.com,489.662.9853,Boston,204.43,Silver
+CUST-01645,James Bartlett,james.bartlett@yahoo.com,592.741.5712x7638,New York,2011.13,Platinum
+CUST-01646,Joseph Bentley,joseph.bentley@yahoo.com,(985)586-3906x16824,Austin,547.92,Silver
+CUST-01647,Christina Goodwin,christina.goodwin@hotmail.com,+1-216-515-3811x68371,Austin,48.06,Bronze
+CUST-01648,Andrew Drake,andrew.drake@yahoo.com,(860)972-0148,Austin,57.11,Bronze
+CUST-01649,Susan Mckee,susan.mckee@gmail.com,+1-626-849-3121,Denver,63.63,Bronze
+CUST-01650,Kristen Vargas,kristen.vargas@yahoo.com,001-576-325-4292x64563,San Francisco,221.18,Silver
+CUST-01651,Steve Adkins,steve.adkins@hotmail.com,001-340-436-9481,San Francisco,81.37,Bronze
+CUST-01652,Dawn Park,dawn.park@yahoo.com,001-549-771-9670x683,Denver,770.38,Gold
+CUST-01653,Jeffrey Rodriguez,jeffrey.rodriguez@gmail.com,(212)359-0163x9949,Denver,79.3,Bronze
+CUST-01654,James Hall,james.hall@yahoo.com,276.673.4814,Boston,84.37,Bronze
+CUST-01655,Christopher Brown,christopher.brown@gmail.com,(379)230-1481x16049,Seattle,387.82,Silver
+CUST-01656,Brandon Collins,brandon.collins@gmail.com,2283866168,Seattle,487.45,Silver
+CUST-01657,Nancy Guzman,nancy.guzman@gmail.com,721-534-8548x4203,Austin,209.68,Silver
+CUST-01658,Charles Brown,charles.brown@yahoo.com,001-317-791-3860,Chicago,460.08,Silver
+CUST-01659,Kristin Garcia,kristin.garcia@hotmail.com,471-632-1940,Chicago,1150.98,Gold
+CUST-01660,Rebecca Caldwell,rebecca.caldwell@gmail.com,(988)614-1128,Seattle,537.08,Silver
+CUST-01661,Logan Kerr,logan.kerr@hotmail.com,693-867-8576,Denver,125.22,Bronze
+CUST-01662,Jacob Jones,jacob.jones@hotmail.com,607-449-1619,New York,82.88,Bronze
+CUST-01663,John Hernandez,john.hernandez@yahoo.com,801-331-5350x6962,New York,415.75,Silver
+CUST-01664,Richard King,richard.king@yahoo.com,625-727-4102x54717,Austin,209.92,Silver
+CUST-01665,Ronald Munoz,ronald.munoz@hotmail.com,001-893-900-5195,Austin,184.93,Bronze
+CUST-01666,Michael Alvarado,michael.alvarado@yahoo.com,955.484.2271,Chicago,143.13,Bronze
+CUST-01667,Peter Anderson,peter.anderson@hotmail.com,(665)304-6070x014,Boston,54.6,Bronze
+CUST-01668,Mary Smith,mary.smith@yahoo.com,262.640.8710x06689,Seattle,428.46,Silver
+CUST-01669,Vanessa Brock,vanessa.brock@gmail.com,428.420.7623x8115,Boston,435.96,Silver
+CUST-01670,Jerome Arnold,jerome.arnold@gmail.com,(482)540-8475,Denver,1290.73,Platinum
+CUST-01671,Michael Obrien,michael.obrien@hotmail.com,300-341-0847x9135,New York,862.42,Gold
+CUST-01672,Sharon Reed,sharon.reed@gmail.com,001-753-957-2289x20641,Boston,953.74,Gold
+CUST-01673,Angela Williams,angela.williams@yahoo.com,630.328.0104x19453,Chicago,343.18,Silver
+CUST-01674,Christina Savage,christina.savage@gmail.com,001-381-544-7867x42802,Seattle,109.07,Bronze
+CUST-01675,Andrew Walker,andrew.walker@yahoo.com,680.537.8912x1397,Austin,172.65,Bronze
+CUST-01676,Lynn Powell,lynn.powell@hotmail.com,6552855759,New York,704.2,Gold
+CUST-01677,Amy Ramirez,amy.ramirez@hotmail.com,001-806-296-9045x2898,Denver,1407.22,Platinum
+CUST-01678,Nicholas Luna,nicholas.luna@yahoo.com,967-833-7457x01652,Austin,234.41,Silver
+CUST-01679,Christopher Walker,christopher.walker@hotmail.com,+1-214-698-0253,Chicago,326.54,Silver
+CUST-01680,James Sharp,james.sharp@hotmail.com,+1-629-464-4477x250,Seattle,48.15,Bronze
+CUST-01681,John Taylor,john.taylor@yahoo.com,(434)680-0417,New York,1965.21,Platinum
+CUST-01682,Daniel Rivera,daniel.rivera@gmail.com,(991)858-5574x9062,San Francisco,78.69,Bronze
+CUST-01683,Alexis Ramirez,alexis.ramirez@yahoo.com,503.333.2959x452,Denver,836.78,Gold
+CUST-01684,Marco Medina,marco.medina@gmail.com,963.404.0296x62991,Austin,219.65,Silver
+CUST-01685,Cory Phillips,cory.phillips@gmail.com,+1-522-404-1678x215,Boston,100.35,Bronze
+CUST-01686,Rachel Reyes,rachel.reyes@gmail.com,206.632.5031x3928,Austin,1405.05,Platinum
+CUST-01687,Amanda Pace,amanda.pace@yahoo.com,5225061901,Denver,49.11,Bronze
+CUST-01688,Jason Montgomery,jason.montgomery@yahoo.com,+1-371-890-0002x956,Seattle,46.46,Bronze
+CUST-01689,Dustin Skinner,dustin.skinner@yahoo.com,001-447-518-5594x079,San Francisco,124.36,Bronze
+CUST-01690,Aaron Bauer,aaron.bauer@yahoo.com,001-632-931-6778x1456,New York,1351.35,Platinum
+CUST-01691,Jessica Massey,jessica.massey@yahoo.com,9199453911,Austin,332.91,Silver
+CUST-01692,Ronnie Fisher,ronnie.fisher@yahoo.com,905-227-6120x92815,Boston,576.14,Silver
+CUST-01693,Richard Jones,richard.jones@hotmail.com,+1-802-923-1167x870,Denver,256.6,Silver
+CUST-01694,Cynthia Harris,cynthia.harris@gmail.com,(323)471-8592,Boston,246.58,Silver
+CUST-01695,Nicholas Reid,nicholas.reid@hotmail.com,285-263-7114x2943,Boston,361.09,Silver
+CUST-01696,Anthony Francis,anthony.francis@yahoo.com,839-889-2313x24659,Seattle,89.55,Bronze
+CUST-01697,Cheyenne Martinez,cheyenne.martinez@yahoo.com,001-484-217-8376x59153,New York,181.92,Bronze
+CUST-01698,Clinton Maxwell,clinton.maxwell@hotmail.com,9655266426,Seattle,1156.81,Gold
+CUST-01699,Monica Wood,monica.wood@gmail.com,924.855.3375x6569,Denver,90.99,Bronze
+CUST-01700,Jorge Alexander,jorge.alexander@yahoo.com,001-262-624-9451,San Francisco,237.97,Silver
+CUST-01701,Richard Taylor,richard.taylor@gmail.com,(992)896-5685x12062,Boston,663.29,Gold
+CUST-01702,Jennifer White,jennifer.white@gmail.com,001-350-697-9344x2129,Boston,529.23,Silver
+CUST-01703,Samuel Patton,samuel.patton@yahoo.com,6227347780,New York,182.09,Bronze
+CUST-01704,Teresa Sharp,teresa.sharp@yahoo.com,(551)484-0703,Austin,604.13,Gold
+CUST-01705,Clayton Chavez,clayton.chavez@hotmail.com,(333)872-0945,Denver,137.69,Bronze
+CUST-01706,Tracy Cannon,tracy.cannon@yahoo.com,2633632863,Chicago,55.57,Bronze
+CUST-01707,Carlos Taylor,carlos.taylor@gmail.com,5085484264,Austin,70.48,Bronze
+CUST-01708,Victoria Lewis,victoria.lewis@yahoo.com,+1-796-608-2896x71360,Seattle,437.38,Silver
+CUST-01709,Catherine Mitchell,catherine.mitchell@yahoo.com,+1-620-785-6490x132,San Francisco,508.58,Silver
+CUST-01710,Kathryn Davis,kathryn.davis@hotmail.com,350.901.1546,Boston,622.32,Gold
+CUST-01711,Michael Lam,michael.lam@hotmail.com,001-208-603-8890x441,New York,20.74,Bronze
+CUST-01712,Bryan Allen,bryan.allen@yahoo.com,(968)651-3538x1483,Chicago,559.04,Silver
+CUST-01713,Stephen Bell,stephen.bell@gmail.com,609.901.6856,Chicago,323.7,Silver
+CUST-01714,Daniel Randall,daniel.randall@yahoo.com,+1-840-519-0271,San Francisco,348.11,Silver
+CUST-01715,Timothy Garcia,timothy.garcia@gmail.com,958-866-8611,Denver,792.97,Gold
+CUST-01716,Samuel Riley,samuel.riley@hotmail.com,533.626.1705x05835,San Francisco,97.2,Bronze
+CUST-01717,Michael Ryan,michael.ryan@hotmail.com,(465)672-8535x339,Chicago,638.43,Gold
+CUST-01718,Erik Ross,erik.ross@gmail.com,677-858-0158,Denver,155.86,Bronze
+CUST-01719,Ronald Washington,ronald.washington@gmail.com,4309285327,New York,679.16,Gold
+CUST-01720,Karen Jordan,karen.jordan@hotmail.com,+1-834-351-5025x2854,New York,198.59,Bronze
+CUST-01721,Tammy Smith,tammy.smith@hotmail.com,930.989.7207x382,Austin,157.84,Bronze
+CUST-01722,Taylor Gillespie,taylor.gillespie@gmail.com,584-225-2786,New York,152.29,Bronze
+CUST-01723,Kimberly Brown,kimberly.brown@yahoo.com,621-902-4234,Seattle,459.42,Silver
+CUST-01724,Jay Byrd,jay.byrd@gmail.com,(877)771-9619x971,Austin,288.3,Silver
+CUST-01725,Jenna Hamilton,jenna.hamilton@yahoo.com,(276)240-9968x3344,San Francisco,40.67,Bronze
+CUST-01726,Christina Richardson,christina.richardson@gmail.com,626-553-7932x2191,Denver,391.54,Silver
+CUST-01727,Tracey Warner,tracey.warner@yahoo.com,9543736015,San Francisco,92.02,Bronze
+CUST-01728,Christopher Duffy,christopher.duffy@gmail.com,001-710-516-2600x8026,Denver,63.87,Bronze
+CUST-01729,Elizabeth Kirk,elizabeth.kirk@yahoo.com,+1-378-433-5488x357,Seattle,519.55,Silver
+CUST-01730,Daniel Duncan,daniel.duncan@yahoo.com,001-514-463-8664,New York,131.68,Bronze
+CUST-01731,Andrew Clark,andrew.clark@yahoo.com,001-626-465-2824x685,Seattle,16.16,Bronze
+CUST-01732,Vanessa Jimenez,vanessa.jimenez@gmail.com,700-302-0860x1460,Denver,909.26,Gold
+CUST-01733,Bridget Hansen,bridget.hansen@yahoo.com,532-871-6303x356,Chicago,36.18,Bronze
+CUST-01734,Carmen Farmer,carmen.farmer@gmail.com,5103009089,San Francisco,232.28,Silver
+CUST-01735,Angela Meyer,angela.meyer@hotmail.com,3487028354,Chicago,103.73,Bronze
+CUST-01736,Amy Harding,amy.harding@gmail.com,+1-809-830-4376x613,Denver,31.2,Bronze
+CUST-01737,George Hendricks,george.hendricks@gmail.com,712.526.8159x47470,Denver,1118.76,Gold
+CUST-01738,Charles Clayton,charles.clayton@gmail.com,5589330967,Boston,494.81,Silver
+CUST-01739,Christine Roberts,christine.roberts@gmail.com,989-814-2693,Chicago,189.74,Bronze
+CUST-01740,Jessica Kelly,jessica.kelly@gmail.com,001-516-876-7187x76288,Austin,1128.84,Gold
+CUST-01741,Sara Reynolds,sara.reynolds@hotmail.com,+1-850-916-2762x92266,San Francisco,157.4,Bronze
+CUST-01742,Xavier Vazquez,xavier.vazquez@gmail.com,001-237-961-6522,New York,396.4,Silver
+CUST-01743,Kelly Silva,kelly.silva@yahoo.com,001-981-425-5977,New York,328.76,Silver
+CUST-01744,Ryan Villegas,ryan.villegas@yahoo.com,(340)983-8580x5014,New York,103.94,Bronze
+CUST-01745,Daniel Valentine,daniel.valentine@yahoo.com,978-393-9129x56518,Denver,341.34,Silver
+CUST-01746,Deborah Skinner,deborah.skinner@yahoo.com,960.905.0092x44928,New York,1401.38,Platinum
+CUST-01747,Michael Ford,michael.ford@gmail.com,+1-830-229-3011x2501,New York,957.97,Gold
+CUST-01748,Trevor Jackson,trevor.jackson@gmail.com,(295)822-2336x9318,Denver,164.27,Bronze
+CUST-01749,Gary Williams,gary.williams@yahoo.com,+1-530-924-2662x4975,Denver,182.43,Bronze
+CUST-01750,Sierra Navarro,sierra.navarro@yahoo.com,8579144695,New York,377.43,Silver
+CUST-01751,Jonathan Le,jonathan.le@hotmail.com,835.744.5345x1466,New York,222.14,Silver
+CUST-01752,Sara Palmer,sara.palmer@hotmail.com,001-548-834-8358x6267,San Francisco,388.35,Silver
+CUST-01753,Tiffany Gallegos,tiffany.gallegos@hotmail.com,432-807-7587x08943,San Francisco,620.45,Gold
+CUST-01754,Kelsey Bishop,kelsey.bishop@gmail.com,+1-744-236-9580x50450,Chicago,295.57,Silver
+CUST-01755,Caitlin Patel,caitlin.patel@yahoo.com,920.907.3429x390,Seattle,1621.72,Platinum
+CUST-01756,Jeremy Rodgers,jeremy.rodgers@gmail.com,001-854-450-3801,Denver,688.02,Gold
+CUST-01757,Matthew Haney,matthew.haney@gmail.com,(702)504-5028x143,Boston,1053.16,Gold
+CUST-01758,Nicole Taylor,nicole.taylor@yahoo.com,+1-543-737-9531x112,Denver,730.28,Gold
+CUST-01759,Barbara Hill,barbara.hill@gmail.com,(752)974-2866x2510,Chicago,17.88,Bronze
+CUST-01760,Jeffrey Lee,jeffrey.lee@hotmail.com,+1-355-345-1460x91935,Austin,25.89,Bronze
+CUST-01761,Thomas Winters,thomas.winters@yahoo.com,(855)937-0627x281,Seattle,206.38,Silver
+CUST-01762,James Ramos,james.ramos@yahoo.com,621-357-5626,Denver,547.08,Silver
+CUST-01763,Glenn Coleman,glenn.coleman@hotmail.com,581-387-6209x906,New York,1372.08,Platinum
+CUST-01764,Carrie Reynolds,carrie.reynolds@gmail.com,799.251.6704,New York,655.2,Gold
+CUST-01765,Jennifer Griffith,jennifer.griffith@hotmail.com,+1-622-567-3123,Austin,865.73,Gold
+CUST-01766,Maria Schmidt,maria.schmidt@hotmail.com,604.785.1420x25936,Boston,180.36,Bronze
+CUST-01767,Brandon Frazier,brandon.frazier@hotmail.com,(931)834-2755,Chicago,354.58,Silver
+CUST-01768,Steven Obrien,steven.obrien@gmail.com,554-690-4431,Chicago,259.98,Silver
+CUST-01769,John Andrade,john.andrade@yahoo.com,710.229.7711,New York,1633.08,Platinum
+CUST-01770,Ricky Vega,ricky.vega@gmail.com,+1-379-226-5173x28162,Chicago,574.61,Silver
+CUST-01771,Jessica Burns,jessica.burns@hotmail.com,(721)998-3691,New York,35.2,Bronze
+CUST-01772,Jeffery Stevens,jeffery.stevens@yahoo.com,905-629-8770,Chicago,1039.12,Gold
+CUST-01773,Michael Larson,michael.larson@hotmail.com,001-815-530-4450x0202,Seattle,254.77,Silver
+CUST-01774,Ann Peters,ann.peters@gmail.com,945.802.9586,San Francisco,291.0,Silver
+CUST-01775,Brandon Wong,brandon.wong@gmail.com,509-834-6754x182,Boston,54.93,Bronze
+CUST-01776,Amber Davis,amber.davis@gmail.com,582.572.1051,New York,331.83,Silver
+CUST-01777,Juan Brown,juan.brown@hotmail.com,522-301-3882x5320,Boston,786.57,Gold
+CUST-01778,Nicole Powers,nicole.powers@hotmail.com,963-560-3891,New York,418.3,Silver
+CUST-01779,Joanna Burke,joanna.burke@yahoo.com,001-389-647-6720x0052,New York,271.9,Silver
+CUST-01780,Holly Garcia,holly.garcia@gmail.com,307.416.3485x0895,Chicago,136.59,Bronze
+CUST-01781,Jay Smith,jay.smith@yahoo.com,719-819-4454,San Francisco,871.45,Gold
+CUST-01782,Catherine Thomas,catherine.thomas@yahoo.com,(956)319-2767x137,Denver,239.62,Silver
+CUST-01783,Hailey Lowe,hailey.lowe@hotmail.com,(226)739-5612x66783,Denver,613.21,Gold
+CUST-01784,Michael Clark,michael.clark@gmail.com,688.874.0223,San Francisco,286.29,Silver
+CUST-01785,Susan Turner,susan.turner@yahoo.com,(627)463-3041x1761,Chicago,49.93,Bronze
+CUST-01786,Connie Garcia,connie.garcia@gmail.com,683-819-6863x6470,Chicago,80.84,Bronze
+CUST-01787,Lawrence Ryan,lawrence.ryan@hotmail.com,(598)970-3688x3004,Denver,410.45,Silver
+CUST-01788,Felicia Knapp,felicia.knapp@gmail.com,(731)559-2291x2706,Chicago,65.25,Bronze
+CUST-01789,Joshua Williams,joshua.williams@yahoo.com,4624911872,Austin,297.36,Silver
+CUST-01790,Juan Martinez,juan.martinez@gmail.com,7189179607,Austin,72.9,Bronze
+CUST-01791,Alicia Daniel,alicia.daniel@hotmail.com,349.974.9979x90522,San Francisco,1518.91,Platinum
+CUST-01792,David Ramirez,david.ramirez@yahoo.com,765-881-8981x06173,Chicago,285.6,Silver
+CUST-01793,Michelle Davis,michelle.davis@yahoo.com,812.397.5572,Austin,153.55,Bronze
+CUST-01794,Robert Torres,robert.torres@yahoo.com,278.881.1938,New York,57.65,Bronze
+CUST-01795,Alyssa Gould,alyssa.gould@hotmail.com,5134071675,Denver,536.34,Silver
+CUST-01796,Danny Walker,danny.walker@hotmail.com,661.231.7985,Denver,563.9,Silver
+CUST-01797,Karen Williams,karen.williams@hotmail.com,+1-503-772-9545x858,Seattle,33.52,Bronze
+CUST-01798,Heather Mckee,heather.mckee@gmail.com,+1-399-981-2743x92255,Denver,888.87,Gold
+CUST-01799,Lindsey Jones,lindsey.jones@hotmail.com,001-825-281-4762x123,Chicago,58.04,Bronze
+CUST-01800,David Weaver,david.weaver@gmail.com,001-794-554-1384,Chicago,1569.57,Platinum
+CUST-01801,Clifford Price,clifford.price@gmail.com,+1-630-779-6859x096,Austin,339.2,Silver
+CUST-01802,Nicole Riley,nicole.riley@yahoo.com,(940)589-9217,Boston,174.76,Bronze
+CUST-01803,Mark Bautista,mark.bautista@gmail.com,(468)311-3397x36707,Denver,2118.85,Platinum
+CUST-01804,Timothy Perez,timothy.perez@yahoo.com,5242222419,New York,1382.36,Platinum
+CUST-01805,Robert Gaines,robert.gaines@gmail.com,001-636-654-0181x4442,Denver,285.83,Silver
+CUST-01806,Eric Galloway,eric.galloway@gmail.com,(743)350-9476,Boston,374.45,Silver
+CUST-01807,David Fitzgerald,david.fitzgerald@yahoo.com,+1-315-564-0994x14753,New York,293.99,Silver
+CUST-01808,Taylor Flores,taylor.flores@hotmail.com,(345)319-0826,Denver,725.53,Gold
+CUST-01809,Anthony Gonzalez,anthony.gonzalez@yahoo.com,894-429-9202x37666,New York,20.41,Bronze
+CUST-01810,Kimberly Hudson,kimberly.hudson@gmail.com,586.219.4118,Denver,698.33,Gold
+CUST-01811,Mary Mcguire,mary.mcguire@yahoo.com,(542)640-6628,Chicago,78.04,Bronze
+CUST-01812,Robert Harris,robert.harris@yahoo.com,+1-688-293-3437x51866,Denver,245.31,Silver
+CUST-01813,William Parsons,william.parsons@yahoo.com,924-638-2692x8550,Boston,462.78,Silver
+CUST-01814,James Nicholson,james.nicholson@gmail.com,001-952-288-9594,Boston,54.5,Bronze
+CUST-01815,John Simmons,john.simmons@hotmail.com,(545)235-9176x50471,Seattle,149.78,Bronze
+CUST-01816,Benjamin Vargas,benjamin.vargas@hotmail.com,842-988-7344x96686,Denver,50.08,Bronze
+CUST-01817,Brianna Carr,brianna.carr@yahoo.com,906.317.0690x149,New York,114.15,Bronze
+CUST-01818,Christopher Richmond,christopher.richmond@gmail.com,847.215.6756x65051,Boston,278.68,Silver
+CUST-01819,Gina Cruz,gina.cruz@hotmail.com,249-623-4359x6985,Chicago,58.42,Bronze
+CUST-01820,Mario Blankenship,mario.blankenship@hotmail.com,366-993-7540x24286,Denver,810.68,Gold
+CUST-01821,Marie Herrera,marie.herrera@gmail.com,871-640-2503x85762,San Francisco,73.82,Bronze
+CUST-01822,Willie Clarke,willie.clarke@hotmail.com,(538)249-3680x63585,Austin,38.38,Bronze
+CUST-01823,Jennifer Miller,jennifer.miller@gmail.com,001-727-489-6951x93048,Seattle,270.45,Silver
+CUST-01824,Rebecca Mckee,rebecca.mckee@yahoo.com,558.867.0365x620,Boston,241.14,Silver
+CUST-01825,Jason Torres,jason.torres@yahoo.com,394.368.9633,New York,232.1,Silver
+CUST-01826,Emily Hernandez,emily.hernandez@gmail.com,(776)917-0731x744,Austin,100.37,Bronze
+CUST-01827,Steven Patterson,steven.patterson@hotmail.com,(926)636-7850x89897,Chicago,1090.18,Gold
+CUST-01828,Kristen Burch,kristen.burch@yahoo.com,+1-944-634-8529x537,San Francisco,162.74,Bronze
+CUST-01829,Natalie Booth,natalie.booth@gmail.com,967.768.7404x2076,Chicago,30.87,Bronze
+CUST-01830,Christopher Carlson,christopher.carlson@yahoo.com,241.215.7330,Seattle,446.85,Silver
+CUST-01831,Dawn Williams,dawn.williams@yahoo.com,001-706-856-5823x4453,Boston,172.37,Bronze
+CUST-01832,Michael Peterson,michael.peterson@gmail.com,226.360.0047,Austin,979.66,Gold
+CUST-01833,Chad Fitzgerald,chad.fitzgerald@yahoo.com,001-856-711-9989,Austin,43.31,Bronze
+CUST-01834,Victoria Miller,victoria.miller@gmail.com,+1-358-837-4661x44776,San Francisco,232.31,Silver
+CUST-01835,William Caldwell,william.caldwell@yahoo.com,001-879-766-6829x0525,Austin,115.11,Bronze
+CUST-01836,Tiffany Willis,tiffany.willis@gmail.com,291.742.3302x92764,Denver,350.77,Silver
+CUST-01837,Joshua Olson,joshua.olson@gmail.com,+1-886-822-1405x131,Boston,2323.79,Platinum
+CUST-01838,Antonio Washington,antonio.washington@yahoo.com,438.691.4785,Seattle,727.8,Gold
+CUST-01839,Spencer Hancock,spencer.hancock@gmail.com,5359944102,Austin,700.29,Gold
+CUST-01840,Deanna Massey,deanna.massey@gmail.com,+1-366-547-7413,San Francisco,308.99,Silver
+CUST-01841,Samantha Jones,samantha.jones@hotmail.com,702.358.5346,Denver,313.33,Silver
+CUST-01842,Michael Tapia,michael.tapia@hotmail.com,001-685-321-7895x59909,Seattle,329.08,Silver
+CUST-01843,Sabrina Maddox,sabrina.maddox@hotmail.com,(355)581-6759x2383,Austin,156.89,Bronze
+CUST-01844,Larry Gill,larry.gill@hotmail.com,580-603-8146,New York,187.81,Bronze
+CUST-01845,David Lawson,david.lawson@gmail.com,721-495-9730x9121,Chicago,28.38,Bronze
+CUST-01846,Thomas Lee,thomas.lee@gmail.com,746-513-3155,Denver,693.38,Gold
+CUST-01847,Melinda Farley,melinda.farley@yahoo.com,303.304.4077,New York,759.15,Gold
+CUST-01848,Patricia Jensen,patricia.jensen@hotmail.com,(359)484-5576x63454,Austin,354.22,Silver
+CUST-01849,Carla Garcia,carla.garcia@yahoo.com,+1-894-352-0641x910,Denver,409.67,Silver
+CUST-01850,Samantha Goodman,samantha.goodman@hotmail.com,(491)800-8224x2168,Chicago,1657.0,Platinum
+CUST-01851,Madison Buckley,madison.buckley@gmail.com,+1-617-956-2699x62083,New York,143.17,Bronze
+CUST-01852,Ashley Randolph,ashley.randolph@gmail.com,001-200-559-3257x2287,Chicago,154.48,Bronze
+CUST-01853,Eric Johnson,eric.johnson@hotmail.com,+1-774-385-9724x38712,Denver,719.95,Gold
+CUST-01854,Kenneth Lopez,kenneth.lopez@hotmail.com,2586028606,Boston,40.89,Bronze
+CUST-01855,Andrea Thompson,andrea.thompson@gmail.com,206-654-7476x950,Chicago,400.78,Silver
+CUST-01856,Monica Walters,monica.walters@hotmail.com,001-885-766-4301,Denver,236.27,Silver
+CUST-01857,Courtney Gomez,courtney.gomez@gmail.com,788.878.8876,Denver,2162.68,Platinum
+CUST-01858,Heidi Pruitt,heidi.pruitt@hotmail.com,+1-331-536-0622x901,Chicago,102.17,Bronze
+CUST-01859,Angela Smith,angela.smith@yahoo.com,394.671.9903x8035,Seattle,187.23,Bronze
+CUST-01860,Melody Meyer,melody.meyer@yahoo.com,001-238-729-4419x1479,Boston,553.24,Silver
+CUST-01861,Jesus Alexander,jesus.alexander@hotmail.com,795.516.7309,Seattle,27.88,Bronze
+CUST-01862,David Cross,david.cross@yahoo.com,8844886865,Boston,210.02,Silver
+CUST-01863,Brittany Jackson,brittany.jackson@hotmail.com,+1-582-228-2801x83235,Seattle,388.14,Silver
+CUST-01864,Samuel Hicks,samuel.hicks@yahoo.com,(584)967-6780x96458,Seattle,1348.63,Platinum
+CUST-01865,Teresa Gross,teresa.gross@hotmail.com,497-952-1353x17555,Denver,2005.51,Platinum
+CUST-01866,Joshua Erickson,joshua.erickson@yahoo.com,314-386-2675,Austin,366.52,Silver
+CUST-01867,Kristy Montgomery,kristy.montgomery@yahoo.com,353-849-6551x564,Chicago,318.39,Silver
+CUST-01868,Scott George,scott.george@gmail.com,001-300-793-5820x1630,New York,41.01,Bronze
+CUST-01869,Barbara Pearson,barbara.pearson@gmail.com,(442)928-4834,Seattle,126.12,Bronze
+CUST-01870,Patrick Tran,patrick.tran@hotmail.com,+1-284-360-1804x0334,Seattle,307.53,Silver
+CUST-01871,Mary Cook,mary.cook@gmail.com,835.286.6715x544,San Francisco,1139.9,Gold
+CUST-01872,Michael Willis,michael.willis@yahoo.com,2967746272,Chicago,753.99,Gold
+CUST-01873,Kara Foster,kara.foster@hotmail.com,799-211-9285x6728,San Francisco,582.94,Silver
+CUST-01874,George Miller,george.miller@yahoo.com,438-830-7755x82126,Denver,851.87,Gold
+CUST-01875,Jordan Dunlap,jordan.dunlap@yahoo.com,(378)344-6078x9075,San Francisco,42.63,Bronze
+CUST-01876,Catherine Brown,catherine.brown@yahoo.com,(551)329-4414x925,Chicago,412.51,Silver
+CUST-01877,Ruben Hill,ruben.hill@hotmail.com,(983)885-9747,Chicago,684.98,Gold
+CUST-01878,Michael Deleon,michael.deleon@hotmail.com,6705554943,Denver,351.23,Silver
+CUST-01879,Tracey Reynolds,tracey.reynolds@yahoo.com,+1-871-556-9220x94907,San Francisco,1469.82,Platinum
+CUST-01880,Kenneth Rodriguez,kenneth.rodriguez@gmail.com,(997)571-0011x547,San Francisco,563.65,Silver
+CUST-01881,Katie Mendez,katie.mendez@yahoo.com,914.787.2255,Boston,241.58,Silver
+CUST-01882,Richard Garcia,richard.garcia@yahoo.com,474-516-8557x395,New York,199.64,Bronze
+CUST-01883,Michelle Herrera,michelle.herrera@yahoo.com,(880)895-7947x581,San Francisco,81.02,Bronze
+CUST-01884,Bradley Cobb,bradley.cobb@hotmail.com,001-341-636-2334x70407,Chicago,608.14,Gold
+CUST-01885,Richard Watkins,richard.watkins@yahoo.com,+1-714-279-7341x8559,Austin,721.26,Gold
+CUST-01886,April Robinson,april.robinson@yahoo.com,(960)717-0396x101,Austin,486.37,Silver
+CUST-01887,Christina Johnson,christina.johnson@gmail.com,001-417-706-7949x07869,Chicago,567.69,Silver
+CUST-01888,Lee Garcia,lee.garcia@hotmail.com,(815)593-8967,Seattle,547.23,Silver
+CUST-01889,Michael Gonzalez,michael.gonzalez@yahoo.com,535.658.9607x0722,Seattle,710.89,Gold
+CUST-01890,Kimberly Rasmussen,kimberly.rasmussen@gmail.com,(413)990-1430x974,Chicago,507.85,Silver
+CUST-01891,Cynthia Cantrell,cynthia.cantrell@gmail.com,(263)957-9671x48030,Denver,101.76,Bronze
+CUST-01892,Emily Perez,emily.perez@yahoo.com,001-665-382-6082x52637,San Francisco,610.91,Gold
+CUST-01893,Donald Hunter,donald.hunter@hotmail.com,(469)811-2232x1425,San Francisco,76.3,Bronze
+CUST-01894,Christopher Rodriguez,christopher.rodriguez@yahoo.com,+1-789-525-9465x7446,Boston,15.81,Bronze
+CUST-01895,Henry Parks,henry.parks@yahoo.com,541-218-1851x367,Boston,1351.51,Platinum
+CUST-01896,Gloria Thomas,gloria.thomas@gmail.com,+1-381-693-7684,Austin,870.98,Gold
+CUST-01897,Michelle Crosby,michelle.crosby@yahoo.com,(322)301-4833x3540,Denver,1525.95,Platinum
+CUST-01898,Jack Jackson,jack.jackson@gmail.com,(803)908-7647x7090,New York,105.45,Bronze
+CUST-01899,Ryan Mata,ryan.mata@gmail.com,001-976-429-5076x71621,San Francisco,1157.46,Gold
+CUST-01900,Bobby Gardner,bobby.gardner@hotmail.com,(680)741-8693x0326,Seattle,127.32,Bronze
+CUST-01901,Laura Scott,laura.scott@yahoo.com,841.699.1605x390,Seattle,64.47,Bronze
+CUST-01902,Laura Carroll,laura.carroll@hotmail.com,001-370-734-2519x7018,Austin,83.21,Bronze
+CUST-01903,Angelica Garcia,angelica.garcia@yahoo.com,+1-329-767-0742,Boston,51.45,Bronze
+CUST-01904,Sandra Jones,sandra.jones@gmail.com,+1-962-752-6022x1690,San Francisco,1832.42,Platinum
+CUST-01905,Laura Robertson,laura.robertson@gmail.com,+1-833-758-3843x910,Chicago,470.0,Silver
+CUST-01906,Shane Mcclure,shane.mcclure@yahoo.com,374-254-6935,New York,790.83,Gold
+CUST-01907,Nancy Navarro,nancy.navarro@yahoo.com,7129833195,Boston,473.62,Silver
+CUST-01908,Ashlee Smith,ashlee.smith@gmail.com,997-217-7170x30568,San Francisco,281.28,Silver
+CUST-01909,Patricia Turner,patricia.turner@gmail.com,560-551-6483x895,San Francisco,120.9,Bronze
+CUST-01910,Shane Hansen,shane.hansen@gmail.com,001-987-567-7600x64345,Boston,46.59,Bronze
+CUST-01911,Megan Fowler,megan.fowler@yahoo.com,001-330-233-2496x75745,San Francisco,710.95,Gold
+CUST-01912,Kevin Campbell,kevin.campbell@hotmail.com,8942731815,Boston,15.58,Bronze
+CUST-01913,Melissa Bruce,melissa.bruce@gmail.com,207.999.5947x6111,Austin,274.49,Silver
+CUST-01914,Stephanie Johnston,stephanie.johnston@yahoo.com,475-845-6572x8972,Austin,1579.68,Platinum
+CUST-01915,Felicia Clark,felicia.clark@hotmail.com,840-839-0984x68560,Austin,320.73,Silver
+CUST-01916,Jennifer Daniel,jennifer.daniel@gmail.com,+1-961-938-2687x0977,Austin,209.71,Silver
+CUST-01917,Caitlyn Mcdonald,caitlyn.mcdonald@hotmail.com,499.962.6377,Austin,63.13,Bronze
+CUST-01918,Chad Floyd,chad.floyd@gmail.com,435.612.8962x206,Austin,714.58,Gold
+CUST-01919,James Hall,james.hall@hotmail.com,001-830-623-9934x46060,Seattle,488.67,Silver
+CUST-01920,Jasmine Frazier,jasmine.frazier@gmail.com,(395)423-5786x5294,Boston,130.04,Bronze
+CUST-01921,William Sanchez,william.sanchez@hotmail.com,9067448854,Austin,49.46,Bronze
+CUST-01922,John Wilson,john.wilson@hotmail.com,+1-980-842-5542x8053,Denver,30.29,Bronze
+CUST-01923,Kathleen Turner,kathleen.turner@gmail.com,(450)278-6887x860,New York,187.7,Bronze
+CUST-01924,Jeremy Lawrence,jeremy.lawrence@gmail.com,(813)817-0195,New York,49.69,Bronze
+CUST-01925,Sandra Bean,sandra.bean@hotmail.com,+1-628-779-8728x73142,Chicago,999.89,Gold
+CUST-01926,Laura Thompson,laura.thompson@gmail.com,296.944.1603x3288,Chicago,607.52,Gold
+CUST-01927,Adam Nguyen,adam.nguyen@hotmail.com,4284745120,Seattle,1295.01,Platinum
+CUST-01928,Jessica Douglas,jessica.douglas@gmail.com,975-445-4164,New York,200.59,Silver
+CUST-01929,Donna Horton,donna.horton@gmail.com,966-627-5015x269,Seattle,1021.67,Gold
+CUST-01930,Joshua Bryan,joshua.bryan@gmail.com,001-960-478-5483x3095,Boston,29.17,Bronze
+CUST-01931,Rachel Barker,rachel.barker@gmail.com,(880)960-1457x9232,Boston,96.14,Bronze
+CUST-01932,Charles Figueroa,charles.figueroa@hotmail.com,981-497-0150x19679,Austin,91.91,Bronze
+CUST-01933,Anthony Anderson,anthony.anderson@gmail.com,001-520-518-2852,New York,195.95,Bronze
+CUST-01934,Janet Montes,janet.montes@yahoo.com,3497379582,Chicago,251.89,Silver
+CUST-01935,Amanda Hurley,amanda.hurley@yahoo.com,911-663-9714x92075,Seattle,591.12,Silver
+CUST-01936,Heather Rodriguez,heather.rodriguez@yahoo.com,(448)773-9626,Boston,364.56,Silver
+CUST-01937,Carolyn Holmes,carolyn.holmes@hotmail.com,912.949.7736,Boston,163.78,Bronze
+CUST-01938,George Walton,george.walton@yahoo.com,443.854.9787,Chicago,60.37,Bronze
+CUST-01939,Michael Rodriguez,michael.rodriguez@yahoo.com,001-443-680-2990x34804,Austin,396.64,Silver
+CUST-01940,Thomas Lin,thomas.lin@gmail.com,+1-800-494-0916x5737,Denver,318.84,Silver
+CUST-01941,Keith Jackson,keith.jackson@yahoo.com,001-222-354-9203x693,New York,216.41,Silver
+CUST-01942,Jennifer Adams,jennifer.adams@hotmail.com,4154273117,Austin,56.27,Bronze
+CUST-01943,Randy Pruitt,randy.pruitt@yahoo.com,756.690.0184x2933,Denver,503.15,Silver
+CUST-01944,Shane Torres,shane.torres@gmail.com,001-383-759-6677,Seattle,309.55,Silver
+CUST-01945,John Larson,john.larson@gmail.com,(262)547-3650,New York,26.73,Bronze
+CUST-01946,Douglas Hart,douglas.hart@hotmail.com,4069476144,Chicago,472.49,Silver
+CUST-01947,Wesley Wright,wesley.wright@hotmail.com,001-455-240-4231x697,New York,303.74,Silver
+CUST-01948,Jessica Ramos,jessica.ramos@yahoo.com,793-593-4396x904,New York,180.91,Bronze
+CUST-01949,Jodi Powers,jodi.powers@gmail.com,001-352-587-8357x338,Austin,301.5,Silver
+CUST-01950,John Villa,john.villa@gmail.com,653-930-2364x122,Boston,153.55,Bronze
+CUST-01951,Sarah Smith,sarah.smith@hotmail.com,+1-253-772-0335,Boston,368.49,Silver
+CUST-01952,Ruth Ross,ruth.ross@gmail.com,725.910.7155,Chicago,223.65,Silver
+CUST-01953,Brian Matthews,brian.matthews@yahoo.com,+1-404-722-4564x1199,Austin,222.49,Silver
+CUST-01954,Lisa Foley,lisa.foley@gmail.com,638-607-8191x35053,Austin,35.54,Bronze
+CUST-01955,Sarah Dickson,sarah.dickson@hotmail.com,001-471-457-5571x663,Austin,296.52,Silver
+CUST-01956,Tina Ortiz,tina.ortiz@gmail.com,(816)321-8563x52007,Chicago,831.52,Gold
+CUST-01957,Larry Roberts,larry.roberts@gmail.com,898-268-5697x71433,Seattle,43.63,Bronze
+CUST-01958,Robin Wagner,robin.wagner@hotmail.com,001-390-510-1461x03927,Denver,551.53,Silver
+CUST-01959,Benjamin Lloyd,benjamin.lloyd@yahoo.com,+1-716-838-8168x78518,New York,55.32,Bronze
+CUST-01960,Sarah Williams,sarah.williams@yahoo.com,+1-209-265-6882x6728,San Francisco,758.04,Gold
+CUST-01961,Timothy Moore,timothy.moore@yahoo.com,(508)714-7237,Austin,1603.66,Platinum
+CUST-01962,Robert Smith,robert.smith@hotmail.com,708.330.6978,Seattle,131.16,Bronze
+CUST-01963,Darlene Reed,darlene.reed@yahoo.com,+1-883-867-1467x490,New York,841.91,Gold
+CUST-01964,Alison Cummings,alison.cummings@yahoo.com,(718)757-1164x560,Denver,347.71,Silver
+CUST-01965,Lori Clark,lori.clark@yahoo.com,218.407.3920,Seattle,537.8,Silver
+CUST-01966,Michael Davenport,michael.davenport@yahoo.com,(953)337-7730x31678,Austin,397.64,Silver
+CUST-01967,Brittany Martin,brittany.martin@yahoo.com,654-287-2012,Chicago,306.04,Silver
+CUST-01968,Dillon Brooks,dillon.brooks@yahoo.com,950-805-4908x09983,New York,240.99,Silver
+CUST-01969,Crystal Young,crystal.young@hotmail.com,224.261.6303x4383,Denver,578.77,Silver
+CUST-01970,Anthony Miller,anthony.miller@gmail.com,729-649-3074x17996,Seattle,396.07,Silver
+CUST-01971,Robert Hughes,robert.hughes@hotmail.com,+1-973-751-8962x252,Seattle,740.26,Gold
+CUST-01972,Crystal Brown,crystal.brown@gmail.com,(930)923-4056,Boston,1842.1,Platinum
+CUST-01973,Melissa Cantrell,melissa.cantrell@gmail.com,(451)258-9041,Chicago,72.67,Bronze
+CUST-01974,Matthew Gutierrez,matthew.gutierrez@yahoo.com,6816239278,Denver,283.24,Silver
+CUST-01975,Todd Mendez,todd.mendez@hotmail.com,+1-763-661-5276,Chicago,1626.66,Platinum
+CUST-01976,Kevin Moore,kevin.moore@gmail.com,(348)524-8863,Denver,111.34,Bronze
+CUST-01977,Miranda Young,miranda.young@gmail.com,650-331-1802x6691,New York,262.75,Silver
+CUST-01978,Cassandra Wright,cassandra.wright@hotmail.com,(406)710-4718x91199,Boston,272.23,Silver
+CUST-01979,Melanie Gray,melanie.gray@hotmail.com,+1-392-647-6883x41034,Denver,459.05,Silver
+CUST-01980,Christopher Campos,christopher.campos@hotmail.com,418-714-0513,Denver,421.79,Silver
+CUST-01981,Daisy Wallace,daisy.wallace@hotmail.com,+1-904-347-0856x09406,San Francisco,1102.62,Gold
+CUST-01982,Kenneth Roth,kenneth.roth@yahoo.com,931.703.1456x45722,Denver,46.21,Bronze
+CUST-01983,Doris Kennedy,doris.kennedy@yahoo.com,9742033744,Austin,380.74,Silver
+CUST-01984,Cassandra Hall,cassandra.hall@hotmail.com,336-294-1264,Seattle,192.62,Bronze
+CUST-01985,Martha Smith,martha.smith@gmail.com,(275)831-8057x63101,San Francisco,344.99,Silver
+CUST-01986,Dawn Phillips,dawn.phillips@gmail.com,(653)960-6400,Denver,20.6,Bronze
+CUST-01987,Kelly Meyer,kelly.meyer@yahoo.com,+1-948-269-8948x481,Boston,454.05,Silver
+CUST-01988,Rachael Wright,rachael.wright@gmail.com,9077701773,Seattle,699.82,Gold
+CUST-01989,Audrey Collins,audrey.collins@gmail.com,807.281.1171,New York,255.84,Silver
+CUST-01990,Victoria Ramirez,victoria.ramirez@gmail.com,(814)944-1559,Chicago,391.24,Silver
+CUST-01991,Joshua Hall,joshua.hall@hotmail.com,+1-584-796-5523x91703,Seattle,654.17,Gold
+CUST-01992,John Smith,john.smith@gmail.com,999-592-6653x6197,New York,1180.19,Gold
+CUST-01993,Dale Gibson,dale.gibson@hotmail.com,562-448-7238x5865,Seattle,695.43,Gold
+CUST-01994,Michelle Hopkins,michelle.hopkins@yahoo.com,+1-371-941-3493,Denver,166.65,Bronze
+CUST-01995,Samantha Myers,samantha.myers@gmail.com,(805)458-1735x79211,Seattle,969.63,Gold
+CUST-01996,Matthew Long,matthew.long@hotmail.com,+1-993-254-6463,Austin,153.02,Bronze
+CUST-01997,Craig Phillips,craig.phillips@hotmail.com,+1-855-870-3934x2718,Boston,314.13,Silver
+CUST-01998,Stephanie Aguilar,stephanie.aguilar@gmail.com,(252)390-5092x600,Seattle,303.29,Silver
+CUST-01999,Kristen Hogan,kristen.hogan@gmail.com,+1-301-456-1619x73844,Chicago,159.97,Bronze
+CUST-02000,Stacey Foley,stacey.foley@gmail.com,2888238469,Chicago,448.34,Silver

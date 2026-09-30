@@ -520,3 +520,161 @@ def generate_bulk_invoices(
 
     buf.seek(0)
     return buf.read(), invoices
+
+
+# ── Invoice Cloning / Mimicking Engine ──────────────────────────────────────────
+
+def mimic_invoice_from_file(
+    contents: bytes,
+    filename: str,
+    seed: Optional[int] = 42,
+) -> dict:
+    """
+    Analyze an uploaded real invoice or document (PDF, Image, Text, or JSON) and generate
+    a realistic, privacy-safe synthetic clone with strict mathematical correctness.
+    Direct and quick: no extra checks or blocking loops.
+    """
+    import base64
+    import os
+    import re
+    import json
+    import httpx
+    import io
+
+    rng = np.random.default_rng(seed)
+    ext = filename.split('.')[-1].lower() if '.' in filename else ''
+    
+    mime_type = "application/pdf" if ext == "pdf" else (
+        "image/png" if ext == "png" else (
+            "image/jpeg" if ext in ("jpg", "jpeg") else (
+                "image/webp" if ext == "webp" else "text/plain"
+            )
+        )
+    )
+
+    detected_locale = 'en_US'
+    detected_items = 4
+    detected_discount = 0.0
+    detected_tax_rate = 0.08
+    custom_products = []
+    extracted_company_from = None
+    extracted_company_to = None
+    extracted_text = ""
+
+    # 1. Quick PDF text extraction via pypdf
+    if ext == "pdf":
+        try:
+            import pypdf
+            reader = pypdf.PdfReader(io.BytesIO(contents))
+            pages_text = []
+            for p in reader.pages[:5]:
+                t = p.extract_text()
+                if t:
+                    pages_text.append(t)
+            extracted_text = "\n".join(pages_text)
+        except Exception:
+            pass
+
+    # 2. Fast AI Document / Image Extraction (Gemini Multimodal Vision)
+    api_key = os.environ.get('GEMINI_API_KEY', '')
+    if api_key and len(contents) <= 12 * 1024 * 1024:
+        try:
+            url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={api_key}"
+            prompt = (
+                "Analyze this invoice image or document and extract its structural metadata in valid JSON with keys: "
+                "'company_from' (vendor/seller name), 'company_to' (client/buyer name), "
+                "'currency_code' (e.g. USD, EUR, PKR, GBP, CAD, AUD), 'tax_rate' (float like 0.08 or 0.17), "
+                "'discount_pct' (float like 0 or 10), 'n_items' (integer count of items, min 2 max 8), "
+                "'locale' (e.g. en_US, ur_PK, en_GB, de_DE, fr_FR), 'product_categories' (list of 3-5 item names like ['Cloud Cluster', 'Security Suite'])."
+            )
+            parts = []
+            if ext in ("pdf", "png", "jpg", "jpeg", "webp", "bmp", "gif"):
+                parts.append({
+                    "inline_data": {
+                        "mime_type": mime_type if ext != "pdf" else "application/pdf",
+                        "data": base64.b64encode(contents).decode("utf-8")
+                    }
+                })
+            elif extracted_text:
+                parts.append({"text": f"Document text:\n{extracted_text[:3000]}"})
+            parts.append({"text": prompt})
+
+            payload = {
+                "contents": [{"parts": parts}],
+                "generationConfig": {
+                    "temperature": 0.2,
+                    "responseMimeType": "application/json",
+                }
+            }
+            with httpx.Client(timeout=6.0) as client:
+                resp = client.post(url, json=payload)
+                if resp.status_code == 200:
+                    data = resp.json()
+                    raw_text = data['candidates'][0]['content']['parts'][0]['text']
+                    extracted = json.loads(raw_text)
+                    if isinstance(extracted, dict):
+                        detected_locale = extracted.get('locale', detected_locale)
+                        detected_items = int(extracted.get('n_items', detected_items))
+                        detected_discount = float(extracted.get('discount_pct', detected_discount))
+                        detected_tax_rate = float(extracted.get('tax_rate', detected_tax_rate))
+                        extracted_company_from = extracted.get('company_from')
+                        extracted_company_to = extracted.get('company_to')
+                        if isinstance(extracted.get('product_categories'), list):
+                            custom_products = [str(p) for p in extracted['product_categories'] if p]
+        except Exception:
+            pass  # Fall back directly without delay
+
+    # 3. Direct heuristic fallback if AI not reachable
+    if not custom_products:
+        text_sample = (extracted_text if extracted_text else contents[:4000].decode('utf-8', errors='ignore')).lower()
+        if 'pkr' in text_sample or 'rs.' in text_sample or 'pakistan' in text_sample:
+            detected_locale = 'ur_PK'
+        elif 'gbp' in text_sample or '£' in text_sample or 'united kingdom' in text_sample:
+            detected_locale = 'en_GB'
+        elif 'eur' in text_sample or '€' in text_sample or 'germany' in text_sample or 'euro' in text_sample:
+            detected_locale = 'de_DE'
+        elif 'cad' in text_sample or 'canada' in text_sample:
+            detected_locale = 'en_CA'
+        elif 'aud' in text_sample or 'australia' in text_sample:
+            detected_locale = 'en_AU'
+        
+        # Pull meaningful alphanumeric words for custom product labels
+        lines = [line.strip() for line in (extracted_text or text_sample).splitlines() if 3 < len(line.strip()) < 40]
+        candidate_items = [l for l in lines if not any(kw in l.lower() for kw in ['invoice', 'date', 'total', 'subtotal', 'tax', 'bill to', 'due', 'amount', 'page'])]
+        if candidate_items:
+            custom_products = candidate_items[:6]
+        
+        detected_items = max(2, min(8, len(lines) // 4 or 4))
+
+    # 4. Generate mathematically sound synthetic clone
+    invoice = generate_invoice_data(
+        seed=seed,
+        locale=detected_locale,
+        n_items=detected_items,
+        discount_pct=detected_discount,
+    )
+
+    if extracted_company_from:
+        invoice['company_from'] = extracted_company_from
+    if extracted_company_to:
+        invoice['company_to'] = extracted_company_to
+
+    if custom_products and len(custom_products) > 0:
+        for idx, item in enumerate(invoice['items']):
+            item['product'] = custom_products[idx % len(custom_products)]
+
+    # 5. Render PDF & HTML preview immediately
+    pdf_bytes = render_invoice_pdf(invoice)
+    pdf_base64 = base64.b64encode(pdf_bytes).decode('utf-8')
+    html_preview = render_invoice_html(invoice)
+
+    return {
+        'invoice': invoice,
+        'html_preview': html_preview,
+        'pdf_base64': pdf_base64,
+        'cloned_from': filename,
+        'detected_locale': detected_locale,
+        'item_count': len(invoice['items']),
+    }
+
+

@@ -77,8 +77,17 @@ MASK_FUNCTIONS = {
 }
 
 
-def apply_masking(series: pd.Series, col_type: str) -> pd.Series:
-    """Apply masking to a column based on its type."""
+def apply_masking(series: pd.Series, col_type: str = 'text') -> pd.Series:
+    """Apply masking to a column based on its type or inferred content."""
+    # If generic or text, check if values look like emails or phones
+    if col_type in ('text', 'generic', None):
+        sample = series.dropna().head(10).astype(str)
+        if len(sample) > 0:
+            if any('@' in val for val in sample):
+                col_type = 'email'
+            elif any(re.search(r'\d{3,}', val) for val in sample):
+                col_type = 'phone'
+                
     mask_fn = MASK_FUNCTIONS.get(col_type, mask_generic)
     return series.apply(lambda x: mask_fn(str(x)) if pd.notna(x) else x)
 
@@ -175,6 +184,16 @@ def apply_privacy(
 
         if method == 'mask':
             col_type = rule.get('col_type', 'text')
+            col_lower = str(col).lower()
+            if col_type in ('text', 'generic', None):
+                if 'email' in col_lower or 'mail' in col_lower:
+                    col_type = 'email'
+                elif 'phone' in col_lower or 'tel' in col_lower or 'mobile' in col_lower:
+                    col_type = 'phone'
+                elif 'name' in col_lower:
+                    col_type = 'name'
+                elif 'card' in col_lower or 'cc' in col_lower:
+                    col_type = 'credit_card'
             df[col] = apply_masking(df[col], col_type)
 
         elif method == 'pseudonymize':
