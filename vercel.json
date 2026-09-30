@@ -4,6 +4,7 @@
   "functions": {
     "api/index.py": {
       "includeFiles": "backend/**",
+      "excludeFiles": "{**/tests/**,**/__pycache__/**,**/*.pyc,**/*.pyi,**/*.md}",
       "maxDuration": 60
     }
   },
